@@ -1,6 +1,6 @@
 import {Routes, Route} from 'react-router-dom';
 
-import './App.css';
+import './styling/app.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import LandingPage from './components/LandingPage';
@@ -10,16 +10,22 @@ import Resume from './components/Resume';
 function App() {
 
   return (
-    <div>
-      <Header />
+    <div class='app-wrapper'>
+      <div class='header'>
+        <Header />
+      </div>
+      
+      <div class='main'>
+        <Routes>
+          <Route path='/' element={<LandingPage />} />
+          <Route path='about' element={<About />} />
+          <Route path='resume' element={<Resume />} />
+        </Routes>
+      </div>
 
-    <Routes>
-      <Route path='/' element={<LandingPage />} />
-      <Route path='about' element={<About />} />
-      <Route path='resume' element={<Resume />} />
-    </Routes>
-
-      <Footer />
+      <div class='footer'>
+        <Footer />
+      </div>
     </div>
   );
 }
