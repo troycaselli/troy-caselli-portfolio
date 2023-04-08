@@ -1,6 +1,45 @@
 .header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* fixes header to top of screen */
     position: sticky;
     z-index: 9999;
     width: 100%;
     top: 0px;
+}
+
+.navlink-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid green;
+}
+
+.navlink-container-left {
+    display: flex;
+    justify-content: right;
+    width: 45%;
+    border: 1px solid blue;
+}
+
+.navlink-container-right {
+    display: flex;
+    justify-content: left;
+    width: 45%;
+    border: 1px solid blue;
+}
+
+.header-link {
+    margin: 2%;
+}
+
+.logo-container {
+    height: 30px;
+    width: 30px;
+    rotate: 45deg;
+    background: red;
+    margin-top: -15px;
 }

@@ -29,7 +29,7 @@ function App() {
   }, [hash]);
 
   return (
-    <div class='app-wrapper'>
+    <div className='app-wrapper'>
       {/* <div class='header'> */}
         <Header />
       {/* </div> */}
