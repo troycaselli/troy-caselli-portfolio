@@ -1,0 +1,6 @@
+.header-wrapper {
+    position: sticky;
+    z-index: 9999;
+    width: 100%;
+    top: 0px;
+}

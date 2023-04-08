@@ -1,8 +1,13 @@
 import React from 'react';
 
+import '../styling/landingPage.css';
+
 function LandingPage() {
     return(
-        <h1>Home</h1>
+        <div>
+            <h1>Intro</h1>
+            <h2 id='projects'>Projects</h2>
+        </div>
     );
 }
 

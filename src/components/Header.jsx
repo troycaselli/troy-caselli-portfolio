@@ -1,8 +1,16 @@
 import React from 'react';
+import {Link, NavLink} from 'react-router-dom';
+
+import '../styling/header.css';
 
 function Header() {
     return(
-        <h1>Header</h1>
+        <div className='header-wrapper'>
+            <NavLink to='/'>Home</NavLink>
+            <NavLink to='/#projects'>Projects</NavLink>
+            <NavLink to='about'>About Me</NavLink>
+            <NavLink to='resume'>Résumé</NavLink>
+        </div>
     );
 }
 
