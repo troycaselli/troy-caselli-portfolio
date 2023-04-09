@@ -9,7 +9,7 @@ import About from './components/About';
 import Resume from './components/Resume';
 
 function App() {
-  const { hash } = useLocation();
+  const { pathname, hash, key } = useLocation();
 
   // checks url for hash pathing
   useEffect(() => {
@@ -26,7 +26,7 @@ function App() {
         }
       }, 0);
     }
-  }, [hash]);
+  }, [pathname, hash, key]);
 
   return (
     <div className='app-wrapper'>

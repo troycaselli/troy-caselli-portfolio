@@ -1,22 +1,38 @@
-import React from 'react';
-import {Link, NavLink} from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
+import {Link, NavLink, useLocation} from 'react-router-dom';
 
+import image from '../logo/sword-spade-large.png';
 import '../styling/header.css';
 
 function Header() {
+    const [activeLink, setActiveLink] = useState('/');
+
+    const { pathname, hash, key } = useLocation();
+    useEffect(() => {
+        if (hash) {
+            setActiveLink(pathname + hash);
+        }
+        else {
+            setActiveLink(pathname);
+        }
+    }, [pathname, hash, key]);
+    console.log(activeLink);
+    
     return(
         <div className='header-wrapper'>
             <div className='navlink-wrapper'>
                 <div className='navlink-container-left'>
-                    <NavLink to='/' className='header-link'>Home</NavLink>
-                    <NavLink to='/#projects' className='header-link'>Projects</NavLink>
+                    <Link to='/' className={'header-link ' + (activeLink === '/' ? 'current' : '')}>Home</Link>
+                    <Link to='/#projects' className={'header-link ' + (activeLink === '/#projects' ? 'current' : '')}>Projects</Link>
                 </div>
                 <div className='navlink-container-right'>
-                    <NavLink to='about' className='header-link'>About Me</NavLink>
-                    <NavLink to='resume' className='header-link'>Résumé</NavLink>
+                    <Link to='about' className={'header-link ' + (activeLink === '/about' ? 'current' : '')}>About Me</Link>
+                    <Link to='resume' className={'header-link ' + (activeLink === '/resume' ? 'current' : '')}>Résumé</Link>
                 </div>
             </div>
-            <div className='logo-container'></div>
+            <div className='logo-container'>
+                <img src={image} alt="Logo" className='logo-image'/>
+            </div>
         </div>
     );
 }
