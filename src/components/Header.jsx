@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Link, NavLink, useLocation} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 
 import image from '../logo/sword-spade-large.png';
 import '../styling/header.css';
@@ -16,7 +16,6 @@ function Header() {
             setActiveLink(pathname);
         }
     }, [pathname, hash, key]);
-    console.log(activeLink);
     
     return(
         <div className='header-wrapper'>
