@@ -1,5 +1,5 @@
 .footer-wrapper {
-    border: 1px solid red;
+    background-color: rgb(32, 82, 151);
 }
 
 .footer-container-top {
@@ -19,7 +19,7 @@
     margin: 15px 25px -8px 25px;
     rotate: 45deg;
     background-color: rgb(226, 192, 2);
-    box-shadow: -2px -2px 9px rgba(255,255,255,0.45), 3px 3px 9px rgba(94,104,121,0.3);
+    box-shadow: 3px 3px 9px black;
     transition: ease-out .5s;
 }
 
@@ -30,7 +30,7 @@
     margin: -8px 25px 15px 25px;
     rotate: 45deg;
     background-color: rgb(226, 192, 2);
-    box-shadow: -2px -2px 9px rgba(255,255,255,0.45), 3px 3px 9px rgba(94,104,121,0.3);
+    box-shadow: 3px 3px 9px black;
     transition: ease-out .5s;
 }
 
@@ -47,4 +47,9 @@
     height: 30px;
     width: 30px;
     rotate: -45deg;
+    color: black;
+}
+
+.footer-media-container:hover {
+    color: rgb(226, 192, 2);
 }
