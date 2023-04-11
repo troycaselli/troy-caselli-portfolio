@@ -1,0 +1,33 @@
+.footer-wrapper {
+    border: 1px solid red;
+}
+
+.footer-container-top {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-media-top {
+    height: 30px;
+    width: 30px;
+    border-radius: 3px;
+    margin: 15px 25px -8px 25px;
+    rotate: 45deg;
+    background-color: rgb(226, 192, 2);
+    box-shadow: -2px -2px 9px rgba(255,255,255,0.45), 3px 3px 9px rgba(94,104,121,0.3);
+}
+
+.footer-media-bottom {
+    height: 30px;
+    width: 30px;
+    border-radius: 3px;
+    margin: -8px 25px 15px 25px;
+    rotate: 45deg;
+    background-color: rgb(226, 192, 2);
+    box-shadow: -2px -2px 9px rgba(255,255,255,0.45), 3px 3px 9px rgba(94,104,121,0.3);
+}
