@@ -20,6 +20,7 @@
     rotate: 45deg;
     background-color: rgb(226, 192, 2);
     box-shadow: -2px -2px 9px rgba(255,255,255,0.45), 3px 3px 9px rgba(94,104,121,0.3);
+    transition: ease-out .5s;
 }
 
 .footer-media-bottom {
@@ -30,4 +31,20 @@
     rotate: 45deg;
     background-color: rgb(226, 192, 2);
     box-shadow: -2px -2px 9px rgba(255,255,255,0.45), 3px 3px 9px rgba(94,104,121,0.3);
+    transition: ease-out .5s;
+}
+
+.footer-media-top:hover, .footer-media-bottom:hover {
+    cursor: pointer;
+    background-color: black;
+    color: rgb(226, 192, 2);
+}
+
+.footer-media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    rotate: -45deg;
 }
