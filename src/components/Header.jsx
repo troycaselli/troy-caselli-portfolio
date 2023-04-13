@@ -7,12 +7,13 @@ import '../styling/header.css';
 function Header() {
     const [activeLink, setActiveLink] = useState('/');
 
+    //activeLink sets 'current' class on Links
     const { pathname, hash, key } = useLocation();
     useEffect(() => {
-        if (hash) {
+        if (hash && hash !== '#top') {
             setActiveLink(pathname + hash);
         }
-        else {
+        if(!hash) {
             setActiveLink(pathname);
         }
     }, [pathname, hash, key]);
