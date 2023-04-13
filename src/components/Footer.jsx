@@ -19,18 +19,19 @@ function Footer() {
                     </a>
                 </div>
                 <div className='footer-media-top'>
-                    <Link to='/' className='footer-media-container'>
+                    <a href='#top' className='footer-media-container' >
                             <FontAwesomeIcon icon={faArrowUp} size='lg' />
-                    </Link>
+                    </a>
                 </div>
                 <div className='footer-media-top'>
-                    <div 
+                    <a 
+                        href='https://calendly.com/troy-caselli/30min'
+                        target='blank'
                         className='footer-media-container'
                         type='button'
-                        onClick={() => {console.log('Calendly')}}
                     >
                             <FontAwesomeIcon icon={faCalendarDays} size='lg' />
-                    </div>
+                    </a>
                 </div>
             </div>
             <div className='footer-container-bottom'>
@@ -43,13 +44,13 @@ function Footer() {
                     </a>
                 </div>
                 <div className='footer-media-bottom'>
-                    <div 
+                    <a 
                         className='footer-media-container'
                         type='button'
-                        onClick={() => {console.log('Email')}}
+                        href='mailto:swordandtrowel1689@gmail.com'
                     >
                             <FontAwesomeIcon icon={faEnvelope} size='lg' />
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

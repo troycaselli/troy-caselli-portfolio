@@ -49,13 +49,8 @@
 }
 
 .header-link:hover {
-    /* transform: scale(1.1); */
     background-position: 0 100%;
 }
-
-/* .header-link:active {
-    color:black;
-} */
 
 .current {
     border-bottom: 2px solid black;
