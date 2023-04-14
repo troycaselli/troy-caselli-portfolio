@@ -1,3 +1,35 @@
-h1 {
-    height: 150vh;
+html, body {
+    background: rgb(20,20,20);
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.intro-container {
+    margin: 10% 0;
+}
+
+.shape {
+    stroke-dasharray: 200 1300;
+    stroke-dashoffset: -950;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: black; 
+    /* #19f6e8; */
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1.5s, stroke-dasharray 1.5s;
+}
+
+.text {
+    font-family: inherit;
+    font-size: 4rem;
+    letter-spacing: 8px;
+    color: #fff;
+    position: relative;
+}
+
+.svg-wrapper:hover .shape {
+    stroke-width: 2px;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 0;
 }
