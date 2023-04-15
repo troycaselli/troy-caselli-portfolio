@@ -15,7 +15,7 @@ body {
 
 .app-wrapper {
     min-height: 100%;
-    background-color: lightblue;
+    background-color: rgb(210, 221, 230);
 }
 
 .header,
