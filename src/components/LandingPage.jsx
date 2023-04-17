@@ -29,26 +29,22 @@ function LandingPage() {
                     </svg>
                 </div>
                 <div className='tools-wrapper'>
-                    {/* <div className='tool-container'> */}
-                        <img className='tool-image' src={cImage} alt='c'></img>
-                    {/* </div> */}
-                    {/* <div className='tool-container'> */}
-                        <img className='tool-image' src={css3Image} alt='css3'></img>
-                    {/* </div> */}
-                    <img className='tool-image' src={cypressImage} alt='cypress'></img>
-                    <img className='tool-image' src={expressImage} alt='express'></img>
-                    <img className='tool-image' src={githubImage} alt='github'></img>
-                    <img className='tool-image' src={gitlabImage} alt='gitlab'></img>
-                    <img className='tool-image' src={html5Image} alt='html5'></img>
-                    <img className='tool-image' src={javaScriptImage} alt='javascript'></img>
-                    <img className='tool-image' src={lessImage} alt='less'></img>
-                    <img className='tool-image' src={nodeImage} alt='node'></img>
-                    <img className='tool-image' src={reactImage} alt='react'></img>
-                    <img className='tool-image' src={reduxImage} alt='redux'></img>
-                    <img className='tool-image' src={slackImage} alt='slack'></img>
-                    <img className='tool-image' src={sqlite3Image} alt='sqlite3'></img>
-                    <img className='tool-image' src={typescriptImage} alt='typescript'></img>
-                    <img className='tool-image' src={vscodeImage} alt='vscode'></img>
+                    <img className='tool-image tool-1' src={cImage} alt='c'></img>
+                    <img className='tool-image tool-2' src={css3Image} alt='css3'></img>
+                    <img className='tool-image tool-3' src={cypressImage} alt='cypress'></img>
+                    <img className='tool-image tool-4' src={expressImage} alt='express'></img>
+                    <img className='tool-image tool-5' src={githubImage} alt='github'></img>
+                    <img className='tool-image tool-6' src={gitlabImage} alt='gitlab'></img>
+                    <img className='tool-image tool-7' src={html5Image} alt='html5'></img>
+                    <img className='tool-image tool-8' src={javaScriptImage} alt='javascript'></img>
+                    <img className='tool-image tool-9' src={lessImage} alt='less'></img>
+                    <img className='tool-image tool-10' src={nodeImage} alt='node'></img>
+                    <img className='tool-image tool-11' src={reactImage} alt='react'></img>
+                    <img className='tool-image tool-12' src={reduxImage} alt='redux'></img>
+                    <img className='tool-image tool-13' src={slackImage} alt='slack'></img>
+                    <img className='tool-image tool-14' src={sqlite3Image} alt='sqlite3'></img>
+                    <img className='tool-image tool-15' src={typescriptImage} alt='typescript'></img>
+                    <img className='tool-image tool-16' src={vscodeImage} alt='vscode'></img>
                 </div>
             </div>
             <div  id='projects' className='projects-wrapper'>
