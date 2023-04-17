@@ -1,25 +1,27 @@
 html, body {
-    background: rgb(20,20,20);
+	background: rgb(32, 82, 151);
     text-align: center;
     height: 100%;
 }
+/* Introduction Section */
 
 .intro-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10% 0;
+    margin: 120px 0 120px 0;
 }
 
 .svg-wrapper {
     width: 600px;
+    z-index: 1;
 }
 
 .shape {
     stroke-dasharray: 200 1300;
     stroke-dashoffset: -950;
     stroke-width: 8px;
-    fill: transparent;
+    fill: rgb(210, 221, 230);
     stroke: rgb(226, 192, 2); 
     /* #19f6e8; */
     border-bottom: 5px solid black;
@@ -41,10 +43,10 @@ html, body {
 }
 
 .tools-wrapper {
-    margin: 5% 0;
+    margin: 20px 0 5% 0;
     border: 1px solid red;
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
     position: relative;
 }
 
@@ -62,10 +64,195 @@ html, body {
 }
 
 .tool-image {
-    /* rotate: -45deg; */
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
     position: absolute;
     top: 0;
     left: 0;
 }
+
+/* Introduction Tools */
+/* .tool-1 {
+    animation: 12s ease-in-out -3s infinite reverse both running oscillate-0;
+}
+.tool-2 {
+    animation: 12s ease-in-out -9s infinite reverse both running oscillate-0;
+}
+@keyframes oscillate-0 {
+    0% {left: 0px; top: -300px}
+    50% {left: 0px; top: 300px}
+    100% {left: 0px; top: -300px}
+}
+.tool-3 {
+    animation: 12s ease-in-out 0s infinite reverse both running oscillate-22;
+}
+.tool-4 {
+    animation: 12s ease-in-out -6s infinite reverse both running oscillate-22;
+}
+@keyframes oscillate-22 {
+    0% {left: 115px; top: -277px}
+    50% {left: -115px; top: 277px}
+    100% {left: 115px; top: -277px}
+}
+.tool-5 {
+    animation: 12s ease-in-out -3s infinite reverse both running oscillate-45;
+}
+.tool-6 {
+    animation: 12s ease-in-out -9s infinite reverse both running oscillate-45;
+}
+@keyframes oscillate-45 {
+    0% {left: 212px; top: -212px}
+    50% {left: -212px; top: 212px}
+    100% {left: 212px; top: -212px}
+}
+.tool-7 {
+    animation: 12s ease-in-out 0s infinite reverse both running oscillate-67;
+}
+.tool-8 {
+    animation: 12s ease-in-out -6s infinite reverse both running oscillate-67;
+}
+@keyframes oscillate-67 {
+    0% {left: -277px; top: 115px}
+    50% {left: 277px; top: -115px}
+    100% {left: -277px; top: 115px}
+}
+.tool-9 {
+    animation: 12s ease-in-out -3s infinite reverse both running oscillate-90;
+}
+.tool-10 {
+    animation: 12s ease-in-out -9s infinite reverse both running oscillate-90;
+}
+@keyframes oscillate-90 {
+    0% {left: -300px; top: 0px}
+    50% {left: 300px; top: 0px}
+    100% {left: -300px; top: 0px}
+}
+.tool-11 {
+    animation: 12s ease-in-out 0s infinite reverse both running oscillate-112;
+}
+.tool-12 {
+    animation: 12s ease-in-out -6s infinite reverse both running oscillate-112;
+}
+@keyframes oscillate-112 {
+    0% {left: -277px; top: -115px}
+    50% {left: 277px; top: 115px}
+    100% {left: -277px; top: -115px}
+}
+.tool-13 {
+    animation: 12s ease-in-out -3s infinite reverse both running oscillate-135;
+}
+.tool-14 {
+    animation: 12s ease-in-out -9s infinite reverse both running oscillate-135;
+}
+@keyframes oscillate-135 {
+    0% {left: -212px; top: -212px}
+    50% {left: 212px; top: 212px}
+    100% {left: -212px; top: -212px}
+}
+.tool-15 {
+    animation: 12s ease-in-out 0s infinite reverse both running oscillate-157;
+}
+.tool-16 {
+    animation: 12s ease-in-out -6s infinite reverse both running oscillate-157;
+}
+@keyframes oscillate-157 {
+    0% {left: -115px; top: -277px}
+    50% {left: 115px; top: 277px}
+    100% {left: -115px; top: -277px}
+} */
+
+
+
+
+
+
+
+.tool-1 {
+    animation: 16s ease-in-out 0s infinite reverse both running oscillate-0;
+}
+.tool-2 {
+    animation: 16s ease-in-out -8s infinite reverse both running oscillate-0;
+}
+@keyframes oscillate-0 {
+    0% {left: 0px; top: -300px}
+    50% {left: 0px; top: 300px}
+    100% {left: 0px; top: -300px}
+}
+.tool-3 {
+    animation: 16s ease-in-out -4s infinite reverse both running oscillate-22;
+}
+.tool-4 {
+    animation: 16s ease-in-out -12s infinite reverse both running oscillate-22;
+}
+@keyframes oscillate-22 {
+    0% {left: 115px; top: -277px}
+    50% {left: -115px; top: 277px}
+    100% {left: 115px; top: -277px}
+}
+.tool-5 {
+    animation: 16s ease-in-out 0s infinite reverse both running oscillate-45;
+}
+.tool-6 {
+    animation: 16s ease-in-out -8s infinite reverse both running oscillate-45;
+}
+@keyframes oscillate-45 {
+    0% {left: 212px; top: -212px}
+    50% {left: -212px; top: 212px}
+    100% {left: 212px; top: -212px}
+}
+.tool-7 {
+    animation: 16s ease-in-out -4s infinite reverse both running oscillate-67;
+}
+.tool-8 {
+    animation: 16s ease-in-out -12s infinite reverse both running oscillate-67;
+}
+@keyframes oscillate-67 {
+    0% {left: -277px; top: 115px}
+    50% {left: 277px; top: -115px}
+    100% {left: -277px; top: 115px}
+}
+.tool-9 {
+    animation: 16s ease-in-out 0s infinite reverse both running oscillate-90;
+}
+.tool-10 {
+    animation: 16s ease-in-out -8s infinite reverse both running oscillate-90;
+}
+@keyframes oscillate-90 {
+    0% {left: -300px; top: 0px}
+    50% {left: 300px; top: 0px}
+    100% {left: -300px; top: 0px}
+}
+.tool-11 {
+    animation: 16s ease-in-out -4s infinite reverse both running oscillate-112;
+}
+.tool-12 {
+    animation: 16s ease-in-out -12s infinite reverse both running oscillate-112;
+}
+@keyframes oscillate-112 {
+    0% {left: -277px; top: -115px}
+    50% {left: 277px; top: 115px}
+    100% {left: -277px; top: -115px}
+}
+.tool-13 {
+    animation: 16s ease-in-out 0s infinite reverse both running oscillate-135;
+}
+.tool-14 {
+    animation: 16s ease-in-out -8s infinite reverse both running oscillate-135;
+}
+@keyframes oscillate-135 {
+    0% {left: -212px; top: -212px}
+    50% {left: 212px; top: 212px}
+    100% {left: -212px; top: -212px}
+}
+.tool-15 {
+    animation: 16s ease-in-out -4s infinite reverse both running oscillate-157;
+}
+.tool-16 {
+    animation: 16s ease-in-out -12s infinite reverse both running oscillate-157;
+}
+@keyframes oscillate-157 {
+    0% {left: -115px; top: -277px}
+    50% {left: 115px; top: 277px}
+    100% {left: -115px; top: -277px}
+}
+/* Projects Section */
