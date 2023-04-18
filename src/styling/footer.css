@@ -1,5 +1,6 @@
 .footer-wrapper {
-    background-color: rgb(32, 82, 151);
+    background-color: rgb(18, 21, 47);
+    padding: 5px 0;
 }
 
 .footer-container-top {
@@ -18,7 +19,7 @@
     border-radius: 3px;
     margin: 15px 25px -8px 25px;
     rotate: 45deg;
-    background-color: rgb(226, 192, 2);
+    background-color: rgb(214, 184, 14);
     box-shadow: 3px 3px 9px black;
     transition: ease-out .5s;
 }
@@ -29,15 +30,15 @@
     border-radius: 3px;
     margin: -8px 25px 15px 25px;
     rotate: 45deg;
-    background-color: rgb(226, 192, 2);
-    box-shadow: 3px 3px 9px black;
+    background-color: rgb(214, 184, 14);
+    box-shadow: 3px 3px 9px rgb(18, 21, 47);
     transition: ease-out .5s;
 }
 
 .footer-media-top:hover, .footer-media-bottom:hover {
     cursor: pointer;
-    background-color: black;
-    color: rgb(226, 192, 2);
+    background-color: rgb(202, 231, 253);
+    /* color: rgb(214, 184, 14); */
 }
 
 .footer-media-container {
@@ -47,9 +48,11 @@
     height: 30px;
     width: 30px;
     rotate: -45deg;
-    color: black;
+    color: rgb(18, 21, 47);
 }
 
 .footer-media-container:hover {
-    color: rgb(226, 192, 2);
+    /* color: rgb(214, 184, 14); */
 }
+
+/* rgb(202, 231, 253) */
