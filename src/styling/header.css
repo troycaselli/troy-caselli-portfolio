@@ -16,8 +16,8 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background: rgb(32, 82, 151);
-    box-shadow: 0px -10px 0px 10px rgb(32, 82, 151), 0px 2px 10px black;
+    background: rgb(18, 21, 47);
+    box-shadow: 0px -10px 0px 10px rgb(32, 82, 151), 0px 2px 10px rgb(18, 21, 47);
 }
 
 .navlink-container-left {
@@ -40,13 +40,13 @@
 
     font-weight: 500;
     overflow: hidden;
-    background: linear-gradient(to right, black, black 50%, rgb(226, 192, 2) 50%);
+    background: linear-gradient(to right, rgb(202, 231, 253), rgb(202, 231, 253) 50%, rgb(214, 184, 14) 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 100%;
-    transition: background-position 300ms ease;
+    transition: background-position 500ms ease;
 }
 
 .header-link:hover {
@@ -54,7 +54,7 @@
 }
 
 .current {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(202, 231, 253);
 }
 
 .logo-container {
@@ -65,8 +65,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(226, 192, 2);
-    box-shadow: 2px 2px 10px 0px black;
+    background: rgb(214, 184, 14);
+    box-shadow: 2px 2px 10px 0px rgb(18, 21, 47);
     border-radius: 3px;
 }
 
