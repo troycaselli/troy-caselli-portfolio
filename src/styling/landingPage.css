@@ -9,7 +9,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 120px 0 320px 0;
+    margin: 100px 0 150px 0;
 }
 
 .svg-wrapper {
@@ -21,7 +21,7 @@ html, body {
     stroke-dasharray: 200 1300;
     stroke-dashoffset: -950;
     stroke-width: 8px;
-    fill: rgb(202, 231, 253);
+    fill: transparent;
     opacity: .7;
     stroke: rgb(214, 184, 14); 
     /* #19f6e8; */
@@ -35,6 +35,7 @@ html, body {
     letter-spacing: 8px;
     fill: rgb(18, 21, 47);
     position: relative;
+    font-weight: bold;
 }
 
 .svg-wrapper:hover .shape {
@@ -44,7 +45,7 @@ html, body {
 }
 
 .tools-wrapper {
-    margin: 20px 0 5% 0;
+    margin: 50px 0 0 0;
     height: 50px;
     width: 50px;
     position: relative;
@@ -79,11 +80,11 @@ html, body {
     animation: 16s ease-in-out -8s infinite reverse both running oscillate-0;
 }
 @keyframes oscillate-0 {
-    0% {left: 0px; top: -300px; opacity: 1;}
+    0% {left: 0px; top: -250px; opacity: .5;}
     25% {opacity: 0;}
-    50% {left: 0px; top: 300px; opacity: 1;}
+    50% {left: 0px; top: 250px; opacity: .5;}
     75% {opacity: 0;}
-    100% {left: 0px; top: -300px; opacity: 1;}
+    100% {left: 0px; top: -250px; opacity: .5;}
 }
 .tool-3 {
     animation: 16s ease-in-out -4s infinite reverse both running oscillate-22;
@@ -92,11 +93,11 @@ html, body {
     animation: 16s ease-in-out -12s infinite reverse both running oscillate-22;
 }
 @keyframes oscillate-22 {
-    0% {left: 115px; top: -277px; opacity: 1;}
+    0% {left: 96px; top: -231px; opacity: .5;}
     25% {opacity: 0;}
-    50% {left: -115px; top: 277px; opacity: 1;}
+    50% {left: -96px; top: 231px; opacity: .5;}
     75% {opacity: 0;}
-    100% {left: 115px; top: -277px; opacity: 1;}
+    100% {left: 96px; top: -231px; opacity: .5;}
 }
 .tool-5 {
     animation: 16s ease-in-out 0s infinite reverse both running oscillate-45;
@@ -105,11 +106,11 @@ html, body {
     animation: 16s ease-in-out -8s infinite reverse both running oscillate-45;
 }
 @keyframes oscillate-45 {
-    0% {left: 212px; top: -212px; opacity: 1;}
+    0% {left: 177px; top: -177px; opacity: .5;}
     25% {opacity: 0;}
-    50% {left: -212px; top: 212px; opacity: 1;}
+    50% {left: -177px; top: 177px; opacity: .5;}
     75% {opacity: 0;}
-    100% {left: 212px; top: -212px; opacity: 1;}
+    100% {left: 177px; top: -177px; opacity: .5;}
 }
 .tool-7 {
     animation: 16s ease-in-out -4s infinite reverse both running oscillate-67;
@@ -118,11 +119,11 @@ html, body {
     animation: 16s ease-in-out -12s infinite reverse both running oscillate-67;
 }
 @keyframes oscillate-67 {
-    0% {left: -277px; top: 115px; opacity: 1;}
+    0% {left: -231px; top: 96px; opacity: .5;}
     25% {opacity: 0;}
-    50% {left: 277px; top: -115px; opacity: 1;}
+    50% {left: 231px; top: -96px; opacity: .5;}
     75% {opacity: 0;}
-    100% {left: -277px; top: 115px; opacity: 1;}
+    100% {left: -231px; top: 96px; opacity: .5;}
 }
 .tool-9 {
     animation: 16s ease-in-out 0s infinite reverse both running oscillate-90;
@@ -131,11 +132,11 @@ html, body {
     animation: 16s ease-in-out -8s infinite reverse both running oscillate-90;
 }
 @keyframes oscillate-90 {
-    0% {left: -300px; top: 0px; opacity: 1;}
+    0% {left: -250px; top: 0px; opacity: .5;}
     25% {opacity: 0;}
-    50% {left: 300px; top: 0px; opacity: 1;}
+    50% {left: 250px; top: 0px; opacity: .5;}
     75% {opacity: 0;}
-    100% {left: -300px; top: 0px; opacity: 1;}
+    100% {left: -250px; top: 0px; opacity: .5;}
 }
 .tool-11 {
     animation: 16s ease-in-out -4s infinite reverse both running oscillate-112;
@@ -144,11 +145,11 @@ html, body {
     animation: 16s ease-in-out -12s infinite reverse both running oscillate-112;
 }
 @keyframes oscillate-112 {
-    0% {left: -277px; top: -115px; opacity: 1;}
+    0% {left: -231px; top: -96px; opacity: .5;}
     25% {opacity: 0;}
-    50% {left: 277px; top: 115px; opacity: 1;}
+    50% {left: 231px; top: 96px; opacity: .5;}
     75% {opacity: 0;}
-    100% {left: -277px; top: -115px; opacity: 1;}
+    100% {left: -231px; top: -96px; opacity: .5;}
 }
 .tool-13 {
     animation: 16s ease-in-out 0s infinite reverse both running oscillate-135;
@@ -157,11 +158,11 @@ html, body {
     animation: 16s ease-in-out -8s infinite reverse both running oscillate-135;
 }
 @keyframes oscillate-135 {
-    0% {left: -212px; top: -212px; opacity: 1;}
+    0% {left: -177px; top: -177px; opacity: .5;}
     25% {opacity: 0;}
-    50% {left: 212px; top: 212px; opacity: 1;}
+    50% {left: 177px; top: 177px; opacity: .5;}
     75% {opacity: 0;}
-    100% {left: -212px; top: -212px; opacity: 1;}
+    100% {left: -177px; top: -177px; opacity: .5;}
 }
 .tool-15 {
     animation: 16s ease-in-out -4s infinite reverse both running oscillate-157;
@@ -170,13 +171,32 @@ html, body {
     animation: 16s ease-in-out -12s infinite reverse both running oscillate-157;
 }
 @keyframes oscillate-157 {
-    0% {left: -115px; top: -277px; opacity: 1;}
+    0% {left: -96px; top: -231px; opacity: .5;}
     25% {opacity: 0;}
-    50% {left: 115px; top: 277px; opacity: 1;}
+    50% {left: 96px; top: 231px; opacity: .5;}
     75% {opacity: 0;}
-    100% {left: -115px; top: -277px; opacity: 1;}
+    100% {left: -96px; top: -231px; opacity: .5;}
 }
 
+.titles-wrapper {
+    display: flex;
+    justify-content: center;
+    /* background: rgb(202, 231, 253, .7); */
+    text-align: left;
+    width: 100%;
+    z-index: 1;
+    margin: -20px;
+}
 
+.title-names {
+    white-space: pre-wrap;
+    font-family: inherit;
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    line-height: 35px;
+    color: rgb(18, 21, 47);
+    font-weight: 900;
+    text-indent: 40px;
+}
 
 /* Projects Section */

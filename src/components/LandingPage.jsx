@@ -46,6 +46,11 @@ function LandingPage() {
                     <img className='tool-image tool-15' src={typescriptImage} alt='typescript'></img>
                     <img className='tool-image tool-16' src={vscodeImage} alt='vscode'></img>
                 </div>
+                <div className='titles-wrapper'>
+                    <div className='titles-container'>
+                        <text className='title-names'>{'{ \n\t Full-Stack Engineer && \n\t OOL Developer && \n\t React Developer \n};'}</text>
+                    </div>
+                </div>
             </div>
             <div  id='projects' className='projects-wrapper'>
                 <h2>Projects</h2>
