@@ -38,7 +38,6 @@
 .footer-media-top:hover, .footer-media-bottom:hover {
     cursor: pointer;
     background-color: rgb(202, 231, 253);
-    /* color: rgb(214, 184, 14); */
 }
 
 .footer-media-container {
@@ -50,9 +49,3 @@
     rotate: -45deg;
     color: rgb(18, 21, 47);
 }
-
-.footer-media-container:hover {
-    /* color: rgb(214, 184, 14); */
-}
-
-/* rgb(202, 231, 253) */

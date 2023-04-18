@@ -25,7 +25,7 @@ html, body {
     opacity: .7;
     stroke: rgb(214, 184, 14); 
     /* #19f6e8; */
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid rgb(18, 21, 47);;
     transition: stroke-width 1s, stroke-dashoffset 1.5s, stroke-dasharray 1.5s;
 }
 
@@ -185,7 +185,7 @@ html, body {
     text-align: left;
     width: 100%;
     z-index: 1;
-    margin: -20px;
+    margin-top: -20px;
 }
 
 .title-names {
@@ -200,3 +200,86 @@ html, body {
 }
 
 /* Projects Section */
+
+.projects-header {
+    font-size: 3rem;
+    color: rgb(18, 21, 47);
+    margin-top: 200px;
+}
+
+.projects-divider {
+    border: 2px solid rgb(214, 184, 14);
+    width: 125px;
+}
+
+.projects-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 10% 0 10% 0;
+}
+
+.projects-container-left {
+    width: 50%;
+}
+
+.projects-container-right {
+    width: 50%;
+}
+
+.project-container-left {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0px 20px 150px 0;
+}
+
+.project-container-right {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 150px 0 0px 20px;
+}
+
+.project-info {
+    width: 50%;
+}
+
+.project-image-container-left {
+    height: 150px;
+    width: 150px;
+    rotate: 45deg;
+    margin: 0 -30px 0 50px;
+    border-radius: 3px;
+    border: 3px solid rgb(214, 184, 14);
+    background-color: rgb(214, 184, 14);
+    overflow: hidden;
+    transition: 300ms ease-in-out;
+}
+
+.project-image-container-right {
+    height: 150px;
+    width: 150px;
+    rotate: 45deg;
+    margin: 0 50px 0 -30px;
+    border-radius: 3px;
+    border: 3px solid rgb(214, 184, 14);
+    background-color: rgb(214, 184, 14);
+    overflow: hidden;
+    transition: 300ms ease-in-out;
+}
+
+.project-image-container-left:hover,
+.project-image-container-right:hover {
+    scale: 1.05;
+}
+
+.project-image {
+    min-width: 150%;
+    min-height: 150%;
+    rotate: -45deg;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -36px 0px 0 -36px;
+    border: 1px solid red;
+}

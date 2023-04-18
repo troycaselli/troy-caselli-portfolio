@@ -21,7 +21,7 @@ import '../styling/landingPage.css';
 function LandingPage() {
     return(
         <div className='landing-wrapper'>
-            <div className='intro-container'>
+            <section className='intro-container'>
                 <div className="svg-wrapper">
                     <svg height="150" width="600" xmlns="http://www.w3.org/2000/svg">
                         <rect class="shape" height="150" width="600" />
@@ -51,11 +51,80 @@ function LandingPage() {
                         <text className='title-names'>{'{ \n\t Full-Stack Engineer && \n\t OOL Developer && \n\t React Developer \n};'}</text>
                     </div>
                 </div>
-            </div>
-            <div  id='projects' className='projects-wrapper'>
-                <h2>Projects</h2>
+            </section>
 
-            </div>
+            <h2 className='projects-header'>Projects</h2>
+            <hr className='projects-divider'/>
+            <section  id='projects' className='projects-wrapper'>
+                <div className='projects-container-left'>
+                    <div className='project-container-left'>
+                        <div className='project-info'>
+                            <h3 className='project-info__title'>Asylum Office Grant Rate Tracker</h3>
+                            <text className='project-info__text'>
+                                This web application includes a built out, responsive landing page and protected pages (such as a profile page) and API endpoints using Auth0 login and logout token authentication.
+                            </text>
+                        </div>
+                        <div className='project-image-container-left'>
+                            <div className='project-image' style={{backgroundImage: `url(${typescriptImage})`}} />
+                        </div>
+                    </div>
+                    <div className='project-container-left'>
+                        <div className='project-info'>
+                            <h3 className='project-info__title'>Asylum Office Grant Rate Tracker</h3>
+                            <text className='project-info__text'>
+                                This web application includes a built out, responsive landing page and protected pages (such as a profile page) and API endpoints using Auth0 login and logout token authentication.
+                            </text>
+                        </div>
+                        <div className='project-image-container-left'>
+                            <div className='project-image' style={{backgroundImage: `url(${githubImage})`}} />
+                        </div>
+                    </div>
+                    {/* <div className='project-container-left'>
+                        <div className='project-info'>
+                            <h3 className='project-info__title'>Asylum Office Grant Rate Tracker</h3>
+                            <text className='project-info__text'>
+                                This web application includes a built out, responsive landing page and protected pages (such as a profile page) and API endpoints using Auth0 login and logout token authentication.
+                            </text>
+                        </div>
+                        <div className='project-image-container-left'></div>
+                    </div> */}
+                </div>
+
+                <div className='projects-container-right'>
+                    <div className='project-container-right'>
+                        <div className='project-image-container-right'>
+                            <div className='project-image' style={{backgroundImage: `url(${cImage})`}} />
+                        </div>
+                        <div className='project-info'>
+                            <h3 className='project-info__title'>Friends List Login</h3>
+                            <text className='project-info__text'>
+                                This Friends List Login application stores a user's list of friends, utilizing React Router and token authorization. Username: "Bloom", Password: "Tech"
+                            </text>
+                        </div>
+                    </div>
+                    <div className='project-container-right'>
+                        <div className='project-image-container-right'>
+                            <div className='project-image' style={{backgroundImage: `url(${javaScriptImage})`}} />
+                        </div>
+                        <div className='project-info'>
+                            <h3 className='project-info__title'>Friends List Login</h3>
+                            <text className='project-info__text'>
+                                This Friends List Login application stores a user's list of friends, utilizing React Router and token authorization. Username: "Bloom", Password: "Tech"
+                            </text>
+                        </div>
+                    </div>
+                    {/* <div className='project-container-right'>
+                        <div className='project-image-container-right'></div>
+                        <div className='project-info'>
+                            <h3 className='project-info__title'>Friends List Login</h3>
+                            <text className='project-info__text'>
+                                This Friends List Login application stores a user's list of friends, utilizing React Router and token authorization. Username: "Bloom", Password: "Tech"
+                            </text>
+                        </div>
+                    </div> */}
+                </div>
+
+            </section>
         </div>
     );
 }
