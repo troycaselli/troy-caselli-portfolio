@@ -1,3 +1,5 @@
-h1 {
+/* h1 {
     height: 150vh;
-}
+} */
+
+/* Height setting on h1 was causing the footer to have a heigth of 150vh as well.*/

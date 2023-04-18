@@ -1,29 +1,37 @@
 /* include border and padding in element width and height */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .app-wrapper {
-    min-height: 100%;
-    background-color: lightblue;
+  min-height: 100vh;
+  background-color: lightblue;
+  position: relative;
+  height: 150vh;
 }
-
-.header,
+.footer {
+  border: 1px solid red;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+}
+/* .header,
 .footer {
     flex: none;
-}
+} */
 
 .main {
-    flex: auto;
-    min-height: 90vh;
+  flex: auto;
+  min-height: 90vh;
 }
