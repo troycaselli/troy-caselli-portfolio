@@ -48,21 +48,29 @@ function LandingPage() {
                 </div>
                 <div className='titles-wrapper'>
                     <div className='titles-container'>
-                        <text className='title-names'>{'{ \n\t Full-Stack Engineer && \n\t OOL Developer && \n\t React Developer \n};'}</text>
+                        <text className='title-names'>
+                            {'{ \n\t Full Stack Engineer && \n\t OOL Developer && \n\t React Developer \n};'}
+                        </text>
                     </div>
                 </div>
             </section>
 
-            <h2 className='projects-header'>Projects</h2>
+            <h2 id='projects' className='projects-header'>Projects</h2>
             <hr className='projects-divider'/>
-            <section  id='projects' className='projects-wrapper'>
+            <section className='projects-wrapper'>
                 <div className='projects-container-left'>
                     <div className='project-container-left'>
                         <div className='project-info'>
                             <h3 className='project-info__title'>Asylum Office Grant Rate Tracker</h3>
-                            <text className='project-info__text'>
+                            <h4 className='project-info__role'>Front End Developer, UI/UX Developer</h4>
+                            <p className='project-info__text'>
                                 This web application includes a built out, responsive landing page and protected pages (such as a profile page) and API endpoints using Auth0 login and logout token authentication.
-                            </text>
+                            </p>
+                            <div className='project-links-container'>
+                                {/* <a className='project-info__link' href='' target='blank' >Website</a>
+                                <text className='project-info__divider'>|</text> */}
+                                <a className='project-info__link' href='https://github.com/troycaselli/asylum-rg-fe-starter' target='blank' >Source Code</a>
+                            </div>
                         </div>
                         <div className='project-image-container-left'>
                             <div className='project-image' style={{backgroundImage: `url(${typescriptImage})`}} />
@@ -70,10 +78,16 @@ function LandingPage() {
                     </div>
                     <div className='project-container-left'>
                         <div className='project-info'>
-                            <h3 className='project-info__title'>Asylum Office Grant Rate Tracker</h3>
-                            <text className='project-info__text'>
-                                This web application includes a built out, responsive landing page and protected pages (such as a profile page) and API endpoints using Auth0 login and logout token authentication.
-                            </text>
+                            <h3 className='project-info__title'>Friends List Login</h3>
+                            <h4 className='project-info__role'>Front End Developer, UI/UX Developer</h4>
+                            <p className='project-info__text'>
+                                This Friends List Login application stores a user's list of friends, utilizing React Router and token authorization. Username: "Bloom", Password: "Tech"
+                            </p>
+                            <div className='project-links-container'>
+                                {/* <a className='project-info__link' href='' target='blank' >Website</a>
+                                <text className='project-info__divider'>|</text> */}
+                                <a className='project-info__link' href='https://github.com/troycaselli/web-module-project-client-auth' target='blank' >Source Code</a>
+                            </div>
                         </div>
                         <div className='project-image-container-left'>
                             <div className='project-image' style={{backgroundImage: `url(${githubImage})`}} />
@@ -82,9 +96,15 @@ function LandingPage() {
                     {/* <div className='project-container-left'>
                         <div className='project-info'>
                             <h3 className='project-info__title'>Asylum Office Grant Rate Tracker</h3>
-                            <text className='project-info__text'>
+                            <h4 className='project-info__role'></h4>
+                            <p className='project-info__text'>
                                 This web application includes a built out, responsive landing page and protected pages (such as a profile page) and API endpoints using Auth0 login and logout token authentication.
-                            </text>
+                            </p>
+                            <div className='project-links-container'>
+                                <a className='project-info__link' href='' target='blank' >Website</a>
+                                <text className='project-info__divider'>|</text>
+                                <a className='project-info__link' href='https://github.com/troycaselli/asylum-rg-fe-starter' target='blank' >Source Code</a>
+                            </div>
                         </div>
                         <div className='project-image-container-left'></div>
                     </div> */}
@@ -96,10 +116,15 @@ function LandingPage() {
                             <div className='project-image' style={{backgroundImage: `url(${cImage})`}} />
                         </div>
                         <div className='project-info'>
-                            <h3 className='project-info__title'>Friends List Login</h3>
-                            <text className='project-info__text'>
-                                This Friends List Login application stores a user's list of friends, utilizing React Router and token authorization. Username: "Bloom", Password: "Tech"
-                            </text>
+                            <h3 className='project-info__title'>Faith in Five Initiative</h3>
+                            <h4 className='project-info__role'>Front End Developer</h4>
+                            <p className='project-info__text'>
+                            </p>
+                            <div className='project-links-container'>
+                                <a className='project-info__link' href='https://faith-in-five.vercel.app/' target='blank' >Website</a>
+                                <text className='project-info__divider'>|</text>
+                                <a className='project-info__link' href='https://gitlab.com/nonprofit2/faithinfive' target='blank' >Private Repository</a>
+                            </div>
                         </div>
                     </div>
                     <div className='project-container-right'>
@@ -107,19 +132,29 @@ function LandingPage() {
                             <div className='project-image' style={{backgroundImage: `url(${javaScriptImage})`}} />
                         </div>
                         <div className='project-info'>
-                            <h3 className='project-info__title'>Friends List Login</h3>
-                            <text className='project-info__text'>
-                                This Friends List Login application stores a user's list of friends, utilizing React Router and token authorization. Username: "Bloom", Password: "Tech"
-                            </text>
+                            <h3 className='project-info__title'>User Account Database</h3>
+                            <h4 className='project-info__role'>Back End Developer</h4>
+                            <p className='project-info__text'>
+                                This User Account Budget API app utilizes SQLite for data management.
+                            </p>
+                            <div className='project-links-container'>
+                                <a className='project-info__link' href='https://github.com/troycaselli/node-db1-project' target='blank' >Source Code</a>
+                            </div>
                         </div>
                     </div>
                     {/* <div className='project-container-right'>
                         <div className='project-image-container-right'></div>
                         <div className='project-info'>
                             <h3 className='project-info__title'>Friends List Login</h3>
-                            <text className='project-info__text'>
+                            <h4 className='project-info__role'></h4>
+                            <p className='project-info__text'>
                                 This Friends List Login application stores a user's list of friends, utilizing React Router and token authorization. Username: "Bloom", Password: "Tech"
-                            </text>
+                            </p>
+                            <div className='project-links-container'>
+                                <a className='project-info__link' href='' target='blank' >Website</a>
+                                <text className='project-info__divider'>|</text>
+                                <a className='project-info__link' href='https://github.com/troycaselli/asylum-rg-fe-starter' target='blank' >Source Code</a>
+                            </div>
                         </div>
                     </div> */}
                 </div>

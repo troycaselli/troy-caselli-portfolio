@@ -201,6 +201,10 @@ html, body {
 
 /* Projects Section */
 
+#projects {
+    scroll-margin-top: 150px;
+}
+
 .projects-header {
     font-size: 3rem;
     color: rgb(18, 21, 47);
@@ -210,6 +214,7 @@ html, body {
 .projects-divider {
     border: 2px solid rgb(214, 184, 14);
     width: 125px;
+    margin-top: 15px;
 }
 
 .projects-wrapper {
@@ -242,6 +247,41 @@ html, body {
 
 .project-info {
     width: 50%;
+    color:rgb(18, 21, 47);
+}
+
+.project-info__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.project-info__role {
+    font-size: .9rem;
+    padding-top: 5px;
+    color:rgb(214, 184, 14);
+    font-style: italic;
+}
+
+.project-info__text {
+    border: 1px solid rgb(214, 184, 14);
+    padding: 8px 5px;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+.project-links-container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+.project-info__link {
+    color: rgb(18, 21, 47);
+    text-decoration: none;
+}
+
+.project-info__divider {
+    padding: 0 15px;
 }
 
 .project-image-container-left {
