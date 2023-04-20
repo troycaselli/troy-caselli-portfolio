@@ -13,6 +13,19 @@ body {
     align-items: stretch;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(214, 184, 14);
+    border-radius: 20px;
+}
+
 .app-wrapper {
     min-height: 100%;
     background-color: rgb(202, 231, 253);

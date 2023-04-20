@@ -3,6 +3,7 @@ html, body {
     text-align: center;
     height: 100%;
 }
+
 /* Introduction Section */
 
 .intro-container {
@@ -199,7 +200,9 @@ html, body {
     text-indent: 40px;
 }
 
+
 /* Projects Section */
+
 
 #projects {
     scroll-margin-top: 150px;
@@ -248,6 +251,22 @@ html, body {
 .project-info {
     width: 50%;
     color:rgb(18, 21, 47);
+    overflow-y: auto;
+    height: 150px;
+    padding: 0 5px 0 20px;
+}
+
+.project-info::-webkit-scrollbar {
+    width: 8px;
+}
+  
+.project-info::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+.project-info::-webkit-scrollbar-thumb {
+    background-color: rgb(214, 184, 14);
+    border-radius: 20px;
 }
 
 .project-info__title {
