@@ -10,7 +10,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px 0 150px 0;
+    margin: 12% 0 0 0;
 }
 
 .svg-wrapper {
@@ -211,7 +211,7 @@ html, body {
 .projects-header {
     font-size: 3rem;
     color: rgb(18, 21, 47);
-    margin-top: 200px;
+    margin-top: 15%;
 }
 
 .projects-divider {
@@ -223,7 +223,7 @@ html, body {
 .projects-wrapper {
     display: flex;
     justify-content: space-around;
-    margin: 10% 0 10% 0;
+    margin-top: 10%;
 }
 
 .projects-container-left {
@@ -232,32 +232,36 @@ html, body {
 
 .projects-container-right {
     width: 50%;
+    margin-top: 225px;
 }
 
 .project-container-left {
     display: flex;
     justify-content: right;
     align-items: center;
-    margin: 0px 20px 150px 0;
+    margin: 0 20px 250px 0;
 }
 
 .project-container-right {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin: 150px 0 0px 20px;
+    margin: 0 0 250px 20px;
 }
 
 .project-info {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
     width: 50%;
-    color:rgb(18, 21, 47);
+    color: rgb(18, 21, 47);
     overflow-y: auto;
-    height: 150px;
-    padding: 0 5px 0 20px;
+    height: 200px;
+    padding: 0 8px 0 20px;
 }
 
 .project-info::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
 }
   
 .project-info::-webkit-scrollbar-track {
@@ -307,7 +311,7 @@ html, body {
     height: 150px;
     width: 150px;
     rotate: 45deg;
-    margin: 0 -30px 0 50px;
+    margin: 0 -30px 0 60px;
     border-radius: 3px;
     border: 3px solid rgb(214, 184, 14);
     background-color: rgb(214, 184, 14);
@@ -333,12 +337,12 @@ html, body {
 }
 
 .project-image {
-    min-width: 150%;
-    min-height: 150%;
+    min-width: 170%;
+    min-height: 170%;
     rotate: -45deg;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: -36px 0px 0 -36px;
+    margin: -45px 0 0 -45px;
     border: 1px solid red;
 }

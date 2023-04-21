@@ -16,6 +16,10 @@ import slackImage from '../images/slack.svg';
 import sqlite3Image from '../images/sqlite3.svg';
 import typescriptImage from '../images/typescript.svg';
 import vscodeImage from '../images/vscode.svg';
+import userAccount from '../images/projects/user-account-database.png';
+import friendsApp from '../images/projects/friends-app.png';
+import faithApp from '../images/projects/faith-in-five.png';
+import asylumApp from '../images/projects/asylum-tracker.png';
 import '../styling/landingPage.css';
 
 function LandingPage() {
@@ -64,7 +68,7 @@ function LandingPage() {
                             <h3 className='project-info__title'>Asylum Office Grant Rate Tracker</h3>
                             <h4 className='project-info__role'>Front End Developer, UI/UX Developer</h4>
                             <p className='project-info__text'>
-                                This web application includes a built out, responsive landing page and protected pages (such as a profile page) and API endpoints using Auth0 login and logout token authentication.
+                                This responsive web application provides information and data for asylum grant rates and also features an Auth0 login for private pages and API calls.
                             </p>
                             <div className='project-links-container'>
                                 {/* <a className='project-info__link' href='' target='blank' >Website</a>
@@ -73,7 +77,7 @@ function LandingPage() {
                             </div>
                         </div>
                         <div className='project-image-container-left'>
-                            <div className='project-image' style={{backgroundImage: `url(${typescriptImage})`}} />
+                            <div className='project-image' style={{backgroundImage: `url(${asylumApp})`}} />
                         </div>
                     </div>
                     <div className='project-container-left'>
@@ -81,7 +85,7 @@ function LandingPage() {
                             <h3 className='project-info__title'>Friends List Login</h3>
                             <h4 className='project-info__role'>Front End Developer, UI/UX Developer</h4>
                             <p className='project-info__text'>
-                                This Friends List Login application stores a user's list of friends, utilizing React Router and token authorization. Username: "Bloom", Password: "Tech"
+                                This friend directory application stores a user's list of friends with their contact information. Access with Username: "Bloom", Password: "Tech"
                             </p>
                             <div className='project-links-container'>
                                 {/* <a className='project-info__link' href='' target='blank' >Website</a>
@@ -90,7 +94,7 @@ function LandingPage() {
                             </div>
                         </div>
                         <div className='project-image-container-left'>
-                            <div className='project-image' style={{backgroundImage: `url(${githubImage})`}} />
+                            <div className='project-image' style={{backgroundImage: `url(${friendsApp})`}} />
                         </div>
                     </div>
                     {/* <div className='project-container-left'>
@@ -113,12 +117,13 @@ function LandingPage() {
                 <div className='projects-container-right'>
                     <div className='project-container-right'>
                         <div className='project-image-container-right'>
-                            <div className='project-image' style={{backgroundImage: `url(${cImage})`}} />
+                            <div className='project-image' style={{backgroundImage: `url(${faithApp})`}} />
                         </div>
                         <div className='project-info'>
                             <h3 className='project-info__title'>Faith in Five Initiative</h3>
                             <h4 className='project-info__role'>Front End Developer</h4>
                             <p className='project-info__text'>
+                                This application helps Faith Bible Church know its neighbors better by displaying all the homes in a five minute radius on a map and providing a visit logs feature.
                             </p>
                             <div className='project-links-container'>
                                 <a className='project-info__link' href='https://faith-in-five.vercel.app/' target='blank' >Website</a>
@@ -129,13 +134,13 @@ function LandingPage() {
                     </div>
                     <div className='project-container-right'>
                         <div className='project-image-container-right'>
-                            <div className='project-image' style={{backgroundImage: `url(${javaScriptImage})`}} />
+                            <div className='project-image' style={{backgroundImage: `url(${userAccount})`}} />
                         </div>
                         <div className='project-info'>
                             <h3 className='project-info__title'>User Account Database</h3>
                             <h4 className='project-info__role'>Back End Developer</h4>
                             <p className='project-info__text'>
-                                This User Account Budget API app utilizes SQLite for data management.
+                                This User Budget API app records and persists users/companies names and their budget through utilizing SQLite for data management.
                             </p>
                             <div className='project-links-container'>
                                 <a className='project-info__link' href='https://github.com/troycaselli/node-db1-project' target='blank' >Source Code</a>
