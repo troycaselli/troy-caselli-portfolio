@@ -206,7 +206,7 @@ html, body {
 .projects-divider {
     border: 2px solid rgb(214, 184, 14);
     width: 125px;
-    margin-top: 15px;
+    margin-top: 2%;
 }
 
 .projects-wrapper {
@@ -241,10 +241,10 @@ html, body {
 .project-info {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     color: rgb(18, 21, 47);
     overflow-y: auto;
-    height: 200px;
+    height: 170px;
     padding: 0 8px 0 20px;
 }
 
@@ -337,6 +337,18 @@ html, body {
 
 /* Media Queries for smaller screen sizes */
 
+
+@media (max-width: 1200px) {
+    .project-info {
+        height: 200px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .project-info {
+        height: 225px;
+    }
+}
 
 @media (min-width: 651px) and (max-width: 900px) {
     .intro-container {
@@ -481,6 +493,17 @@ html, body {
         letter-spacing: 4px;
         line-height: 30px;
         font-weight: bold;
+    }
+
+    /* Projects Section (651px-900px) */
+
+    .projects-header {
+        font-size: 2.5rem;
+        margin-top: 20%;
+    }
+    .projects-divider {
+        width: 100px;
+        /* margin-top: 10px; */
     }
 }
 
