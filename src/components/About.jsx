@@ -1,8 +1,12 @@
 import React from 'react';
 
+import '../styling/about.css';
+
 function About() {
     return(
-        <h1>A Bit About Me</h1>
+        <section className='about-wrapper'>
+            <p className='about-text'>{'{wip}'}</p>
+        </section>
     );
 }
 
