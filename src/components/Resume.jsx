@@ -1,8 +1,12 @@
 import React from 'react';
 
+import '../styling/resume.css';
+
 function Resume() {
     return(
-        <h1>Résumé</h1>
+        <section className='resume-wrapper'>
+            <p className='resume-text'>{'{wip}'}</p>
+        </section>
     );
 }
 
