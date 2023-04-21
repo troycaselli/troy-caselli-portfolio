@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
 import cImage from '../images/c.svg';
 import css3Image from '../images/css3.svg';
@@ -23,12 +23,41 @@ import asylumApp from '../images/projects/asylum-tracker.png';
 import '../styling/landingPage.css';
 
 function LandingPage() {
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    // repositions relative svg text
+    useEffect(() => {
+        let value = window.innerWidth
+        if(value > 900) {
+            const el = document.querySelector('.text')
+            el.setAttribute('x', '47')
+            el.setAttribute('y', '97')
+        } else if(value <= 900 && value > 650) {
+            const el = document.querySelector('.text')
+            el.setAttribute('x', '50')
+            el.setAttribute('y', '71')
+        } else if(value <= 850 && value > 450) {
+            const el = document.querySelector('.text')
+            el.setAttribute('x', '26')
+            el.setAttribute('y', '48')
+        } else {
+            const el = document.querySelector('.text')
+            el.setAttribute('x', '15')
+            el.setAttribute('y', '32')
+        }
+    }, [windowWidth])
+
+    window.onresize = () => {
+        setWindowWidth(window.innerWidth)
+    }
+
     return(
         <div className='landing-wrapper'>
             <section className='intro-container'>
                 <div className="svg-wrapper">
-                    <svg height="150" width="600" xmlns="http://www.w3.org/2000/svg">
-                        <rect class="shape" height="150" width="600" />
+                    <svg className='svg-container' xmlns="http://www.w3.org/2000/svg">
+                        <rect className="shape" />
                         <text x='47' y='97' className="text">TROY CASELLI</text>
                     </svg>
                 </div>
