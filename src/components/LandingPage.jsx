@@ -16,17 +16,13 @@ import slackImage from '../images/slack.svg';
 import sqlite3Image from '../images/sqlite3.svg';
 import typescriptImage from '../images/typescript.svg';
 import vscodeImage from '../images/vscode.svg';
-import userAccount from '../images/projects/user-account-database.png';
-import friendsApp from '../images/projects/friends-app.png';
-import faithApp from '../images/projects/faith-in-five.png';
-import asylumApp from '../images/projects/asylum-tracker.png';
 import '../styling/landingPage.css';
 
 function LandingPage() {
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    // repositions relative svg text
+    // repositions relative svg text on window's inner-width change
     useEffect(() => {
         let value = window.innerWidth
         if(value > 900) {
@@ -37,6 +33,7 @@ function LandingPage() {
             const el = document.querySelector('.text')
             el.setAttribute('x', '50')
             el.setAttribute('y', '71')
+            // const imageEl = document.querySelector()
         } else if(value <= 850 && value > 450) {
             const el = document.querySelector('.text')
             el.setAttribute('x', '26')
@@ -106,7 +103,7 @@ function LandingPage() {
                             </div>
                         </div>
                         <div className='project-image-container-left'>
-                            <div className='project-image' style={{backgroundImage: `url(${asylumApp})`}} />
+                            <div className='project-image image-asylum' />
                         </div>
                     </div>
                     <div className='project-container-left'>
@@ -123,7 +120,7 @@ function LandingPage() {
                             </div>
                         </div>
                         <div className='project-image-container-left'>
-                            <div className='project-image' style={{backgroundImage: `url(${friendsApp})`}} />
+                            <div className='project-image image-friends' />
                         </div>
                     </div>
                     {/* <div className='project-container-left'>
@@ -146,7 +143,7 @@ function LandingPage() {
                 <div className='projects-container-right'>
                     <div className='project-container-right'>
                         <div className='project-image-container-right'>
-                            <div className='project-image' style={{backgroundImage: `url(${faithApp})`}} />
+                            <div className='project-image image-faith' />
                         </div>
                         <div className='project-info'>
                             <h3 className='project-info__title'>Faith in Five Initiative</h3>
@@ -163,7 +160,7 @@ function LandingPage() {
                     </div>
                     <div className='project-container-right'>
                         <div className='project-image-container-right'>
-                            <div className='project-image' style={{backgroundImage: `url(${userAccount})`}} />
+                            <div className='project-image image-user' />
                         </div>
                         <div className='project-info'>
                             <h3 className='project-info__title'>User Account Database</h3>

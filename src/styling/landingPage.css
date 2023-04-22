@@ -331,7 +331,19 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: -45px 0 0 -45px;
-    border: 1px solid red;
+}
+
+.image-asylum {
+    background-image: url(/src/images/projects/asylum-tracker-square.png);
+}
+.image-friends {
+    background-image: url(/src/images/projects/friends-app-square.png);
+}
+.image-faith {
+    background-image: url(/src/images/projects/faith-in-five-square.png);
+}
+.image-user {
+    background-image: url(/src/images/projects/user-account-database-square.png);
 }
 
 
@@ -504,6 +516,64 @@ html, body {
     .projects-divider {
         width: 100px;
         /* margin-top: 10px; */
+    }
+    .projects-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+    .projects-container-left,
+    .projects-container-right {
+        width: 100%;
+        margin: 0;
+    }
+    .project-container-left {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    .project-container-right {
+        flex-direction: column;
+        margin: 0;
+    }
+    .project-info {
+        padding: 5% 0;
+        height: auto;
+    }
+    .project-image-container-left,
+    .project-image-container-right {
+        height: 400px;
+        width: 100%;
+        rotate: 0deg;
+        margin: 0;
+        border-radius: 0;
+        transition: none;
+        border-left: none;
+        border-right: none;
+    }
+    .project-image-container-left:hover,
+    .project-image-container-right:hover {
+        scale: none;
+    }
+    .project-image {
+        min-width: 100%;
+        min-height: 100%;
+        rotate: 0deg;
+        background-position: top;
+        margin: 0;
+    }
+    .image-asylum {
+        background-image: url(/src/images/projects/asylum-tracker-full.png);
+    }
+    .image-friends {
+        background-image: url(/src/images/projects/friends-app-full.png);
+    }
+    .image-faith {
+        background-image: url(/src/images/projects/faith-in-five-square.png);
+    }
+    .image-user {
+        background-image: url(/src/images/projects/user-account-database-square.png);
     }
 }
 
