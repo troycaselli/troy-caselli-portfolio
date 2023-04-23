@@ -57,16 +57,18 @@ function LandingPage() {
     }
 
     const toggleArrow = (evt) => {
-        const val = '#' + evt.target.getAttribute('value');
-        // console.log(val)
-        const el = document.querySelector(val)
-        // console.log(el)
-        if(el.classList.contains('opened')) {
-            el.classList.remove('opened')
-            evt.target.innerText = arrowDown
+        const elValue = evt.target.getAttribute('value')
+        const elValueId = '#' + elValue
+        const elInfo = document.querySelector(elValueId)
+        const elArrowId = '#' + elValue + '-text'
+        const elArrow = document.querySelector(elArrowId)
+
+        if(elInfo.classList.contains('opened')) {
+            elInfo.classList.remove('opened')
+            elArrow.innerText = arrowDown
         } else {
-            el.classList.add('opened')
-            evt.target.innerText = arrowUp
+            elInfo.classList.add('opened')
+            elArrow.innerText = arrowUp
         }
     }
 
@@ -123,9 +125,9 @@ function LandingPage() {
                                 <a className='project-info__link' href='https://github.com/troycaselli/asylum-rg-fe-starter' target='blank' >Source Code</a>
                             </div>
                         </div>
-                        <div className='project-image-container-left'>
-                            <div className='project-image image-asylum'>
-                                <p className='project-image__text' value='asylum' onClick={toggleArrow} >{arrowDown}</p>
+                        <div className='project-image-container-left' >
+                            <div className='project-image image-asylum' value='asylum' onClick={toggleArrow}>
+                                <p className='project-image__text' id='asylum-text' value='asylum' >{arrowDown}</p>
                             </div>
                         </div>
                     </div>
@@ -142,34 +144,19 @@ function LandingPage() {
                                 <a className='project-info__link' href='https://github.com/troycaselli/web-module-project-client-auth' target='blank' >Source Code</a>
                             </div>
                         </div>
-                        <div className='project-image-container-left'>
-                            <div className='project-image image-friends'> 
-                                <p className='project-image__text' value='friends' onClick={toggleArrow} >{arrowDown}</p>
+                        <div className='project-image-container-left' >
+                            <div className='project-image image-friends'value='friends' onClick={toggleArrow}> 
+                                <p className='project-image__text' id='friends-text' value='friends' >{arrowDown}</p>
                             </div>
                         </div>
                     </div>
-                    {/* <div className='project-container-left'>
-                        <div className='project-info'>
-                            <h3 className='project-info__title'>Asylum Office Grant Rate Tracker</h3>
-                            <h4 className='project-info__role'></h4>
-                            <p className='project-info__text'>
-                                This web application includes a built out, responsive landing page and protected pages (such as a profile page) and API endpoints using Auth0 login and logout token authentication.
-                            </p>
-                            <div className='project-links-container'>
-                                <a className='project-info__link' href='' target='blank' >Website</a>
-                                <text className='project-info__divider'>|</text>
-                                <a className='project-info__link' href='https://github.com/troycaselli/asylum-rg-fe-starter' target='blank' >Source Code</a>
-                            </div>
-                        </div>
-                        <div className='project-image-container-left'></div>
-                    </div> */}
                 </div>
 
                 <div className='projects-container-right'>
                     <div className='project-container-right'>
                         <div className='project-image-container-right'>
-                            <div className='project-image image-faith'>
-                                <p className='project-image__text' value='faith' onClick={toggleArrow} >{arrowDown}</p>
+                            <div className='project-image image-faith' value='faith' onClick={toggleArrow} >
+                                <p className='project-image__text' id='faith-text' value='faith' >{arrowDown}</p>
                             </div>
                         </div>
                         <div className='project-info' id='faith'>
@@ -187,8 +174,8 @@ function LandingPage() {
                     </div>
                     <div className='project-container-right'>
                         <div className='project-image-container-right'>
-                            <div className='project-image image-user'>
-                                <p className='project-image__text' value='user' onClick={toggleArrow} >{arrowDown}</p>
+                            <div className='project-image image-user' value='user' onClick={toggleArrow} >
+                                <p className='project-image__text' id='user-text' value='user' >{arrowDown}</p>
                             </div>
                         </div>
                         <div className='project-info' id='user'>
@@ -202,21 +189,6 @@ function LandingPage() {
                             </div>
                         </div>
                     </div>
-                    {/* <div className='project-container-right'>
-                        <div className='project-image-container-right'></div>
-                        <div className='project-info'>
-                            <h3 className='project-info__title'>Friends List Login</h3>
-                            <h4 className='project-info__role'></h4>
-                            <p className='project-info__text'>
-                                This Friends List Login application stores a user's list of friends, utilizing React Router and token authorization. Username: "Bloom", Password: "Tech"
-                            </p>
-                            <div className='project-links-container'>
-                                <a className='project-info__link' href='' target='blank' >Website</a>
-                                <text className='project-info__divider'>|</text>
-                                <a className='project-info__link' href='https://github.com/troycaselli/asylum-rg-fe-starter' target='blank' >Source Code</a>
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
 
             </section>
