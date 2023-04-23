@@ -20,6 +20,14 @@ import '../styling/landingPage.css';
 
 function LandingPage() {
 
+    const arrowUp = '\u{25B2}'
+    const arrowDown = '\u{25BC}'
+
+    // U+25B5 (▵)
+    // U+25BF (▿)
+    // U+25B2 (▲)
+    // U+25BC (▼)
+
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     // repositions relative svg text on window's inner-width change
@@ -33,7 +41,6 @@ function LandingPage() {
             const el = document.querySelector('.text')
             el.setAttribute('x', '50')
             el.setAttribute('y', '71')
-            // const imageEl = document.querySelector()
         } else if(value <= 850 && value > 450) {
             const el = document.querySelector('.text')
             el.setAttribute('x', '26')
@@ -47,6 +54,20 @@ function LandingPage() {
 
     window.onresize = () => {
         setWindowWidth(window.innerWidth)
+    }
+
+    const toggleArrow = (evt) => {
+        const val = '#' + evt.target.getAttribute('value');
+        // console.log(val)
+        const el = document.querySelector(val)
+        // console.log(el)
+        if(el.classList.contains('opened')) {
+            el.classList.remove('opened')
+            evt.target.innerText = arrowDown
+        } else {
+            el.classList.add('opened')
+            evt.target.innerText = arrowUp
+        }
     }
 
     return(
@@ -90,7 +111,7 @@ function LandingPage() {
             <section className='projects-wrapper'>
                 <div className='projects-container-left'>
                     <div className='project-container-left'>
-                        <div className='project-info'>
+                        <div className='project-info' id='asylum'>
                             <h3 className='project-info__title'>Asylum Office Grant Rate Tracker</h3>
                             <h4 className='project-info__role'>Front End Developer, UI/UX Developer</h4>
                             <p className='project-info__text'>
@@ -103,11 +124,13 @@ function LandingPage() {
                             </div>
                         </div>
                         <div className='project-image-container-left'>
-                            <div className='project-image image-asylum' />
+                            <div className='project-image image-asylum'>
+                                <p className='project-image__text' value='asylum' onClick={toggleArrow} >{arrowDown}</p>
+                            </div>
                         </div>
                     </div>
                     <div className='project-container-left'>
-                        <div className='project-info'>
+                        <div className='project-info' id='friends'>
                             <h3 className='project-info__title'>Friends List Login</h3>
                             <h4 className='project-info__role'>Front End Developer, UI/UX Developer</h4>
                             <p className='project-info__text'>
@@ -120,7 +143,9 @@ function LandingPage() {
                             </div>
                         </div>
                         <div className='project-image-container-left'>
-                            <div className='project-image image-friends' />
+                            <div className='project-image image-friends'> 
+                                <p className='project-image__text' value='friends' onClick={toggleArrow} >{arrowDown}</p>
+                            </div>
                         </div>
                     </div>
                     {/* <div className='project-container-left'>
@@ -143,9 +168,11 @@ function LandingPage() {
                 <div className='projects-container-right'>
                     <div className='project-container-right'>
                         <div className='project-image-container-right'>
-                            <div className='project-image image-faith' />
+                            <div className='project-image image-faith'>
+                                <p className='project-image__text' value='faith' onClick={toggleArrow} >{arrowDown}</p>
+                            </div>
                         </div>
-                        <div className='project-info'>
+                        <div className='project-info' id='faith'>
                             <h3 className='project-info__title'>Faith in Five Initiative</h3>
                             <h4 className='project-info__role'>Front End Developer</h4>
                             <p className='project-info__text'>
@@ -160,9 +187,11 @@ function LandingPage() {
                     </div>
                     <div className='project-container-right'>
                         <div className='project-image-container-right'>
-                            <div className='project-image image-user' />
+                            <div className='project-image image-user'>
+                                <p className='project-image__text' value='user' onClick={toggleArrow} >{arrowDown}</p>
+                            </div>
                         </div>
-                        <div className='project-info'>
+                        <div className='project-info' id='user'>
                             <h3 className='project-info__title'>User Account Database</h3>
                             <h4 className='project-info__role'>Back End Developer</h4>
                             <p className='project-info__text'>
