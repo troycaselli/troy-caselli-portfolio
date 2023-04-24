@@ -75,3 +75,25 @@
     height: 40px;
     width: 40px;
 }
+
+@media (max-width: 450px) {
+    .header-wrapper {
+        position: static;
+    }
+    .navlink-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0 60px 0;
+    }
+    .navlink-container-left,
+    .navlink-container-right {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-link {
+        font-size: 1.2rem;
+        padding: 15px 0 5px 0;
+    }
+}
