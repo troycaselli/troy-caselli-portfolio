@@ -243,23 +243,21 @@ html, body {
     flex-direction: column;
     width: 60%;
     color: rgb(18, 21, 47);
-    overflow-y: auto;
+    /* overflow-y: auto; */
     height: 170px;
-    padding: 0 8px 0 20px;
+    padding: 0 8px;
 }
 
-.project-info::-webkit-scrollbar {
+/* .project-info::-webkit-scrollbar {
     width: 6px;
 }
-  
 .project-info::-webkit-scrollbar-track {
     background: transparent;
-}
-  
+} 
 .project-info::-webkit-scrollbar-thumb {
     background-color: rgb(214, 184, 14);
     border-radius: 20px;
-}
+} */
 
 .project-info__title {
     font-size: 1.2rem;
@@ -515,7 +513,6 @@ html, body {
     }
     .projects-divider {
         width: 100px;
-        /* margin-top: 10px; */
     }
     .projects-wrapper {
         display: flex;
@@ -538,15 +535,20 @@ html, body {
         margin: 0;
     }
     .project-info {
-        padding: 5% 0;
-        height: auto;
-        display: none;
+        width: 80%;
+        opacity: 0;
+        height: 0;
+        transition: ease .5s;
     }
-
+    
+    .project-info__title {
+        padding-top: 5%;
+    }
     .opened {
-        display: block;
+        opacity: 1;
+        height: 190px;
     }
-
+    
     .project-image-container-left,
     .project-image-container-right {
         height: 400px;
@@ -579,7 +581,7 @@ html, body {
         background-image: url(/src/images/projects/friends-app-full.png);
     }
     .image-faith {
-        background-image: url(/src/images/projects/faith-in-five-square.png);
+        background-image: url(/src/images/projects/faith-in-five-full.png);
     }
     .image-user {
         background-image: url(/src/images/projects/user-account-database-square.png);
@@ -587,7 +589,6 @@ html, body {
 
     .project-image__text {
         color: rgb(18, 21, 47);
-        /* width: 100%; */
         position: absolute;
         bottom: 0;
         margin-bottom: 2%;
@@ -745,6 +746,98 @@ html, body {
         line-height: 25px;
         font-weight: bold;
     }
+
+    /* Projects Section 451px-650px*/
+
+    .projects-header {
+        font-size: 2.5rem;
+        margin-top: 20%;
+    }
+    .projects-divider {
+        width: 100px;
+    }
+    .projects-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+    .projects-container-left,
+    .projects-container-right {
+        width: 100%;
+        margin: 0;
+    }
+    .project-container-left {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    .project-container-right {
+        flex-direction: column;
+        margin: 0;
+    }
+    .project-info {
+        width: 90%;
+        opacity: 0;
+        height: 0;
+        transition: ease .5s;
+    }
+    
+    .project-info__title {
+        padding-top: 5%;
+    }
+    .opened {
+        opacity: 1;
+        height: 190px;
+    }
+    
+    .project-image-container-left,
+    .project-image-container-right {
+        height: 400px;
+        width: 100%;
+        rotate: 0deg;
+        margin: 0;
+        border-radius: 0;
+        transition: none;
+        border-left: none;
+        border-right: none;
+    }
+    .project-image-container-left:hover,
+    .project-image-container-right:hover {
+        scale: none;
+    }
+    .project-image {
+        display: flex;
+        justify-content: center;
+        min-width: 100%;
+        min-height: 100%;
+        height: 100%;
+        rotate: 0deg;
+        background-position: top;
+        margin: 0;
+    }
+    .image-asylum {
+        background-image: url(/src/images/projects/asylum-tracker-full.png);
+    }
+    .image-friends {
+        background-image: url(/src/images/projects/friends-app-full.png);
+    }
+    .image-faith {
+        background-image: url(/src/images/projects/faith-in-five-full.png);
+    }
+    .image-user {
+        background-image: url(/src/images/projects/user-account-database-full.png);
+    }
+
+    .project-image__text {
+        color: rgb(18, 21, 47);
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 2%;
+        background: rgb(214, 184, 14);
+        padding: 10px;
+        border-radius: 20px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -894,5 +987,97 @@ html, body {
         letter-spacing: 0;
         line-height: 15px;
         font-weight: bold;
+    }
+
+    /* Projects Section 0px-450px*/
+
+    .projects-header {
+        font-size: 2.5rem;
+        margin-top: 20%;
+    }
+    .projects-divider {
+        width: 100px;
+    }
+    .projects-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+    .projects-container-left,
+    .projects-container-right {
+        width: 100%;
+        margin: 0;
+    }
+    .project-container-left {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    .project-container-right {
+        flex-direction: column;
+        margin: 0;
+    }
+    .project-info {
+        width: 100%;
+        opacity: 0;
+        height: 0;
+        transition: ease .5s;
+    }
+    
+    .project-info__title {
+        padding-top: 5%;
+    }
+    .opened {
+        opacity: 1;
+        height: 220px;
+    }
+    
+    .project-image-container-left,
+    .project-image-container-right {
+        height: 400px;
+        width: 100%;
+        rotate: 0deg;
+        margin: 0;
+        border-radius: 0;
+        transition: none;
+        border-left: none;
+        border-right: none;
+    }
+    .project-image-container-left:hover,
+    .project-image-container-right:hover {
+        scale: none;
+    }
+    .project-image {
+        display: flex;
+        justify-content: center;
+        min-width: 100%;
+        min-height: 100%;
+        height: 100%;
+        rotate: 0deg;
+        background-position: top;
+        margin: 0;
+    }
+    .image-asylum {
+        background-image: url(/src/images/projects/asylum-tracker-full.png);
+    }
+    .image-friends {
+        background-image: url(/src/images/projects/friends-app-full.png);
+    }
+    .image-faith {
+        background-image: url(/src/images/projects/faith-in-five-full.png);
+    }
+    .image-user {
+        background-image: url(/src/images/projects/user-account-database-full.png);
+    }
+
+    .project-image__text {
+        color: rgb(18, 21, 47);
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 2%;
+        background: rgb(214, 184, 14);
+        padding: 10px;
+        border-radius: 20px;
     }
 }

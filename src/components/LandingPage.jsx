@@ -125,7 +125,7 @@ function LandingPage() {
                                 <a className='project-info__link' href='https://github.com/troycaselli/asylum-rg-fe-starter' target='blank' >Source Code</a>
                             </div>
                         </div>
-                        <div className='project-image-container-left' >
+                        <div className='project-image-container-left'>
                             <div className='project-image image-asylum' value='asylum' onClick={toggleArrow}>
                                 <p className='project-image__text' id='asylum-text' value='asylum' >{arrowDown}</p>
                             </div>
