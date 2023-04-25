@@ -11,7 +11,8 @@ function Footer() {
             <div className='footer-container-top'>
                 <div className='footer-media-top'>
                     <a  href='https://www.linkedin.com/in/troy-caselli/'
-                        target='blank'
+                        target='_blank'
+                        rel='noopener noreferrer'
                         className='footer-media-container'
                     >
                             <FontAwesomeIcon icon={faLinkedinIn} size='lg' />
@@ -25,7 +26,8 @@ function Footer() {
                 <div className='footer-media-top'>
                     <a 
                         href='https://calendly.com/troy-caselli/30min'
-                        target='blank'
+                        target='_blank'
+                        rel='noopener noreferrer'
                         className='footer-media-container'
                         type='button'
                     >
@@ -36,7 +38,8 @@ function Footer() {
             <div className='footer-container-bottom'>
                 <div className='footer-media-bottom'>
                     <a href='https://github.com/troycaselli'
-                        target='blank'
+                        target='_blank'
+                        rel='noopener noreferrer'
                         className='footer-media-container'
                     >
                             <FontAwesomeIcon icon={faGithub} size='xl' />
