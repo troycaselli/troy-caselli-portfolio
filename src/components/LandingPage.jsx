@@ -1,21 +1,21 @@
 import React, {useEffect, useState} from 'react';
 
-import cImage from '../images/c.svg';
-import css3Image from '../images/css3.svg';
-import cypressImage from '../images/cypress.svg';
-import expressImage from '../images/express.svg';
-import githubImage from '../images/github.svg';
-import gitlabImage from '../images/gitlab.svg';
-import html5Image from '../images/html5.svg';
-import javaScriptImage from '../images/javascript.svg';
-import lessImage from '../images/less.svg';
-import nodeImage from '../images/nodejs.svg';
-import reactImage from '../images/react.svg';
-import reduxImage from '../images/redux.svg';
-import slackImage from '../images/slack.svg';
-import sqlite3Image from '../images/sqlite3.svg';
-import typescriptImage from '../images/typescript.svg';
-import vscodeImage from '../images/vscode.svg';
+import cImage from '../images/icons/c.svg';
+import css3Image from '../images/icons/css3.svg';
+import cypressImage from '../images/icons/cypress.svg';
+import expressImage from '../images/icons/express.svg';
+import githubImage from '../images/icons/github.svg';
+import gitlabImage from '../images/icons/gitlab.svg';
+import html5Image from '../images/icons/html5.svg';
+import javaScriptImage from '../images/icons/javascript.svg';
+import lessImage from '../images/icons/less.svg';
+import nodeImage from '../images/icons/nodejs.svg';
+import reactImage from '../images/icons/react.svg';
+import reduxImage from '../images/icons/redux.svg';
+import slackImage from '../images/icons/slack.svg';
+import sqlite3Image from '../images/icons/sqlite3.svg';
+import typescriptImage from '../images/icons/typescript.svg';
+import vscodeImage from '../images/icons/vscode.svg';
 import '../styling/landingPage.css';
 
 function LandingPage() {
