@@ -11,9 +11,15 @@ function About() {
                         <div className='featured-portrait__image image-troy-portrait'></div>
                     </div>
                 </div>
-                <div className='featured-certification-container'>
+                <div className='featured-certification-wrapper'>
                     <div className='featured-certification-container'>
-                        <div className='featured-certification__image image-bloomtech-logo'></div>
+                        <a 
+                            href='https://www.credly.com/badges/ca1eb39e-acfe-432d-9199-0ce5ed2340f3/public_url'
+                            target='blank'
+                            type='button'
+                        >
+                            <div className='featured-certification__image image-bloomtech-logo' />
+                        </a>
                     </div>
                 </div>
                 <div className='featured-text-container'>
