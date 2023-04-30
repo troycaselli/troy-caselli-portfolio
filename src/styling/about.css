@@ -21,7 +21,6 @@
     align-items: center;
     height: 100%;
     width: 40%;
-    border: 1px solid green;
 }
 
 .featured-portrait-container {
@@ -30,7 +29,7 @@
     rotate: 45deg;
     margin-right: -30px;
     border-radius: 3px;
-    border: 3px solid rgb(214, 184, 14);
+    border: 3px solid rgb(18, 21, 47);
     background-color: rgb(214, 184, 14);
     overflow: hidden;
 }
@@ -55,7 +54,6 @@
     align-items: center;
     height: 100%;
     width: 15%;
-    border: 1px solid red;
 }
 
 .featured-certification-container {
@@ -90,7 +88,31 @@
 }
 
 .featured-text-container {
-    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
     width: 45%;
+    margin-right: 30px;
+}
+
+.featured-text-titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.featured-text__title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0 1%;
+}
+
+.featured-text__body {
+    line-height: 20px;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid rgb(214, 184, 14);
+    border-radius: 3px;
 }
