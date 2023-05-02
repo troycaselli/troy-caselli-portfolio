@@ -27,6 +27,10 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid rgb(18, 21, 47);
 }
 
+body::-webkit-scrollbar-corner {
+    background: rgb(18, 21, 47);
+  }
+
 .app-wrapper {
     min-height: 100%;
     background-color: rgb(202, 231, 253);

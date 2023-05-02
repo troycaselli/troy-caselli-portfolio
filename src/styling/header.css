@@ -17,7 +17,7 @@
     justify-content: space-between;
     width: 100%;
     background: rgb(18, 21, 47);
-    box-shadow: 0px -10px 0px 10px rgb(32, 82, 151), 0px 2px 10px rgb(18, 21, 47);
+    box-shadow: 0px -10px 0px 10px rgb(18, 21, 47), 0px 2px 10px rgb(18, 21, 47);
 }
 
 .navlink-container-left {
