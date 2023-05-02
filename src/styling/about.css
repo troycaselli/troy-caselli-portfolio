@@ -136,11 +136,22 @@
 
 /* About me page slideshow is adapted from https://dev.to/shantanu_jana/3d-image-slider-using-html-css-328b */
 
+.slideshow-header {
+    font-size: 3rem;
+    color: rgb(18, 21, 47);
+    margin-top: 15%;
+}
+
+.slideshow-divider {
+    border: 2px solid rgb(214, 184, 14);
+    width: 225px;
+}
+
 #slideshow {
     position: relative;
     width: 50%;
     height: 28vw;
-    margin: 18% auto;
+    margin: 5% auto 10% auto;
     font-family: 'Helvetica Neue', sans-serif;
     perspective: 1400px;
     transform-style: preserve-3d;
