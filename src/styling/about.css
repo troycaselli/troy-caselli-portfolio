@@ -294,7 +294,7 @@
     .featured-image-wrapper {
         justify-content: center;
         width: 100%;
-        margin-top: 8%;
+        margin-top: 12%;
     }
 
     .featured-portrait-container {
@@ -308,7 +308,7 @@
     }
 
     .featured-certification-container {
-        margin: -170px -225px 0 0;
+        margin: -80px -225px 0 0;
     }
 
     .featured-text-container {
@@ -330,6 +330,10 @@
 }
 
 @media (max-width: 650px) {
+    .about-wrapper {
+        overflow-x: hidden;
+    }
+
     .featured-image-wrapper {
         margin-top: 15%;
     }
