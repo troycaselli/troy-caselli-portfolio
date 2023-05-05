@@ -125,12 +125,12 @@ function About() {
                 />
                 <label for='s1' id='slide1' className='slideshow__label'>
                     <div className='slideshow__image-container'>
-                        <img src={graduationImg} alt='bloomtech graduation' className='slideshow__image' />
+                        <img src={maternityImg} alt='maternity' className='slideshow__image' />
                     </div>
                 </label>
                 <label for='s2' id='slide2' className='slideshow__label'>
                     <div className='slideshow__image-container'>
-                        <img src={maternityImg} alt='maternity' className='slideshow__image' />
+                        <img src={graduationImg} alt='bloomtech graduation' className='slideshow__image' />
                     </div>
                 </label>
                 <label for='s3' id='slide3' className='slideshow__label'>
@@ -145,7 +145,7 @@ function About() {
                 </label>
                 <label for='s5' id='slide5' className='slideshow__label'>
                     <div className='slideshow__image-container'>
-                        <img src={studyingImg} alt='studying with Tobias' className='slideshow__image' />
+                        <img src={mazeImg} alt='corn maze' className='slideshow__image' />
                     </div>
                 </label>
                 <label for='s6' id='slide6' className='slideshow__label'>
@@ -155,7 +155,7 @@ function About() {
                 </label>
                 <label for='s7' id='slide7' className='slideshow__label'>
                     <div className='slideshow__image-container'>
-                        <img src={mazeImg} alt='corn maze' className='slideshow__image' />
+                        <img src={studyingImg} alt='studying with Tobias' className='slideshow__image' />
                     </div>
                 </label>
             </div>

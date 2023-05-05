@@ -1,12 +1,137 @@
 .resume-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    margin-top: -10%;
+    margin: 0 8% 8% 8%;
+    line-height: 20px;
+}
+.resume-section {
+    width: 100%;
+    text-align: left;
+    margin: 50px 0;
+}
+.resume__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    border: 1px solid rgb(214, 184, 14);
+    padding: 15px;
+    width: fit-content;
+}
+.skills-text {
+    margin: 15px 0;
+}
+.skills-subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.resume-divider {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.resume-divider__half {
+    border-top: 1px solid rgb(214, 184, 14);
+    width: 40%;
+    height: 0;
+}
+.resume-divider__outer-diamond {
+    width: 50px;
+    height: 50px;
+    rotate: 45deg;
+    margin-top: -24.5px;
+    border: 1px solid rgb(214, 184, 14);
+}
+.resume-divider__inner-diamond {
+    width: 36px;
+    height: 36px;
+    margin: 6px 0 0 6px;
+    border: 1px solid rgb(214, 184, 14);
+}
+.resume-container {
+    margin-bottom: 30px;
+}
+.resume__specs {
+    display: flex;
+    margin-top: 20px;
+}
+.resume__name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.resume__role {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: rgb(214, 184, 14);
+}
+.resume-texts {
+    margin-left: 30px;
+}
+.resume-text {
+    margin: 15px 0;
+}
+.resume__dates {
+    margin-top: 3px;
+    font-style: italic;
+}
+.resume__degree {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: rgb(214, 184, 14);
+}
+.education-container {
+    display: flex;
+}
+.normal-font {
+    font-style: normal;
 }
 
-.resume-text {
-    font-size: 10rem;
-    color: rgb(18, 21, 47);
+@media (max-width: 900px) {
+    .resume__specs,
+    .education-container {
+        flex-direction: column;
+    }
+    .resume__role,
+    .resume__degree {
+        margin-top: 3px;
+    }
+    .resume-divider {
+        margin-bottom: 5px; 
+    }
+}
+
+@media (max-width: 450px) {
+    .resume-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .resume__title {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    .skills-subtitle,
+    .resume__name,
+    .resume__role,
+    .resume__degree {
+        font-size: 1.1rem;
+    }
+    .resume__dates {
+        font-size: 1rem;
+    }
+    .resume-divider__half {
+        width: 35%;
+        margin-bottom: 35px;
+    }
+    .resume-divider__outer-diamond {
+        width: 40px;
+        height: 40px;
+        margin-top: -19.5px;
+    }
+    .resume-divider__inner-diamond {
+        width: 29px;
+        height: 29px;
+        margin: 4.5px 0 0 4.5px;
+    }
 }
