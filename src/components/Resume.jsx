@@ -10,15 +10,23 @@ function Resume() {
                 <h2 className='resume__title'>TECHNICAL SKILLS</h2>
                 {/* <div className='skills-texts'> */}
                     <p className='skills-text'>
-                        <b>Front End:</b> JavaScript, React.js, TypeScript, Next.js, C++, Axios, Redux, Context API, HTML, CSS (Less, Tailwind, ChakraUI), Jest, Cypress, Yup
+                        <span className='skills-subtitle'>Front End:</span> JavaScript, React.js, TypeScript, Next.js, C++, Axios, Redux, Context API, HTML, CSS (Less, Tailwind, ChakraUI), Jest, Cypress, Yup
                     </p>
                     <p className='skills-text'>
-                        <b>Back End:</b> Node.js, Express, SQLite3, Relational Databases, Docker, knex.js, PHP
+                        <span className='skills-subtitle'>Back End:</span> Node.js, Express, SQLite3, Relational Databases, Docker, knex.js, PHP
                     </p>
                     <p className='skills-text'>
-                        <b>Additional Skills:</b> Project Management, GitHub, GitLab, VS Code, Git CLI, Postman, HTTPie, Vercel, Netlify, Deployment, Architecture, Algorithms, Debugging
+                        <span className='skills-subtitle'>Additional Skills:</span> Project Management, GitHub, GitLab, VS Code, Git CLI, Postman, HTTPie, Vercel, Netlify, Deployment, Architecture, Algorithms, Debugging
                     </p>
                 {/* </div> */}
+            </div>
+
+            <div className='resume-divider'>
+                <div className='resume-divider__half'></div>
+                <div className='resume-divider__outer-diamond'>
+                    <div className='resume-divider__inner-diamond'></div>
+                </div>
+                <div className='resume-divider__half'></div>
             </div>
 
             <div className='resume-section'>
@@ -30,13 +38,13 @@ function Resume() {
                     </div>
                     <div className='resume-texts'>
                         <p className='resume-text'>
-                            •	Built landing and profile pages from wireframe using Less CSS, flexbox, and media queries for responsive UI design.
+                            ◆	Built landing and profile pages from wireframe using Less CSS, flexbox, and media queries for responsive UI design.
                         </p>
                         <p className='resume-text'>
-                            •	Replaced mock data with production data by adapting and rewriting the logic of Axios promises and API integration.
+                            ◆	Replaced mock data with production data by adapting and rewriting the logic of Axios promises and API integration.
                         </p>
                         <p className='resume-text'>
-                            •	Implemented Auth0 login/logout functionality with protected routes and secure API endpoints in React Router 5.
+                            ◆	Implemented Auth0 login/logout functionality with protected routes and secure API endpoints in React Router 5.
                         </p>
                     </div>
                 </div>
@@ -47,10 +55,10 @@ function Resume() {
                     </div>
                     <div className='resume-texts'>
                         <p className='resume-text'>
-                            •	Built and merged a multi-step, single-page application, intake form into the project using Typescript (TSX).
+                            ◆	Built and merged a multi-step, single-page application, intake form into the project using Typescript (TSX).
                         </p>
                         <p className='resume-text'>
-                            •	Utilized Tailwind to match the intake application form components with the whole project for UI/UX consistency.
+                            ◆	Utilized Tailwind to match the intake application form components with the whole project for UI/UX consistency.
                         </p>
                     </div>
                 </div>
@@ -61,13 +69,13 @@ function Resume() {
                     </div>
                     <div className='resume-texts'>
                         <p className='resume-text'>
-                            •	Designed a user-friendly, single-page application which interacts with a user’s friend list using React Router 6.
+                            ◆	Designed a user-friendly, single-page application which interacts with a user’s friend list using React Router 6.
                         </p>
                         <p className='resume-text'>
-                            •	Regulated access to restricted user Friends and Add Friend pages with token authorization and PrivateRoutes.
+                            ◆	Regulated access to restricted user Friends and Add Friend pages with token authorization and PrivateRoutes.
                         </p>
                         <p className='resume-text'>
-                            •	Employed Yup to validate and add new friend data and incorporated error messages and disable for quality UX.
+                            ◆	Employed Yup to validate and add new friend data and incorporated error messages and disable for quality UX.
                         </p>
                     </div>
                 </div>
@@ -78,16 +86,24 @@ function Resume() {
                     </div>
                     <div className='resume-texts'>
                         <p className='resume-text'>
-                            •	Constructed a RESTful API integrating each CRUD operation for users to  interact with the budget database.
+                            ◆	Constructed a RESTful API integrating each CRUD operation for users to  interact with the budget database.
                         </p>
                         <p className='resume-text'>
-                            •	Developed middleware functions purposed to evaluate user requests and respond with an error message if invalid.
+                            ◆	Developed middleware functions purposed to evaluate user requests and respond with an error message if invalid.
                         </p>
                         <p className='resume-text'>
-                            •	Utilized Knex in asynchronous models enabling access to and manipulation of the SQLite3 user accounts database.
+                            ◆	Utilized Knex in asynchronous models enabling access to and manipulation of the SQLite3 user accounts database.
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <div className='resume-divider'>
+                <div className='resume-divider__half'></div>
+                <div className='resume-divider__outer-diamond'>
+                    <div className='resume-divider__inner-diamond'></div>
+                </div>
+                <div className='resume-divider__half'></div>
             </div>
 
             <div className='resume-section'>
@@ -100,10 +116,10 @@ function Resume() {
                     <p className='resume__dates'>Sept. 2022-Current</p>
                     <div className='resume-texts'>
                         <p className='resume-text'>
-                            •	Contributed to large-scale, multi-tier production applications enabling nonprofits to better serve the community.
+                            ◆	Contributed to large-scale, multi-tier production applications enabling nonprofits to better serve the community.
                         </p>
                         <p className='resume-text'>
-                            •	Developed code in agile workflows with small teams and independently to achieve stakeholder needs on schedule.
+                            ◆	Developed code in agile workflows with small teams and independently to achieve stakeholder needs on schedule.
                         </p>
                     </div>
                 </div>
@@ -115,13 +131,13 @@ function Resume() {
                     <p className='resume__dates'>Oct. 2021 – June 2022</p>
                     <div className='resume-texts'>
                         <p className='resume-text'>
-                            •	Managed classes of various subjects consisting of middle and high school aged students.
+                            ◆	Managed classes of various subjects consisting of middle and high school aged students.
                         </p>
                         <p className='resume-text'>
-                            •	Taught course material, facilitated discussions, and provided guidance for individual and group assignments.
+                            ◆	Taught course material, facilitated discussions, and provided guidance for individual and group assignments.
                         </p>
                         <p className='resume-text'>
-                            •	Designated by teachers and admin staff as the preferred substitute to contact whenever the need arose.
+                            ◆	Designated by teachers and admin staff as the preferred substitute to contact whenever the need arose.
                         </p>
                     </div>
                 </div>
@@ -133,13 +149,13 @@ function Resume() {
                     <p className='resume__dates'>Feb. 2017 – Aug. 2019</p>
                     <div className='resume-texts'>
                         <p className='resume-text'>
-                            •	Completed projects within timeframe and budget which increased the company’s gross income over $20,000.
+                            ◆	Completed projects within timeframe and budget which increased the company’s gross income over $20,000.
                         </p>
                         <p className='resume-text'>
-                            •	Received managerial confirmation that client relations were consistently professional and effective for business.
+                            ◆	Received managerial confirmation that client relations were consistently professional and effective for business.
                         </p>
                         <p className='resume-text'>
-                            •	Participated in business development from a self-employed to employee-based model vital for company growth.
+                            ◆	Participated in business development from a self-employed to employee-based model vital for company growth.
                         </p>
                     </div>
                 </div>
@@ -151,16 +167,24 @@ function Resume() {
                     <p className='resume__dates'>Apr. 2013 – Aug. 2017</p>
                     <div className='resume-texts'>
                         <p className='resume-text'>
-                            •	Trained and certified employees in safety, customer service, and a variety of work stations and positions.
+                            ◆	Trained and certified employees in safety, customer service, and a variety of work stations and positions.
                         </p>
                         <p className='resume-text'>
-                            •	Received the Employee of the Month Award on two occasions in a store exceeding fifty employees.
+                            ◆	Received the Employee of the Month Award on two occasions in a store exceeding fifty employees.
                         </p>
                         <p className='resume-text'>
-                            •	Received the “OPS” Gold Award on three occasions for excellence in quality, speed, and teamwork on the backline.
+                            ◆	Received the “OPS” Gold Award on three occasions for excellence in quality, speed, and teamwork on the backline.
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <div className='resume-divider'>
+                <div className='resume-divider__half'></div>
+                <div className='resume-divider__outer-diamond'>
+                    <div className='resume-divider__inner-diamond'></div>
+                </div>
+                <div className='resume-divider__half'></div>
             </div>
 
             <div className='resume-section'>

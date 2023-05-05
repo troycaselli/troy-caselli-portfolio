@@ -10,16 +10,53 @@
 .resume-section {
     width: 100%;
     text-align: left;
+    margin: 50px 0;
 }
 
 .resume__title {
     font-size: 2rem;
     font-weight: bold;
-    margin: 80px 0 30px 0;
+    margin-bottom: 30px;
+    border: 1px solid rgb(214, 184, 14);
+    padding: 15px;
+    width: fit-content;
 }
 
 .skills-text {
     margin: 15px 0;
+}
+
+.skills-subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.resume-divider {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.resume-divider__half {
+    border-top: 1px solid rgb(214, 184, 14);
+    width: 40%;
+    height: 0;
+}
+
+.resume-divider__outer-diamond {
+    width: 50px;
+    height: 50px;
+    rotate: 45deg;
+    margin-top: -24.5px;
+    border: 1px solid rgb(214, 184, 14);
+}
+
+.resume-divider__inner-diamond {
+    margin: 6px 0 0 6px;
+    border: 1px solid rgb(214, 184, 14);
+    width: 36px;
+    height: 36px;
 }
 
 .resume-container {
@@ -39,6 +76,7 @@
 .resume__role {
     font-size: 1.2rem;
     font-style: italic;
+    color: rgb(214, 184, 14);
 }
 
 .resume-texts {
@@ -57,6 +95,7 @@
 .resume__degree {
     font-size: 1.2rem;
     font-style: italic;
+    color: rgb(214, 184, 14);
 }
 
 .education-container {
