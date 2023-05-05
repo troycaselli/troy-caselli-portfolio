@@ -16,6 +16,7 @@
     font-weight: bold;
     margin-bottom: 30px;
     border: 1px solid rgb(214, 184, 14);
+    border-radius: 2px;
     padding: 15px;
     width: fit-content;
 }
@@ -42,12 +43,15 @@
     rotate: 45deg;
     margin-top: -24.5px;
     border: 1px solid rgb(214, 184, 14);
+    border-radius: 2px;
 }
 .resume-divider__inner-diamond {
-    width: 36px;
-    height: 36px;
-    margin: 6px 0 0 6px;
+    width: 37px;
+    height: 37px;
+    margin: 5.5px 0 0 5.5px;
     border: 1px solid rgb(214, 184, 14);
+    border-radius: 2px;
+
 }
 .resume-container {
     margin-bottom: 30px;
@@ -86,6 +90,29 @@
 .normal-font {
     font-style: normal;
 }
+.resume-button {
+    text-decoration: none;
+    color: rgb(214, 184, 14);
+    padding: 10px;
+    border: 1px solid rgb(214, 184, 14);
+    border-radius: 2px;
+    transition: 300ms;
+}
+.resume-button:hover {
+    background: rgb(18, 21, 47);
+    color:rgb(214, 184, 14);
+}
+.resume-button:active {
+    animation: press 0.2s 1 linear;
+}
+@keyframes press {
+    0% {scale: 1;}
+    50% {scale: .95;}
+    100% {scale: 1;}
+}
+/* .resume-button:active {
+    scale: 1.05;
+} */
 
 @media (max-width: 900px) {
     .resume__specs,
@@ -130,8 +157,8 @@
         margin-top: -19.5px;
     }
     .resume-divider__inner-diamond {
-        width: 29px;
-        height: 29px;
-        margin: 4.5px 0 0 4.5px;
+        width: 30px;
+        height: 30px;
+        margin: 4px 0 0 4px;
     }
 }
