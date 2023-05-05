@@ -8,7 +8,7 @@ function Resume() {
 
             <div className='resume-section'>
                 <h2 className='resume__title'>TECHNICAL SKILLS</h2>
-                {/* <div className='skills-texts'> */}
+                <div className='skills-texts'>
                     <p className='skills-text'>
                         <span className='skills-subtitle'>Front End:</span> JavaScript, React.js, TypeScript, Next.js, C++, Axios, Redux, Context API, HTML, CSS (Less, Tailwind, ChakraUI), Jest, Cypress, Yup
                     </p>
@@ -18,7 +18,7 @@ function Resume() {
                     <p className='skills-text'>
                         <span className='skills-subtitle'>Additional Skills:</span> Project Management, GitHub, GitLab, VS Code, Git CLI, Postman, HTTPie, Vercel, Netlify, Deployment, Architecture, Algorithms, Debugging
                     </p>
-                {/* </div> */}
+                </div>
             </div>
 
             <div className='resume-divider'>
