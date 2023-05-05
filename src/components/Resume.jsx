@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '../styling/resume.css';
+import resumePDF from '../troy-caselli-web-dev-resume.pdf';
 
 function Resume() {
     return(
@@ -213,6 +214,13 @@ function Resume() {
                     <p className='resume__dates'>Sept. 2013 – Dec. 2017</p>
                 </div>
             </div>
+
+            <a 
+                href={resumePDF}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='resume-button'
+            >PDF Download</a>
 
         </section>
     );
