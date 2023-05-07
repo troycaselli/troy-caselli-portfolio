@@ -11,13 +11,13 @@ function Resume() {
                 <h2 className='resume__title'>TECHNICAL SKILLS</h2>
                 <div className='skills-texts'>
                     <p className='skills-text'>
-                        <span className='skills-subtitle'>Front End:</span> JavaScript, React.js, TypeScript, Next.js, C++, Axios, Redux, Context API, HTML, CSS (Less, Tailwind, ChakraUI), Jest, Cypress, Yup
+                        <span className='skills-subtitle'>Front-End:</span> JavaScript, React.js, TypeScript, Next.js, C++, Axios, Redux, Context API, HTML, CSS (Less, Tailwind, ChakraUI), Yup
                     </p>
                     <p className='skills-text'>
-                        <span className='skills-subtitle'>Back End:</span> Node.js, Express, SQLite3, Relational Databases, Docker, knex.js, PHP
+                        <span className='skills-subtitle'>Back-End:</span> Node.js, Express, Relational Databases (SQLite3 and PostgreSQL), Docker, knex.js, PHP
                     </p>
                     <p className='skills-text'>
-                        <span className='skills-subtitle'>Additional Skills:</span> Project Management, GitHub, GitLab, VS Code, Git CLI, Postman, HTTPie, Vercel, Netlify, Deployment, Architecture, Algorithms, Debugging
+                        <span className='skills-subtitle'>Additional Skills:</span> API endpoints/Integration, automation testing (Jest and Cypress), Project Management, GitHub, GitLab, VS Code, Git CLI, Postman, HTTPie, Vercel, Netlify, Deployment, Architecture, Algorithms, Debugging
                     </p>
                 </div>
             </div>
@@ -34,9 +34,49 @@ function Resume() {
                 <h2 className='resume__title'>PROJECTS</h2>
                 <div className='resume-container'>
                     <div className='resume__specs'>
-                        <p className='resume__name'>Asylum Office Grant Rate Tracker,&nbsp;</p>
-                        <p className='resume__role'><i>Front End Developer, UI/UX Developer</i></p>
+                        <p className='resume__name'>Faith in Five Initiative,&nbsp;</p>
+                        <p className='resume__role'>Full-Stack Developer</p>
                     </div>
+                    <p className='resume-text'>
+                        This web app helps Faith Bible Church serve its neighbors better through interactive addresses display and visit log feature.
+                    </p>
+                    <div className='resume-texts'>
+                        <p className='resume-text'>
+                            ◆	Created and incorporated a fully functional user landing dashboard and neighbor logs archive page in TypeScript.
+                        </p>
+                        <p className='resume-text'>
+                            ◆	Developed an intuitive user interface using Chakra UI elements with custom styling from an Adobe XD wireframe.
+                        </p>
+                        <p className='resume-text'>
+                            ◆	Established API integration between PostgreSQL database and dashboard and logs archive pages for relevant UX.
+                        </p>
+                    </div>
+                </div>
+                <div className='resume-container'>
+                    <div className='resume__specs'>
+                        <p className='resume__name'>Family Promise Shelter Management System,&nbsp;</p>
+                        <p className='resume__role'>Front-End Developer</p>
+                    </div>
+                    <p className='resume-text'>
+                        This application enables homeless individuals to digitally fill out and submit an intake form for admittance to a local shelter.
+                    </p>
+                    <div className='resume-texts'>
+                        <p className='resume-text'>
+                            ◆	Built and merged a multi-step, single-page application, intake form into the project using Typescript (TSX).
+                        </p>
+                        <p className='resume-text'>
+                            ◆	Utilized Tailwind to match the intake application form components with the whole project for UI/UX consistency.
+                        </p>
+                    </div>
+                </div>
+                <div className='resume-container'>
+                    <div className='resume__specs'>
+                        <p className='resume__name'>Asylum Office Grant Rate Tracker,&nbsp;</p>
+                        <p className='resume__role'><i>Front-End Developer, UI/UX Developer</i></p>
+                    </div>
+                    <p className='resume-text'>
+                        This site provides public information and data for asylum grant rates in the USA and private features for authorized users.
+                    </p>
                     <div className='resume-texts'>
                         <p className='resume-text'>
                             ◆	Built landing and profile pages from wireframe using Less CSS, flexbox, and media queries for responsive UI design.
@@ -51,23 +91,12 @@ function Resume() {
                 </div>
                 <div className='resume-container'>
                     <div className='resume__specs'>
-                        <p className='resume__name'>Family Promise Shelter Management System,&nbsp;</p>
-                        <p className='resume__role'>Front End Developer</p>
-                    </div>
-                    <div className='resume-texts'>
-                        <p className='resume-text'>
-                            ◆	Built and merged a multi-step, single-page application, intake form into the project using Typescript (TSX).
-                        </p>
-                        <p className='resume-text'>
-                            ◆	Utilized Tailwind to match the intake application form components with the whole project for UI/UX consistency.
-                        </p>
-                    </div>
-                </div>
-                <div className='resume-container'>
-                    <div className='resume__specs'>
                         <p className='resume__name'>Friends List Login,&nbsp;</p>
-                        <p className='resume__role'>Front End Developer, UI/UX Developer</p>
+                        <p className='resume__role'>Front-End Developer, UI/UX Developer</p>
                     </div>
+                    <p className='resume-text'>
+                        This web application simulates an electronic phonebook by storing a user's list of friends with their contact information.
+                    </p>
                     <div className='resume-texts'>
                         <p className='resume-text'>
                             ◆	Designed a user-friendly, single-page application which interacts with a user’s friend list using React Router 6.
@@ -83,8 +112,11 @@ function Resume() {
                 <div className='resume-container'>
                     <div className='resume__specs'>
                         <p className='resume__name'>User Account Database,&nbsp;</p>
-                        <p className='resume__role'>Back End Developer</p>
+                        <p className='resume__role'>Back-End Developer</p>
                     </div>
+                    <p className='resume-text'>
+                        This backend-only app records and persists user and company name information alongside their current spending plan cap.
+                    </p>
                     <div className='resume-texts'>
                         <p className='resume-text'>
                             ◆	Constructed a RESTful API integrating each CRUD operation for users to  interact with the budget database.
@@ -112,9 +144,9 @@ function Resume() {
                 <div className='resume-container'>
                     <div className='resume__specs'>
                         <p className='resume__name'>ikTech,&nbsp;</p>
-                        <p className='resume__role'>Full Stack Developer</p>
+                        <p className='resume__role'>Contract Full-Stack Developer</p>
                     </div>
-                    <p className='resume__dates'>Sept. 2022-Current</p>
+                    <p className='resume__dates'>Jan. 2023-Current</p>
                     <div className='resume-texts'>
                         <p className='resume-text'>
                             ◆	Contributed to large-scale, multi-tier production applications enabling nonprofits to better serve the community.
@@ -126,55 +158,16 @@ function Resume() {
                 </div>
                 <div className='resume-container'>
                     <div className='resume__specs'>
-                        <p className='resume__name'>Northwest Christian Schools,&nbsp;</p>
-                        <p className='resume__role'>Substitute Teacher</p>
+                        <p className='resume__name'>Family Promise,&nbsp;</p>
+                        <p className='resume__role'>Front-End Developer Intern</p>
                     </div>
-                    <p className='resume__dates'>Oct. 2021 – June 2022</p>
+                    <p className='resume__dates'>Sept. 2022-Dec. 2022</p>
                     <div className='resume-texts'>
                         <p className='resume-text'>
-                            ◆	Managed classes of various subjects consisting of middle and high school aged students.
+                            ◆	Advanced the development of a digital intake form to more expediently admit potential homeless shelter guests.
                         </p>
                         <p className='resume-text'>
-                            ◆	Taught course material, facilitated discussions, and provided guidance for individual and group assignments.
-                        </p>
-                        <p className='resume-text'>
-                            ◆	Designated by teachers and admin staff as the preferred substitute to contact whenever the need arose.
-                        </p>
-                    </div>
-                </div>
-                <div className='resume-container'>
-                    <div className='resume__specs'>
-                        <p className='resume__name'>AMAN Services,&nbsp;</p>
-                        <p className='resume__role'>General Laborer</p>
-                    </div>
-                    <p className='resume__dates'>Feb. 2017 – Aug. 2019</p>
-                    <div className='resume-texts'>
-                        <p className='resume-text'>
-                            ◆	Completed projects within timeframe and budget which increased the company’s gross income over $20,000.
-                        </p>
-                        <p className='resume-text'>
-                            ◆	Received managerial confirmation that client relations were consistently professional and effective for business.
-                        </p>
-                        <p className='resume-text'>
-                            ◆	Participated in business development from a self-employed to employee-based model vital for company growth.
-                        </p>
-                    </div>
-                </div>
-                <div className='resume-container'>
-                    <div className='resume__specs'>
-                        <p className='resume__name'>Arby’s,&nbsp;</p>
-                        <p className='resume__role'>In-Store Trainer</p>
-                    </div>
-                    <p className='resume__dates'>Apr. 2013 – Aug. 2017</p>
-                    <div className='resume-texts'>
-                        <p className='resume-text'>
-                            ◆	Trained and certified employees in safety, customer service, and a variety of work stations and positions.
-                        </p>
-                        <p className='resume-text'>
-                            ◆	Received the Employee of the Month Award on two occasions in a store exceeding fifty employees.
-                        </p>
-                        <p className='resume-text'>
-                            ◆	Received the “OPS” Gold Award on three occasions for excellence in quality, speed, and teamwork on the backline.
+                            ◆	Learned TypeScript, Tailwind CSS library, and Docker in order to efficiently contribute to projects source code.
                         </p>
                     </div>
                 </div>
@@ -194,7 +187,7 @@ function Resume() {
                     <div className='education-container'>
                         <p className='resume__name'>Bloom Institute of Technology,&nbsp;</p>
                         <p className='resume__degree'>
-                            Graduate of the Full Stack Web Development Program
+                            Graduate of the Full-Stack Web Development Program
                         </p>
                     </div>
                     <p className='resume__dates'>July 2022 – Apr. 2023</p>
