@@ -102,7 +102,7 @@ function LandingPage() {
                 <div className='titles-wrapper'>
                     <div className='titles-container'>
                         <text className='title-names'>
-                            {'{ \n\t Full Stack Engineer && \n\t OOL Developer && \n\t React Developer \n};'}
+                            {'{ \n\t Full-Stack Engineer && \n\t OOL Developer && \n\t React Developer \n};'}
                         </text>
                     </div>
                 </div>
@@ -113,16 +113,50 @@ function LandingPage() {
             <section className='projects-wrapper'>
                 <div className='projects-container-left'>
                     <div className='project-container-left'>
-                        <div className='project-info' id='asylum'>
-                            <h3 className='project-info__title'>Asylum Office Grant Rate Tracker</h3>
-                            <h4 className='project-info__role'>Front End Developer, UI/UX Developer</h4>
+                        <div className='project-info' id='faith'>
+                            <h3 className='project-info__title'>Faith in Five Initiative</h3>
+                            <h4 className='project-info__role'>Front-End Developer</h4>
                             <p className='project-info__text'>
-                                This responsive web application provides information and data for asylum grant rates and also features an Auth0 login for private pages and API calls.
+                                This web app helps Faith Bible Church serve its neighbors better through interactive addresses display and visit log feature.
                             </p>
                             <div className='project-links-container'>
-                                {/* <a className='project-info__link' href='' target='blank' >Website</a>
+                                <a 
+                                    className='project-info__link'
+                                    href='https://faith-in-five.vercel.app/'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >Website</a>
+                                <text className='project-info__divider'>|</text>
+                                <a 
+                                    className='project-info__link'
+                                    href='https://gitlab.com/nonprofit2/faithinfive'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >Private Repository</a>
+                            </div>
+                        </div>
+                        <div className='project-image-container-left'>
+                            <div className='project-image image-faith' value='faith' onClick={toggleArrow} >
+                                <p className='project-image__text' id='faith-text' value='faith' >{arrowDown}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='project-container-left'>
+                        <div className='project-info' id='asylum'>
+                            <h3 className='project-info__title'>Asylum Office Grant Rate Tracker</h3>
+                            <h4 className='project-info__role'>Front-End Developer, UI/UX Developer</h4>
+                            <p className='project-info__text'>
+                                This site provides public information and data for asylum grant rates in the USA and private features for authorized users.
+                            </p>
+                            <div className='project-links-container'>
+                                {/* <a className='project-info__link' href='' target='_blank' rel='noopener noreferrer' >Website</a>
                                 <text className='project-info__divider'>|</text> */}
-                                <a className='project-info__link' href='https://github.com/troycaselli/asylum-rg-fe-starter' target='blank' >Source Code</a>
+                                <a 
+                                    className='project-info__link'
+                                    href='https://github.com/troycaselli/asylum-rg-fe-starter'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >Source Code</a>
                             </div>
                         </div>
                         <div className='project-image-container-left'>
@@ -132,21 +166,24 @@ function LandingPage() {
                         </div>
                     </div>
                     <div className='project-container-left'>
-                        <div className='project-info' id='friends'>
-                            <h3 className='project-info__title'>Friends List Login</h3>
-                            <h4 className='project-info__role'>Front End Developer, UI/UX Developer</h4>
+                        <div className='project-info' id='user'>
+                            <h3 className='project-info__title'>User Account Database</h3>
+                            <h4 className='project-info__role'>Back-End Developer</h4>
                             <p className='project-info__text'>
-                                This friend directory application stores a user's list of friends with their contact information. Access with Username: "Bloom", Password: "Tech"
+                                This backend-only app records and persists user and company name information alongside their current spending plan cap.
                             </p>
                             <div className='project-links-container'>
-                                {/* <a className='project-info__link' href='' target='blank' >Website</a>
-                                <text className='project-info__divider'>|</text> */}
-                                <a className='project-info__link' href='https://github.com/troycaselli/web-module-project-client-auth' target='blank' >Source Code</a>
+                                <a
+                                    className='project-info__link'
+                                    href='https://github.com/troycaselli/node-db1-project'
+                                    target='_blank'
+                                    rel='noopener noreferrer' 
+                                >Source Code</a>
                             </div>
                         </div>
-                        <div className='project-image-container-left' >
-                            <div className='project-image image-friends'value='friends' onClick={toggleArrow}> 
-                                <p className='project-image__text' id='friends-text' value='friends' >{arrowDown}</p>
+                        <div className='project-image-container-left'>
+                            <div className='project-image image-user' value='user' onClick={toggleArrow} >
+                                <p className='project-image__text' id='user-text' value='user' >{arrowDown}</p>
                             </div>
                         </div>
                     </div>
@@ -155,37 +192,54 @@ function LandingPage() {
                 <div className='projects-container-right'>
                     <div className='project-container-right'>
                         <div className='project-image-container-right'>
-                            <div className='project-image image-faith' value='faith' onClick={toggleArrow} >
-                                <p className='project-image__text' id='faith-text' value='faith' >{arrowDown}</p>
+                            <div className='project-image image-sms' value='sms' onClick={toggleArrow} >
+                                <p className='project-image__text' id='sms-text' value='sms' >{arrowDown}</p>
                             </div>
                         </div>
-                        <div className='project-info' id='faith'>
-                            <h3 className='project-info__title'>Faith in Five Initiative</h3>
-                            <h4 className='project-info__role'>Front End Developer</h4>
+                        <div className='project-info' id='sms'>
+                            <h3 className='project-info__title'>Family Promise SMS</h3>
+                            <h4 className='project-info__role'>Front-End Developer</h4>
                             <p className='project-info__text'>
-                                This application helps Faith Bible Church know its neighbors better by displaying all the homes in a five minute radius on a map and providing a visit logs feature.
+                                This application enables homeless individuals to digitally fill out and submit an intake form for admittance to a local shelter.
                             </p>
                             <div className='project-links-container'>
-                                <a className='project-info__link' href='https://faith-in-five.vercel.app/' target='blank' >Website</a>
+                                <a
+                                    className='project-info__link'
+                                    href='https://shelter-management-system.vercel.app/'
+                                    target='_blank'
+                                    rel='noopener noreferrer' 
+                                >Website</a>
                                 <text className='project-info__divider'>|</text>
-                                <a className='project-info__link' href='https://gitlab.com/nonprofit2/faithinfive' target='blank' >Private Repository</a>
+                                <a
+                                    className='project-info__link'
+                                    href='https://gitlab.com/family-promise/shelter-management-system'
+                                    target='_blank'
+                                    rel='noopener noreferrer' 
+                                >Private Repository</a>
                             </div>
                         </div>
                     </div>
                     <div className='project-container-right'>
                         <div className='project-image-container-right'>
-                            <div className='project-image image-user' value='user' onClick={toggleArrow} >
-                                <p className='project-image__text' id='user-text' value='user' >{arrowDown}</p>
+                            <div className='project-image image-friends'value='friends' onClick={toggleArrow}> 
+                                <p className='project-image__text' id='friends-text' value='friends' >{arrowDown}</p>
                             </div>
                         </div>
-                        <div className='project-info' id='user'>
-                            <h3 className='project-info__title'>User Account Database</h3>
-                            <h4 className='project-info__role'>Back End Developer</h4>
+                        <div className='project-info' id='friends'>
+                            <h3 className='project-info__title'>Friends List Login</h3>
+                            <h4 className='project-info__role'>Front-End Developer, UI/UX Developer</h4>
                             <p className='project-info__text'>
-                                This User Budget API app records and persists users/companies names and their budget through utilizing SQLite for data management.
+                                This app simulates an electronic phonebook by storing a user's list of friends with their contact information. Access with Username: "Bloom", Password: "Tech"
                             </p>
                             <div className='project-links-container'>
-                                <a className='project-info__link' href='https://github.com/troycaselli/node-db1-project' target='blank' >Source Code</a>
+                                {/* <a className='project-info__link' href='' target='_blank' rel='noopener noreferrer' >Website</a>
+                                <text className='project-info__divider'>|</text> */}
+                                <a
+                                    className='project-info__link'
+                                    href='https://github.com/troycaselli/web-module-project-client-auth'
+                                    target='_blank'
+                                    rel='noopener noreferrer' 
+                                >Source Code</a>
                             </div>
                         </div>
                     </div>

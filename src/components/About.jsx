@@ -60,8 +60,8 @@ function About() {
                             determined to enter a field that I had a passion for and could excel 
                             in, a field that I could use to serve my community and the world. 
                             After much deliberation, I chose to enter into the tech field as a 
-                            Full Stack Web Developer. As a result, I spent the next year 
-                            self-learning programming and earning a Full Stack certification 
+                            Full-Stack Web Developer. As a result, I spent the next year 
+                            self-learning programming and earning a Full-Stack certification 
                             through Bloom Institute of Technology. Currently, I am glad to be using
                             my programming skills as a freelancer for ikTech, a company native to 
                             Spokane with a distinct focus on software development for nonprofit 
