@@ -331,14 +331,17 @@ html, body {
     margin: -45px 0 0 -45px;
 }
 
+.image-faith {
+    background-image: url(/src/images/projects/faith-in-five-square.png);
+}
+.image-sms {
+    background-image: url(/src/images/projects/family-promise-sms-square.png);
+}
 .image-asylum {
     background-image: url(/src/images/projects/asylum-tracker-square.png);
 }
 .image-friends {
     background-image: url(/src/images/projects/friends-app-square.png);
-}
-.image-faith {
-    background-image: url(/src/images/projects/faith-in-five-square.png);
 }
 .image-user {
     background-image: url(/src/images/projects/user-account-database-square.png);
@@ -575,14 +578,17 @@ html, body {
         background-position: top;
         margin: 0;
     }
+    .image-faith {
+        background-image: url(/src/images/projects/faith-in-five-full.png);
+    }
+    .image-sms {
+        background-image: url(/src/images/projects/family-promise-sms-full.png);
+    }
     .image-asylum {
         background-image: url(/src/images/projects/asylum-tracker-full.png);
     }
     .image-friends {
         background-image: url(/src/images/projects/friends-app-full.png);
-    }
-    .image-faith {
-        background-image: url(/src/images/projects/faith-in-five-full.png);
     }
     .image-user {
         background-image: url(/src/images/projects/user-account-database-square.png);
@@ -820,14 +826,17 @@ html, body {
         background-position: top;
         margin: 0;
     }
+    .image-faith {
+        background-image: url(/src/images/projects/faith-in-five-full.png);
+    }
+    .image-sms {
+        background-image: url(/src/images/projects/family-promise-sms-full.png);
+    }
     .image-asylum {
         background-image: url(/src/images/projects/asylum-tracker-full.png);
     }
     .image-friends {
         background-image: url(/src/images/projects/friends-app-full.png);
-    }
-    .image-faith {
-        background-image: url(/src/images/projects/faith-in-five-full.png);
     }
     .image-user {
         background-image: url(/src/images/projects/user-account-database-full.png);
@@ -1067,14 +1076,17 @@ html, body {
         background-position: top;
         margin: 0;
     }
+    .image-faith {
+        background-image: url(/src/images/projects/faith-in-five-full.png);
+    }
+    .image-sms {
+        background-image: url(/src/images/projects/family-promise-sms-full.png);
+    }
     .image-asylum {
         background-image: url(/src/images/projects/asylum-tracker-full.png);
     }
     .image-friends {
         background-image: url(/src/images/projects/friends-app-full.png);
-    }
-    .image-faith {
-        background-image: url(/src/images/projects/faith-in-five-full.png);
     }
     .image-user {
         background-image: url(/src/images/projects/user-account-database-full.png);
