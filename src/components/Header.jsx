@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 
-import image from '../images/logo/sword-spade-large.png';
+import image from '../images/logo/sword-spade-large.webp';
 import '../styling/header.css';
 
 function Header() {
