@@ -1,12 +1,12 @@
 import React from 'react';
 
-import graduationImg from '../images/about/bloomtech-graduation.webp';
-import maternityImg from '../images/about/maternity.webp';
-import playingImg from '../images/about/play-and-study.webp';
-import glacierImg from '../images/about/glacier-national-park.webp';
-import cherriesImg from '../images/about/picking-cherries.webp';
-import studyingImg from '../images/about/juggling-responsibilities.webp';
-import mazeImg from '../images/about/corn-maze.webp';
+import graduationImg from '../images/about/bloomtech-graduation.jpg';
+import maternityImg from '../images/about/maternity.jpg';
+import playingImg from '../images/about/play-and-study.jpg';
+import glacierImg from '../images/about/glacier-national-park.jpg';
+import cherriesImg from '../images/about/picking-cherries.jpg';
+import studyingImg from '../images/about/juggling-responsibilities.jpg';
+import mazeImg from '../images/about/corn-maze.jpg';
 import '../styling/about.css';
 
 function About() {
