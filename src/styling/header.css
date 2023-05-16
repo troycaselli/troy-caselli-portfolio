@@ -16,8 +16,8 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background: var(--secondary-color);
-    box-shadow: 0px -10px 0px 10px var(--secondary-color), 0px 2px 10px var(--secondary-color);
+    background: var(--primary-color);
+    box-shadow: 0px -10px 0px 10px var(--primary-color), 0px 2px 10px var(--primary-color);
 }
 
 .navlink-container-left {
@@ -40,7 +40,7 @@
 
     font-weight: 500;
     overflow: hidden;
-    background: linear-gradient(to right, var(--primary-color), var(--primary-color) 50%, var(--tertiary-color) 50%);
+    background: linear-gradient(to right, var(--tertiary-color), var(--tertiary-color) 50%, var(--secondary-color) 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -54,7 +54,7 @@
 }
 
 .current {
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 .logo-container {
@@ -65,8 +65,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--tertiary-color);
-    box-shadow: 2px 2px 10px 0px var(--secondary-color);
+    background: var(--secondary-color);
+    box-shadow: 2px 2px 10px 0px var(--primary-color);
     border-radius: 3px;
 }
 

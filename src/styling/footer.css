@@ -1,5 +1,5 @@
 .footer-wrapper {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 5px 0;
 }
 
@@ -19,7 +19,7 @@
     border-radius: 3px;
     margin: 15px 25px -8px 25px;
     rotate: 45deg;
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
     box-shadow: 3px 3px 9px black;
     transition: ease-out .5s;
 }
@@ -30,14 +30,14 @@
     border-radius: 3px;
     margin: -8px 25px 15px 25px;
     rotate: 45deg;
-    background-color: var(--tertiary-color);
-    box-shadow: 3px 3px 9px var(--secondary-color);
+    background-color: var(--secondary-color);
+    box-shadow: 3px 3px 9px black;
     transition: ease-out .5s;
 }
 
 .footer-media-top:hover, .footer-media-bottom:hover {
     cursor: pointer;
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
 }
 
 .footer-media-container {
@@ -47,5 +47,5 @@
     height: 30px;
     width: 30px;
     rotate: -45deg;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }

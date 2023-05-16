@@ -1,5 +1,5 @@
 html, body {
-	background: var(--secondary-color);
+	background: var(--primary-color);
     text-align: center;
     height: 100%;
 }
@@ -31,8 +31,8 @@ html, body {
     stroke-width: 8px;
     fill: transparent;
     opacity: .7;
-    stroke: var(--tertiary-color); 
-    border-bottom: 5px solid var(--secondary-color);
+    stroke: var(--secondary-color); 
+    border-bottom: 5px solid var(--primary-color);
     transition: stroke-width 1s, stroke-dashoffset 1.5s, stroke-dasharray 1.5s;
 }
 
@@ -40,7 +40,7 @@ html, body {
     font-family: inherit;
     font-size: 4rem;
     letter-spacing: 8px;
-    fill: var(--secondary-color);
+    fill: var(--primary-color);
     position: relative;
     font-weight: bold;
 }
@@ -185,7 +185,7 @@ html, body {
     font-size: 1.8rem;
     letter-spacing: 4px;
     line-height: 35px;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-weight: 900;
 }
 
@@ -199,12 +199,12 @@ html, body {
 
 .projects-header {
     font-size: 3rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-top: 15%;
 }
 
 .projects-divider {
-    border: 2px solid var(--tertiary-color);
+    border: 2px solid var(--secondary-color);
     width: 125px;
     margin-top: 2%;
 }
@@ -242,22 +242,10 @@ html, body {
     display: flex;
     flex-direction: column;
     width: 60%;
-    color: var(--secondary-color);
-    /* overflow-y: auto; */
+    color: var(--primary-color);
     height: 170px;
     padding: 0 8px;
 }
-
-/* .project-info::-webkit-scrollbar {
-    width: 6px;
-}
-.project-info::-webkit-scrollbar-track {
-    background: transparent;
-} 
-.project-info::-webkit-scrollbar-thumb {
-    background-color: var(--tertiary-color);
-    border-radius: 20px;
-} */
 
 .project-info__title {
     font-size: 1.2rem;
@@ -272,7 +260,7 @@ html, body {
 }
 
 .project-info__text {
-    border: 1px solid var(--tertiary-color);
+    border: 1px solid var(--secondary-color);
     padding: 8px 5px;
     margin: 10px 0;
     border-radius: 3px;
@@ -284,7 +272,7 @@ html, body {
 }
 
 .project-info__link {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -298,8 +286,8 @@ html, body {
     rotate: 45deg;
     margin: 0 -30px 0 60px;
     border-radius: 3px;
-    border: 3px solid var(--tertiary-color);
-    background-color: var(--tertiary-color);
+    border: 3px solid var(--secondary-color);
+    background-color: var(--secondary-color);
     overflow: hidden;
     transition: 300ms ease-in-out;
 }
@@ -310,8 +298,8 @@ html, body {
     rotate: 45deg;
     margin: 0 50px 0 -30px;
     border-radius: 3px;
-    border: 3px solid var(--tertiary-color);
-    background-color: var(--tertiary-color);
+    border: 3px solid var(--secondary-color);
+    background-color: var(--secondary-color);
     overflow: hidden;
     transition: 300ms ease-in-out;
 }
@@ -595,11 +583,11 @@ html, body {
     }
 
     .project-image__text {
-        color: var(--secondary-color);
+        color: var(--primary-color);
         position: absolute;
         bottom: 0;
         margin-bottom: 2%;
-        background: var(--tertiary-color);
+        background: var(--secondary-color);
         padding: 10px;
         border-radius: 20px;
     }
@@ -762,7 +750,7 @@ html, body {
     }
     .projects-divider {
         width: 80px;
-        border: 1.5px solid var(--tertiary-color);
+        border: 1.5px solid var(--secondary-color);
 
     }
     .projects-wrapper {
@@ -843,11 +831,11 @@ html, body {
     }
 
     .project-image__text {
-        color: var(--secondary-color);
+        color: var(--primary-color);
         position: absolute;
         bottom: 0;
         margin-bottom: 2%;
-        background: var(--tertiary-color);
+        background: var(--secondary-color);
         padding: 10px;
         border-radius: 20px;
     }
@@ -1013,7 +1001,7 @@ html, body {
     }
     .projects-divider {
         width: 70px;
-        border: 1.5px solid var(--tertiary-color);
+        border: 1.5px solid var(--secondary-color);
     }
     .projects-wrapper {
         display: flex;
@@ -1093,11 +1081,11 @@ html, body {
     }
 
     .project-image__text {
-        color: var(--secondary-color);
+        color: var(--primary-color);
         position: absolute;
         bottom: 0;
         margin-bottom: 2%;
-        background: var(--tertiary-color);
+        background: var(--secondary-color);
         padding: 10px;
         border-radius: 20px;
     }

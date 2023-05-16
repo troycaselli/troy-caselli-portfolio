@@ -1,8 +1,17 @@
 /* include border and padding in element width and height */
 :root {
-    --primary-color: rgb(202, 231, 253);
-    --secondary-color: rgb(18, 21, 47);
-    --tertiary-color: rgb(214, 184, 14);
+    /* --primary-color: rgb(18, 21, 47);
+    --secondary-color: rgb(214, 184, 14);
+    --tertiary-color: rgb(208, 73, 46);
+    --background-color: rgb(202, 231, 253); */
+    /* --primary-color: #1d1d16;
+    --secondary-color: #fed84c;
+    --tertiary-color: rgb(202, 71, 48);
+    --background-color: #F0F6F7FF; */
+    --primary-color: rgb(38, 73, 92);
+    --secondary-color: rgb(233, 211, 48);
+    --tertiary-color: rgb(202, 71, 48);
+    --background-color: rgb(240, 246, 247);
 }
 
 * {
@@ -28,18 +37,18 @@ body::-webkit-scrollbar-track {
 }
   
 body::-webkit-scrollbar-thumb {
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
     border-radius: 20px;
-    border: 3px solid var(--secondary-color);
+    border: 3px solid var(--primary-color);
 }
 
 body::-webkit-scrollbar-corner {
-    background: var(--secondary-color);
+    background: var(--tertiary-color);
   }
 
 .app-wrapper {
     min-height: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
 }
 
 .header,
