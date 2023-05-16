@@ -1,17 +1,16 @@
 /* include border and padding in element width and height */
 :root {
-    /* --primary-color: rgb(18, 21, 47);
-    --secondary-color: rgb(214, 184, 14);
-    --tertiary-color: rgb(208, 73, 46);
-    --background-color: rgb(202, 231, 253); */
-    /* --primary-color: #1d1d16;
-    --secondary-color: #fed84c;
-    --tertiary-color: rgb(202, 71, 48);
-    --background-color: #F0F6F7FF; */
     --primary-color: rgb(38, 73, 92);
     --secondary-color: rgb(233, 211, 48);
     --tertiary-color: rgb(202, 71, 48);
     --background-color: rgb(240, 246, 247);
+    --text-color: rgb(38, 73, 92);
+    /* --primary-color: rgb(5, 13, 17);
+    --secondary-color: rgb(211, 191, 44);
+    --tertiary-color: rgb(175, 61, 41);
+    --background-color: rgb(40, 44, 45);
+    --text-color: rgb(221, 221, 226); */
+
 }
 
 * {

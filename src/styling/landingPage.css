@@ -40,7 +40,7 @@ html, body {
     font-family: inherit;
     font-size: 4rem;
     letter-spacing: 8px;
-    fill: var(--primary-color);
+    fill: var(--text-color);
     position: relative;
     font-weight: bold;
 }
@@ -185,7 +185,7 @@ html, body {
     font-size: 1.8rem;
     letter-spacing: 4px;
     line-height: 35px;
-    color: var(--primary-color);
+    color: var(--text-color);
     font-weight: 900;
 }
 
@@ -199,7 +199,7 @@ html, body {
 
 .projects-header {
     font-size: 3rem;
-    color: var(--primary-color);
+    color: var(--text-color);
     margin-top: 15%;
 }
 
@@ -242,7 +242,7 @@ html, body {
     display: flex;
     flex-direction: column;
     width: 60%;
-    color: var(--primary-color);
+    color: var(--text-color);
     height: 170px;
     padding: 0 8px;
 }
@@ -272,7 +272,7 @@ html, body {
 }
 
 .project-info__link {
-    color: var(--primary-color);
+    color: var(--text-color);
     text-decoration: none;
 }
 

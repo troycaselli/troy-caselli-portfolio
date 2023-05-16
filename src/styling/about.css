@@ -92,7 +92,7 @@
     justify-content: center;
     height: 100%;
     width: 45%;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .featured-text-titles {
@@ -139,7 +139,7 @@
 
 .slideshow-header {
     font-size: 3rem;
-    color: var(--primary-color);
+    color: var(--text-color);
     margin-top: 15%;
 }
 

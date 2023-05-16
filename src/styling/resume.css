@@ -5,7 +5,7 @@
     align-items: center;
     margin: 0 8% 8% 8%;
     line-height: 20px;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 .resume-section {
     width: 100%;
