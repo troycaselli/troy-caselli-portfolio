@@ -1,4 +1,10 @@
 /* include border and padding in element width and height */
+:root {
+    --primary-color: rgb(202, 231, 253);
+    --secondary-color: rgb(18, 21, 47);
+    --tertiary-color: rgb(214, 184, 14);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -22,18 +28,18 @@ body::-webkit-scrollbar-track {
 }
   
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(214, 184, 14);
+    background-color: var(--tertiary-color);
     border-radius: 20px;
-    border: 3px solid rgb(18, 21, 47);
+    border: 3px solid var(--secondary-color);
 }
 
 body::-webkit-scrollbar-corner {
-    background: rgb(18, 21, 47);
+    background: var(--secondary-color);
   }
 
 .app-wrapper {
     min-height: 100%;
-    background-color: rgb(202, 231, 253);
+    background-color: var(--primary-color);
 }
 
 .header,

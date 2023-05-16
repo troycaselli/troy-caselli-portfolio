@@ -1,5 +1,5 @@
 html, body {
-	background: rgb(18, 21, 47);
+	background: var(--secondary-color);
     text-align: center;
     height: 100%;
 }
@@ -31,8 +31,8 @@ html, body {
     stroke-width: 8px;
     fill: transparent;
     opacity: .7;
-    stroke: rgb(214, 184, 14); 
-    border-bottom: 5px solid rgb(18, 21, 47);
+    stroke: var(--tertiary-color); 
+    border-bottom: 5px solid var(--secondary-color);
     transition: stroke-width 1s, stroke-dashoffset 1.5s, stroke-dasharray 1.5s;
 }
 
@@ -40,7 +40,7 @@ html, body {
     font-family: inherit;
     font-size: 4rem;
     letter-spacing: 8px;
-    fill: rgb(18, 21, 47);
+    fill: var(--secondary-color);
     position: relative;
     font-weight: bold;
 }
@@ -185,7 +185,7 @@ html, body {
     font-size: 1.8rem;
     letter-spacing: 4px;
     line-height: 35px;
-    color: rgb(18, 21, 47);
+    color: var(--secondary-color);
     font-weight: 900;
 }
 
@@ -199,12 +199,12 @@ html, body {
 
 .projects-header {
     font-size: 3rem;
-    color: rgb(18, 21, 47);
+    color: var(--secondary-color);
     margin-top: 15%;
 }
 
 .projects-divider {
-    border: 2px solid rgb(214, 184, 14);
+    border: 2px solid var(--tertiary-color);
     width: 125px;
     margin-top: 2%;
 }
@@ -242,7 +242,7 @@ html, body {
     display: flex;
     flex-direction: column;
     width: 60%;
-    color: rgb(18, 21, 47);
+    color: var(--secondary-color);
     /* overflow-y: auto; */
     height: 170px;
     padding: 0 8px;
@@ -255,7 +255,7 @@ html, body {
     background: transparent;
 } 
 .project-info::-webkit-scrollbar-thumb {
-    background-color: rgb(214, 184, 14);
+    background-color: var(--tertiary-color);
     border-radius: 20px;
 } */
 
@@ -267,12 +267,12 @@ html, body {
 .project-info__role {
     font-size: .9rem;
     padding-top: 5px;
-    color:rgb(214, 184, 14);
+    color:var(--tertiary-color);
     font-style: italic;
 }
 
 .project-info__text {
-    border: 1px solid rgb(214, 184, 14);
+    border: 1px solid var(--tertiary-color);
     padding: 8px 5px;
     margin: 10px 0;
     border-radius: 3px;
@@ -284,7 +284,7 @@ html, body {
 }
 
 .project-info__link {
-    color: rgb(18, 21, 47);
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
@@ -298,8 +298,8 @@ html, body {
     rotate: 45deg;
     margin: 0 -30px 0 60px;
     border-radius: 3px;
-    border: 3px solid rgb(214, 184, 14);
-    background-color: rgb(214, 184, 14);
+    border: 3px solid var(--tertiary-color);
+    background-color: var(--tertiary-color);
     overflow: hidden;
     transition: 300ms ease-in-out;
 }
@@ -310,8 +310,8 @@ html, body {
     rotate: 45deg;
     margin: 0 50px 0 -30px;
     border-radius: 3px;
-    border: 3px solid rgb(214, 184, 14);
-    background-color: rgb(214, 184, 14);
+    border: 3px solid var(--tertiary-color);
+    background-color: var(--tertiary-color);
     overflow: hidden;
     transition: 300ms ease-in-out;
 }
@@ -595,11 +595,11 @@ html, body {
     }
 
     .project-image__text {
-        color: rgb(18, 21, 47);
+        color: var(--secondary-color);
         position: absolute;
         bottom: 0;
         margin-bottom: 2%;
-        background: rgb(214, 184, 14);
+        background: var(--tertiary-color);
         padding: 10px;
         border-radius: 20px;
     }
@@ -762,7 +762,7 @@ html, body {
     }
     .projects-divider {
         width: 80px;
-        border: 1.5px solid rgb(214, 184, 14);
+        border: 1.5px solid var(--tertiary-color);
 
     }
     .projects-wrapper {
@@ -843,11 +843,11 @@ html, body {
     }
 
     .project-image__text {
-        color: rgb(18, 21, 47);
+        color: var(--secondary-color);
         position: absolute;
         bottom: 0;
         margin-bottom: 2%;
-        background: rgb(214, 184, 14);
+        background: var(--tertiary-color);
         padding: 10px;
         border-radius: 20px;
     }
@@ -1013,7 +1013,7 @@ html, body {
     }
     .projects-divider {
         width: 70px;
-        border: 1.5px solid rgb(214, 184, 14);
+        border: 1.5px solid var(--tertiary-color);
     }
     .projects-wrapper {
         display: flex;
@@ -1093,11 +1093,11 @@ html, body {
     }
 
     .project-image__text {
-        color: rgb(18, 21, 47);
+        color: var(--secondary-color);
         position: absolute;
         bottom: 0;
         margin-bottom: 2%;
-        background: rgb(214, 184, 14);
+        background: var(--tertiary-color);
         padding: 10px;
         border-radius: 20px;
     }

@@ -16,8 +16,8 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background: rgb(18, 21, 47);
-    box-shadow: 0px -10px 0px 10px rgb(18, 21, 47), 0px 2px 10px rgb(18, 21, 47);
+    background: var(--secondary-color);
+    box-shadow: 0px -10px 0px 10px var(--secondary-color), 0px 2px 10px var(--secondary-color);
 }
 
 .navlink-container-left {
@@ -36,11 +36,11 @@
     padding: 20px;
     text-decoration: none;
     color: gray;
-    transition: ease-out .2s;
+    transition: ease-out 200ms;
 
     font-weight: 500;
     overflow: hidden;
-    background: linear-gradient(to right, rgb(202, 231, 253), rgb(202, 231, 253) 50%, rgb(214, 184, 14) 50%);
+    background: linear-gradient(to right, var(--primary-color), var(--primary-color) 50%, var(--tertiary-color) 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -54,7 +54,19 @@
 }
 
 .current {
-    border-bottom: 2px solid rgb(202, 231, 253);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.theme-container {
+    display: flex;
+    align-items: center;
+    transition: ease-out 3s;
+}
+
+.theme__button {
+    color:var(--tertiary-color);
+    cursor: pointer;
+    height: fit-content;
 }
 
 .logo-container {
@@ -65,8 +77,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(214, 184, 14);
-    box-shadow: 2px 2px 10px 0px rgb(18, 21, 47);
+    background: var(--tertiary-color);
+    box-shadow: 2px 2px 10px 0px var(--secondary-color);
     border-radius: 3px;
 }
 
