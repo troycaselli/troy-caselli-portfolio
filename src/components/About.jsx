@@ -79,7 +79,6 @@ function About() {
             </div>
 
             <h2 className='slideshow-header'>Photo Gallery</h2>
-            <hr className='slideshow-divider'/>
             <div id='slideshow'>
                 <input
                     type='radio' 

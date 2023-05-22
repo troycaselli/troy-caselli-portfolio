@@ -38,6 +38,7 @@
     color: gray;
     transition: ease-out 200ms;
 
+    font-size: 1.1rem;
     font-weight: 500;
     overflow: hidden;
     background: linear-gradient(to right, var(--tertiary-color), var(--tertiary-color) 50%, var(--secondary-color) 50%);

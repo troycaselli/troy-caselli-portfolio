@@ -35,19 +35,19 @@ function LandingPage() {
         let value = window.innerWidth
         if(value > 900) {
             const el = document.querySelector('.text')
-            el.setAttribute('x', '47')
+            el.setAttribute('x', '43')
             el.setAttribute('y', '97')
         } else if(value <= 900 && value > 650) {
             const el = document.querySelector('.text')
-            el.setAttribute('x', '50')
+            el.setAttribute('x', '47')
             el.setAttribute('y', '71')
-        } else if(value <= 850 && value > 450) {
+        } else if(value <= 650 && value > 450) {
             const el = document.querySelector('.text')
-            el.setAttribute('x', '26')
+            el.setAttribute('x', '25')
             el.setAttribute('y', '48')
         } else {
             const el = document.querySelector('.text')
-            el.setAttribute('x', '15')
+            el.setAttribute('x', '14')
             el.setAttribute('y', '32')
         }
     }, [windowWidth])
@@ -109,7 +109,6 @@ function LandingPage() {
             </section>
 
             <h2 id='projects' className='projects-header'>Projects</h2>
-            <hr className='projects-divider'/>
             <section className='projects-wrapper'>
                 <div className='projects-container-left'>
                     <div className='project-container-left'>
