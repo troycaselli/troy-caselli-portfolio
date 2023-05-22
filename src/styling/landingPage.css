@@ -12,17 +12,14 @@ html, body {
     align-items: center;
     margin: 12% 0 0 0;
 }
-
 .svg-wrapper {
     width: 600px;
     z-index: 1;
 }
-
 .svg-container {
     height: 150px;
     width: 600px;
 }
-
 .shape {
     height: 150px;
     width: 600px;
@@ -35,29 +32,25 @@ html, body {
     border-bottom: 5px solid var(--primary-color);
     transition: stroke-width 1s, stroke-dashoffset 1.5s, stroke-dasharray 1.5s;
 }
-
 .text {
-    font-family: inherit;
+    font-family: 'Aboreto', 'Lato', sans-serif;
     font-size: 4rem;
     letter-spacing: 8px;
     fill: var(--text-color);
     position: relative;
     font-weight: bold;
 }
-
 .svg-wrapper:hover .shape {
     stroke-width: 4px;
     stroke-dasharray: 1500;
     stroke-dashoffset: 0;
 }
-
 .tools-wrapper {
     margin: 4% 0 0 0;
     height: 50px;
     width: 50px;
     position: relative;
 }
-
 .tool-image {
     height: 50px;
     width: 50px;
@@ -65,7 +58,6 @@ html, body {
     top: 0;
     left: 0;
 }
-
 .tool-1 {
     animation: 16s ease-in-out 0s infinite reverse both running oscillate-0;
 }
@@ -170,7 +162,6 @@ html, body {
     75% {opacity: 0;}
     100% {left: -96px; top: -231px; opacity: .5;}
 }
-
 .titles-wrapper {
     display: flex;
     justify-content: center;
@@ -178,7 +169,6 @@ html, body {
     width: 100%;
     z-index: 1;
 }
-
 .title-names {
     white-space: pre-wrap;
     font-family: inherit;
@@ -186,58 +176,49 @@ html, body {
     letter-spacing: 4px;
     line-height: 35px;
     color: var(--text-color);
-    font-weight: 900;
+    font-weight: 700;
 }
 
 
 /* Projects Section */
 
-
 #projects {
     scroll-margin-top: 150px;
 }
-
 .projects-header {
     font-size: 3rem;
     color: var(--text-color);
     margin-top: 15%;
 }
-
 .projects-divider {
     border: 2px solid var(--secondary-color);
     width: 125px;
     margin-top: 2%;
 }
-
 .projects-wrapper {
     display: flex;
     justify-content: space-around;
     margin-top: 10%;
 }
-
 .projects-container-left {
     width: 50%;
 }
-
 .projects-container-right {
     width: 50%;
     margin-top: 225px;
 }
-
 .project-container-left {
     display: flex;
     justify-content: right;
     align-items: center;
     margin: 0 20px 250px 0;
 }
-
 .project-container-right {
     display: flex;
     justify-content: left;
     align-items: center;
     margin: 0 0 250px 20px;
 }
-
 .project-info {
     display: flex;
     flex-direction: column;
@@ -246,40 +227,33 @@ html, body {
     height: 170px;
     padding: 0 8px;
 }
-
 .project-info__title {
     font-size: 1.2rem;
     font-weight: bold;
 }
-
 .project-info__role {
     font-size: .9rem;
     padding-top: 5px;
     color:var(--tertiary-color);
     font-style: italic;
 }
-
 .project-info__text {
     border: 1px solid var(--secondary-color);
     padding: 8px 5px;
     margin: 10px 0;
     border-radius: 3px;
 }
-
 .project-links-container {
     display: flex;
     justify-content: center;
 }
-
 .project-info__link {
     color: var(--text-color);
     text-decoration: none;
 }
-
 .project-info__divider {
     padding: 0 15px;
 }
-
 .project-image-container-left {
     height: 150px;
     width: 150px;
@@ -291,7 +265,6 @@ html, body {
     overflow: hidden;
     transition: 300ms ease-in-out;
 }
-
 .project-image-container-right {
     height: 150px;
     width: 150px;
@@ -303,12 +276,10 @@ html, body {
     overflow: hidden;
     transition: 300ms ease-in-out;
 }
-
 .project-image-container-left:hover,
 .project-image-container-right:hover {
     scale: 1.05;
 }
-
 .project-image {
     min-width: 170%;
     min-height: 170%;
@@ -318,7 +289,6 @@ html, body {
     background-size: cover;
     margin: -45px 0 0 -45px;
 }
-
 .image-faith {
     background-image: url(/src/images/projects/faith-in-five-square.webp);
 }
@@ -351,7 +321,7 @@ html, body {
     }
 }
 
-@media (min-width: 651px) and (max-width: 900px) {
+@media (max-width: 900px) {
     .intro-container {
         margin-top: 13%;
     }
@@ -383,7 +353,6 @@ html, body {
         height: 37.5px;
         width: 37.5px;
     }
-
     .tool-1 {
         animation: 14s ease-in-out 0s infinite reverse both running oscillate-0;
     }
@@ -488,12 +457,9 @@ html, body {
         75% {opacity: 0;}
         100% {left: -72px; top: -173px; opacity: .5;}
     }
-
     .title-names {
         font-size: 1.3rem;
-        letter-spacing: 4px;
         line-height: 30px;
-        font-weight: bold;
     }
 
     /* Projects Section (651px-900px) */
@@ -506,7 +472,6 @@ html, body {
         width: 100px;
     }
     .projects-wrapper {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -539,7 +504,6 @@ html, body {
         opacity: 1;
         height: 190px;
     }
-    
     .project-image-container-left,
     .project-image-container-right {
         height: 400px;
@@ -561,7 +525,6 @@ html, body {
         justify-content: center;
         min-width: 100%;
         min-height: 100%;
-        height: 100%;
         rotate: 0deg;
         background-position: top;
         margin: 0;
@@ -578,10 +541,6 @@ html, body {
     .image-friends {
         background-image: url(/src/images/projects/friends-app-full.webp);
     }
-    .image-user {
-        background-image: url(/src/images/projects/user-account-database-square.webp);
-    }
-
     .project-image__text {
         color: var(--primary-color);
         position: absolute;
@@ -594,7 +553,7 @@ html, body {
 }
 
 
-@media (min-width: 451px) and (max-width: 650px) {
+@media (max-width: 650px) {
 
     .intro-container {
         margin-top: 15%;
@@ -619,8 +578,6 @@ html, body {
     .text {
         font-size: 1.5rem;
     }
-
-    
     .tools-wrapper {
         height: 25px;
         width: 25px;
@@ -629,7 +586,6 @@ html, body {
         height: 25px;
         width: 25px;
     }
-
     .tool-1 {
         animation: 12s ease-in-out 0s infinite reverse both running oscillate-0;
     }
@@ -734,12 +690,10 @@ html, body {
         75% {opacity: 0;}
         100% {left: -48px; top: -115px; opacity: .5;}
     }
-
     .title-names {
         font-size: 1rem;
-        letter-spacing: 4px;
         line-height: 25px;
-        font-weight: bold;
+        font-weight: 500;
     }
 
     /* Projects Section 451px-650px*/
@@ -751,68 +705,13 @@ html, body {
     .projects-divider {
         width: 80px;
         border: 1.5px solid var(--secondary-color);
-
-    }
-    .projects-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10%;
-    }
-    .projects-container-left,
-    .projects-container-right {
-        width: 100%;
-        margin: 0;
-    }
-    .project-container-left {
-        flex-direction: column-reverse;
-        margin: 0;
-    }
-    .project-container-right {
-        flex-direction: column;
-        margin: 0;
     }
     .project-info {
         width: 90%;
-        opacity: 0;
-        height: 0;
-        transition: ease .5s;
-    }
-    
-    .project-info__title {
-        padding-top: 5%;
     }
     .opened {
         opacity: 1;
         height: 190px;
-    }
-    
-    .project-image-container-left,
-    .project-image-container-right {
-        height: 400px;
-        width: 100%;
-        rotate: 0deg;
-        margin: 0;
-        border-radius: 0;
-        transition: none;
-        border-left: none;
-        border-right: none;
-        cursor: pointer;
-    }
-    .project-image-container-left:hover,
-    .project-image-container-right:hover {
-        scale: none;
-    }
-    .project-image {
-        display: flex;
-        justify-content: center;
-        min-width: 100%;
-        min-height: 100%;
-        height: 100%;
-        rotate: 0deg;
-        background-position: top;
-        margin: 0;
     }
     .image-faith {
         background-image: url(/src/images/projects/faith-in-five-square.webp);
@@ -820,16 +719,12 @@ html, body {
     .image-sms {
         background-image: url(/src/images/projects/family-promise-sms-square.webp);
     }
-    .image-asylum {
-        background-image: url(/src/images/projects/asylum-tracker-full.webp);
-    }
     .image-friends {
         background-image: url(/src/images/projects/friends-app-square.webp);
     }
     .image-user {
         background-image: url(/src/images/projects/user-account-database-square.webp);
     }
-
     .project-image__text {
         color: var(--primary-color);
         position: absolute;
@@ -867,8 +762,6 @@ html, body {
         font-size: 1.2rem;
         letter-spacing: 4px;
     }
-
-    
     .tools-wrapper {
         height: 20px;
         width: 20px;
@@ -877,7 +770,6 @@ html, body {
         height: 20px;
         width: 20px;
     }
-
     .tool-1 {
         animation: 10s ease-in-out 0s infinite reverse both running oscillate-0;
     }
@@ -982,12 +874,10 @@ html, body {
         75% {opacity: 0;}
         100% {left: -38px; top: -92px; opacity: .5;}
     }
-
     .title-names {
         font-size: .9rem;
         letter-spacing: 0;
         line-height: 15px;
-        font-weight: bold;
     }
 
     /* Projects Section 0px-450px*/
@@ -997,31 +887,9 @@ html, body {
     }
     .projects-header {
         font-size: 1.7rem;
-        margin-top: 30%;
     }
     .projects-divider {
         width: 70px;
-        border: 1.5px solid var(--secondary-color);
-    }
-    .projects-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10%;
-    }
-    .projects-container-left,
-    .projects-container-right {
-        width: 100%;
-        margin: 0;
-    }
-    .project-container-left {
-        flex-direction: column-reverse;
-        margin: 0;
-    }
-    .project-container-right {
-        flex-direction: column;
-        margin: 0;
     }
     .project-info {
         width: 100%;
@@ -1029,57 +897,16 @@ html, body {
         height: 0;
         transition: ease .5s;
     }
-    
-    .project-info__title {
-        padding-top: 5%;
-    }
     .opened {
         opacity: 1;
         height: 220px;
     }
-    
-    .project-image-container-left,
-    .project-image-container-right {
-        height: 400px;
-        width: 100%;
-        rotate: 0deg;
-        margin: 0;
-        border-radius: 0;
-        transition: none;
-        border-left: none;
-        border-right: none;
-        cursor: pointer;
-    }
-    .project-image-container-left:hover,
-    .project-image-container-right:hover {
-        scale: none;
-    }
-    .project-image {
-        display: flex;
-        justify-content: center;
-        min-width: 100%;
-        min-height: 100%;
-        height: 100%;
-        rotate: 0deg;
-        background-position: top;
-        margin: 0;
-    }
-    .image-faith {
-        background-image: url(/src/images/projects/faith-in-five-square.webp);
-    }
-    .image-sms {
-        background-image: url(/src/images/projects/family-promise-sms-square.webp);
-    }
     .image-asylum {
         background-image: url(/src/images/projects/asylum-tracker-square.webp);
-    }
-    .image-friends {
-        background-image: url(/src/images/projects/friends-app-square.webp);
     }
     .image-user {
         background-image: url(/src/images/projects/user-account-database-full.webp);
     }
-
     .project-image__text {
         color: var(--primary-color);
         position: absolute;

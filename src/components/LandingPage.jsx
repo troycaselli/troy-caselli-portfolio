@@ -102,7 +102,7 @@ function LandingPage() {
                 <div className='titles-wrapper'>
                     <div className='titles-container'>
                         <text className='title-names'>
-                            {'{ \n\t Full-Stack Engineer && \n\t OOL Developer && \n\t React Developer \n};'}
+                            {'{ \n\t Full-Stack Engineer && \n\t JavaScript Developer && \n\t React Developer \n};'}
                         </text>
                     </div>
                 </div>
