@@ -49,6 +49,7 @@
 @media (max-width: 1199px) {
     .footer-media-top:active, .footer-media-bottom:active {
         background-color: var(--tertiary-color);
+        -webkit-tap-highlight-color: none;
         animation: press 0.2s 1 linear;
     }
     @keyframes press {
