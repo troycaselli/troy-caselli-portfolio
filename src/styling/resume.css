@@ -104,6 +104,7 @@
     transition: 300ms;
 }
 .resume-button:active {
+    background-color: var(--primary-color);
     animation: press 0.2s 1 linear;
 }
 @keyframes press {
