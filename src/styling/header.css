@@ -82,10 +82,10 @@
     .header-link {
         transition: none;
         -webkit-text-fill-color: var(--secondary-color);
+        -webkit-tap-highlight-color: transparent;
     }
     .header-link:active {
         -webkit-text-fill-color: var(--tertiary-color);
-        -webkit-tap-highlight-color: none;
         animation: press 0.2s 1 linear;
     }
     @keyframes press {
