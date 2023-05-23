@@ -67,11 +67,6 @@
     transition: 300ms ease-in-out;
 }
 
-.featured-certification-container:hover {
-    scale: 1.05;
-    cursor: pointer;
-}
-
 .featured-certification__image {
     min-width: 150%;
     min-height: 150%;   
@@ -279,6 +274,13 @@
 #s6:checked ~ #slide3,
 #s7:checked ~ #slide4 {
     opacity: 0;
+}
+
+@media (min-width: 1200px) {
+    .featured-certification-container:hover {
+        scale: 1.05;
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 1000px) {

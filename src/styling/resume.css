@@ -103,10 +103,6 @@
     border-radius: 2px;
     transition: 300ms;
 }
-.resume-button:hover {
-    background: var(--primary-color);
-    /* color:var(--secondary-color); */
-}
 .resume-button:active {
     animation: press 0.2s 1 linear;
 }
@@ -115,9 +111,12 @@
     50% {scale: .95;}
     100% {scale: 1;}
 }
-/* .resume-button:active {
-    scale: 1.05;
-} */
+
+@media (min-width: 1200px) {
+    .resume-button:hover {
+        background: var(--primary-color);
+    }
+}
 
 @media (max-width: 900px) {
     .resume__specs,
