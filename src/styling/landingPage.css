@@ -319,9 +319,13 @@ html, body {
 /* Media Queries for smaller screen sizes */
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
     .project-info {
         height: 200px;
+    }
+    .shape {
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 0;
     }
 }
 
@@ -338,9 +342,6 @@ html, body {
     .svg-wrapper {
         width: 450px;
     }
-    .svg-wrapper:hover .shape {
-        stroke-dasharray: 1125;
-    }
     .svg-container {
         height: 112.5px;
         width: 450px;
@@ -348,8 +349,6 @@ html, body {
     .shape {
         height: 112.5px;
         width: 450px;
-        stroke-dasharray: 150 975;
-        stroke-dashoffset: -712.5;
     }
     .text {
         font-size: 2.5rem;
@@ -571,9 +570,6 @@ html, body {
     .svg-wrapper {
         width: 300px;
     }
-    .svg-wrapper:hover .shape {
-        stroke-dasharray: 750;
-    }
     .svg-container {
         height: 75px;
         width: 300px;
@@ -581,8 +577,6 @@ html, body {
     .shape {
         height: 75px;
         width: 300px;
-        stroke-dasharray: 100 650;
-        stroke-dashoffset: -475;
         stroke-width: 6px;
     }
     .text {
@@ -753,10 +747,6 @@ html, body {
     .svg-wrapper {
         width: 200px;
     }
-    .svg-wrapper:hover .shape {
-        stroke-width: 3px;
-        stroke-dasharray: 500;
-    }
     .svg-container {
         height: 50px;
         width: 200px;
@@ -764,8 +754,6 @@ html, body {
     .shape {
         height: 50px;
         width: 200px;
-        stroke-dasharray: 67 433;
-        stroke-dashoffset: -316;
         stroke-width: 5px;
     }
     .text {

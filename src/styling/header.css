@@ -35,7 +35,6 @@
 .header-link {
     padding: 20px;
     text-decoration: none;
-    color: gray;
     transition: ease-out 200ms;
 
     font-size: 1.1rem;
@@ -76,6 +75,22 @@
 @media (min-width: 1200px) {
     .header-link:hover {
         background-position: 0 100%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .header-link {
+        transition: none;
+        -webkit-text-fill-color: var(--secondary-color);
+    }
+    .header-link:active {
+        -webkit-text-fill-color: var(--tertiary-color);
+        animation: press 0.2s 1 linear;
+    }
+    @keyframes press {
+        0% {scale: 1;}
+        50% {scale: .95;}
+        100% {scale: 1;}
     }
 }
 

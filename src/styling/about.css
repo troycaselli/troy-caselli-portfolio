@@ -5,7 +5,6 @@
     align-items: center;
     margin-top: 10%;
 }
-
 .featured-wrapper {
     display: flex;
     justify-content: center;
@@ -13,7 +12,6 @@
     height: 100%;
     width: 100%;
 }
-
 .featured-image-wrapper {
     display: flex;
     justify-content: right;
@@ -21,7 +19,6 @@
     height: 100%;
     width: 320px;
 }
-
 .featured-portrait-container {
     height: 300px;
     width: 300px;
@@ -32,7 +29,6 @@
     background-color: var(--secondary-color);
     overflow: hidden;
 }
-
 .featured-portrait__image {
     min-width: 150%;
     min-height: 150%;   
@@ -42,11 +38,9 @@
     background-size: cover;
     margin: -75px 0 0 -80px;
 }
-
 .image-troy-portrait {
     background-image: url(/src/images/about/troy-caselli-portrait-square.webp);
 }
-
 .featured-certification-wrapper {
     display: flex;
     justify-content: left;
@@ -54,7 +48,6 @@
     height: 100%;
     width: 150px;
 }
-
 .featured-certification-container {
     height: 120px;
     width: 120px;
@@ -66,7 +59,6 @@
     overflow: hidden;
     transition: 300ms ease-in-out;
 }
-
 .featured-certification__image {
     min-width: 150%;
     min-height: 150%;   
@@ -76,11 +68,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .image-bloomtech-logo {
     background-image: url(/src/images/logo/bloomtech-logo-circle.webp);
 }
-
 .featured-text-container {
     display: flex;
     flex-direction: column;
@@ -89,20 +79,17 @@
     width: 45%;
     color: var(--text-color);
 }
-
 .featured-text-titles {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 5%;
 }
-
 .featured-text__title {
     font-size: 1.3rem;
     font-weight: bold;
     padding: 0 1%;
 }
-
 .featured-text-paragraphs {
     font-size: 1.1rem;
     border: 2px solid var(--secondary-color);
@@ -110,21 +97,17 @@
     height: 350px;
     overflow-y: auto;
 }
-
 .featured-text-paragraphs::-webkit-scrollbar {
     width: 18px;
 }
-  
 .featured-text-paragraphs::-webkit-scrollbar-track {
     background: transparent;
 }
-  
 .featured-text-paragraphs::-webkit-scrollbar-thumb {
     background-color: var(--secondary-color);
     border-radius: 20px;
     border: 5px solid var(--background-color);
 }
-
 .featured-text__paragraph {
     line-height: 20px;
     text-align: left;
@@ -132,7 +115,6 @@
 }
 
 /* About me page slideshow is adapted from https://dev.to/shantanu_jana/3d-image-slider-using-html-css-328b */
-
 .slideshow-header {
     font-size: 3.5rem;
     color: var(--text-color);
@@ -142,7 +124,6 @@
     padding: 10px 30px;
     width: fit-content;
 }
-
 #slideshow {
     position: relative;
     width: 50%;
@@ -152,11 +133,9 @@
     perspective: 1400px;
     transform-style: preserve-3d;
 }
-
 .slideshow__button {
     display: none;
 }
-
 .slideshow__label,
 .slideshow__image-container {
     position: absolute;
@@ -175,7 +154,6 @@
     transition: transform 400ms ease;
     overflow:  hidden;
 }
-
 .slideshow__image {
     width: 90%;
     background-repeat: no-repeat;
@@ -293,44 +271,35 @@
     .featured-wrapper {
         flex-direction: column;
     }
-
     .featured-image-wrapper {
         justify-content: center;
         width: 100%;
         margin-top: 12%;
     }
-
     .featured-portrait-container {
         margin: 0;
     }
-
     .featured-certification-wrapper {
         justify-content: center;
         width: 100%;
         margin-bottom: 20%;
     }
-
     .featured-certification-container {
         margin: -80px -225px 0 0;
     }
-
     .featured-text-container {
         width: 90%;
     }
-
     .featured-text-paragraphs {
         height: auto;
     }
-
     .slideshow-header {
         font-size: 3rem;
         margin-top: 20%;
     }
-
     .slideshow-divider {
         width: 180px;
     }
-
     #slideshow {
         margin: 8% auto 12% auto;
     }
@@ -340,48 +309,38 @@
     .about-wrapper {
         overflow-x: hidden;
     }
-
     .featured-image-wrapper {
         margin-top: 15%;
     }
-
     .featured-portrait-container {
         height: 250px;
         width: 250px;
     }
-
     .featured-portrait__image {
         margin: -55px 0 0 -60px;
     }
-
     .featured-certification-container {
         height: 90px;
         width: 90px;
         margin: -50px -150px 0 0;
     }
-
     .featured-certification__image {
         margin: -21px 0 0 -21px;
     }
-
     .featured-text-titles {
         flex-direction: column;
     }
-
     .featured-text__title {
         padding: 2%;
     }
 
     /* About Slideshow Gallery */
-
     .slideshow-header {
         font-size: 2.5rem;
     }
-
     .slideshow-divider {
         width: 160px;
     }
-
     #slideshow {
         width: 65%;
         height: 30vh;
@@ -415,75 +374,66 @@
     .featured-image-wrapper {
         margin-top: 22%;
     }
-
     .featured-portrait-container {
         height: 180px;
         width: 180px;
     }
-
     .featured-portrait__image {
         margin: -40px 0 0 -45px;
     }
-
     .featured-certification-container {
         height: 70px;
         width: 70px;
         margin: -40px -120px 0 0;
     }
-
     .featured-certification__image {
         margin: -15px 0 0 -15px;
     }
-
     .featured-text-titles {
         margin: 10% 0;
     }
-
     .featured-text__title {
         padding: 3%;
     }
 
     /* About Slideshow Gallery */
-
     .slideshow-header {
         font-size: 2rem;
         margin-top: 30%;
     }
-    
     .slideshow-divider {
         width: 150px;
     }
-
     #slideshow {
         height: 25vh;
         margin: 15% auto 30% auto;
     }
 
     /* Slide Right(1) */
-#s1:checked ~ #slide2,
-#s2:checked ~ #slide3,
-#s3:checked ~ #slide4,
-#s4:checked ~ #slide5,
-#s5:checked ~ #slide6,
-#s6:checked ~ #slide7,
-#s7:checked ~ #slide1 {
-    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
-    transform: translate3d(25%, 0, -100px);
-    opacity: .5;
-    border: 2px solid var(--secondary-color);
-}
+    #s1:checked ~ #slide2,
+    #s2:checked ~ #slide3,
+    #s3:checked ~ #slide4,
+    #s4:checked ~ #slide5,
+    #s5:checked ~ #slide6,
+    #s6:checked ~ #slide7,
+    #s7:checked ~ #slide1 {
+        box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+        transform: translate3d(25%, 0, -100px);
+        opacity: .5;
+        border: 2px solid var(--secondary-color);
+    }
 
-/* Slide Left(1) */
-#s1:checked ~ #slide7,
-#s2:checked ~ #slide1,
-#s3:checked ~ #slide2,
-#s4:checked ~ #slide3,
-#s5:checked ~ #slide4,
-#s6:checked ~ #slide5,
-#s7:checked ~ #slide6 {
-    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
-    transform: translate3d(-25%, 0, -100px);
-    opacity: .5;
-    border: 2px solid var(--secondary-color);
-}
+    /* Slide Left(1) */
+    #s1:checked ~ #slide7,
+    #s2:checked ~ #slide1,
+    #s3:checked ~ #slide2,
+    #s4:checked ~ #slide3,
+    #s5:checked ~ #slide4,
+    #s6:checked ~ #slide5,
+    #s7:checked ~ #slide6 {
+        box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+        transform: translate3d(-25%, 0, -100px);
+        opacity: .5;
+        border: 2px solid var(--secondary-color);
+    }
 }

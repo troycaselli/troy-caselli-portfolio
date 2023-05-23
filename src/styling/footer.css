@@ -45,3 +45,15 @@
         background-color: var(--tertiary-color);
     }
 }
+
+@media (max-width: 1199px) {
+    .footer-media-top:active, .footer-media-bottom:active {
+        background-color: var(--tertiary-color);
+        animation: press 0.2s 1 linear;
+    }
+    @keyframes press {
+        0% {scale: 1;}
+        50% {scale: .95;}
+        100% {scale: 1;}
+    }
+}
