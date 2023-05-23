@@ -45,11 +45,6 @@ html, body {
     position: relative;
     font-weight: bold;
 }
-.svg-wrapper:hover .shape {
-    stroke-width: 4px;
-    stroke-dasharray: 1500;
-    stroke-dashoffset: 0;
-}
 .tools-wrapper {
     margin: 4% 0 0 0;
     height: 50px;
@@ -281,10 +276,6 @@ html, body {
     overflow: hidden;
     transition: 300ms ease-in-out;
 }
-.project-image-container-left:hover,
-.project-image-container-right:hover {
-    scale: 1.05;
-}
 .project-image {
     min-width: 170%;
     min-height: 170%;
@@ -310,6 +301,20 @@ html, body {
     background-image: url(/src/images/projects/user-account-database-square.webp);
 }
 
+
+/* Hover for larger screens */
+
+@media (min-width: 1200px) {
+    .svg-wrapper:hover .shape {
+        stroke-width: 4px;
+        stroke-dasharray: 1500;
+        stroke-dashoffset: 0;
+    }
+    .project-image-container-left:hover,
+    .project-image-container-right:hover {
+        scale: 1.05;
+    }
+}
 
 /* Media Queries for smaller screen sizes */
 

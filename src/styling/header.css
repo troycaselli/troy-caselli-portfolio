@@ -50,10 +50,6 @@
     transition: background-position 500ms ease;
 }
 
-.header-link:hover {
-    background-position: 0 100%;
-}
-
 .current {
     border-bottom: 2px solid var(--secondary-color);
 }
@@ -75,6 +71,12 @@
     rotate: -45deg;
     height: 40px;
     width: 40px;
+}
+
+@media (min-width: 1200px) {
+    .header-link:hover {
+        background-position: 0 100%;
+    }
 }
 
 @media (max-width: 450px) {
