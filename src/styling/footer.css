@@ -49,7 +49,12 @@
 }
 
 @media (max-width: 1199px) {
-    .footer-media-top:active, .footer-media-bottom:active {
+    .footer-media-bottom,
+    .footer-media-top {
+        transition: ease-out .1s;
+    }
+    .footer-media-top:active,
+    .footer-media-bottom:active {
         background-color: var(--tertiary-color);
         animation: press 0.2s 1 linear;
     }
