@@ -17,7 +17,8 @@ function Header() {
             setActiveLink(pathname);
         }
     }, [pathname, hash, key]);
-    
+
+
     return(
         <div className='header-wrapper'>
             <div className='navlink-wrapper'>
