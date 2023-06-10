@@ -4,11 +4,14 @@
     --tertiary-color: rgb(202, 71, 48);
     --background-color: rgb(240, 246, 247);
     --text-color: rgb(38, 73, 92);
-    /* --primary-color: rgb(5, 13, 17);
+}
+
+[data-theme="dark"] {
+    --primary-color: rgb(5, 13, 17);
     --secondary-color: rgb(211, 191, 44);
     --tertiary-color: rgb(175, 61, 41);
     --background-color: rgb(40, 44, 45);
-    --text-color: rgb(221, 221, 226); */
+    --text-color: rgb(221, 221, 226);
 }
 
 * {

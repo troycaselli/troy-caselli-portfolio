@@ -52,6 +52,26 @@
 .current {
     border-bottom: 2px solid var(--secondary-color);
 }
+  
+.theme-switch input {
+    display: none;
+}
+
+.dark::before {
+    content: '\f186';
+    font: var(--fa-font-solid);
+    color: red;
+	font-weight: 900;
+    cursor: pointer;
+}
+
+.light::before {
+    content: '\f185';
+    font: var(--fa-font-solid);
+    color: red;
+	font-weight: 900;
+    cursor: pointer;
+  }
 
 .logo-container {
     height: 60px;
