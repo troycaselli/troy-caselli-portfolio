@@ -21,7 +21,7 @@ function Header() {
     }, [pathname, hash, key]);
 
     // theme and icon switch
-    const [themeIcon, setThemeMode] = useState('moon')
+    const [themeIcon, setThemeMode] = useState(localStorage.getItem('themeIcon') || 'moon')
     const toggleThemeIcon = () => {
         if (themeIcon === 'sun') {
             setThemeMode('moon')
@@ -29,42 +29,25 @@ function Header() {
             setThemeMode('sun')
         }
     }
-
     useMemo(() => {
         if(!localStorage.getItem('theme')) {
             document.documentElement.setAttribute('data-theme', 'light');
             localStorage.setItem('theme', 'light');
+            localStorage.setItem('themeIcon', 'moon');
         }
         else if (themeIcon === 'sun') {
             document.documentElement.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark');
+            localStorage.setItem('themeIcon', 'sun');
         }
         else {
             document.documentElement.setAttribute('data-theme', 'light');
             localStorage.setItem('theme', 'light');
+            localStorage.setItem('themeIcon', 'moon');
         }
     }, [themeIcon])
+
     
-
-
-    // useEffect(() => {
-    //     const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-    //     function switchTheme(e) {
-    //         if(!localStorage.getItem('theme')) {
-    //             localStorage.setItem('theme', 'light');
-    //         }
-    //         else if (themeMode === 'moon') {
-    //             document.documentElement.setAttribute('data-theme', 'dark');
-    //             localStorage.setItem('theme', 'dark');
-    //         }
-    //         else {
-    //             document.documentElement.setAttribute('data-theme', 'light');
-    //             localStorage.setItem('theme', 'light');
-    //         }
-    //     }
-    //     toggleSwitch.addEventListener('change', switchTheme, false);
-    // }, [themeMode])
-
     return(
         <div className='header-wrapper'>
             <div className='navlink-wrapper'>

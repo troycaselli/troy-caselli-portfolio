@@ -58,7 +58,6 @@
 }
 
 .sun::before {
-    /* sun */
     content: '\f185'; 
     font: var(--fa-font-solid);
     color: red;
@@ -67,7 +66,6 @@
 }
 
 .moon::before {
-    /* moon */
     content: '\f186';
     font: var(--fa-font-solid);
     color: red;
