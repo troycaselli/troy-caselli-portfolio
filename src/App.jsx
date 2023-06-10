@@ -3,6 +3,7 @@ import {Routes, Route, useLocation} from 'react-router-dom';
 
 import './styling/app.css';
 import Header from './components/Header';
+import ThemeToggle from './components/ThemeToggle';
 import Footer from './components/Footer';
 import LandingPage from './components/LandingPage';
 import About from './components/About';
@@ -30,21 +31,16 @@ function App() {
 
   return (
     <div className='app-wrapper'>
-      {/* <div class='header'> */}
         <Header />
-      {/* </div> */}
+        <ThemeToggle />
 
-      {/* <div class='main'> */}
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='about' element={<About />} />
           <Route path='resume' element={<Resume />} />
         </Routes>
-      {/* </div> */}
 
-      {/* <div class='footer'> */}
         <Footer />
-      {/* </div> */}
     </div>
   );
 }
