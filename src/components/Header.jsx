@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useMemo} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
@@ -21,29 +21,49 @@ function Header() {
     }, [pathname, hash, key]);
 
     // theme and icon switch
-    const [themeMode, setThemeMode] = useState(<FontAwesomeIcon icon={faSun} />)
+    const [themeIcon, setThemeMode] = useState('moon')
     const toggleThemeIcon = () => {
-        if (themeMode.props.icon.iconName === 'sun') {
-            setThemeMode(<FontAwesomeIcon icon={faMoon} />)
+        if (themeIcon === 'sun') {
+            setThemeMode('moon')
         } else {
-            setThemeMode(<FontAwesomeIcon icon={faSun} />)
+            setThemeMode('sun')
         }
     }
-    
-    useEffect(() => {
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
-            }
-            else {
-                document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light');
-            }
+
+    useMemo(() => {
+        if(!localStorage.getItem('theme')) {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
         }
-        toggleSwitch.addEventListener('change', switchTheme, false);
-    }, [themeMode])
+        else if (themeIcon === 'sun') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+        else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }
+    }, [themeIcon])
+    
+
+
+    // useEffect(() => {
+    //     const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    //     function switchTheme(e) {
+    //         if(!localStorage.getItem('theme')) {
+    //             localStorage.setItem('theme', 'light');
+    //         }
+    //         else if (themeMode === 'moon') {
+    //             document.documentElement.setAttribute('data-theme', 'dark');
+    //             localStorage.setItem('theme', 'dark');
+    //         }
+    //         else {
+    //             document.documentElement.setAttribute('data-theme', 'light');
+    //             localStorage.setItem('theme', 'light');
+    //         }
+    //     }
+    //     toggleSwitch.addEventListener('change', switchTheme, false);
+    // }, [themeMode])
 
     return(
         <div className='header-wrapper'>
@@ -58,7 +78,7 @@ function Header() {
                 </div>
                 <label className="theme-switch" for="checkbox">
                     <input type="checkbox" id="checkbox" />
-                    <div className={localStorage.getItem('theme')} onClick={e => toggleThemeIcon(e)}>{themeMode}</div>
+                    <div className={themeIcon} onClick={e => toggleThemeIcon(e)}></div>
                 </label>
             </div>
             <div className='logo-container'>
