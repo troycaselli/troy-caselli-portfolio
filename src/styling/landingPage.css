@@ -276,6 +276,11 @@ html, body {
     overflow: hidden;
     transition: 300ms ease-in-out;
 }
+/* .project-image-container-left:hover,
+.project-image-container-right:hover {
+    scale: 1.05;
+    cursor: pointer;
+} */
 .project-image {
     min-width: 170%;
     min-height: 170%;
@@ -309,10 +314,6 @@ html, body {
         stroke-width: 4px;
         stroke-dasharray: 1500;
         stroke-dashoffset: 0;
-    }
-    .project-image-container-left:hover,
-    .project-image-container-right:hover {
-        scale: 1.05;
     }
 }
 
