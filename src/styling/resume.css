@@ -60,7 +60,10 @@
 }
 .resume__specs {
     display: flex;
-    margin-top: 20px;
+    margin: 25px 0 3px 0;
+}
+.resume__experience-specs {
+    display: flex;
 }
 .resume__name {
     font-size: 1.3rem;
@@ -74,13 +77,16 @@
 .resume-texts {
     margin-left: 30px;
 }
-.resume-text {
+.resume-description {
+    font-size: 1.1rem;
+    margin: 5px 0 15px 0;
+}
+.resume-bullet {
     font-size: 1.1rem;
     margin: 15px 0;
 }
 .resume__dates {
     font-size: 1.1rem;
-    margin-top: 3px;
     font-style: italic;
 }
 .resume__degree {
@@ -90,6 +96,7 @@
 }
 .education-container {
     display: flex;
+    margin-bottom: 3px;
 }
 .normal-font {
     font-style: normal;
