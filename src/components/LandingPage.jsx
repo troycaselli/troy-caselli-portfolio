@@ -125,13 +125,6 @@ function LandingPage() {
                                     target='_blank'
                                     rel='noopener noreferrer'
                                 >Website</a>
-                                <text className='project-info__divider'>|</text>
-                                <a 
-                                    className='project-info__link'
-                                    href='https://gitlab.com/nonprofit2/faithinfive'
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                >Private Repository</a>
                             </div>
                         </div>
                         <div className='project-image-container-left'>
@@ -208,13 +201,6 @@ function LandingPage() {
                                     target='_blank'
                                     rel='noopener noreferrer' 
                                 >Website</a>
-                                <text className='project-info__divider'>|</text>
-                                <a
-                                    className='project-info__link'
-                                    href='https://gitlab.com/family-promise/shelter-management-system'
-                                    target='_blank'
-                                    rel='noopener noreferrer' 
-                                >Private Repository</a>
                             </div>
                         </div>
                     </div>
