@@ -291,19 +291,19 @@ html, body {
     margin: -45px 0 0 -45px;
 }
 .image-faith {
-    background-image: url(/src/images/projects/faith-in-five-square.webp);
+    background-image: url(/src/images/projectPreviews/faith-in-five-square.webp);
 }
 .image-sms {
-    background-image: url(/src/images/projects/family-promise-sms-square.webp);
+    background-image: url(/src/images/projectPreviews/family-promise-sms-square.webp);
 }
 .image-asylum {
-    background-image: url(/src/images/projects/asylum-tracker-square.webp);
+    background-image: url(/src/images/projectPreviews/asylum-tracker-square.webp);
 }
 .image-friends {
-    background-image: url(/src/images/projects/friends-app-square.webp);
+    background-image: url(/src/images/projectPreviews/friends-app-square.webp);
 }
 .image-user {
-    background-image: url(/src/images/projects/user-account-database-square.webp);
+    background-image: url(/src/images/projectPreviews/user-account-database-square.webp);
 }
 
 
@@ -540,16 +540,16 @@ html, body {
         margin: 0;
     }
     .image-faith {
-        background-image: url(/src/images/projects/faith-in-five-full.webp);
+        background-image: url(/src/images/projectPreviews/faith-in-five-full.webp);
     }
     .image-sms {
-        background-image: url(/src/images/projects/family-promise-sms-full.webp);
+        background-image: url(/src/images/projectPreviews/family-promise-sms-full.webp);
     }
     .image-asylum {
-        background-image: url(/src/images/projects/asylum-tracker-full.webp);
+        background-image: url(/src/images/projectPreviews/asylum-tracker-full.webp);
     }
     .image-friends {
-        background-image: url(/src/images/projects/friends-app-full.webp);
+        background-image: url(/src/images/projectPreviews/friends-app-full.webp);
     }
     .project-image__text {
         color: var(--primary-color);
@@ -719,16 +719,16 @@ html, body {
         height: 190px;
     }
     .image-faith {
-        background-image: url(/src/images/projects/faith-in-five-square.webp);
+        background-image: url(/src/images/projectPreviews/faith-in-five-square.webp);
     }
     .image-sms {
-        background-image: url(/src/images/projects/family-promise-sms-square.webp);
+        background-image: url(/src/images/projectPreviews/family-promise-sms-square.webp);
     }
     .image-friends {
-        background-image: url(/src/images/projects/friends-app-square.webp);
+        background-image: url(/src/images/projectPreviews/friends-app-square.webp);
     }
     .image-user {
-        background-image: url(/src/images/projects/user-account-database-square.webp);
+        background-image: url(/src/images/projectPreviews/user-account-database-square.webp);
     }
     .project-image__text {
         color: var(--primary-color);
@@ -910,10 +910,10 @@ html, body {
         height: 220px;
     }
     .image-asylum {
-        background-image: url(/src/images/projects/asylum-tracker-square.webp);
+        background-image: url(/src/images/projectPreviews/asylum-tracker-square.webp);
     }
     .image-user {
-        background-image: url(/src/images/projects/user-account-database-full.webp);
+        background-image: url(/src/images/projectPreviews/user-account-database-full.webp);
     }
     .project-image__text {
         color: var(--primary-color);
