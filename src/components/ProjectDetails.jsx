@@ -1,5 +1,16 @@
 import React from 'react';
 import '../styling/projectDetails.css';
+import confirmationEmail from '../images/projects/faithInFive/confirmationEmail.png';
+import dashboardPage from '../images/projects/faithInFive/dashboardPage.png';
+import groupsPage from '../images/projects/faithInFive/groupsPage.png';
+import listViewPage from '../images/projects/faithInFive/listViewPage.png';
+import loginPage from '../images/projects/faithInFive/loginPage.png';
+import mapViewPage from '../images/projects/faithInFive/mapViewPage.png';
+import restrictedPage1 from '../images/projects/faithInFive/restrictedPage1.png';
+import restrictedPage2 from '../images/projects/faithInFive/restrictedPage2.png';
+import restrictedPage3 from '../images/projects/faithInFive/restrictedPage3.png';
+import usersPage from '../images/projects/faithInFive/usersPage.png';
+import welcomePage from '../images/projects/faithInFive/welcomePage.png';
 
 function ProjectDetails() {
 
@@ -13,7 +24,7 @@ function ProjectDetails() {
       </div>
 
       <div className='project-wireframes'>
-        
+        <img alt='test'></img>
       </div>
       
       <div className='project-user-flow'>
