@@ -29,32 +29,6 @@
     font-size: 1.3rem;
     font-weight: bold;
 }
-.resume-divider {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.resume-divider__half {
-    border-top: 1px solid var(--secondary-color);
-    width: 40%;
-    height: 0;
-}
-.resume-divider__outer-diamond {
-    width: 50px;
-    height: 50px;
-    rotate: 45deg;
-    margin-top: -24.5px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 2px;
-}
-.resume-divider__inner-diamond {
-    width: 37px;
-    height: 37px;
-    margin: 5.5px 0 0 5.5px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 2px;
-
-}
 .resume-container {
     margin-bottom: 30px;
 }
@@ -136,9 +110,6 @@
     .resume__degree {
         margin-top: 3px;
     }
-    .resume-divider {
-        margin-bottom: 5px; 
-    }
 }
 
 @media (max-width: 450px) {
@@ -156,19 +127,5 @@
     .resume__role,
     .resume__degree {
         font-size: 1.2rem;
-    }
-    .resume-divider__half {
-        width: 35%;
-        margin-bottom: 35px;
-    }
-    .resume-divider__outer-diamond {
-        width: 40px;
-        height: 40px;
-        margin-top: -19.5px;
-    }
-    .resume-divider__inner-diamond {
-        width: 30px;
-        height: 30px;
-        margin: 4px 0 0 4px;
     }
 }

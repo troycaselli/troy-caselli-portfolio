@@ -1,4 +1,5 @@
 import React from 'react';
+import Divider from '../components/Divider';
 import '../styling/projectDetails.css';
 import confirmationEmail from '../images/projects/faithInFive/confirmationEmail.png';
 import dashboardPage from '../images/projects/faithInFive/dashboardPage.png';
@@ -15,7 +16,7 @@ import welcomePage from '../images/projects/faithInFive/welcomePage.png';
 function ProjectDetails() {
 
   return (
-    <div className='project-wrapper'>
+    <section className='project-wrapper'>
 
       <div className='project-intro'>
         <h1 className='project-title'>Faith in Five</h1>
@@ -23,14 +24,19 @@ function ProjectDetails() {
         <p className='project-contributions'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ab ratione error. Commodi placeat, ex eius harum atque eum porro dolorem cumque eligendi quisquam modi. Possimus doloremque fugiat reiciendis sapiente!</p>
       </div>
 
+      <Divider />
+
       <div className='project-wireframes'>
-        <img alt='test'></img>
+
       </div>
       
+      <Divider />
+
       <div className='project-user-flow'>
         
       </div>
-    </div>
+      
+    </section>
   );
 }
 
