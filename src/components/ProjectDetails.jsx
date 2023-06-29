@@ -18,24 +18,80 @@ function ProjectDetails() {
   return (
     <section className='project-wrapper'>
 
-      <div className='project-intro'>
-        <h1 className='project-title'>Faith in Five</h1>
-        <p className='project-about'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas reprehenderit cupiditate, illum sed delectus ipsa eligendi? Ipsa blanditiis praesentium, sapiente voluptates delectus adipisci nemo nulla, obcaecati modi exercitationem quo nobis!</p>
-        <p className='project-contributions'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ab ratione error. Commodi placeat, ex eius harum atque eum porro dolorem cumque eligendi quisquam modi. Possimus doloremque fugiat reiciendis sapiente!</p>
+      <div className='project__intro'>
+        <h1 className='project__title'>Faith in Five</h1>
+        <p className='project__about'>
+          This web app helps Faith Bible Church serve its neighbors better through interactive addresses display and visit log feature.
+        </p>
+        {/* <p className='project__contributions'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ab ratione error. Commodi placeat, ex eius harum atque eum porro dolorem cumque eligendi quisquam modi. Possimus doloremque fugiat reiciendis sapiente!
+        </p> */}
       </div>
 
       <Divider />
 
-      <div className='project-wireframes'>
-
+      <div className='project__overview'>
+        <h2 className='project__title'>Overview</h2>
       </div>
-      
+
       <Divider />
 
-      <div className='project-user-flow'>
-        
+      <div className='project__user-flow'>
+        <h2 className='project__title'>User Flows</h2>
+        <div className='flow-card'>
+          <h3>Frontliner Flow</h3>
+          {/* make circles with info */}
+          <div className='flow__step'>
+            <p></p>
+          </div>
+          {/* arrow */}
+          <div className='flow__step'>
+            <p></p>
+          </div>
+          {/* arrow */}
+          <div className='flow__step'>
+            <p></p>
+          </div>
+          {/* arrow */}
+        </div>
+        <div className='flow-card'>
+          <h3>Administrator Flow</h3>
+          {/* make circles with info */}
+          <div className='flow__step'>
+            <p></p>
+          </div>
+          {/* arrow */}
+          <div className='flow__step'>
+            <p></p>
+          </div>
+          {/* arrow */}
+          <div className='flow__step'>
+            <p></p>
+          </div>
+          {/* arrow */}
+        </div>
       </div>
-      
+
+      <Divider />
+
+      {/* <div className='project__wireframes'>
+        <h2 className='project__title'>Wireframes</h2>
+      </div>
+
+      <Divider /> */}
+
+      <div className='project__design'>
+        <h2 className='project__title'>UX / Design</h2>
+        <div className='design-card'>
+          {/* <img src={} alt=''></img>
+          <img src={} alt=''></img>
+          <img src={} alt=''></img>
+          <img src={} alt=''></img>
+          <img src={} alt=''></img>
+          <img src={} alt=''></img> */}
+        </div>
+      </div>
+
     </section>
   );
 }
