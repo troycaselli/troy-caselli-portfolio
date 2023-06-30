@@ -1,6 +1,8 @@
 import React from 'react';
+import Divider from '../components/Divider';
 
 import '../styling/resume.css';
+import '../styling/divider.css';
 import resumePDF from '../troy-caselli-web-dev-resume.pdf';
 
 function Resume() {
@@ -22,13 +24,7 @@ function Resume() {
                 </div>
             </div>
 
-            <div className='resume-divider'>
-                <div className='resume-divider__half'></div>
-                <div className='resume-divider__outer-diamond'>
-                    <div className='resume-divider__inner-diamond'></div>
-                </div>
-                <div className='resume-divider__half'></div>
-            </div>
+            <Divider />
 
             <div className='resume-section'>
                 <h2 className='resume__title'>EXPERIENCE</h2>
@@ -94,13 +90,7 @@ function Resume() {
                 </div>
             </div>
 
-            <div className='resume-divider'>
-                <div className='resume-divider__half'></div>
-                <div className='resume-divider__outer-diamond'>
-                    <div className='resume-divider__inner-diamond'></div>
-                </div>
-                <div className='resume-divider__half'></div>
-            </div>
+            <Divider />
 
             <div className='resume-section'>
                 <h2 className='resume__title'>PROJECTS</h2>
@@ -169,13 +159,7 @@ function Resume() {
                 </div>
             </div>
 
-            <div className='resume-divider'>
-                <div className='resume-divider__half'></div>
-                <div className='resume-divider__outer-diamond'>
-                    <div className='resume-divider__inner-diamond'></div>
-                </div>
-                <div className='resume-divider__half'></div>
-            </div>
+            <Divider />
 
             <div className='resume-section'>
                 <h2 className='resume__title'>EDUCATION</h2>

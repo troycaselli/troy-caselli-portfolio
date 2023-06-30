@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import LandingPage from './components/LandingPage';
 import About from './components/About';
 import Resume from './components/Resume';
+import ProjectDetails from './components/ProjectDetails';
 
 function App() {
   const { pathname, hash, key } = useLocation();
@@ -38,6 +39,8 @@ function App() {
           <Route path='/' element={<LandingPage />} />
           <Route path='about' element={<About />} />
           <Route path='resume' element={<Resume />} />
+          {/* TODO: personalize pathname to specific project */}
+          <Route path='project' element={<ProjectDetails />} /> 
         </Routes>
 
         <Footer />
