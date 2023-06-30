@@ -59,13 +59,20 @@
 }
 .circles-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .project__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 250px;
     height: 250px;
     border-radius: 999px;
     margin: 20px;
     background-color: var(--tertiary-color);
     min-width: fit-content;
+}
+.project__circle-text {
+    max-width: 200px;
 }

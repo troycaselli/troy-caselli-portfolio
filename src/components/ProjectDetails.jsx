@@ -34,10 +34,10 @@ function ProjectDetails() {
         <h2 className='project__subtitle'>User Overview</h2>
         <div className='users-container'>
           <div className='project__users-circle'>
-            <p></p>
+          <p className='project__circle-text'><b></b></p>
           </div>
           <div className='project__users-circle'>
-            <p></p>
+          <p className='project__circle-text'><b></b></p>
           </div>
         </div>
       </div>
@@ -50,13 +50,13 @@ function ProjectDetails() {
           <h3>Frontliner Flow</h3>
           <div className='circles-container'>
             <div className='project__circle'>
-              <p></p>
+              <p className='project__circle-text'><b>I</b><br></br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste impedit repudiandae itaque blanditiis temporibus officiis, totam incidunt perferendis doloribus laudantium. Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div className='project__circle'>
-              <p>I <br></br> information</p>
+              <p className='project__circle-text'><b>II</b><br></br></p>
             </div>
             <div className='project__circle'>
-              <p></p>
+              <p className='project__circle-text'><b>III</b><br></br></p>
             </div>
             </div>
           </div>
@@ -64,14 +64,14 @@ function ProjectDetails() {
           <h3>Administrator Flow</h3>
           <div className='circles-container'>
             <div className='project__circle'>
-              <p></p>
+              <p className='project__circle-text'><b>I</b><br></br></p>
             </div>
 
             <div className='project__circle'>
-              <p></p>
+              <p className='project__circle-text'><b>II</b><br></br></p>
             </div>
             <div className='project__circle'>
-              <p></p>
+              <p className='project__circle-text'><b>III</b><br></br></p>
             </div>
           </div>
         </div>
