@@ -18,10 +18,10 @@ function ProjectDetails() {
   return (
     <section className='project-wrapper'>
 
-      <div className='project__intro'>
-        <h1 className='project__title'>Faith in Five</h1>
+      <div className='project-section'>
+        <h1 className='project__title'>FAITH IN FIVE</h1>
         <p className='project__about'>
-          This web app helps Faith Bible Church serve its neighbors better through interactive addresses display and visit log feature.
+          This web app helps Faith Bible Church serve its neighbors better through interactive addresses display and visit log feature
         </p>
         {/* <p className='project__contributions'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ab ratione error. Commodi placeat, ex eius harum atque eum porro dolorem cumque eligendi quisquam modi. Possimus doloremque fugiat reiciendis sapiente!
@@ -30,58 +30,63 @@ function ProjectDetails() {
 
       <Divider />
 
-      <div className='project__overview'>
-        <h2 className='project__title'>Overview</h2>
+      <div className='project-section'>
+        <h2 className='project__subtitle'>User Overview</h2>
+        <div className='users-container'>
+          <div className='project__users-circle'>
+            <p></p>
+          </div>
+          <div className='project__users-circle'>
+            <p></p>
+          </div>
+        </div>
       </div>
 
       <Divider />
 
-      <div className='project__user-flow'>
-        <h2 className='project__title'>User Flows</h2>
-        <div className='flow-card'>
+      <div className='project-section'>
+        <h2 className='project__subtitle'>User Flow</h2>
+        <div className='project-card'>
           <h3>Frontliner Flow</h3>
-          {/* make circles with info */}
-          <div className='flow__step'>
-            <p></p>
+          <div className='circles-container'>
+            <div className='project__circle'>
+              <p></p>
+            </div>
+            <div className='project__circle'>
+              <p>I <br></br> information</p>
+            </div>
+            <div className='project__circle'>
+              <p></p>
+            </div>
+            </div>
           </div>
-          {/* arrow */}
-          <div className='flow__step'>
-            <p></p>
-          </div>
-          {/* arrow */}
-          <div className='flow__step'>
-            <p></p>
-          </div>
-          {/* arrow */}
-        </div>
-        <div className='flow-card'>
+        <div className='project-card'>
           <h3>Administrator Flow</h3>
-          {/* make circles with info */}
-          <div className='flow__step'>
-            <p></p>
+          <div className='circles-container'>
+            <div className='project__circle'>
+              <p></p>
+            </div>
+
+            <div className='project__circle'>
+              <p></p>
+            </div>
+            <div className='project__circle'>
+              <p></p>
+            </div>
           </div>
-          {/* arrow */}
-          <div className='flow__step'>
-            <p></p>
-          </div>
-          {/* arrow */}
-          <div className='flow__step'>
-            <p></p>
-          </div>
-          {/* arrow */}
         </div>
       </div>
 
       <Divider />
 
-      {/* <div className='project__wireframes'>
-        <h2 className='project__title'>Wireframes</h2>
+      {/* <div className='project-section'>
+        <h2 className='project__subtitle'>Wireframes</h2>
       </div>
 
       <Divider /> */}
 
-      <div className='project__design'>
-        <h2 className='project__title'>UX / Design</h2>
+      <div className='project-section'>
+        <h2 className='project__subtitle'>UX / Design</h2>
         <div className='design-card'>
           {/* <img src={} alt=''></img>
           <img src={} alt=''></img>
