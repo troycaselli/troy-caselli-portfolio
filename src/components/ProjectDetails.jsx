@@ -34,10 +34,10 @@ function ProjectDetails() {
         <h2 className='project__subtitle'>User Overview</h2>
         <div className='users-container'>
           <div className='project__users-circle'>
-          <p className='project__circle-text'><b></b></p>
+            <p className='project__circle-text'>Enables Faith Bible Church Members <b>(Frontliners)</b> to track their hospitality and service visits to neighbors more effectively</p>
           </div>
           <div className='project__users-circle'>
-          <p className='project__circle-text'><b></b></p>
+            <p className='project__circle-text'>Simplifies the tasks of <b>administrators</b> who manage users, groups, and addresses</p>
           </div>
         </div>
       </div>
@@ -47,31 +47,42 @@ function ProjectDetails() {
       <div className='project-section'>
         <h2 className='project__subtitle'>User Flow</h2>
         <div className='project-card'>
-          <h3>Frontliner Flow</h3>
+          <h3 className='project-card__user-title'>Frontliner Flow</h3>
           <div className='circles-container'>
             <div className='project__circle'>
-              <p className='project__circle-text'><b>I</b><br></br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste impedit repudiandae itaque blanditiis temporibus officiis, totam incidunt perferendis doloribus laudantium. Lorem ipsum dolor sit amet consectetur.</p>
+              <p className='project__circle-bold'><b>I</b></p>
+              <p className='project__circle-text'>
+                Login to the FI5 App with a valid, whitelisted email address
+              </p>
             </div>
             <div className='project__circle'>
-              <p className='project__circle-text'><b>II</b><br></br></p>
+              <p className='project__circle-bold'><b>II</b></p>
+              <p className='project__circle-text'>
+                Check the addresses (including location, status, and previous visits log) assigned for your group to visit
+              </p>
             </div>
             <div className='project__circle'>
-              <p className='project__circle-text'><b>III</b><br></br></p>
+              <p className='project__circle-bold'><b>III</b></p>
+              <p className='project__circle-text'>
+                After meeting with a neighbor, submit a visit log with information such as name, interest in church, prayer requests, and needs
+              </p>
             </div>
             </div>
           </div>
         <div className='project-card'>
-          <h3>Administrator Flow</h3>
+          <h3 className='project-card__user-title'>Administrator Flow</h3>
           <div className='circles-container'>
             <div className='project__circle'>
-              <p className='project__circle-text'><b>I</b><br></br></p>
+            <p className='project__circle-bold'><b>I</b></p>
+              <p className='project__circle-text'>
+                Login to the FI5 App with a valid, admin email address
+              </p>
             </div>
-
             <div className='project__circle'>
-              <p className='project__circle-text'><b>II</b><br></br></p>
-            </div>
-            <div className='project__circle'>
-              <p className='project__circle-text'><b>III</b><br></br></p>
+            <p className='project__circle-bold'><b>II</b></p>
+              <p className='project__circle-text'>
+                Add, edit, or remove users, groups, and addresses in order to ensure the best service for everyone who lives near the church 
+              </p>
             </div>
           </div>
         </div>
