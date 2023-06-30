@@ -98,13 +98,16 @@ function ProjectDetails() {
 
       <div className='project-section'>
         <h2 className='project__subtitle'>UX / Design</h2>
-        <div className='design-card'>
-          {/* <img src={} alt=''></img>
-          <img src={} alt=''></img>
-          <img src={} alt=''></img>
-          <img src={} alt=''></img>
-          <img src={} alt=''></img>
-          <img src={} alt=''></img> */}
+        <div className='design-container'>
+          <img src={welcomePage} alt='welcome page'className='design__img'></img>
+          <img src={loginPage} alt='login page'className='design__img'></img>
+          <img src={confirmationEmail} alt='confirmation email'className='design__img'></img>
+          <img src={dashboardPage} alt='dashboard page'className='design__img'></img>
+          <img src={mapViewPage} alt='map view page'className='design__img'></img>
+          <img src={listViewPage} alt='list view pge'className='design__img'></img>
+          <img src={groupsPage} alt='groups page'className='design__img'></img>
+          <img src={usersPage} alt='users page'className='design__img'></img>
+          <img src={restrictedPage1} alt='restricted page'className='design__img'></img>
         </div>
       </div>
 

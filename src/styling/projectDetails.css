@@ -69,6 +69,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 100%;
 }
 .project__circle {
     display: flex;
@@ -89,4 +90,16 @@
 .project__circle-bold {
     font-size: 1.4rem;
     padding-bottom: 15px;
+}
+.design-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
+}
+.design__img {
+    width: 550px;
+    padding: 20px 0;
 }
