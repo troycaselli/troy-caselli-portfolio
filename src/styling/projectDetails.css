@@ -21,6 +21,7 @@
     border-radius: 2px;
     padding: 15px;
     width: fit-content;
+    line-height: 2.2rem;
 }
 .project__role {
     font-size: 1.3rem;
@@ -54,13 +55,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
     width: 250px;
     height: 250px;
     border-radius: 999px;
     border: 2px solid var(--tertiary-color);
     min-width: fit-content;
     margin: 20px;
+}
+.project__circle-text {
+    max-width: 200px;
+    font-size: 1.2rem;
 }
 .project-card {
     display: flex;
@@ -94,16 +98,12 @@
     background-color: var(--tertiary-color);
     min-width: fit-content;
 }
-.project__circle-text {
-    max-width: 200px;
-    font-size: 1.2rem;
-}
 .project__circle-bold {
     font-size: 1.4rem;
     padding-bottom: 15px;
 }
 .project__text {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 .design-container {
     display: flex;
@@ -123,4 +123,48 @@
 .design__img {
     width: 550px;
     padding: 20px 0;
+}
+
+@media (max-width: 450px) {
+    .project__title {
+        font-size: 2rem;
+        padding: 10px;
+    }
+    .project__role,
+    .project__about {
+        font-size: 1.2rem;
+    }
+    .project__link {
+        font-size: 1.1rem;
+    }
+    .project__subtitle {
+        font-size: 1.8rem;
+    }
+    .project__users-circle {
+        width: 200px;
+        height: 200px;
+        margin: 20px 0;
+    }
+    .project__circle-text {
+        max-width: 150px;
+        font-size: 1rem;
+    }
+    .project-card__user-title {
+        font-size: 1.3rem;
+    }
+    .project__circle {
+        width: 200px;
+        height: 200px;
+        margin: 20px 0;
+    }
+    .project__circle-bold {
+        font-size: 1.2rem;
+        padding-bottom: 5px;
+    }
+    .project__text {
+        font-size: 1rem;
+    }
+    .design__img {
+        width: 100%;
+    }
 }
