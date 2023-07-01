@@ -115,7 +115,7 @@ function LandingPage() {
                     <div className='project-container-left'>
                         <div className='project-info' id='faith'>
                             <h3 className='project-info__title'>Faith in Five Initiative</h3>
-                            <h4 className='project-info__role'>Front-End Developer</h4>
+                            <h4 className='project-info__role'>Full-Stack Developer</h4>
                             <p className='project-info__text'>
                                 This web app helps Faith Bible Church serve its neighbors better through interactive addresses display and visit log feature.
                             </p>
@@ -127,7 +127,7 @@ function LandingPage() {
                                     rel='noopener noreferrer'
                                 >Website</a>
                                 <text className='project-info__divider'>|</text> 
-                                <Link to='/project' className='project-info__link'>Exhibit</Link>
+                                <Link to='/faith-in-five' className='project-info__link'>Exhibit</Link>
                             </div>
                         </div>
                         <div className='project-image-container-left'>
