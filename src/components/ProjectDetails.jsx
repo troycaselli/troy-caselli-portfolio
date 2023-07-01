@@ -19,10 +19,17 @@ function ProjectDetails() {
     <section className='project-wrapper'>
 
       <div className='project-section'>
-        <h1 className='project__title'>FAITH IN FIVE</h1>
+        <h1 className='project__title'>FAITH IN FIVE INITIATIVE</h1>
+        <h3 className='project__role'>Full-Stack Developer</h3>
         <p className='project__about'>
           This web app helps Faith Bible Church serve its neighbors better through interactive addresses display and visit log feature
         </p>
+        <a 
+          className='project__link'
+          href='https://faith-in-five.vercel.app/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >Website</a>
         {/* <p className='project__contributions'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ab ratione error. Commodi placeat, ex eius harum atque eum porro dolorem cumque eligendi quisquam modi. Possimus doloremque fugiat reiciendis sapiente!
         </p> */}

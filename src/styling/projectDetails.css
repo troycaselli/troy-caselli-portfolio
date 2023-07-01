@@ -17,14 +17,25 @@
 .project__title {
     font-size: 2.2rem;
     font-weight: bold;
-    margin-bottom: 30px;
     border: 1px solid var(--secondary-color);
     border-radius: 2px;
     padding: 15px;
     width: fit-content;
 }
+.project__role {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--tertiary-color);
+    margin: 20px 0;
+}
 .project__about {
     font-size: 1.3rem;
+}
+.project__link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 30px;
 }
 .project__subtitle {
     font-size: 2rem;

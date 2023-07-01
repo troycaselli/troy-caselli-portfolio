@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import {Link} from 'react-router-dom';
 
 import cImage from '../images/icons/c.svg';
 import css3Image from '../images/icons/css3.svg';
@@ -125,6 +126,8 @@ function LandingPage() {
                                     target='_blank'
                                     rel='noopener noreferrer'
                                 >Website</a>
+                                <text className='project-info__divider'>|</text> 
+                                <Link to='/project' className='project-info__link'>Exhibit</Link>
                             </div>
                         </div>
                         <div className='project-image-container-left'>
