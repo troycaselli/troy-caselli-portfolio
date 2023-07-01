@@ -1,5 +1,5 @@
 import React from 'react';
-import Divider from '../components/Divider';
+import Divider from './Divider';
 import '../styling/projectDetails.css';
 import confirmationEmail from '../images/projects/faithInFive/confirmationEmail.png';
 import dashboardPage from '../images/projects/faithInFive/dashboardPage.png';
@@ -8,12 +8,10 @@ import listViewPage from '../images/projects/faithInFive/listViewPage.png';
 import loginPage from '../images/projects/faithInFive/loginPage.png';
 import mapViewPage from '../images/projects/faithInFive/mapViewPage.png';
 import restrictedPage1 from '../images/projects/faithInFive/restrictedPage1.png';
-import restrictedPage2 from '../images/projects/faithInFive/restrictedPage2.png';
-import restrictedPage3 from '../images/projects/faithInFive/restrictedPage3.png';
 import usersPage from '../images/projects/faithInFive/usersPage.png';
 import welcomePage from '../images/projects/faithInFive/welcomePage.png';
 
-function ProjectDetails() {
+function FaithInFiveProject() {
 
   return (
     <section className='project-wrapper'>
@@ -122,4 +120,4 @@ function ProjectDetails() {
   );
 }
 
-export default ProjectDetails;
+export default FaithInFiveProject;
