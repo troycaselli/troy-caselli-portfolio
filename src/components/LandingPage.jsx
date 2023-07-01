@@ -204,6 +204,8 @@ function LandingPage() {
                                     target='_blank'
                                     rel='noopener noreferrer' 
                                 >Website</a>
+                                <text className='project-info__divider'>|</text> 
+                                <Link to='/family-promise-sms' className='project-info__link'>Exhibit</Link>
                             </div>
                         </div>
                     </div>
