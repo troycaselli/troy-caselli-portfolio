@@ -20,6 +20,8 @@
     border-radius: 2px;
     padding: 15px;
     width: fit-content;
+    text-align: center;
+    line-height: 2.2rem;
 }
 .skills-text {
     font-size: 1.1rem;
