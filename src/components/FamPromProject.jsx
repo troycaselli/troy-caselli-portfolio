@@ -39,7 +39,7 @@ function FamPromProject() {
         <h2 className='project__subtitle'>User Overview</h2>
         <div className='users-container'>
           <div className='project__users-circle'>
-            <p className='project__circle-text'><b></b></p>
+            <p className='project__circle-text'>Expedites the process for <b>applicants</b> who need assistance to receive funds and accomodations</p>
           </div>
         </div>
       </div>
@@ -49,18 +49,24 @@ function FamPromProject() {
       <div className='project-section'>
         <h2 className='project__subtitle'>User Flow</h2>
         <div className='project-card'>
-          <h3 className='project-card__user-title'>Administrator Flow</h3>
+          <h3 className='project-card__user-title'>Applicant Flow</h3>
           <div className='circles-container'>
             <div className='project__circle'>
-            <p className='project__circle-bold'><b>I</b></p>
+              <p className='project__circle-bold'><b>I</b></p>
               <p className='project__circle-text'>
-                Login to the FI5 App with a valid, admin email address
+                Sign up or login to the SMS App with a valid email address
               </p>
             </div>
             <div className='project__circle'>
-            <p className='project__circle-bold'><b>II</b></p>
+              <p className='project__circle-bold'><b>II</b></p>
               <p className='project__circle-text'>
-                Add, edit, or remove users, groups, and addresses in order to ensure the best service for everyone who lives near the church 
+                Sufficiently fill out and submit the Shelter Management System Intake Form
+              </p>
+            </div>
+            <div className='project__circle'>
+              <p className='project__circle-bold'><b>III</b></p>
+              <p className='project__circle-text'>
+                Receive an announcement by phone, email, or mail from Family Promise describing your qualification and receipt of benefits
               </p>
             </div>
           </div>
