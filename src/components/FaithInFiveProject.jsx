@@ -39,7 +39,9 @@ function FaithInFiveProject() {
         <h2 className='project__subtitle'>User Overview</h2>
         <div className='users-container'>
           <div className='project__users-circle'>
-            <p className='project__circle-text'>Enables Faith Bible Church Members <b>(Frontliners)</b> to track their hospitality and service visits to neighbors more effectively</p>
+            <p className='project__circle-text'>
+              Enables Faith Bible Church Members <b>(Frontliners)</b> to track their hospitality and service visits to neighbors more effectively
+            </p>
           </div>
           <div className='project__users-circle'>
             <p className='project__circle-text'>Simplifies the tasks of <b>administrators</b> who manage users, groups, and addresses</p>
