@@ -10,6 +10,7 @@ import About from './components/About';
 import Resume from './components/Resume';
 import FaithInFiveProject from './components/FaithInFiveProject';
 import FamPromProject from './components/FamPromProject';
+import AsylumProject from './components/AsylumProject';
 
 function App() {
   const { pathname, hash, key } = useLocation();
@@ -41,7 +42,8 @@ function App() {
           <Route path='about' element={<About />} />
           <Route path='resume' element={<Resume />} />
           <Route path='faith-in-five' element={<FaithInFiveProject />} /> 
-          <Route path='family-promise-sms' element={<FamPromProject />} /> 
+          <Route path='family-promise-sms' element={<FamPromProject />} />
+          <Route path='asylum-grant-tracker' element={<AsylumProject />} />
         </Routes>
 
         <Footer />

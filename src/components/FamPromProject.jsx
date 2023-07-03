@@ -95,7 +95,7 @@ function FamPromProject() {
                     <img src={confirmationEmail} alt='confirmation email'className='design__img'></img>
                     <img src={landingPage} alt='landing page'className='design__img'></img>
                     <img src={profilePage} alt='profile page'className='design__img'></img>
-                    <img src={lastPage} alt='last pge'className='design__img'></img>
+                    <img src={lastPage} alt='last page'className='design__img'></img>
                     <div className='design-container__full-images'>
                         <img
                             src={intakePageIncomplete}
