@@ -152,6 +152,8 @@ function LandingPage() {
                                     target='_blank'
                                     rel='noopener noreferrer'
                                 >Source Code</a>
+                                <text className='project-info__divider'>|</text> 
+                                <Link to='/asylum-grant-tracker' className='project-info__link'>Exhibit</Link>
                             </div>
                         </div>
                         <div className='project-image-container-left'>
