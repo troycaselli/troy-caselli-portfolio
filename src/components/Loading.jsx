@@ -1,11 +1,10 @@
-import React from 'react';
-import '../styling/loading.css';
+import React from "react";
+import "../styling/loading.css";
 
 function Loading() {
-
   return (
     <div>
-        <p>RENDERING</p>
+      <p>RENDERING</p>
     </div>
   );
 }
