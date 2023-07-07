@@ -19,7 +19,7 @@ function Resume() {
           <p className="skills-text">
             <span className="skills-subtitle">Back-End:</span> Node.js,
             Relational Databases (SQLite3 and PostgreSQL), Express, knex.js,
-            Docker, C++, PHP
+            Docker, C++, Ruby, Ruby on Rails, PHP
           </p>
           <p className="skills-text">
             <span className="skills-subtitle">Additional Skills:</span> API
