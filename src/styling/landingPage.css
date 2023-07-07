@@ -378,6 +378,22 @@ body {
 .project-info__link {
   color: var(--text-color);
   text-decoration: none;
+  transition: ease-out 200ms;
+}
+.project-info__link:active {
+  animation: select 200ms 1 linear;
+  color: var(--tertiary-color);
+}
+@keyframes select {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.8;
+  }
+  100% {
+    scale: 1;
+  }
 }
 .project-info__divider {
   padding: 0 15px;

@@ -1,133 +1,139 @@
 .resume-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 8% 8% 8%;
-    line-height: 20px;
-    color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8% 8% 8%;
+  line-height: 20px;
+  color: var(--text-color);
 }
 .resume-section {
-    width: 100%;
-    text-align: left;
-    margin: 50px 0;
+  width: 100%;
+  text-align: left;
+  margin: 50px 0;
 }
 .resume__title {
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 2px;
-    padding: 15px;
-    width: fit-content;
-    text-align: center;
-    line-height: 2.2rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 2px;
+  padding: 15px;
+  width: fit-content;
+  text-align: center;
+  line-height: 2.2rem;
 }
 .skills-text {
-    font-size: 1.1rem;
-    margin: 15px 0;
+  font-size: 1.1rem;
+  margin: 15px 0;
 }
 .skills-subtitle {
-    font-size: 1.3rem;
-    font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 .resume-container {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .resume__specs {
-    display: flex;
-    margin: 25px 0 3px 0;
+  display: flex;
+  margin: 25px 0 3px 0;
 }
 .resume__experience-specs {
-    display: flex;
+  display: flex;
 }
 .resume__name {
-    font-size: 1.3rem;
-    font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 .resume__role {
-    font-size: 1.3rem;
-    font-style: italic;
-    color: var(--tertiary-color);
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--tertiary-color);
 }
 .resume-texts {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 .resume-description {
-    font-size: 1.1rem;
-    margin: 5px 0 15px 0;
+  font-size: 1.1rem;
+  margin: 5px 0 15px 0;
 }
 .resume-bullet {
-    font-size: 1.1rem;
-    margin: 15px 0;
+  font-size: 1.1rem;
+  margin: 15px 0;
 }
 .resume__dates {
-    font-size: 1.1rem;
-    font-style: italic;
+  font-size: 1.1rem;
+  font-style: italic;
 }
 .resume__degree {
-    font-size: 1.3rem;
-    font-style: italic;
-    color: var(--tertiary-color);
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--tertiary-color);
 }
 .education-container {
-    display: flex;
-    margin-bottom: 3px;
+  display: flex;
+  margin-bottom: 3px;
 }
 .normal-font {
-    font-style: normal;
+  font-style: normal;
 }
 .resume-button {
-    font-size: 1.1rem;
-    text-decoration: none;
-    padding: 10px;
-    color: var(--tertiary-color);
-    border: 1px solid var(--secondary-color);
-    -webkit-tap-highlight-color: transparent;
-    border-radius: 2px;
-    transition: 300ms;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 10px;
+  color: var(--tertiary-color);
+  border: 1px solid var(--secondary-color);
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 2px;
+  transition: 300ms;
 }
 .resume-button:active {
-    background-color: var(--primary-color);
-    animation: press 0.2s 1 linear;
+  background-color: var(--primary-color);
+  animation: press 0.2s 1 linear;
 }
 @keyframes press {
-    0% {scale: 1;}
-    50% {scale: .95;}
-    100% {scale: 1;}
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.95;
+  }
+  100% {
+    scale: 1;
+  }
 }
 
 @media (min-width: 1200px) {
-    .resume-button:hover {
-        background: var(--primary-color);
-    }
+  .resume-button:hover {
+    background: var(--primary-color);
+  }
 }
 
 @media (max-width: 900px) {
-    .resume__specs,
-    .education-container {
-        flex-direction: column;
-    }
-    .resume__role,
-    .resume__degree {
-        margin-top: 3px;
-    }
+  .resume__specs,
+  .education-container {
+    flex-direction: column;
+  }
+  .resume__role,
+  .resume__degree {
+    margin-top: 3px;
+  }
 }
 
 @media (max-width: 450px) {
-    .resume-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .resume__title {
-        font-size: 2rem;
-        padding: 10px;
-    }
-    .skills-subtitle,
-    .resume__name,
-    .resume__role,
-    .resume__degree {
-        font-size: 1.2rem;
-    }
+  .resume-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .resume__title {
+    font-size: 2rem;
+    padding: 10px;
+  }
+  .skills-subtitle,
+  .resume__name,
+  .resume__role,
+  .resume__degree {
+    font-size: 1.2rem;
+  }
 }
