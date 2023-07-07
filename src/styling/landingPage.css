@@ -1,280 +1,424 @@
-html, body {
-	background: var(--primary-color);
-    text-align: center;
-    height: 100%;
+html,
+body {
+  background: var(--primary-color);
+  text-align: center;
+  height: 100%;
 }
 
 /* Introduction Section */
 
 .landing-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .intro-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 12% 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12% 0 0 0;
 }
 .svg-wrapper {
-    width: 600px;
-    z-index: 1;
+  width: 600px;
+  z-index: 1;
 }
 .svg-container {
-    height: 150px;
-    width: 600px;
+  height: 150px;
+  width: 600px;
 }
 .shape {
-    height: 150px;
-    width: 600px;
-    stroke-dasharray: 200 1300;
-    stroke-dashoffset: -950;
-    stroke-width: 8px;
-    fill: transparent;
-    opacity: .7;
-    stroke: var(--secondary-color); 
-    border-bottom: 5px solid var(--primary-color);
-    transition: stroke-width 1s, stroke-dashoffset 1.5s, stroke-dasharray 1.5s;
+  height: 150px;
+  width: 600px;
+  stroke-dasharray: 200 1300;
+  stroke-dashoffset: -950;
+  stroke-width: 8px;
+  fill: transparent;
+  opacity: 0.7;
+  stroke: var(--secondary-color);
+  border-bottom: 5px solid var(--primary-color);
+  transition: stroke-width 1s, stroke-dashoffset 1.5s, stroke-dasharray 1.5s;
 }
 .text {
-    font-family: 'Aboreto', 'Lato', sans-serif;
-    font-size: 4rem;
-    letter-spacing: 8px;
-    fill: var(--text-color);
-    position: relative;
-    font-weight: bold;
+  font-family: "Aboreto", "Lato", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 8px;
+  fill: var(--text-color);
+  position: relative;
+  font-weight: bold;
 }
 .tools-wrapper {
-    margin: 4% 0 0 0;
-    height: 50px;
-    width: 50px;
-    position: relative;
+  margin: 4% 0 0 0;
+  height: 50px;
+  width: 50px;
+  position: relative;
 }
 .tool-image {
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .tool-1 {
-    animation: 16s ease-in-out 0s infinite reverse both running oscillate-0;
+  animation: 16s ease-in-out 0s infinite reverse both running oscillate-0;
 }
 .tool-2 {
-    animation: 16s ease-in-out -8s infinite reverse both running oscillate-0;
+  animation: 16s ease-in-out -8s infinite reverse both running oscillate-0;
 }
 @keyframes oscillate-0 {
-    0% {left: 0px; top: -250px; opacity: .5;}
-    25% {opacity: 0;}
-    50% {left: 0px; top: 250px; opacity: .5;}
-    75% {opacity: 0;}
-    100% {left: 0px; top: -250px; opacity: .5;}
+  0% {
+    left: 0px;
+    top: -250px;
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    left: 0px;
+    top: 250px;
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    left: 0px;
+    top: -250px;
+    opacity: 0.5;
+  }
 }
 .tool-3 {
-    animation: 16s ease-in-out -4s infinite reverse both running oscillate-22;
+  animation: 16s ease-in-out -4s infinite reverse both running oscillate-22;
 }
 .tool-4 {
-    animation: 16s ease-in-out -12s infinite reverse both running oscillate-22;
+  animation: 16s ease-in-out -12s infinite reverse both running oscillate-22;
 }
 @keyframes oscillate-22 {
-    0% {left: 96px; top: -231px; opacity: .5;}
-    25% {opacity: 0;}
-    50% {left: -96px; top: 231px; opacity: .5;}
-    75% {opacity: 0;}
-    100% {left: 96px; top: -231px; opacity: .5;}
+  0% {
+    left: 96px;
+    top: -231px;
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    left: -96px;
+    top: 231px;
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    left: 96px;
+    top: -231px;
+    opacity: 0.5;
+  }
 }
 .tool-5 {
-    animation: 16s ease-in-out 0s infinite reverse both running oscillate-45;
+  animation: 16s ease-in-out 0s infinite reverse both running oscillate-45;
 }
 .tool-6 {
-    animation: 16s ease-in-out -8s infinite reverse both running oscillate-45;
+  animation: 16s ease-in-out -8s infinite reverse both running oscillate-45;
 }
 @keyframes oscillate-45 {
-    0% {left: 177px; top: -177px; opacity: .5;}
-    25% {opacity: 0;}
-    50% {left: -177px; top: 177px; opacity: .5;}
-    75% {opacity: 0;}
-    100% {left: 177px; top: -177px; opacity: .5;}
+  0% {
+    left: 177px;
+    top: -177px;
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    left: -177px;
+    top: 177px;
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    left: 177px;
+    top: -177px;
+    opacity: 0.5;
+  }
 }
 .tool-7 {
-    animation: 16s ease-in-out -4s infinite reverse both running oscillate-67;
+  animation: 16s ease-in-out -4s infinite reverse both running oscillate-67;
 }
 .tool-8 {
-    animation: 16s ease-in-out -12s infinite reverse both running oscillate-67;
+  animation: 16s ease-in-out -12s infinite reverse both running oscillate-67;
 }
 @keyframes oscillate-67 {
-    0% {left: -231px; top: 96px; opacity: .5;}
-    25% {opacity: 0;}
-    50% {left: 231px; top: -96px; opacity: .5;}
-    75% {opacity: 0;}
-    100% {left: -231px; top: 96px; opacity: .5;}
+  0% {
+    left: -231px;
+    top: 96px;
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    left: 231px;
+    top: -96px;
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    left: -231px;
+    top: 96px;
+    opacity: 0.5;
+  }
 }
 .tool-9 {
-    animation: 16s ease-in-out 0s infinite reverse both running oscillate-90;
+  animation: 16s ease-in-out 0s infinite reverse both running oscillate-90;
 }
 .tool-10 {
-    animation: 16s ease-in-out -8s infinite reverse both running oscillate-90;
+  animation: 16s ease-in-out -8s infinite reverse both running oscillate-90;
 }
 @keyframes oscillate-90 {
-    0% {left: -250px; top: 0px; opacity: .5;}
-    25% {opacity: 0;}
-    50% {left: 250px; top: 0px; opacity: .5;}
-    75% {opacity: 0;}
-    100% {left: -250px; top: 0px; opacity: .5;}
+  0% {
+    left: -250px;
+    top: 0px;
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    left: 250px;
+    top: 0px;
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    left: -250px;
+    top: 0px;
+    opacity: 0.5;
+  }
 }
 .tool-11 {
-    animation: 16s ease-in-out -4s infinite reverse both running oscillate-112;
+  animation: 16s ease-in-out -4s infinite reverse both running oscillate-112;
 }
 .tool-12 {
-    animation: 16s ease-in-out -12s infinite reverse both running oscillate-112;
+  animation: 16s ease-in-out -12s infinite reverse both running oscillate-112;
 }
 @keyframes oscillate-112 {
-    0% {left: -231px; top: -96px; opacity: .5;}
-    25% {opacity: 0;}
-    50% {left: 231px; top: 96px; opacity: .5;}
-    75% {opacity: 0;}
-    100% {left: -231px; top: -96px; opacity: .5;}
+  0% {
+    left: -231px;
+    top: -96px;
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    left: 231px;
+    top: 96px;
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    left: -231px;
+    top: -96px;
+    opacity: 0.5;
+  }
 }
 .tool-13 {
-    animation: 16s ease-in-out 0s infinite reverse both running oscillate-135;
+  animation: 16s ease-in-out 0s infinite reverse both running oscillate-135;
 }
 .tool-14 {
-    animation: 16s ease-in-out -8s infinite reverse both running oscillate-135;
+  animation: 16s ease-in-out -8s infinite reverse both running oscillate-135;
 }
 @keyframes oscillate-135 {
-    0% {left: -177px; top: -177px; opacity: .5;}
-    25% {opacity: 0;}
-    50% {left: 177px; top: 177px; opacity: .5;}
-    75% {opacity: 0;}
-    100% {left: -177px; top: -177px; opacity: .5;}
+  0% {
+    left: -177px;
+    top: -177px;
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    left: 177px;
+    top: 177px;
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    left: -177px;
+    top: -177px;
+    opacity: 0.5;
+  }
 }
 .tool-15 {
-    animation: 16s ease-in-out -4s infinite reverse both running oscillate-157;
+  animation: 16s ease-in-out -4s infinite reverse both running oscillate-157;
 }
 .tool-16 {
-    animation: 16s ease-in-out -12s infinite reverse both running oscillate-157;
+  animation: 16s ease-in-out -12s infinite reverse both running oscillate-157;
 }
 @keyframes oscillate-157 {
-    0% {left: -96px; top: -231px; opacity: .5;}
-    25% {opacity: 0;}
-    50% {left: 96px; top: 231px; opacity: .5;}
-    75% {opacity: 0;}
-    100% {left: -96px; top: -231px; opacity: .5;}
+  0% {
+    left: -96px;
+    top: -231px;
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    left: 96px;
+    top: 231px;
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    left: -96px;
+    top: -231px;
+    opacity: 0.5;
+  }
 }
 .titles-wrapper {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    width: 100%;
-    z-index: 1;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  z-index: 1;
 }
 .title-names {
-    white-space: pre-wrap;
-    font-family: inherit;
-    font-size: 1.8rem;
-    letter-spacing: 4px;
-    line-height: 35px;
-    color: var(--text-color);
-    font-weight: 700;
+  white-space: pre-wrap;
+  font-family: inherit;
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+  line-height: 35px;
+  color: var(--text-color);
+  font-weight: 700;
 }
-
 
 /* Projects Section */
 
 #projects {
-    scroll-margin-top: 250px;
+  scroll-margin-top: 250px;
 }
 .projects-header {
-    font-size: 3.5rem;
-    color: var(--text-color);
-    margin-top: 25%;
-    border: 2px solid var(--secondary-color);
-    border-radius: 2px;
-    padding: 10px 30px;
-    width: fit-content;
+  font-size: 3.5rem;
+  color: var(--text-color);
+  margin-top: 25%;
+  border: 2px solid var(--secondary-color);
+  border-radius: 2px;
+  padding: 10px 30px;
+  width: fit-content;
 }
 .projects-wrapper {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
 }
 .projects-container-left {
-    width: 50%;
+  width: 50%;
 }
 .projects-container-right {
-    width: 50%;
-    margin-top: 225px;
+  width: 50%;
+  margin-top: 225px;
 }
 .project-container-left {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    margin: 0 20px 250px 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 0 20px 250px 0;
 }
 .project-container-right {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin: 0 0 250px 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0 0 250px 20px;
 }
 .project-info {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    color: var(--text-color);
-    height: 170px;
-    padding: 0 8px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  color: var(--text-color);
+  height: 170px;
+  padding: 0 8px;
 }
 .project-info__title {
-    font-size: 1.4rem;
-    font-weight: bold;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 .project-info__role {
-    padding-top: 5px;
-    color:var(--tertiary-color);
-    font-style: italic;
+  padding-top: 5px;
+  color: var(--tertiary-color);
+  font-style: italic;
 }
 .project-info__text {
-    font-size: 1.1rem;
-    border: 1px solid var(--secondary-color);
-    padding: 8px 5px;
-    margin: 10px 0;
-    border-radius: 3px;
+  font-size: 1.1rem;
+  border: 1px solid var(--secondary-color);
+  padding: 8px 5px;
+  margin: 10px 0;
+  border-radius: 3px;
 }
 .project-links-container {
-    font-size: 1.1rem;
-    display: flex;
-    justify-content: center;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
 }
 .project-info__link {
-    color: var(--text-color);
-    text-decoration: none;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: ease-out 200ms;
+}
+.project-info__link:active {
+  animation: select 200ms 1 linear;
+  color: var(--tertiary-color);
+}
+@keyframes select {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.8;
+  }
+  100% {
+    scale: 1;
+  }
 }
 .project-info__divider {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 .project-image-container-left {
-    height: 150px;
-    width: 150px;
-    rotate: 45deg;
-    margin: 0 -30px 0 60px;
-    border-radius: 3px;
-    border: 3px solid var(--secondary-color);
-    background-color: var(--secondary-color);
-    overflow: hidden;
-    transition: 300ms ease-in-out;
+  height: 150px;
+  width: 150px;
+  rotate: 45deg;
+  margin: 0 -30px 0 60px;
+  border-radius: 3px;
+  border: 3px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  overflow: hidden;
+  transition: 300ms ease-in-out;
 }
 .project-image-container-right {
-    height: 150px;
-    width: 150px;
-    rotate: 45deg;
-    margin: 0 50px 0 -30px;
-    border-radius: 3px;
-    border: 3px solid var(--secondary-color);
-    background-color: var(--secondary-color);
-    overflow: hidden;
-    transition: 300ms ease-in-out;
+  height: 150px;
+  width: 150px;
+  rotate: 45deg;
+  margin: 0 50px 0 -30px;
+  border-radius: 3px;
+  border: 3px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  overflow: hidden;
+  transition: 300ms ease-in-out;
 }
 /* .project-image-container-left:hover,
 .project-image-container-right:hover {
@@ -282,646 +426,1026 @@ html, body {
     cursor: pointer;
 } */
 .project-image {
-    min-width: 170%;
-    min-height: 170%;
-    rotate: -45deg;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: -45px 0 0 -45px;
+  min-width: 170%;
+  min-height: 170%;
+  rotate: -45deg;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -45px 0 0 -45px;
 }
 .image-faith {
-    background-image: url(/src/images/projectPreviews/faith-in-five-square.webp);
+  background-image: url(/src/images/projectPreviews/faith-in-five-square.webp);
 }
 .image-sms {
-    background-image: url(/src/images/projectPreviews/family-promise-sms-square.webp);
+  background-image: url(/src/images/projectPreviews/family-promise-sms-square.webp);
 }
 .image-asylum {
-    background-image: url(/src/images/projectPreviews/asylum-tracker-square.webp);
+  background-image: url(/src/images/projectPreviews/asylum-tracker-square.webp);
 }
 .image-friends {
-    background-image: url(/src/images/projectPreviews/friends-app-square.webp);
+  background-image: url(/src/images/projectPreviews/friends-app-square.webp);
 }
 .image-user {
-    background-image: url(/src/images/projectPreviews/user-account-database-square.webp);
+  background-image: url(/src/images/projectPreviews/user-account-database-square.webp);
 }
-
 
 /* Hover for larger screens */
 
 @media (min-width: 1200px) {
-    .svg-wrapper:hover .shape {
-        stroke-width: 4px;
-        stroke-dasharray: 1500;
-        stroke-dashoffset: 0;
-    }
+  .svg-wrapper:hover .shape {
+    stroke-width: 4px;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 0;
+  }
 }
 
 /* Media Queries for smaller screen sizes */
 
-
 @media (max-width: 1199px) {
-    .project-info {
-        height: 200px;
-    }
-    .shape {
-        stroke-dasharray: 2000;
-        stroke-dashoffset: 0;
-    }
+  .project-info {
+    height: 200px;
+  }
+  .shape {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+  }
 }
 
 @media (max-width: 1000px) {
-    .project-info {
-        height: 225px;
-    }
+  .project-info {
+    height: 225px;
+  }
 }
 
 @media (max-width: 900px) {
-    .intro-container {
-        margin-top: 13%;
-    }
-    .svg-wrapper {
-        width: 450px;
-    }
-    .svg-container {
-        height: 112.5px;
-        width: 450px;
-    }
-    .shape {
-        height: 112.5px;
-        width: 450px;
-    }
-    .text {
-        font-size: 2.5rem;
-    }
-    
-    .tools-wrapper {
-        height: 37.5px;
-        width: 37.5px;
-    }
-    .tool-image {
-        height: 37.5px;
-        width: 37.5px;
-    }
-    .tool-1 {
-        animation: 14s ease-in-out 0s infinite reverse both running oscillate-0;
-    }
-    .tool-2 {
-        animation: 14s ease-in-out -7s infinite reverse both running oscillate-0;
-    }
-    @keyframes oscillate-0 {
-        0% {left: 0px; top: -187.5px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 0px; top: 187.5px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: 0px; top: -187.5px; opacity: .5;}
-    }
-    .tool-3 {
-        animation: 14s ease-in-out -3.5s infinite reverse both running oscillate-22;
-    }
-    .tool-4 {
-        animation: 14s ease-in-out -10.5s infinite reverse both running oscillate-22;
-    }
-    @keyframes oscillate-22 {
-        0% {left: 72px; top: -173px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: -72px; top: 173px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: 72px; top: -173px; opacity: .5;}
-    }
-    .tool-5 {
-        animation: 14s ease-in-out 0s infinite reverse both running oscillate-45;
-    }
-    .tool-6 {
-        animation: 14s ease-in-out -7s infinite reverse both running oscillate-45;
-    }
-    @keyframes oscillate-45 {
-        0% {left: 133px; top: -133px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: -133px; top: 133px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: 133px; top: -133px; opacity: .5;}
-    }
-    .tool-7 {
-        animation: 14s ease-in-out -3.5s infinite reverse both running oscillate-67;
-    }
-    .tool-8 {
-        animation: 14s ease-in-out -10.5s infinite reverse both running oscillate-67;
-    }
-    @keyframes oscillate-67 {
-        0% {left: -173px; top: 72px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 173px; top: -72px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: -173px; top: 72px; opacity: .5;}
-    }
-    .tool-9 {
-        animation: 14s ease-in-out 0s infinite reverse both running oscillate-90;
-    }
-    .tool-10 {
-        animation: 14s ease-in-out -7s infinite reverse both running oscillate-90;
-    }
-    @keyframes oscillate-90 {
-        0% {left: -187.5px; top: 0px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 187.5px; top: 0px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: -187.5px; top: 0px; opacity: .5;}
-    }
-    .tool-11 {
-        animation: 14s ease-in-out -3.5s infinite reverse both running oscillate-112;
-    }
-    .tool-12 {
-        animation: 14s ease-in-out -10.5s infinite reverse both running oscillate-112;
-    }
-    @keyframes oscillate-112 {
-        0% {left: -173px; top: -72px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 173px; top: 72px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: -173px; top: -72px; opacity: .5;}
-    }
-    .tool-13 {
-        animation: 14s ease-in-out 0s infinite reverse both running oscillate-135;
-    }
-    .tool-14 {
-        animation: 14s ease-in-out -7s infinite reverse both running oscillate-135;
-    }
-    @keyframes oscillate-135 {
-        0% {left: -133px; top: -133px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 133px; top: 133px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: -133px; top: -133px; opacity: .5;}
-    }
-    .tool-15 {
-        animation: 14s ease-in-out -3.5s infinite reverse both running oscillate-157;
-    }
-    .tool-16 {
-        animation: 14s ease-in-out -10.5s infinite reverse both running oscillate-157;
-    }
-    @keyframes oscillate-157 {
-        0% {left: -72px; top: -173px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 72px; top: 173px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: -72px; top: -173px; opacity: .5;}
-    }
-    .title-names {
-        font-size: 1.5rem;
-        line-height: 30px;
-    }
+  .intro-container {
+    margin-top: 13%;
+  }
+  .svg-wrapper {
+    width: 450px;
+  }
+  .svg-container {
+    height: 112.5px;
+    width: 450px;
+  }
+  .shape {
+    height: 112.5px;
+    width: 450px;
+  }
+  .text {
+    font-size: 2.5rem;
+  }
 
-    /* Projects Section (651px-900px) */
+  .tools-wrapper {
+    height: 37.5px;
+    width: 37.5px;
+  }
+  .tool-image {
+    height: 37.5px;
+    width: 37.5px;
+  }
+  .tool-1 {
+    animation: 14s ease-in-out 0s infinite reverse both running oscillate-0;
+  }
+  .tool-2 {
+    animation: 14s ease-in-out -7s infinite reverse both running oscillate-0;
+  }
+  @keyframes oscillate-0 {
+    0% {
+      left: 0px;
+      top: -187.5px;
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      left: 0px;
+      top: 187.5px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: 0px;
+      top: -187.5px;
+      opacity: 0.5;
+    }
+  }
+  .tool-3 {
+    animation: 14s ease-in-out -3.5s infinite reverse both running oscillate-22;
+  }
+  .tool-4 {
+    animation: 14s ease-in-out -10.5s infinite reverse both running oscillate-22;
+  }
+  @keyframes oscillate-22 {
+    0% {
+      left: 72px;
+      top: -173px;
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      left: -72px;
+      top: 173px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: 72px;
+      top: -173px;
+      opacity: 0.5;
+    }
+  }
+  .tool-5 {
+    animation: 14s ease-in-out 0s infinite reverse both running oscillate-45;
+  }
+  .tool-6 {
+    animation: 14s ease-in-out -7s infinite reverse both running oscillate-45;
+  }
+  @keyframes oscillate-45 {
+    0% {
+      left: 133px;
+      top: -133px;
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      left: -133px;
+      top: 133px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: 133px;
+      top: -133px;
+      opacity: 0.5;
+    }
+  }
+  .tool-7 {
+    animation: 14s ease-in-out -3.5s infinite reverse both running oscillate-67;
+  }
+  .tool-8 {
+    animation: 14s ease-in-out -10.5s infinite reverse both running oscillate-67;
+  }
+  @keyframes oscillate-67 {
+    0% {
+      left: -173px;
+      top: 72px;
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      left: 173px;
+      top: -72px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: -173px;
+      top: 72px;
+      opacity: 0.5;
+    }
+  }
+  .tool-9 {
+    animation: 14s ease-in-out 0s infinite reverse both running oscillate-90;
+  }
+  .tool-10 {
+    animation: 14s ease-in-out -7s infinite reverse both running oscillate-90;
+  }
+  @keyframes oscillate-90 {
+    0% {
+      left: -187.5px;
+      top: 0px;
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      left: 187.5px;
+      top: 0px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: -187.5px;
+      top: 0px;
+      opacity: 0.5;
+    }
+  }
+  .tool-11 {
+    animation: 14s ease-in-out -3.5s infinite reverse both running oscillate-112;
+  }
+  .tool-12 {
+    animation: 14s ease-in-out -10.5s infinite reverse both running oscillate-112;
+  }
+  @keyframes oscillate-112 {
+    0% {
+      left: -173px;
+      top: -72px;
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      left: 173px;
+      top: 72px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: -173px;
+      top: -72px;
+      opacity: 0.5;
+    }
+  }
+  .tool-13 {
+    animation: 14s ease-in-out 0s infinite reverse both running oscillate-135;
+  }
+  .tool-14 {
+    animation: 14s ease-in-out -7s infinite reverse both running oscillate-135;
+  }
+  @keyframes oscillate-135 {
+    0% {
+      left: -133px;
+      top: -133px;
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      left: 133px;
+      top: 133px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: -133px;
+      top: -133px;
+      opacity: 0.5;
+    }
+  }
+  .tool-15 {
+    animation: 14s ease-in-out -3.5s infinite reverse both running oscillate-157;
+  }
+  .tool-16 {
+    animation: 14s ease-in-out -10.5s infinite reverse both running oscillate-157;
+  }
+  @keyframes oscillate-157 {
+    0% {
+      left: -72px;
+      top: -173px;
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      left: 72px;
+      top: 173px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: -72px;
+      top: -173px;
+      opacity: 0.5;
+    }
+  }
+  .title-names {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
 
-    .projects-header {
-        font-size: 3rem;
-        margin-top: 30%;
-    }
-    .projects-divider {
-        width: 100px;
-    }
-    .projects-wrapper {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10%;
-    }
-    .projects-container-left,
-    .projects-container-right {
-        width: 100%;
-        margin: 0;
-    }
-    .project-container-left {
-        flex-direction: column-reverse;
-        margin: 7% 0 0 0;
-    }
-    .project-container-right {
-        flex-direction: column;
-        margin: 7% 0 0 0;
-    }
-    .project-info {
-        width: 80%;
-        opacity: 0;
-        height: 0;
-        transition: ease .5s;
-    }
-    
-    .project-info__title {
-        padding-top: 5%;
-    }
-    .opened {
-        opacity: 1;
-        height: 190px;
-    }
-    .project-image-container-left,
-    .project-image-container-right {
-        height: 400px;
-        width: 100%;
-        rotate: 0deg;
-        margin: 0;
-        border-radius: 0;
-        transition: none;
-        border-left: none;
-        border-right: none;
-        cursor: pointer;
-    }
-    .project-image-container-left:hover,
-    .project-image-container-right:hover {
-        scale: none;
-    }
-    .project-image {
-        display: flex;
-        justify-content: center;
-        min-width: 100%;
-        min-height: 100%;
-        rotate: 0deg;
-        background-position: top;
-        margin: 0;
-    }
-    .image-faith {
-        background-image: url(/src/images/projectPreviews/faith-in-five-full.webp);
-    }
-    .image-sms {
-        background-image: url(/src/images/projectPreviews/family-promise-sms-full.webp);
-    }
-    .image-asylum {
-        background-image: url(/src/images/projectPreviews/asylum-tracker-full.webp);
-    }
-    .image-friends {
-        background-image: url(/src/images/projectPreviews/friends-app-full.webp);
-    }
-    .project-image__text {
-        color: var(--primary-color);
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 2%;
-        background: var(--secondary-color);
-        padding: 10px;
-        border-radius: 20px;
-    }
+  /* Projects Section (651px-900px) */
+
+  .projects-header {
+    font-size: 3rem;
+    margin-top: 30%;
+  }
+  .projects-divider {
+    width: 100px;
+  }
+  .projects-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+  .projects-container-left,
+  .projects-container-right {
+    width: 100%;
+    margin: 0;
+  }
+  .project-container-left {
+    flex-direction: column-reverse;
+    margin: 7% 0 0 0;
+  }
+  .project-container-right {
+    flex-direction: column;
+    margin: 7% 0 0 0;
+  }
+  .project-info {
+    width: 80%;
+    opacity: 0;
+    height: 0;
+    transition: ease 0.5s;
+  }
+
+  .project-info__title {
+    padding-top: 5%;
+  }
+  .opened {
+    opacity: 1;
+    height: 190px;
+  }
+  .project-image-container-left,
+  .project-image-container-right {
+    height: 400px;
+    width: 100%;
+    rotate: 0deg;
+    margin: 0;
+    border-radius: 0;
+    transition: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+  }
+  .project-image-container-left:hover,
+  .project-image-container-right:hover {
+    scale: none;
+  }
+  .project-image {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100%;
+    rotate: 0deg;
+    background-position: top;
+    margin: 0;
+  }
+  .image-faith {
+    background-image: url(/src/images/projectPreviews/faith-in-five-full.webp);
+  }
+  .image-sms {
+    background-image: url(/src/images/projectPreviews/family-promise-sms-full.webp);
+  }
+  .image-asylum {
+    background-image: url(/src/images/projectPreviews/asylum-tracker-full.webp);
+  }
+  .image-friends {
+    background-image: url(/src/images/projectPreviews/friends-app-full.webp);
+  }
+  .project-image__text {
+    color: var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2%;
+    background: var(--secondary-color);
+    padding: 10px;
+    border-radius: 20px;
+  }
 }
 
-
 @media (max-width: 650px) {
+  .intro-container {
+    margin-top: 15%;
+  }
+  .svg-wrapper {
+    width: 300px;
+  }
+  .svg-container {
+    height: 75px;
+    width: 300px;
+  }
+  .shape {
+    height: 75px;
+    width: 300px;
+    stroke-width: 6px;
+  }
+  .text {
+    font-size: 1.5rem;
+  }
+  .tools-wrapper {
+    height: 25px;
+    width: 25px;
+  }
+  .tool-image {
+    height: 25px;
+    width: 25px;
+  }
+  .tool-1 {
+    animation: 12s ease-in-out 0s infinite reverse both running oscillate-0;
+  }
+  .tool-2 {
+    animation: 12s ease-in-out -6s infinite reverse both running oscillate-0;
+  }
+  @keyframes oscillate-0 {
+    0% {
+      left: 0px;
+      top: -125px;
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      left: 0px;
+      top: 125px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: 0px;
+      top: -125px;
+      opacity: 0.5;
+    }
+  }
+  .tool-3 {
+    animation: 12s ease-in-out -3s infinite reverse both running oscillate-22;
+  }
+  .tool-4 {
+    animation: 12s ease-in-out -9s infinite reverse both running oscillate-22;
+  }
+  @keyframes oscillate-22 {
+    0% {
+      left: 48px;
+      top: -115px;
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      left: -48px;
+      top: 115px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: 48px;
+      top: -115px;
+      opacity: 0.5;
+    }
+  }
+  .tool-5 {
+    animation: 12s ease-in-out 0s infinite reverse both running oscillate-45;
+  }
+  .tool-6 {
+    animation: 12s ease-in-out -6s infinite reverse both running oscillate-45;
+  }
+  @keyframes oscillate-45 {
+    0% {
+      left: 88px;
+      top: -88px;
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      left: -88px;
+      top: 88px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: 88px;
+      top: -88px;
+      opacity: 0.5;
+    }
+  }
+  .tool-7 {
+    animation: 12s ease-in-out -3s infinite reverse both running oscillate-67;
+  }
+  .tool-8 {
+    animation: 12s ease-in-out -9s infinite reverse both running oscillate-67;
+  }
+  @keyframes oscillate-67 {
+    0% {
+      left: -115px;
+      top: 48px;
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      left: 115px;
+      top: -48px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: -115px;
+      top: 48px;
+      opacity: 0.5;
+    }
+  }
+  .tool-9 {
+    animation: 12s ease-in-out 0s infinite reverse both running oscillate-90;
+  }
+  .tool-10 {
+    animation: 12s ease-in-out -6s infinite reverse both running oscillate-90;
+  }
+  @keyframes oscillate-90 {
+    0% {
+      left: -125px;
+      top: 0px;
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      left: 125px;
+      top: 0px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: -125px;
+      top: 0px;
+      opacity: 0.5;
+    }
+  }
+  .tool-11 {
+    animation: 12s ease-in-out -3s infinite reverse both running oscillate-112;
+  }
+  .tool-12 {
+    animation: 12s ease-in-out -9s infinite reverse both running oscillate-112;
+  }
+  @keyframes oscillate-112 {
+    0% {
+      left: -115px;
+      top: -48px;
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      left: 115px;
+      top: 48px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: -115px;
+      top: -48px;
+      opacity: 0.5;
+    }
+  }
+  .tool-13 {
+    animation: 12s ease-in-out 0s infinite reverse both running oscillate-135;
+  }
+  .tool-14 {
+    animation: 12s ease-in-out -6s infinite reverse both running oscillate-135;
+  }
+  @keyframes oscillate-135 {
+    0% {
+      left: -88px;
+      top: -88px;
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      left: 88px;
+      top: 88px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: -88px;
+      top: -88px;
+      opacity: 0.5;
+    }
+  }
+  .tool-15 {
+    animation: 12s ease-in-out -3s infinite reverse both running oscillate-157;
+  }
+  .tool-16 {
+    animation: 12s ease-in-out -9s infinite reverse both running oscillate-157;
+  }
+  @keyframes oscillate-157 {
+    0% {
+      left: -48px;
+      top: -115px;
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      left: 48px;
+      top: 115px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: -48px;
+      top: -115px;
+      opacity: 0.5;
+    }
+  }
+  .title-names {
+    font-size: 1.2rem;
+    line-height: 25px;
+    font-weight: 500;
+  }
 
-    .intro-container {
-        margin-top: 15%;
-    }
-    .svg-wrapper {
-        width: 300px;
-    }
-    .svg-container {
-        height: 75px;
-        width: 300px;
-    }
-    .shape {
-        height: 75px;
-        width: 300px;
-        stroke-width: 6px;
-    }
-    .text {
-        font-size: 1.5rem;
-    }
-    .tools-wrapper {
-        height: 25px;
-        width: 25px;
-    }
-    .tool-image {
-        height: 25px;
-        width: 25px;
-    }
-    .tool-1 {
-        animation: 12s ease-in-out 0s infinite reverse both running oscillate-0;
-    }
-    .tool-2 {
-        animation: 12s ease-in-out -6s infinite reverse both running oscillate-0;
-    }
-    @keyframes oscillate-0 {
-        0% {left: 0px; top: -125px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 0px; top: 125px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: 0px; top: -125px; opacity: .5;}
-    }
-    .tool-3 {
-        animation: 12s ease-in-out -3s infinite reverse both running oscillate-22;
-    }
-    .tool-4 {
-        animation: 12s ease-in-out -9s infinite reverse both running oscillate-22;
-    }
-    @keyframes oscillate-22 {
-        0% {left: 48px; top: -115px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: -48px; top: 115px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: 48px; top: -115px; opacity: .5;}
-    }
-    .tool-5 {
-        animation: 12s ease-in-out 0s infinite reverse both running oscillate-45;
-    }
-    .tool-6 {
-        animation: 12s ease-in-out -6s infinite reverse both running oscillate-45;
-    }
-    @keyframes oscillate-45 {
-        0% {left: 88px; top: -88px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: -88px; top: 88px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: 88px; top: -88px; opacity: .5;}
-    }
-    .tool-7 {
-        animation: 12s ease-in-out -3s infinite reverse both running oscillate-67;
-    }
-    .tool-8 {
-        animation: 12s ease-in-out -9s infinite reverse both running oscillate-67;
-    }
-    @keyframes oscillate-67 {
-        0% {left: -115px; top: 48px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 115px; top: -48px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: -115px; top: 48px; opacity: .5;}
-    }
-    .tool-9 {
-        animation: 12s ease-in-out 0s infinite reverse both running oscillate-90;
-    }
-    .tool-10 {
-        animation: 12s ease-in-out -6s infinite reverse both running oscillate-90;
-    }
-    @keyframes oscillate-90 {
-        0% {left: -125px; top: 0px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 125px; top: 0px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: -125px; top: 0px; opacity: .5;}
-    }
-    .tool-11 {
-        animation: 12s ease-in-out -3s infinite reverse both running oscillate-112;
-    }
-    .tool-12 {
-        animation: 12s ease-in-out -9s infinite reverse both running oscillate-112;
-    }
-    @keyframes oscillate-112 {
-        0% {left: -115px; top: -48px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 115px; top: 48px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: -115px; top: -48px; opacity: .5;}
-    }
-    .tool-13 {
-        animation: 12s ease-in-out 0s infinite reverse both running oscillate-135;
-    }
-    .tool-14 {
-        animation: 12s ease-in-out -6s infinite reverse both running oscillate-135;
-    }
-    @keyframes oscillate-135 {
-        0% {left: -88px; top: -88px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 88px; top: 88px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: -88px; top: -88px; opacity: .5;}
-    }
-    .tool-15 {
-        animation: 12s ease-in-out -3s infinite reverse both running oscillate-157;
-    }
-    .tool-16 {
-        animation: 12s ease-in-out -9s infinite reverse both running oscillate-157;
-    }
-    @keyframes oscillate-157 {
-        0% {left: -48px; top: -115px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 48px; top: 115px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: -48px; top: -115px; opacity: .5;}
-    }
-    .title-names {
-        font-size: 1.2rem;
-        line-height: 25px;
-        font-weight: 500;
-    }
+  /* Projects Section 451px-650px*/
 
-    /* Projects Section 451px-650px*/
-
-    .projects-header {
-        font-size: 2.5rem;
-        margin-top: 35%;
-    }
-    .projects-divider {
-        width: 80px;
-        border: 1.5px solid var(--secondary-color);
-    }
-    .project-info {
-        width: 90%;
-    }
-    .opened {
-        opacity: 1;
-        height: 190px;
-    }
-    .image-faith {
-        background-image: url(/src/images/projectPreviews/faith-in-five-square.webp);
-    }
-    .image-sms {
-        background-image: url(/src/images/projectPreviews/family-promise-sms-square.webp);
-    }
-    .image-friends {
-        background-image: url(/src/images/projectPreviews/friends-app-square.webp);
-    }
-    .image-user {
-        background-image: url(/src/images/projectPreviews/user-account-database-square.webp);
-    }
-    .project-image__text {
-        color: var(--primary-color);
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 2%;
-        background: var(--secondary-color);
-        padding: 10px;
-        border-radius: 20px;
-    }
+  .projects-header {
+    font-size: 2.5rem;
+    margin-top: 35%;
+  }
+  .projects-divider {
+    width: 80px;
+    border: 1.5px solid var(--secondary-color);
+  }
+  .project-info {
+    width: 90%;
+  }
+  .opened {
+    opacity: 1;
+    height: 190px;
+  }
+  .image-faith {
+    background-image: url(/src/images/projectPreviews/faith-in-five-square.webp);
+  }
+  .image-sms {
+    background-image: url(/src/images/projectPreviews/family-promise-sms-square.webp);
+  }
+  .image-friends {
+    background-image: url(/src/images/projectPreviews/friends-app-square.webp);
+  }
+  .image-user {
+    background-image: url(/src/images/projectPreviews/user-account-database-square.webp);
+  }
+  .project-image__text {
+    color: var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2%;
+    background: var(--secondary-color);
+    padding: 10px;
+    border-radius: 20px;
+  }
 }
 
 @media (max-width: 450px) {
-    .intro-container {
-        margin-top: 22%;
+  .intro-container {
+    margin-top: 22%;
+  }
+  .svg-wrapper {
+    width: 200px;
+  }
+  .svg-container {
+    height: 50px;
+    width: 200px;
+  }
+  .shape {
+    height: 50px;
+    width: 200px;
+    stroke-width: 5px;
+  }
+  .text {
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+  }
+  .tools-wrapper {
+    height: 20px;
+    width: 20px;
+  }
+  .tool-image {
+    height: 20px;
+    width: 20px;
+  }
+  .tool-1 {
+    animation: 10s ease-in-out 0s infinite reverse both running oscillate-0;
+  }
+  .tool-2 {
+    animation: 10s ease-in-out -5s infinite reverse both running oscillate-0;
+  }
+  @keyframes oscillate-0 {
+    0% {
+      left: 0px;
+      top: -100px;
+      opacity: 0.5;
     }
-    .svg-wrapper {
-        width: 200px;
+    25% {
+      opacity: 0;
     }
-    .svg-container {
-        height: 50px;
-        width: 200px;
+    50% {
+      left: 0px;
+      top: 100px;
+      opacity: 0.5;
     }
-    .shape {
-        height: 50px;
-        width: 200px;
-        stroke-width: 5px;
+    75% {
+      opacity: 0;
     }
-    .text {
-        font-size: 1.2rem;
-        letter-spacing: 4px;
+    100% {
+      left: 0px;
+      top: -100px;
+      opacity: 0.5;
     }
-    .tools-wrapper {
-        height: 20px;
-        width: 20px;
+  }
+  .tool-3 {
+    animation: 10s ease-in-out -2.5s infinite reverse both running oscillate-22;
+  }
+  .tool-4 {
+    animation: 10s ease-in-out -7.5s infinite reverse both running oscillate-22;
+  }
+  @keyframes oscillate-22 {
+    0% {
+      left: 38px;
+      top: -92px;
+      opacity: 0.5;
     }
-    .tool-image {
-        height: 20px;
-        width: 20px;
+    25% {
+      opacity: 0;
     }
-    .tool-1 {
-        animation: 10s ease-in-out 0s infinite reverse both running oscillate-0;
+    50% {
+      left: -38px;
+      top: 92px;
+      opacity: 0.5;
     }
-    .tool-2 {
-        animation: 10s ease-in-out -5s infinite reverse both running oscillate-0;
+    75% {
+      opacity: 0;
     }
-    @keyframes oscillate-0 {
-        0% {left: 0px; top: -100px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 0px; top: 100px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: 0px; top: -100px; opacity: .5;}
+    100% {
+      left: 38px;
+      top: -92px;
+      opacity: 0.5;
     }
-    .tool-3 {
-        animation: 10s ease-in-out -2.5s infinite reverse both running oscillate-22;
+  }
+  .tool-5 {
+    animation: 10s ease-in-out 0s infinite reverse both running oscillate-45;
+  }
+  .tool-6 {
+    animation: 10s ease-in-out -5s infinite reverse both running oscillate-45;
+  }
+  @keyframes oscillate-45 {
+    0% {
+      left: 71px;
+      top: -71px;
+      opacity: 0.5;
     }
-    .tool-4 {
-        animation: 10s ease-in-out -7.5s infinite reverse both running oscillate-22;
+    25% {
+      opacity: 0;
     }
-    @keyframes oscillate-22 {
-        0% {left: 38px; top: -92px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: -38px; top: 92px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: 38px; top: -92px; opacity: .5;}
+    50% {
+      left: -71px;
+      top: 71px;
+      opacity: 0.5;
     }
-    .tool-5 {
-        animation: 10s ease-in-out 0s infinite reverse both running oscillate-45;
+    75% {
+      opacity: 0;
     }
-    .tool-6 {
-        animation: 10s ease-in-out -5s infinite reverse both running oscillate-45;
+    100% {
+      left: 71px;
+      top: -71px;
+      opacity: 0.5;
     }
-    @keyframes oscillate-45 {
-        0% {left: 71px; top: -71px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: -71px; top: 71px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: 71px; top: -71px; opacity: .5;}
+  }
+  .tool-7 {
+    animation: 10s ease-in-out -2.5s infinite reverse both running oscillate-67;
+  }
+  .tool-8 {
+    animation: 10s ease-in-out -7.5s infinite reverse both running oscillate-67;
+  }
+  @keyframes oscillate-67 {
+    0% {
+      left: -92px;
+      top: 38px;
+      opacity: 0.5;
     }
-    .tool-7 {
-        animation: 10s ease-in-out -2.5s infinite reverse both running oscillate-67;
+    25% {
+      opacity: 0;
     }
-    .tool-8 {
-        animation: 10s ease-in-out -7.5s infinite reverse both running oscillate-67;
+    50% {
+      left: 92px;
+      top: -38px;
+      opacity: 0.5;
     }
-    @keyframes oscillate-67 {
-        0% {left: -92px; top: 38px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 92px; top: -38px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: -92px; top: 38px; opacity: .5;}
+    75% {
+      opacity: 0;
     }
-    .tool-9 {
-        animation: 10s ease-in-out 0s infinite reverse both running oscillate-90;
+    100% {
+      left: -92px;
+      top: 38px;
+      opacity: 0.5;
     }
-    .tool-10 {
-        animation: 10s ease-in-out -5s infinite reverse both running oscillate-90;
+  }
+  .tool-9 {
+    animation: 10s ease-in-out 0s infinite reverse both running oscillate-90;
+  }
+  .tool-10 {
+    animation: 10s ease-in-out -5s infinite reverse both running oscillate-90;
+  }
+  @keyframes oscillate-90 {
+    0% {
+      left: -100px;
+      top: 0px;
+      opacity: 0.5;
     }
-    @keyframes oscillate-90 {
-        0% {left: -100px; top: 0px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 100px; top: 0px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: -100px; top: 0px; opacity: .5;}
+    25% {
+      opacity: 0;
     }
-    .tool-11 {
-        animation: 10s ease-in-out -2.5s infinite reverse both running oscillate-112;
+    50% {
+      left: 100px;
+      top: 0px;
+      opacity: 0.5;
     }
-    .tool-12 {
-        animation: 10s ease-in-out -7.5s infinite reverse both running oscillate-112;
+    75% {
+      opacity: 0;
     }
-    @keyframes oscillate-112 {
-        0% {left: -92px; top: -38px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 92px; top: 38px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: -92px; top: -38px; opacity: .5;}
+    100% {
+      left: -100px;
+      top: 0px;
+      opacity: 0.5;
     }
-    .tool-13 {
-        animation: 10s ease-in-out 0s infinite reverse both running oscillate-135;
+  }
+  .tool-11 {
+    animation: 10s ease-in-out -2.5s infinite reverse both running oscillate-112;
+  }
+  .tool-12 {
+    animation: 10s ease-in-out -7.5s infinite reverse both running oscillate-112;
+  }
+  @keyframes oscillate-112 {
+    0% {
+      left: -92px;
+      top: -38px;
+      opacity: 0.5;
     }
-    .tool-14 {
-        animation: 10s ease-in-out -5s infinite reverse both running oscillate-135;
+    25% {
+      opacity: 0;
     }
-    @keyframes oscillate-135 {
-        0% {left: -71px; top: -71px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 71px; top: 71px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: -71px; top: -71px; opacity: .5;}
+    50% {
+      left: 92px;
+      top: 38px;
+      opacity: 0.5;
     }
-    .tool-15 {
-        animation: 10s ease-in-out -2.5s infinite reverse both running oscillate-157;
+    75% {
+      opacity: 0;
     }
-    .tool-16 {
-        animation: 10s ease-in-out -7.5s infinite reverse both running oscillate-157;
+    100% {
+      left: -92px;
+      top: -38px;
+      opacity: 0.5;
     }
-    @keyframes oscillate-157 {
-        0% {left: -38px; top: -92px; opacity: .5;}
-        25% {opacity: 0;}
-        50% {left: 38px; top: 92px; opacity: .5;}
-        75% {opacity: 0;}
-        100% {left: -38px; top: -92px; opacity: .5;}
+  }
+  .tool-13 {
+    animation: 10s ease-in-out 0s infinite reverse both running oscillate-135;
+  }
+  .tool-14 {
+    animation: 10s ease-in-out -5s infinite reverse both running oscillate-135;
+  }
+  @keyframes oscillate-135 {
+    0% {
+      left: -71px;
+      top: -71px;
+      opacity: 0.5;
     }
-    .title-names {
-        font-size: 1.1rem;
-        letter-spacing: 0;
-        line-height: 15px;
+    25% {
+      opacity: 0;
     }
+    50% {
+      left: 71px;
+      top: 71px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: -71px;
+      top: -71px;
+      opacity: 0.5;
+    }
+  }
+  .tool-15 {
+    animation: 10s ease-in-out -2.5s infinite reverse both running oscillate-157;
+  }
+  .tool-16 {
+    animation: 10s ease-in-out -7.5s infinite reverse both running oscillate-157;
+  }
+  @keyframes oscillate-157 {
+    0% {
+      left: -38px;
+      top: -92px;
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      left: 38px;
+      top: 92px;
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      left: -38px;
+      top: -92px;
+      opacity: 0.5;
+    }
+  }
+  .title-names {
+    font-size: 1.1rem;
+    letter-spacing: 0;
+    line-height: 15px;
+  }
 
-    /* Projects Section 0px-450px*/
+  /* Projects Section 0px-450px*/
 
-    #projects {
-        scroll-margin-top: 60px;
-    }
-    .projects-header {
-        font-size: 2rem;
-        margin-top: 40%;
-    }
-    .project-container-left {
-        flex-direction: column-reverse;
-        margin: 10% 0 0 0;
-    }
-    .project-container-right {
-        flex-direction: column;
-        margin: 10% 0 0 0;
-    }
-    .projects-divider {
-        width: 70px;
-    }
-    .project-info {
-        width: 100%;
-        opacity: 0;
-        height: 0;
-        transition: ease .5s;
-    }
-    .opened {
-        opacity: 1;
-        height: 220px;
-    }
-    .image-asylum {
-        background-image: url(/src/images/projectPreviews/asylum-tracker-square.webp);
-    }
-    .image-user {
-        background-image: url(/src/images/projectPreviews/user-account-database-full.webp);
-    }
-    .project-image__text {
-        color: var(--primary-color);
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 2%;
-        background: var(--secondary-color);
-        padding: 10px;
-        border-radius: 20px;
-    }
+  #projects {
+    scroll-margin-top: 60px;
+  }
+  .projects-header {
+    font-size: 2rem;
+    margin-top: 40%;
+  }
+  .project-container-left {
+    flex-direction: column-reverse;
+    margin: 10% 0 0 0;
+  }
+  .project-container-right {
+    flex-direction: column;
+    margin: 10% 0 0 0;
+  }
+  .projects-divider {
+    width: 70px;
+  }
+  .project-info {
+    width: 100%;
+    opacity: 0;
+    height: 0;
+    transition: ease 0.5s;
+  }
+  .opened {
+    opacity: 1;
+    height: 220px;
+  }
+  .image-asylum {
+    background-image: url(/src/images/projectPreviews/asylum-tracker-square.webp);
+  }
+  .image-user {
+    background-image: url(/src/images/projectPreviews/user-account-database-full.webp);
+  }
+  .project-image__text {
+    color: var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2%;
+    background: var(--secondary-color);
+    padding: 10px;
+    border-radius: 20px;
+  }
 }
