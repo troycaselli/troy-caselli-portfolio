@@ -1,62 +1,62 @@
 :root {
-    --primary-color: rgb(38, 73, 92);
-    --secondary-color: rgb(233, 211, 48);
-    --tertiary-color: rgb(202, 71, 48);
-    --background-color: rgb(240, 246, 247);
-    --text-color: rgb(38, 73, 92);
+  --primary-color: rgb(38, 73, 92);
+  --secondary-color: rgb(233, 211, 48);
+  --tertiary-color: rgb(202, 71, 48);
+  --background-color: rgb(240, 246, 247);
+  --text-color: rgb(38, 73, 92);
 }
 
 [data-theme="dark"] {
-    --primary-color: rgb(5, 13, 17);
-    --secondary-color: rgb(211, 191, 44);
-    --tertiary-color: rgb(175, 61, 41);
-    --background-color: rgb(40, 44, 45);
-    --text-color: rgb(221, 221, 226);
+  --primary-color: rgb(5, 13, 17);
+  --secondary-color: rgb(211, 191, 44);
+  --tertiary-color: rgb(175, 61, 41);
+  --background-color: rgb(40, 44, 45);
+  --text-color: rgb(221, 221, 226);
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 body::-webkit-scrollbar {
-    width: 12px;
+  width: 12px;
 }
-  
+
 body::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
-  
+
 body::-webkit-scrollbar-thumb {
-    background-color: var(--secondary-color);
-    border-radius: 20px;
-    border: 3px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  border: 3px solid var(--primary-color);
 }
 
 body::-webkit-scrollbar-corner {
-    background: var(--tertiary-color);
-  }
+  background: var(--primary-color);
+}
 
 .app-wrapper {
-    min-height: 100%;
-    background-color: var(--background-color);
+  min-height: 100%;
+  background-color: var(--background-color);
 }
 
 .header,
 .footer {
-    flex: none;
+  flex: none;
 }
 
 .main {
-    flex: auto;
-    min-height: 90vh;
+  flex: auto;
+  min-height: 90vh;
 }
