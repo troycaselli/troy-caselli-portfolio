@@ -48,3 +48,10 @@
   padding: 0 2.5px;
   cursor: pointer;
 }
+
+@media (max-width: 900px) {
+  .theme-toggle-wrapper {
+    margin: 0;
+    padding: 20px 20px 0 0;
+  }
+}

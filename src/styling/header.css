@@ -107,7 +107,7 @@
   }
 }
 
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
   .header-wrapper {
     position: static;
   }
@@ -127,4 +127,4 @@
     font-size: 1.2rem;
     padding: 15px 0 5px 0;
   }
-}
+} */
