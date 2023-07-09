@@ -7,6 +7,8 @@ import image from "../images/logo/sword-spade-large.webp";
 import "../styling/hamburger.css";
 
 function Header() {
+  const [checkedValue, setCheckedValue] = useState(false);
+
   //activeLink sets 'current' class on Links
   const [activeLink, setActiveLink] = useState("/");
   const { pathname, hash, key } = useLocation();
@@ -19,28 +21,60 @@ function Header() {
     }
   }, [pathname, hash, key]);
 
+  const toggleCheckboxValue = () => {
+    setCheckedValue(!checkedValue);
+  };
+
   return (
     <div>
       <label>
-        <input type="checkbox" />
-        <span class="menu">
-          {" "}
-          <span class="hamburger"></span>{" "}
-        </span>
-        <ul>
-          <li>
-            {" "}
-            <a href="#">one</a>{" "}
-          </li>
-          <li>
-            {" "}
-            <a href="#">two</a>{" "}
-          </li>
-          <li>
-            {" "}
-            <a href="#">three</a>{" "}
-          </li>
-        </ul>
+        <input
+          type="checkbox"
+          className="hamburger-input"
+          checked={checkedValue}
+          onChange={toggleCheckboxValue}
+        />
+        <div class="hamburger-menu">
+          <div class="hamburger"></div>
+        </div>
+        <div className="hamburger-links">
+          <Link
+            to="/"
+            className={
+              "hamburger-link " + (activeLink === "/" ? "current" : "")
+            }
+            onClick={toggleCheckboxValue}
+          >
+            Home
+          </Link>
+          <Link
+            to="/#projects"
+            className={
+              "hamburger-link " + (activeLink === "/#projects" ? "current" : "")
+            }
+            onClick={toggleCheckboxValue}
+          >
+            Projects
+          </Link>
+          <Link
+            to="about"
+            className={
+              "hamburger-link " + (activeLink === "/about" ? "current" : "")
+            }
+            onClick={toggleCheckboxValue}
+          >
+            About Me
+          </Link>
+          <Link
+            to="resume"
+            className={
+              "hamburger-link " + (activeLink === "/resume" ? "current" : "")
+            }
+            onClick={toggleCheckboxValue}
+          >
+            Résumé
+          </Link>
+        </div>
       </label>
     </div>
     /* <div className="header-wrapper">
