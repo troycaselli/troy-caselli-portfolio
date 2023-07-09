@@ -14,16 +14,17 @@
     z-index: 2;
     width: 60px;
     height: 60px;
-    background: #fff;
+    background: var(--primary-color);
     border-radius: 50%;
-    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+    box-shadow: 0 0 0 0 var(--primary-color), 0 0 0 0 var(--primary-color);
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     cursor: pointer;
   }
 
   .hamburger-input:checked + .hamburger-menu {
-    box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
+    box-shadow: 0 0 0 100vw var(--primary-color),
+      0 0 0 100vh var(--primary-color);
     border-radius: 0;
   }
 
@@ -33,7 +34,7 @@
     bottom: 28px;
     width: 30px;
     height: 2px;
-    background: #69d2e7;
+    background: var(--secondary-color);
     display: block;
     -webkit-transform-origin: center;
     transform-origin: center;
@@ -48,7 +49,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    background: #69d2e7;
+    background: var(--secondary-color);
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
   }
@@ -64,17 +65,20 @@
   .hamburger-input:checked + .hamburger-menu .hamburger {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+    background: var(--tertiary-color);
   }
 
   .hamburger-input:checked + .hamburger-menu .hamburger:before {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
+    background: var(--tertiary-color);
     top: 0;
   }
 
   .hamburger-input:checked + .hamburger-menu .hamburger:after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
+    background: var(--tertiary-color);
     bottom: 0;
   }
 
