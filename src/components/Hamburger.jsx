@@ -26,7 +26,7 @@ function Header() {
   };
 
   return (
-    <div>
+    <section className="hamburger-wrapper">
       <label>
         <input
           type="checkbox"
@@ -76,7 +76,7 @@ function Header() {
           </Link>
         </div>
       </label>
-    </div>
+    </section>
     /* <div className="header-wrapper">
       <div className="navlink-wrapper">
         <div className="navlink-container-left">
