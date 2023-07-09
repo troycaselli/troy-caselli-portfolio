@@ -78,7 +78,7 @@ function LandingPage() {
         <div className="svg-wrapper">
           <svg className="svg-container" xmlns="http://www.w3.org/2000/svg">
             <rect className="shape" />
-            <text x="47" y="97" className="text">
+            <text x="43" y="97" className="text">
               TROY CASELLI
             </text>
           </svg>

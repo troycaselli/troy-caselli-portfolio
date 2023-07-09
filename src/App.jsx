@@ -1,8 +1,9 @@
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import "./styling/app.css";
 import Header from "./components/Header";
+import Hamburger from "./components/Hamburger";
 import ThemeToggle from "./components/ThemeToggle";
 import Footer from "./components/Footer";
 import LandingPage from "./components/LandingPage";
@@ -13,7 +14,21 @@ import FamPromProject from "./components/FamPromProject";
 import AsylumProject from "./components/AsylumProject";
 
 function App() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const { pathname, hash, key } = useLocation();
+
+  // Logic for showing navbar for desktop or hamburger for tablet and phones
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    // Add the event listener when the component mounts
+    window.addEventListener("resize", handleResize);
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   // checks url for hash pathing
   useEffect(() => {
@@ -34,7 +49,7 @@ function App() {
 
   return (
     <div className="app-wrapper">
-      <Header />
+      {windowWidth > 900 ? <Header /> : <Hamburger />}
       <ThemeToggle />
 
       <Routes>
