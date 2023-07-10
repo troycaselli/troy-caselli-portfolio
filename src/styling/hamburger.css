@@ -1,8 +1,5 @@
 /* Navigation for tablets and phones: Max-width: 900px */
 @media (max-width: 900px) {
-  /* .hamburger-wrapper {
-        position: sticky;
-    } */
   .hamburger-input {
     display: none;
   }
@@ -84,6 +81,20 @@
     bottom: 0;
   }
 
+  .hamburger-theme-toggle {
+    z-index: -1;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    -webkit-transform: translate(-5%, -5%);
+    transform: translate(-5%, -5%);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
+    transition: all 0.2s ease-in-out 0.1s;
+  }
+
   .hamburger-links {
     z-index: -1;
     position: fixed;
@@ -94,11 +105,15 @@
     display: flex;
     flex-direction: column;
     opacity: 0;
-    -webkit-transition: all 0.3s ease-in-out 0.1s;
-    transition: all 0.3s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
+    transition: all 0.2s ease-in-out 0.1s;
   }
 
-  .hamburger-input:checked + .hamburger-menu + .hamburger-links {
+  .hamburger-input:checked
+    + .hamburger-menu
+    + .hamburger-theme-toggle
+    + .hamburger-links,
+  .hamburger-input:checked + .hamburger-menu + .hamburger-theme-toggle {
     z-index: 2;
     opacity: 1;
   }
@@ -111,7 +126,10 @@
     color: var(--secondary-color);
   }
 
-  .hamburger-input:checked + .hamburger-menu + .hamburger-link {
+  .hamburger-input:checked
+    + .hamburger-menu
+    + .hamburger-theme-toggle
+    + .hamburger-link {
     display: flex;
     flex-direction: column;
   }
