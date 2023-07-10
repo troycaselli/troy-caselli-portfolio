@@ -7,6 +7,7 @@ import Hamburger from "./components/Hamburger";
 import ThemeToggle from "./components/ThemeToggle";
 import Footer from "./components/Footer";
 import LandingPage from "./components/LandingPage";
+import MobileLanding from "./components/MobileLanding";
 import About from "./components/About";
 import Resume from "./components/Resume";
 import FaithInFiveProject from "./components/FaithInFiveProject";
@@ -53,7 +54,10 @@ function App() {
       <ThemeToggle />
 
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route
+          path="/"
+          element={windowWidth > 900 ? <LandingPage /> : <MobileLanding />}
+        />
         <Route path="about" element={<About />} />
         <Route path="resume" element={<Resume />} />
         <Route path="faith-in-five" element={<FaithInFiveProject />} />
