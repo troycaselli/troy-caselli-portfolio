@@ -33,8 +33,8 @@ function ThemeToggle() {
 
   return (
     <div className="theme-toggle-wrapper">
-      <div className="logo-container">
-        <img src={logo} alt="Logo" className="logo-image" />
+      <div className="mobile-logo-container">
+        <img src={logo} alt="Logo" className="mobile-logo-image" />
       </div>
       <label className="theme-switch" for="checkbox">
         <input type="checkbox" id="checkbox" />
