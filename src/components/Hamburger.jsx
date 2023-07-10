@@ -3,10 +3,10 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import image from "../images/logo/sword-spade-large.webp";
+import ThemeToggle from "../components/ThemeToggle";
 import "../styling/hamburger.css";
 
-function Header() {
+function Hamburger() {
   const [checkedValue, setCheckedValue] = useState(false);
 
   //activeLink sets 'current' class on Links
@@ -36,6 +36,9 @@ function Header() {
         />
         <div class="hamburger-menu">
           <div class="hamburger"></div>
+        </div>
+        <div className="hamburger-theme-toggle">
+          <ThemeToggle />
         </div>
         <div className="hamburger-links">
           <Link
@@ -77,48 +80,7 @@ function Header() {
         </div>
       </label>
     </section>
-    /* <div className="header-wrapper">
-      <div className="navlink-wrapper">
-        <div className="navlink-container-left">
-          <Link
-            to="/"
-            className={"header-link " + (activeLink === "/" ? "current" : "")}
-          >
-            Home
-          </Link>
-          <Link
-            to="/#projects"
-            className={
-              "header-link " + (activeLink === "/#projects" ? "current" : "")
-            }
-          >
-            Projects
-          </Link>
-        </div>
-        <div className="navlink-container-right">
-          <Link
-            to="about"
-            className={
-              "header-link " + (activeLink === "/about" ? "current" : "")
-            }
-          >
-            About Me
-          </Link>
-          <Link
-            to="resume"
-            className={
-              "header-link " + (activeLink === "/resume" ? "current" : "")
-            }
-          >
-            Résumé
-          </Link>
-        </div>
-      </div>
-      <div className="logo-container">
-        <img src={image} alt="Logo" className="logo-image" />
-      </div>
-    </div> */
   );
 }
 
-export default Header;
+export default Hamburger;

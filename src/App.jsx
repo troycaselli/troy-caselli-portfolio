@@ -50,7 +50,7 @@ function App() {
   return (
     <div className="app-wrapper">
       {windowWidth > 900 ? <Header /> : <Hamburger />}
-      <ThemeToggle />
+      {windowWidth > 900 ? <ThemeToggle /> : <></>}
 
       <Routes>
         <Route path="/" element={<LandingPage />} />

@@ -52,6 +52,16 @@
 @media (max-width: 900px) {
   .theme-toggle-wrapper {
     margin: 0;
-    padding: 20px 20px 0 0;
+  }
+  .theme-switch {
+    background-color: var(--primary-color);
+    transition: 300ms ease-out;
+  }
+  .sun::before {
+    font-size: 30px;
+  }
+  .moon::before {
+    font-size: 30px;
+    padding: 0 3.5px;
   }
 }
