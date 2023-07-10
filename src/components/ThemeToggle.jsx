@@ -1,5 +1,7 @@
 import React, { useState, useMemo } from "react";
+import logo from "../images/logo/sword-spade-large.webp";
 import "../styling/themeToggle.css";
+import "../styling/header.css";
 
 function ThemeToggle() {
   // theme and icon switch
@@ -31,6 +33,9 @@ function ThemeToggle() {
 
   return (
     <div className="theme-toggle-wrapper">
+      <div className="logo-container">
+        <img src={logo} alt="Logo" className="logo-image" />
+      </div>
       <label className="theme-switch" for="checkbox">
         <input type="checkbox" id="checkbox" />
         <div className={themeIcon} onClick={(e) => toggleThemeIcon(e)}></div>
