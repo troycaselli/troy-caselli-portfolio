@@ -404,7 +404,7 @@ body {
   rotate: 45deg;
   margin: 0 -30px 0 60px;
   border-radius: 3px;
-  border: 3px solid var(--secondary-color);
+  border: 1.5px solid var(--secondary-color);
   background-color: var(--secondary-color);
   overflow: hidden;
   transition: 300ms ease-in-out;
@@ -415,16 +415,11 @@ body {
   rotate: 45deg;
   margin: 0 50px 0 -30px;
   border-radius: 3px;
-  border: 3px solid var(--secondary-color);
+  border: 1.5px solid var(--secondary-color);
   background-color: var(--secondary-color);
   overflow: hidden;
   transition: 300ms ease-in-out;
 }
-/* .project-image-container-left:hover,
-.project-image-container-right:hover {
-    scale: 1.05;
-    cursor: pointer;
-} */
 .project-image {
   min-width: 170%;
   min-height: 170%;
@@ -748,6 +743,9 @@ body {
     font-size: 3rem;
     margin-top: 30%;
   }
+  .projects-wrapper {
+    width: 90%;
+  }
   .projects-divider {
     width: 100px;
   }
@@ -790,10 +788,7 @@ body {
     width: 100%;
     rotate: 0deg;
     margin: 0;
-    border-radius: 0;
     transition: none;
-    border-left: none;
-    border-right: none;
     cursor: pointer;
   }
   .project-image-container-left:hover,
