@@ -3,8 +3,8 @@ import "../styling/loading.css";
 
 function Loading() {
   return (
-    <div>
-      <p>RENDERING</p>
+    <div className="loading-container">
+      <div className="loading"></div>
     </div>
   );
 }

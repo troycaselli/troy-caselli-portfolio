@@ -14,10 +14,8 @@ import FamPromProject from "./components/FamPromProject";
 import AsylumProject from "./components/AsylumProject";
 
 function App() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const { pathname, hash, key } = useLocation();
-
   // Logic for showing navbar for desktop or hamburger for tablet and phones
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -31,6 +29,7 @@ function App() {
   }, []);
 
   // checks url for hash pathing
+  const { pathname, hash, key } = useLocation();
   useEffect(() => {
     // if no hash in path, scroll to top
     if (!hash) {

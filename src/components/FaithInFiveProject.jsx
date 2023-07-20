@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Divider from "./Divider";
+import Loading from "./Loading.jsx";
 import "../styling/projectDetails.css";
 import confirmationEmail from "../images/projects/faithInFive/confirmationEmail.png";
 import dashboardPage from "../images/projects/faithInFive/dashboardPage.png";
@@ -12,6 +13,12 @@ import usersPage from "../images/projects/faithInFive/usersPage.png";
 import welcomePage from "../images/projects/faithInFive/welcomePage.png";
 
 function FaithInFiveProject() {
+  //toggle loading component
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setLoading(false);
+  }, []);
+
   return (
     <section className="project-wrapper">
       <div className="project-section">
@@ -124,41 +131,49 @@ function FaithInFiveProject() {
 
       <div className="project-section">
         <h2 className="project__subtitle">UX / Design</h2>
-        <div className="design-container">
-          <img
-            src={welcomePage}
-            alt="welcome page"
-            className="design__img"
-          ></img>
-          <img src={loginPage} alt="login page" className="design__img"></img>
-          <img
-            src={confirmationEmail}
-            alt="confirmation email"
-            className="design__img"
-          ></img>
-          <img
-            src={dashboardPage}
-            alt="dashboard page"
-            className="design__img"
-          ></img>
-          <img
-            src={mapViewPage}
-            alt="map view page"
-            className="design__img"
-          ></img>
-          <img
-            src={listViewPage}
-            alt="list view page"
-            className="design__img"
-          ></img>
-          <img src={groupsPage} alt="groups page" className="design__img"></img>
-          <img src={usersPage} alt="users page" className="design__img"></img>
-          <img
-            src={restrictedPage1}
-            alt="restricted page"
-            className="design__img"
-          ></img>
-        </div>
+        {loading ? (
+          <Loading />
+        ) : (
+          <div className="design-container">
+            <img
+              src={welcomePage}
+              alt="welcome page"
+              className="design__img"
+            ></img>
+            <img src={loginPage} alt="login page" className="design__img"></img>
+            <img
+              src={confirmationEmail}
+              alt="confirmation email"
+              className="design__img"
+            ></img>
+            <img
+              src={dashboardPage}
+              alt="dashboard page"
+              className="design__img"
+            ></img>
+            <img
+              src={mapViewPage}
+              alt="map view page"
+              className="design__img"
+            ></img>
+            <img
+              src={listViewPage}
+              alt="list view page"
+              className="design__img"
+            ></img>
+            <img
+              src={groupsPage}
+              alt="groups page"
+              className="design__img"
+            ></img>
+            <img src={usersPage} alt="users page" className="design__img"></img>
+            <img
+              src={restrictedPage1}
+              alt="restricted page"
+              className="design__img"
+            ></img>
+          </div>
+        )}
       </div>
     </section>
   );
