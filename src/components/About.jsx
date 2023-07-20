@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import Loading from "./Loading.jsx";
+import IncrementedImage from "./IncrementedImage.jsx";
 import graduationImg from "../images/about/bloomtech-graduation.webp";
 import maternityImg from "../images/about/maternity.webp";
 import playingImg from "../images/about/play-and-study.webp";
@@ -147,65 +148,100 @@ function About() {
           />
           <label htmlFor="s1" id="slide1" className="slideshow__label">
             <div className="slideshow__image-container">
-              <img
+              <IncrementedImage
+                src={maternityImg}
+                placeholderSrc={maternityBlur}
+                alt="maternity"
+              />
+              {/* <img
                 src={studyingBlur}
                 alt="maternity"
                 className="slideshow__image"
-              />
+              /> */}
             </div>
           </label>
           <label htmlFor="s2" id="slide2" className="slideshow__label">
             <div className="slideshow__image-container">
-              <img
+              <IncrementedImage
+                src={graduationImg}
+                placeholderSrc={graduationBlur}
+                alt="bloomtech graduation"
+              />
+              {/* <img
                 src={studyingBlur}
                 alt="bloomtech graduation"
                 className="slideshow__image"
-              />
+              /> */}
             </div>
           </label>
           <label htmlFor="s3" id="slide3" className="slideshow__label">
             <div className="slideshow__image-container">
-              <img
+              <IncrementedImage
+                src={playingImg}
+                placeholderSrc={playingBlur}
+                alt="playing with Tobias"
+              />
+              {/* <img
                 src={studyingBlur}
                 alt="playing with Tobias"
                 className="slideshow__image"
-              />
+              /> */}
             </div>
           </label>
           <label htmlFor="s4" id="slide4" className="slideshow__label">
             <div className="slideshow__image-container">
-              <img
+              <IncrementedImage
+                src={cherriesImg}
+                placeholderSrc={cherriesBlur}
+                alt="cherry picking"
+              />
+              {/* <img
                 src={studyingBlur}
                 alt="cherry picking"
                 className="slideshow__image"
-              />
+              /> */}
             </div>
           </label>
           <label htmlFor="s5" id="slide5" className="slideshow__label">
             <div className="slideshow__image-container">
-              <img
+              <IncrementedImage
+                src={mazeImg}
+                placeholderSrc={mazeBlur}
+                alt="corn maze"
+              />
+              {/* <img
                 src={studyingBlur}
                 alt="corn maze"
                 className="slideshow__image"
-              />
+              /> */}
             </div>
           </label>
           <label htmlFor="s6" id="slide6" className="slideshow__label">
             <div className="slideshow__image-container">
-              <img
+              <IncrementedImage
+                src={glacierImg}
+                placeholderSrc={glacierBlur}
+                alt="glacier national park"
+              />
+              {/* <img
                 src={studyingBlur}
                 alt="glacier national park"
                 className="slideshow__image"
-              />
+              /> */}
             </div>
           </label>
           <label htmlFor="s7" id="slide7" className="slideshow__label">
             <div className="slideshow__image-container">
-              <img
+              <IncrementedImage
+                src={studyingImg}
+                placeholderSrc={studyingBlur}
+                alt="studying with Tobias"
+              />
+              {/* <img
                 src={studyingBlur}
                 alt="studying with Tobias"
                 className="slideshow__image"
-              />
+              /> */}
             </div>
           </label>
         </div>

@@ -160,6 +160,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 3px;
+}
+.slideshow__image__blur {
+  width: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3px;
   filter: blur(10px);
 }
 
