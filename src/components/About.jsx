@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
+import Loading from "./Loading.jsx";
 import graduationImg from "../images/about/bloomtech-graduation.webp";
 import maternityImg from "../images/about/maternity.webp";
 import playingImg from "../images/about/play-and-study.webp";
@@ -10,12 +11,22 @@ import mazeImg from "../images/about/corn-maze.webp";
 import "../styling/about.css";
 
 function About() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(false);
+  }, []);
+
   return (
     <section className="about-wrapper">
       <div className="featured-wrapper">
         <div className="featured-image-wrapper">
           <div className="featured-portrait-container">
-            <div className="featured-portrait__image image-troy-portrait"></div>
+            {loading ? (
+              <Loading />
+            ) : (
+              <div className="featured-portrait__image image-troy-portrait"></div>
+            )}
           </div>
         </div>
         <div className="featured-certification-wrapper">
@@ -80,110 +91,114 @@ function About() {
       </div>
 
       <h2 className="slideshow-header">Photo Gallery</h2>
-      <div id="slideshow">
-        <input
-          type="radio"
-          name="slideshow"
-          className="slideshow__button"
-          id="s1"
-          defaultChecked
-        />
-        <input
-          type="radio"
-          name="slideshow"
-          className="slideshow__button"
-          id="s2"
-        />
-        <input
-          type="radio"
-          name="slideshow"
-          className="slideshow__button"
-          id="s3"
-        />
-        <input
-          type="radio"
-          name="slideshow"
-          className="slideshow__button"
-          id="s4"
-        />
-        <input
-          type="radio"
-          name="slideshow"
-          className="slideshow__button"
-          id="s5"
-        />
-        <input
-          type="radio"
-          name="slideshow"
-          className="slideshow__button"
-          id="s6"
-        />
-        <input
-          type="radio"
-          name="slideshow"
-          className="slideshow__button"
-          id="s7"
-        />
-        <label for="s1" id="slide1" className="slideshow__label">
-          <div className="slideshow__image-container">
-            <img
-              src={maternityImg}
-              alt="maternity"
-              className="slideshow__image"
-            />
-          </div>
-        </label>
-        <label for="s2" id="slide2" className="slideshow__label">
-          <div className="slideshow__image-container">
-            <img
-              src={graduationImg}
-              alt="bloomtech graduation"
-              className="slideshow__image"
-            />
-          </div>
-        </label>
-        <label for="s3" id="slide3" className="slideshow__label">
-          <div className="slideshow__image-container">
-            <img
-              src={playingImg}
-              alt="playing with Tobias"
-              className="slideshow__image"
-            />
-          </div>
-        </label>
-        <label for="s4" id="slide4" className="slideshow__label">
-          <div className="slideshow__image-container">
-            <img
-              src={cherriesImg}
-              alt="cherry picking"
-              className="slideshow__image"
-            />
-          </div>
-        </label>
-        <label for="s5" id="slide5" className="slideshow__label">
-          <div className="slideshow__image-container">
-            <img src={mazeImg} alt="corn maze" className="slideshow__image" />
-          </div>
-        </label>
-        <label for="s6" id="slide6" className="slideshow__label">
-          <div className="slideshow__image-container">
-            <img
-              src={glacierImg}
-              alt="glacier national park"
-              className="slideshow__image"
-            />
-          </div>
-        </label>
-        <label for="s7" id="slide7" className="slideshow__label">
-          <div className="slideshow__image-container">
-            <img
-              src={studyingImg}
-              alt="studying with Tobias"
-              className="slideshow__image"
-            />
-          </div>
-        </label>
-      </div>
+      {loading ? (
+        <Loading />
+      ) : (
+        <div id="slideshow">
+          <input
+            type="radio"
+            name="slideshow"
+            className="slideshow__button"
+            id="s1"
+            defaultChecked
+          />
+          <input
+            type="radio"
+            name="slideshow"
+            className="slideshow__button"
+            id="s2"
+          />
+          <input
+            type="radio"
+            name="slideshow"
+            className="slideshow__button"
+            id="s3"
+          />
+          <input
+            type="radio"
+            name="slideshow"
+            className="slideshow__button"
+            id="s4"
+          />
+          <input
+            type="radio"
+            name="slideshow"
+            className="slideshow__button"
+            id="s5"
+          />
+          <input
+            type="radio"
+            name="slideshow"
+            className="slideshow__button"
+            id="s6"
+          />
+          <input
+            type="radio"
+            name="slideshow"
+            className="slideshow__button"
+            id="s7"
+          />
+          <label htmlFor="s1" id="slide1" className="slideshow__label">
+            <div className="slideshow__image-container">
+              <img
+                src={maternityImg}
+                alt="maternity"
+                className="slideshow__image"
+              />
+            </div>
+          </label>
+          <label htmlFor="s2" id="slide2" className="slideshow__label">
+            <div className="slideshow__image-container">
+              <img
+                src={graduationImg}
+                alt="bloomtech graduation"
+                className="slideshow__image"
+              />
+            </div>
+          </label>
+          <label htmlFor="s3" id="slide3" className="slideshow__label">
+            <div className="slideshow__image-container">
+              <img
+                src={playingImg}
+                alt="playing with Tobias"
+                className="slideshow__image"
+              />
+            </div>
+          </label>
+          <label htmlFor="s4" id="slide4" className="slideshow__label">
+            <div className="slideshow__image-container">
+              <img
+                src={cherriesImg}
+                alt="cherry picking"
+                className="slideshow__image"
+              />
+            </div>
+          </label>
+          <label htmlFor="s5" id="slide5" className="slideshow__label">
+            <div className="slideshow__image-container">
+              <img src={mazeImg} alt="corn maze" className="slideshow__image" />
+            </div>
+          </label>
+          <label htmlFor="s6" id="slide6" className="slideshow__label">
+            <div className="slideshow__image-container">
+              <img
+                src={glacierImg}
+                alt="glacier national park"
+                className="slideshow__image"
+              />
+            </div>
+          </label>
+          <label htmlFor="s7" id="slide7" className="slideshow__label">
+            <div className="slideshow__image-container">
+              <img
+                src={studyingImg}
+                alt="studying with Tobias"
+                className="slideshow__image"
+              />
+            </div>
+          </label>
+        </div>
+      )}
     </section>
   );
 }

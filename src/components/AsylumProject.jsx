@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Divider from "./Divider";
+import Loading from "./Loading.jsx";
 import "../styling/projectDetails.css";
 import citizenshipMap from "../images/projects/asylumGrantTracker/citizenshipMap.png";
 import dataChart from "../images/projects/asylumGrantTracker/dataChart.png";
@@ -11,6 +12,12 @@ import signupPage from "../images/projects/asylumGrantTracker/signupPage.png";
 import timeGraph from "../images/projects/asylumGrantTracker/timeGraph.png";
 
 function AsylumProject() {
+  //toggle loading component
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setLoading(false);
+  }, []);
+
   return (
     <section className="project-wrapper">
       <div className="project-section">
@@ -130,28 +137,36 @@ function AsylumProject() {
 
       <div className="project-section">
         <h2 className="project__subtitle">UX / Design</h2>
-        <div className="design-container">
-          <img
-            src={landingPage}
-            alt="landing page"
-            className="design__img"
-          ></img>
-          <img src={heatMap} alt="heat map" className="design__img"></img>
-          <img
-            src={citizenshipMap}
-            alt="citizenship map"
-            className="design__img"
-          ></img>
-          <img src={timeGraph} alt="time graph" className="design__img"></img>
-          <img src={dataChart} alt="data chart" className="design__img"></img>
-          <img src={signupPage} alt="signup page" className="design__img"></img>
-          <img src={loginPage} alt="login page" className="design__img"></img>
-          <img
-            src={profilePage}
-            alt="profile page"
-            className="design__img"
-          ></img>
-        </div>
+        {loading ? (
+          <Loading />
+        ) : (
+          <div className="design-container">
+            <img
+              src={landingPage}
+              alt="landing page"
+              className="design__img"
+            ></img>
+            <img src={heatMap} alt="heat map" className="design__img"></img>
+            <img
+              src={citizenshipMap}
+              alt="citizenship map"
+              className="design__img"
+            ></img>
+            <img src={timeGraph} alt="time graph" className="design__img"></img>
+            <img src={dataChart} alt="data chart" className="design__img"></img>
+            <img
+              src={signupPage}
+              alt="signup page"
+              className="design__img"
+            ></img>
+            <img src={loginPage} alt="login page" className="design__img"></img>
+            <img
+              src={profilePage}
+              alt="profile page"
+              className="design__img"
+            ></img>
+          </div>
+        )}
       </div>
     </section>
   );

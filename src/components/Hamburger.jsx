@@ -34,8 +34,8 @@ function Hamburger() {
           checked={checkedValue}
           onChange={toggleCheckboxValue}
         />
-        <div class="hamburger-menu">
-          <div class="hamburger"></div>
+        <div className="hamburger-menu">
+          <div className="hamburger"></div>
         </div>
         <div className="hamburger-theme-toggle">
           <ThemeToggle />

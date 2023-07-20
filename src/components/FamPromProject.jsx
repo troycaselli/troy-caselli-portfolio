@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Divider from "./Divider";
+import Loading from "./Loading.jsx";
 import "../styling/projectDetails.css";
 import confirmationEmail from "../images/projects/famPromIntake/confirmationEmail.png";
 import intakeForm from "../images/projects/famPromIntake/intakeForm.png";
@@ -12,6 +13,12 @@ import profilePage from "../images/projects/famPromIntake/profilePage.png";
 import welcomePage from "../images/projects/famPromIntake/welcomePage.png";
 
 function FamPromProject() {
+  //toggle loading component
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setLoading(false);
+  }, []);
+
   return (
     <section className="project-wrapper">
       <div className="project-section">
@@ -105,42 +112,46 @@ function FamPromProject() {
 
       <div className="project-section">
         <h2 className="project__subtitle">UX / Design</h2>
-        <div className="design-container">
-          <img
-            src={welcomePage}
-            alt="welcome page"
-            className="design__img"
-          ></img>
-          <img src={loginPage} alt="login page" className="design__img"></img>
-          <img
-            src={confirmationEmail}
-            alt="confirmation email"
-            className="design__img"
-          ></img>
-          <img
-            src={landingPage}
-            alt="landing page"
-            className="design__img"
-          ></img>
-          <img
-            src={profilePage}
-            alt="profile page"
-            className="design__img"
-          ></img>
-          <img src={lastPage} alt="last page" className="design__img"></img>
-          <div className="design-container__full-images">
+        {loading ? (
+          <Loading />
+        ) : (
+          <div className="design-container">
             <img
-              src={intakePageIncomplete}
-              alt="intake page: incomplete"
+              src={welcomePage}
+              alt="welcome page"
+              className="design__img"
+            ></img>
+            <img src={loginPage} alt="login page" className="design__img"></img>
+            <img
+              src={confirmationEmail}
+              alt="confirmation email"
               className="design__img"
             ></img>
             <img
-              src={intakePageCompleted}
-              alt="intake page: completed"
+              src={landingPage}
+              alt="landing page"
               className="design__img"
             ></img>
+            <img
+              src={profilePage}
+              alt="profile page"
+              className="design__img"
+            ></img>
+            <img src={lastPage} alt="last page" className="design__img"></img>
+            <div className="design-container__full-images">
+              <img
+                src={intakePageIncomplete}
+                alt="intake page: incomplete"
+                className="design__img"
+              ></img>
+              <img
+                src={intakePageCompleted}
+                alt="intake page: completed"
+                className="design__img"
+              ></img>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );

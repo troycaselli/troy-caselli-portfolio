@@ -32,7 +32,7 @@ function ThemeToggle() {
 
   return (
     <div className="theme-toggle-wrapper">
-      <label className="theme-switch" for="checkbox">
+      <label className="theme-switch" htmlFor="checkbox">
         <input type="checkbox" id="checkbox" />
         <div className={themeIcon} onClick={(e) => toggleThemeIcon(e)}></div>
       </label>
