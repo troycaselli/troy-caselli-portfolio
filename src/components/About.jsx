@@ -8,6 +8,13 @@ import glacierImg from "../images/about/glacier-national-park.webp";
 import cherriesImg from "../images/about/picking-cherries.webp";
 import studyingImg from "../images/about/juggling-responsibilities.webp";
 import mazeImg from "../images/about/corn-maze.webp";
+import graduationBlur from "../images/about/bloomtech-graduation-blur.jpg";
+import maternityBlur from "../images/about/maternity-blur.jpg";
+import playingBlur from "../images/about/play-and-study-blur.jpg";
+import glacierBlur from "../images/about/glacier-national-park-blur.jpg";
+import cherriesBlur from "../images/about/picking-cherries-blur.jpg";
+import studyingBlur from "../images/about/juggling-responsibilities-blur.jpg";
+import mazeBlur from "../images/about/corn-maze-blur.jpg";
 import "../styling/about.css";
 
 function About() {
@@ -141,7 +148,7 @@ function About() {
           <label htmlFor="s1" id="slide1" className="slideshow__label">
             <div className="slideshow__image-container">
               <img
-                src={maternityImg}
+                src={studyingBlur}
                 alt="maternity"
                 className="slideshow__image"
               />
@@ -150,7 +157,7 @@ function About() {
           <label htmlFor="s2" id="slide2" className="slideshow__label">
             <div className="slideshow__image-container">
               <img
-                src={graduationImg}
+                src={studyingBlur}
                 alt="bloomtech graduation"
                 className="slideshow__image"
               />
@@ -159,7 +166,7 @@ function About() {
           <label htmlFor="s3" id="slide3" className="slideshow__label">
             <div className="slideshow__image-container">
               <img
-                src={playingImg}
+                src={studyingBlur}
                 alt="playing with Tobias"
                 className="slideshow__image"
               />
@@ -168,7 +175,7 @@ function About() {
           <label htmlFor="s4" id="slide4" className="slideshow__label">
             <div className="slideshow__image-container">
               <img
-                src={cherriesImg}
+                src={studyingBlur}
                 alt="cherry picking"
                 className="slideshow__image"
               />
@@ -176,13 +183,17 @@ function About() {
           </label>
           <label htmlFor="s5" id="slide5" className="slideshow__label">
             <div className="slideshow__image-container">
-              <img src={mazeImg} alt="corn maze" className="slideshow__image" />
+              <img
+                src={studyingBlur}
+                alt="corn maze"
+                className="slideshow__image"
+              />
             </div>
           </label>
           <label htmlFor="s6" id="slide6" className="slideshow__label">
             <div className="slideshow__image-container">
               <img
-                src={glacierImg}
+                src={studyingBlur}
                 alt="glacier national park"
                 className="slideshow__image"
               />
@@ -191,7 +202,7 @@ function About() {
           <label htmlFor="s7" id="slide7" className="slideshow__label">
             <div className="slideshow__image-container">
               <img
-                src={studyingImg}
+                src={studyingBlur}
                 alt="studying with Tobias"
                 className="slideshow__image"
               />

@@ -160,6 +160,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 3px;
+  filter: blur(10px);
 }
 
 /* Slider Functionality */
