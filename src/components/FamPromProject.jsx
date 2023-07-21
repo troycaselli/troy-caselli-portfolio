@@ -1,16 +1,27 @@
 import React, { useState, useEffect } from "react";
+
+import IncrementedImage from "./IncrementedImage.jsx";
 import Divider from "./Divider";
 import Loading from "./Loading.jsx";
+import confirmationEmail from "../images/projects/famPromIntake/confirmation-email.png";
+import intakeForm from "../images/projects/famPromIntake/intake-form.png";
+import intakePageCompleted from "../images/projects/famPromIntake/intake-page-completed.png";
+import intakePageIncomplete from "../images/projects/famPromIntake/intake-page-incomplete.png";
+import landingPage from "../images/projects/famPromIntake/landing-page.png";
+import lastPage from "../images/projects/famPromIntake/last-page.png";
+import loginPage from "../images/projects/famPromIntake/last-page.png";
+import profilePage from "../images/projects/famPromIntake/profile-page.png";
+import welcomePage from "../images/projects/famPromIntake/welcome-page.png";
+import confirmationEmailBlur from "../images/projects/famPromIntake/confirmation-email-blur.jpg";
+import intakeFormBlur from "../images/projects/famPromIntake/intake-form-blur.jpg";
+import intakePageCompletedBlur from "../images/projects/famPromIntake/intake-page-completed-blur.jpg";
+import intakePageIncompleteBlur from "../images/projects/famPromIntake/intake-page-incomplete-blur.jpg";
+import landingPageBlur from "../images/projects/famPromIntake/landing-page-blur.jpg";
+import lastPageBlur from "../images/projects/famPromIntake/last-page-blur.jpg";
+import loginPageBlur from "../images/projects/famPromIntake/login-page-blur.jpg";
+import profilePageBlur from "../images/projects/famPromIntake/profile-page-blur.jpg";
+import welcomePageBlur from "../images/projects/famPromIntake/welcome-page-blur.jpg";
 import "../styling/projectDetails.css";
-import confirmationEmail from "../images/projects/famPromIntake/confirmationEmail.png";
-import intakeForm from "../images/projects/famPromIntake/intakeForm.png";
-import intakePageCompleted from "../images/projects/famPromIntake/intakePageCompleted.png";
-import intakePageIncomplete from "../images/projects/famPromIntake/intakePageIncomplete.png";
-import landingPage from "../images/projects/famPromIntake/landingPage.png";
-import lastPage from "../images/projects/famPromIntake/lastPage.png";
-import loginPage from "../images/projects/famPromIntake/loginPage.png";
-import profilePage from "../images/projects/famPromIntake/profilePage.png";
-import welcomePage from "../images/projects/famPromIntake/welcomePage.png";
 
 function FamPromProject() {
   //toggle loading component
@@ -101,11 +112,12 @@ function FamPromProject() {
           the current app and include the information in the sixteen-page paper
           intake form (excerpt below).
         </p>
-        <img
+        <IncrementedImage
           src={intakeForm}
+          placeholderSrc={intakeFormBlur}
           alt="intake form sample"
           className="design__img"
-        ></img>
+        />
       </div>
 
       <Divider />
@@ -116,39 +128,55 @@ function FamPromProject() {
           <Loading />
         ) : (
           <div className="design-container">
-            <img
+            <IncrementedImage
               src={welcomePage}
+              placeholderSrc={welcomePageBlur}
               alt="welcome page"
               className="design__img"
-            ></img>
-            <img src={loginPage} alt="login page" className="design__img"></img>
-            <img
+            />
+            <IncrementedImage
+              src={loginPage}
+              placeholderSrc={loginPageBlur}
+              alt="login page"
+              className="design__img"
+            />
+            <IncrementedImage
               src={confirmationEmail}
+              placeholderSrc={confirmationEmailBlur}
               alt="confirmation email"
               className="design__img"
-            ></img>
-            <img
+            />
+            <IncrementedImage
               src={landingPage}
+              placeholderSrc={landingPageBlur}
               alt="landing page"
               className="design__img"
-            ></img>
-            <img
+            />
+            <IncrementedImage
               src={profilePage}
+              placeholderSrc={profilePageBlur}
               alt="profile page"
               className="design__img"
-            ></img>
-            <img src={lastPage} alt="last page" className="design__img"></img>
+            />
+            <IncrementedImage
+              src={lastPage}
+              placeholderSrc={lastPageBlur}
+              alt="last page"
+              className="design__img"
+            />
             <div className="design-container__full-images">
-              <img
+              <IncrementedImage
                 src={intakePageIncomplete}
+                placeholderSrc={intakePageIncompleteBlur}
                 alt="intake page: incomplete"
                 className="design__img"
-              ></img>
-              <img
+              />
+              <IncrementedImage
                 src={intakePageCompleted}
+                placeholderSrc={intakePageCompletedBlur}
                 alt="intake page: completed"
                 className="design__img"
-              ></img>
+              />
             </div>
           </div>
         )}

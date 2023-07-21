@@ -1,15 +1,25 @@
 import React, { useState, useEffect } from "react";
+
+import IncrementedImage from "./IncrementedImage.jsx";
 import Divider from "./Divider";
 import Loading from "./Loading.jsx";
+import citizenshipMap from "../images/projects/asylumGrantTracker/citizenship-map.png";
+import dataChart from "../images/projects/asylumGrantTracker/data-chart.png";
+import heatMap from "../images/projects/asylumGrantTracker/heat-map.png";
+import landingPage from "../images/projects/asylumGrantTracker/landing-page.png";
+import loginPage from "../images/projects/asylumGrantTracker/login-page.png";
+import profilePage from "../images/projects/asylumGrantTracker/profile-page.png";
+import signupPage from "../images/projects/asylumGrantTracker/signup-page.png";
+import timeGraph from "../images/projects/asylumGrantTracker/time-graph.png";
+import citizenshipMapBlur from "../images/projects/asylumGrantTracker/citizenship-map-blur.jpg";
+import dataChartBlur from "../images/projects/asylumGrantTracker/data-chart-blur.jpg";
+import heatMapBlur from "../images/projects/asylumGrantTracker/heat-map-blur.jpg";
+import landingPageBlur from "../images/projects/asylumGrantTracker/landing-page-blur.jpg";
+import loginPageBlur from "../images/projects/asylumGrantTracker/login-page-blur.jpg";
+import profilePageBlur from "../images/projects/asylumGrantTracker/profile-page-blur.jpg";
+import signupPageBlur from "../images/projects/asylumGrantTracker/signup-page-blur.jpg";
+import timeGraphBlur from "../images/projects/asylumGrantTracker/time-graph-blur.jpg";
 import "../styling/projectDetails.css";
-import citizenshipMap from "../images/projects/asylumGrantTracker/citizenshipMap.png";
-import dataChart from "../images/projects/asylumGrantTracker/dataChart.png";
-import heatMap from "../images/projects/asylumGrantTracker/heatMap.png";
-import landingPage from "../images/projects/asylumGrantTracker/landingPage.png";
-import loginPage from "../images/projects/asylumGrantTracker/loginPage.png";
-import profilePage from "../images/projects/asylumGrantTracker/profilePage.png";
-import signupPage from "../images/projects/asylumGrantTracker/signupPage.png";
-import timeGraph from "../images/projects/asylumGrantTracker/timeGraph.png";
 
 function AsylumProject() {
   //toggle loading component
@@ -141,30 +151,54 @@ function AsylumProject() {
           <Loading />
         ) : (
           <div className="design-container">
-            <img
+            <IncrementedImage
               src={landingPage}
+              placeholderSrc={landingPageBlur}
               alt="landing page"
               className="design__img"
-            ></img>
-            <img src={heatMap} alt="heat map" className="design__img"></img>
-            <img
+            />
+            <IncrementedImage
+              src={heatMap}
+              placeholderSrc={heatMapBlur}
+              alt="heat map"
+              className="design__img"
+            />
+            <IncrementedImage
               src={citizenshipMap}
+              placeholderSrc={citizenshipMapBlur}
               alt="citizenship map"
               className="design__img"
-            ></img>
-            <img src={timeGraph} alt="time graph" className="design__img"></img>
-            <img src={dataChart} alt="data chart" className="design__img"></img>
-            <img
+            />
+            <IncrementedImage
+              src={timeGraph}
+              placeholderSrc={timeGraphBlur}
+              alt="time graph"
+              className="design__img"
+            />
+            <IncrementedImage
+              src={dataChart}
+              placeholderSrc={dataChartBlur}
+              alt="data chart"
+              className="design__img"
+            />
+            <IncrementedImage
               src={signupPage}
+              placeholderSrc={signupPageBlur}
               alt="signup page"
               className="design__img"
-            ></img>
-            <img src={loginPage} alt="login page" className="design__img"></img>
-            <img
+            />
+            <IncrementedImage
+              src={loginPage}
+              placeholderSrc={loginPageBlur}
+              alt="login page"
+              className="design__img"
+            />
+            <IncrementedImage
               src={profilePage}
+              placeholderSrc={profilePageBlur}
               alt="profile page"
               className="design__img"
-            ></img>
+            />
           </div>
         )}
       </div>

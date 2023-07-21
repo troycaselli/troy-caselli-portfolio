@@ -1,16 +1,27 @@
 import React, { useState, useEffect } from "react";
+
+import IncrementedImage from "./IncrementedImage.jsx";
 import Divider from "./Divider";
 import Loading from "./Loading.jsx";
+import confirmationEmail from "../images/projects/faithInFive/confirmation-email.png";
+import dashboardPage from "../images/projects/faithInFive/dashboard-page.png";
+import groupsPage from "../images/projects/faithInFive/groups-page.png";
+import listViewPage from "../images/projects/faithInFive/list-view-page.png";
+import loginPage from "../images/projects/faithInFive/login-page.png";
+import mapViewPage from "../images/projects/faithInFive/map-view-page.png";
+import restrictedPage from "../images/projects/faithInFive/restricted-page.png";
+import usersPage from "../images/projects/faithInFive/users-page.png";
+import welcomePage from "../images/projects/faithInFive/welcome-page.png";
+import confirmationEmailBlur from "../images/projects/faithInFive/confirmation-email-blur.jpg";
+import dashboardPageBlur from "../images/projects/faithInFive/dashboard-page-blur.jpg";
+import groupsPageBlur from "../images/projects/faithInFive/groups-page-blur.jpg";
+import listViewPageBlur from "../images/projects/faithInFive/list-view-page-blur.jpg";
+import loginPageBlur from "../images/projects/faithInFive/login-page-blur.jpg";
+import mapViewPageBlur from "../images/projects/faithInFive/map-view-page-blur.jpg";
+import restrictedPageBlur from "../images/projects/faithInFive/restricted-page-blur.jpg";
+import usersPageBlur from "../images/projects/faithInFive/users-page-blur.jpg";
+import welcomePageBlur from "../images/projects/faithInFive/welcome-page-blur.jpg";
 import "../styling/projectDetails.css";
-import confirmationEmail from "../images/projects/faithInFive/confirmationEmail.png";
-import dashboardPage from "../images/projects/faithInFive/dashboardPage.png";
-import groupsPage from "../images/projects/faithInFive/groupsPage.png";
-import listViewPage from "../images/projects/faithInFive/listViewPage.png";
-import loginPage from "../images/projects/faithInFive/loginPage.png";
-import mapViewPage from "../images/projects/faithInFive/mapViewPage.png";
-import restrictedPage1 from "../images/projects/faithInFive/restrictedPage1.png";
-import usersPage from "../images/projects/faithInFive/usersPage.png";
-import welcomePage from "../images/projects/faithInFive/welcomePage.png";
 
 function FaithInFiveProject() {
   //toggle loading component
@@ -135,43 +146,60 @@ function FaithInFiveProject() {
           <Loading />
         ) : (
           <div className="design-container">
-            <img
+            <IncrementedImage
               src={welcomePage}
+              placeholderSrc={welcomePageBlur}
               alt="welcome page"
               className="design__img"
-            ></img>
-            <img src={loginPage} alt="login page" className="design__img"></img>
-            <img
+            />
+            <IncrementedImage
+              src={loginPage}
+              placeholderSrc={loginPageBlur}
+              alt="login page"
+              className="design__img"
+            />
+            <IncrementedImage
               src={confirmationEmail}
+              placeholderSrc={confirmationEmailBlur}
               alt="confirmation email"
               className="design__img"
-            ></img>
-            <img
+            />
+            <IncrementedImage
               src={dashboardPage}
+              placeholderSrc={dashboardPageBlur}
               alt="dashboard page"
               className="design__img"
-            ></img>
-            <img
+            />
+            <IncrementedImage
               src={mapViewPage}
+              placeholderSrc={mapViewPageBlur}
               alt="map view page"
               className="design__img"
-            ></img>
-            <img
+            />
+            <IncrementedImage
               src={listViewPage}
+              placeholderSrc={listViewPageBlur}
               alt="list view page"
               className="design__img"
-            ></img>
-            <img
+            />
+            <IncrementedImage
               src={groupsPage}
+              placeholderSrc={groupsPageBlur}
               alt="groups page"
               className="design__img"
-            ></img>
-            <img src={usersPage} alt="users page" className="design__img"></img>
-            <img
-              src={restrictedPage1}
+            />
+            <IncrementedImage
+              src={usersPage}
+              placeholderSrc={usersPageBlur}
+              alt="users page"
+              className="design__img"
+            />
+            <IncrementedImage
+              src={restrictedPage}
+              placeholderSrc={restrictedPageBlur}
               alt="restricted page"
               className="design__img"
-            ></img>
+            />
           </div>
         )}
       </div>
