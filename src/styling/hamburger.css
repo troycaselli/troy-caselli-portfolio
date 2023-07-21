@@ -13,7 +13,8 @@
     height: 68px;
     background: var(--primary-color);
     border-radius: 50%;
-    box-shadow: 0 0 0 0 var(--primary-color), 0 0 0 0 var(--primary-color);
+    box-shadow: 0 0 3px 0px var(--primary-color),
+      0 0 3px 0px var(--primary-color);
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     cursor: pointer;
