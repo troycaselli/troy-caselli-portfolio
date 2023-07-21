@@ -10,12 +10,10 @@ const IncrementedImage = (props) => {
     const img = new Image();
     img.src = src;
     img.onload = () => {
-      //   setTimeout(() => {
       setImgClass(className);
       setImgSrc(src);
-      //   }, 2000);
     };
-  }, [src]);
+  }, [className, src]);
 
   return <img src={imgSrc} alt={alt || ""} className={imgClass} />;
 };
