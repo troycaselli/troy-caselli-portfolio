@@ -3,24 +3,7 @@ import React, { useState, useEffect } from "react";
 import IncrementedImage from "./IncrementedImage.jsx";
 import Divider from "./Divider";
 import Loading from "./Loading.jsx";
-import confirmationEmail from "../images/projects/famPromIntake/confirmation-email.png";
-import intakeForm from "../images/projects/famPromIntake/intake-form.png";
-import intakePageCompleted from "../images/projects/famPromIntake/intake-page-completed.png";
-import intakePageIncomplete from "../images/projects/famPromIntake/intake-page-incomplete.png";
-import landingPage from "../images/projects/famPromIntake/landing-page.png";
-import lastPage from "../images/projects/famPromIntake/last-page.png";
-import loginPage from "../images/projects/famPromIntake/last-page.png";
-import profilePage from "../images/projects/famPromIntake/profile-page.png";
-import welcomePage from "../images/projects/famPromIntake/welcome-page.png";
-import confirmationEmailBlur from "../images/projects/famPromIntake/confirmation-email-blur.jpg";
-import intakeFormBlur from "../images/projects/famPromIntake/intake-form-blur.jpg";
-import intakePageCompletedBlur from "../images/projects/famPromIntake/intake-page-completed-blur.jpg";
-import intakePageIncompleteBlur from "../images/projects/famPromIntake/intake-page-incomplete-blur.jpg";
-import landingPageBlur from "../images/projects/famPromIntake/landing-page-blur.jpg";
-import lastPageBlur from "../images/projects/famPromIntake/last-page-blur.jpg";
-import loginPageBlur from "../images/projects/famPromIntake/login-page-blur.jpg";
-import profilePageBlur from "../images/projects/famPromIntake/profile-page-blur.jpg";
-import welcomePageBlur from "../images/projects/famPromIntake/welcome-page-blur.jpg";
+import images from "../images/projects/famPromIntake/index.js";
 import "../styling/projectDetails.css";
 
 function FamPromProject() {
@@ -113,8 +96,8 @@ function FamPromProject() {
           intake form (excerpt below).
         </p>
         <IncrementedImage
-          src={intakeForm}
-          placeholderSrc={intakeFormBlur}
+          src={images.intakeForm}
+          placeholderSrc={images.intakeFormBlur}
           alt="intake form sample"
           className="design__img"
         />
@@ -129,51 +112,51 @@ function FamPromProject() {
         ) : (
           <div className="design-container">
             <IncrementedImage
-              src={welcomePage}
-              placeholderSrc={welcomePageBlur}
+              src={images.welcomePage}
+              placeholderSrc={images.welcomePageBlur}
               alt="welcome page"
               className="design__img"
             />
             <IncrementedImage
-              src={loginPage}
-              placeholderSrc={loginPageBlur}
+              src={images.loginPage}
+              placeholderSrc={images.loginPageBlur}
               alt="login page"
               className="design__img"
             />
             <IncrementedImage
-              src={confirmationEmail}
-              placeholderSrc={confirmationEmailBlur}
+              src={images.confirmationEmail}
+              placeholderSrc={images.confirmationEmailBlur}
               alt="confirmation email"
               className="design__img"
             />
             <IncrementedImage
-              src={landingPage}
-              placeholderSrc={landingPageBlur}
+              src={images.landingPage}
+              placeholderSrc={images.landingPageBlur}
               alt="landing page"
               className="design__img"
             />
             <IncrementedImage
-              src={profilePage}
-              placeholderSrc={profilePageBlur}
+              src={images.profilePage}
+              placeholderSrc={images.profilePageBlur}
               alt="profile page"
               className="design__img"
             />
             <IncrementedImage
-              src={lastPage}
-              placeholderSrc={lastPageBlur}
+              src={images.lastPage}
+              placeholderSrc={images.lastPageBlur}
               alt="last page"
               className="design__img"
             />
             <div className="design-container__full-images">
               <IncrementedImage
-                src={intakePageIncomplete}
-                placeholderSrc={intakePageIncompleteBlur}
+                src={images.intakePageIncomplete}
+                placeholderSrc={images.intakePageIncompleteBlur}
                 alt="intake page: incomplete"
                 className="design__img"
               />
               <IncrementedImage
-                src={intakePageCompleted}
-                placeholderSrc={intakePageCompletedBlur}
+                src={images.intakePageCompleted}
+                placeholderSrc={images.intakePageCompletedBlur}
                 alt="intake page: completed"
                 className="design__img"
               />

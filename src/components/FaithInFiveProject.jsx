@@ -3,24 +3,7 @@ import React, { useState, useEffect } from "react";
 import IncrementedImage from "./IncrementedImage.jsx";
 import Divider from "./Divider";
 import Loading from "./Loading.jsx";
-import confirmationEmail from "../images/projects/faithInFive/confirmation-email.png";
-import dashboardPage from "../images/projects/faithInFive/dashboard-page.png";
-import groupsPage from "../images/projects/faithInFive/groups-page.png";
-import listViewPage from "../images/projects/faithInFive/list-view-page.png";
-import loginPage from "../images/projects/faithInFive/login-page.png";
-import mapViewPage from "../images/projects/faithInFive/map-view-page.png";
-import restrictedPage from "../images/projects/faithInFive/restricted-page.png";
-import usersPage from "../images/projects/faithInFive/users-page.png";
-import welcomePage from "../images/projects/faithInFive/welcome-page.png";
-import confirmationEmailBlur from "../images/projects/faithInFive/confirmation-email-blur.jpg";
-import dashboardPageBlur from "../images/projects/faithInFive/dashboard-page-blur.jpg";
-import groupsPageBlur from "../images/projects/faithInFive/groups-page-blur.jpg";
-import listViewPageBlur from "../images/projects/faithInFive/list-view-page-blur.jpg";
-import loginPageBlur from "../images/projects/faithInFive/login-page-blur.jpg";
-import mapViewPageBlur from "../images/projects/faithInFive/map-view-page-blur.jpg";
-import restrictedPageBlur from "../images/projects/faithInFive/restricted-page-blur.jpg";
-import usersPageBlur from "../images/projects/faithInFive/users-page-blur.jpg";
-import welcomePageBlur from "../images/projects/faithInFive/welcome-page-blur.jpg";
+import images from "../images/projects/faithInFive/index.js";
 import "../styling/projectDetails.css";
 
 function FaithInFiveProject() {
@@ -147,56 +130,56 @@ function FaithInFiveProject() {
         ) : (
           <div className="design-container">
             <IncrementedImage
-              src={welcomePage}
-              placeholderSrc={welcomePageBlur}
+              src={images.welcomePage}
+              placeholderSrc={images.welcomePageBlur}
               alt="welcome page"
               className="design__img"
             />
             <IncrementedImage
-              src={loginPage}
-              placeholderSrc={loginPageBlur}
+              src={images.loginPage}
+              placeholderSrc={images.loginPageBlur}
               alt="login page"
               className="design__img"
             />
             <IncrementedImage
-              src={confirmationEmail}
-              placeholderSrc={confirmationEmailBlur}
+              src={images.confirmationEmail}
+              placeholderSrc={images.confirmationEmailBlur}
               alt="confirmation email"
               className="design__img"
             />
             <IncrementedImage
-              src={dashboardPage}
-              placeholderSrc={dashboardPageBlur}
+              src={images.dashboardPage}
+              placeholderSrc={images.dashboardPageBlur}
               alt="dashboard page"
               className="design__img"
             />
             <IncrementedImage
-              src={mapViewPage}
-              placeholderSrc={mapViewPageBlur}
+              src={images.mapViewPage}
+              placeholderSrc={images.mapViewPageBlur}
               alt="map view page"
               className="design__img"
             />
             <IncrementedImage
-              src={listViewPage}
-              placeholderSrc={listViewPageBlur}
+              src={images.listViewPage}
+              placeholderSrc={images.listViewPageBlur}
               alt="list view page"
               className="design__img"
             />
             <IncrementedImage
-              src={groupsPage}
-              placeholderSrc={groupsPageBlur}
+              src={images.groupsPage}
+              placeholderSrc={images.groupsPageBlur}
               alt="groups page"
               className="design__img"
             />
             <IncrementedImage
-              src={usersPage}
-              placeholderSrc={usersPageBlur}
+              src={images.usersPage}
+              placeholderSrc={images.usersPageBlur}
               alt="users page"
               className="design__img"
             />
             <IncrementedImage
-              src={restrictedPage}
-              placeholderSrc={restrictedPageBlur}
+              src={images.restrictedPage}
+              placeholderSrc={images.restrictedPageBlur}
               alt="restricted page"
               className="design__img"
             />

@@ -3,22 +3,7 @@ import React, { useState, useEffect } from "react";
 import IncrementedImage from "./IncrementedImage.jsx";
 import Divider from "./Divider";
 import Loading from "./Loading.jsx";
-import citizenshipMap from "../images/projects/asylumGrantTracker/citizenship-map.png";
-import dataChart from "../images/projects/asylumGrantTracker/data-chart.png";
-import heatMap from "../images/projects/asylumGrantTracker/heat-map.png";
-import landingPage from "../images/projects/asylumGrantTracker/landing-page.png";
-import loginPage from "../images/projects/asylumGrantTracker/login-page.png";
-import profilePage from "../images/projects/asylumGrantTracker/profile-page.png";
-import signupPage from "../images/projects/asylumGrantTracker/signup-page.png";
-import timeGraph from "../images/projects/asylumGrantTracker/time-graph.png";
-import citizenshipMapBlur from "../images/projects/asylumGrantTracker/citizenship-map-blur.jpg";
-import dataChartBlur from "../images/projects/asylumGrantTracker/data-chart-blur.jpg";
-import heatMapBlur from "../images/projects/asylumGrantTracker/heat-map-blur.jpg";
-import landingPageBlur from "../images/projects/asylumGrantTracker/landing-page-blur.jpg";
-import loginPageBlur from "../images/projects/asylumGrantTracker/login-page-blur.jpg";
-import profilePageBlur from "../images/projects/asylumGrantTracker/profile-page-blur.jpg";
-import signupPageBlur from "../images/projects/asylumGrantTracker/signup-page-blur.jpg";
-import timeGraphBlur from "../images/projects/asylumGrantTracker/time-graph-blur.jpg";
+import images from "../images/projects/asylumGrantTracker/index.js";
 import "../styling/projectDetails.css";
 
 function AsylumProject() {
@@ -152,50 +137,50 @@ function AsylumProject() {
         ) : (
           <div className="design-container">
             <IncrementedImage
-              src={landingPage}
-              placeholderSrc={landingPageBlur}
+              src={images.landingPage}
+              placeholderSrc={images.landingPageBlur}
               alt="landing page"
               className="design__img"
             />
             <IncrementedImage
-              src={heatMap}
-              placeholderSrc={heatMapBlur}
+              src={images.heatMap}
+              placeholderSrc={images.heatMapBlur}
               alt="heat map"
               className="design__img"
             />
             <IncrementedImage
-              src={citizenshipMap}
-              placeholderSrc={citizenshipMapBlur}
+              src={images.citizenshipMap}
+              placeholderSrc={images.citizenshipMapBlur}
               alt="citizenship map"
               className="design__img"
             />
             <IncrementedImage
-              src={timeGraph}
-              placeholderSrc={timeGraphBlur}
+              src={images.timeGraph}
+              placeholderSrc={images.timeGraphBlur}
               alt="time graph"
               className="design__img"
             />
             <IncrementedImage
-              src={dataChart}
-              placeholderSrc={dataChartBlur}
+              src={images.dataChart}
+              placeholderSrc={images.dataChartBlur}
               alt="data chart"
               className="design__img"
             />
             <IncrementedImage
-              src={signupPage}
-              placeholderSrc={signupPageBlur}
+              src={images.signupPage}
+              placeholderSrc={images.signupPageBlur}
               alt="signup page"
               className="design__img"
             />
             <IncrementedImage
-              src={loginPage}
-              placeholderSrc={loginPageBlur}
+              src={images.loginPage}
+              placeholderSrc={images.loginPageBlur}
               alt="login page"
               className="design__img"
             />
             <IncrementedImage
-              src={profilePage}
-              placeholderSrc={profilePageBlur}
+              src={images.profilePage}
+              placeholderSrc={images.profilePageBlur}
               alt="profile page"
               className="design__img"
             />
