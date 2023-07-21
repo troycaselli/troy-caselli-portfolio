@@ -141,6 +141,12 @@
   padding: 20px 0;
 }
 
+@media (max-width: 650px) {
+  .design__img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 450px) {
   .project__title {
     font-size: 2rem;
@@ -179,8 +185,5 @@
   }
   .project__text {
     font-size: 1rem;
-  }
-  .design__img {
-    width: 100%;
   }
 }

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-import IncrementedImage from "./IncrementedImage.jsx";
+import IncrementedImage from "./IncrementedImage";
 import Divider from "./Divider";
 import Loading from "./Loading.jsx";
-import images from "../images/projects/faithInFive/index.js";
+import images from "../images/projects/faithInFive";
 import "../styling/projectDetails.css";
 
 function FaithInFiveProject() {
