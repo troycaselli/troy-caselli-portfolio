@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
+  padding-top: 10%;
 }
 .featured-wrapper {
   display: flex;
@@ -57,6 +57,20 @@
   -webkit-tap-highlight-color: transparent;
   overflow: hidden;
   transition: 300ms ease-in-out;
+}
+.featured-certification-container:active {
+  animation: cilck 200ms 1 linear;
+}
+@keyframes cilck {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.9;
+  }
+  100% {
+    scale: 1;
+  }
 }
 .featured-certification__image {
   width: 150%;
