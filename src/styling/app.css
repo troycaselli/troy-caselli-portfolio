@@ -60,3 +60,8 @@ body::-webkit-scrollbar-corner {
   flex: auto;
   min-height: 90vh;
 }
+
+/* image blur */
+.blur {
+  filter: blur(10px);
+}

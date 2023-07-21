@@ -20,6 +20,7 @@
   width: 320px;
 }
 .featured-portrait-container {
+  display: flex;
   height: 300px;
   width: 300px;
   rotate: 45deg;
@@ -37,9 +38,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: -75px 0 0 -80px;
-}
-.image-troy-portrait {
-  background-image: url(/src/images/about/troy-caselli-portrait-square.webp);
 }
 .featured-certification-wrapper {
   display: flex;
@@ -61,16 +59,10 @@
   transition: 300ms ease-in-out;
 }
 .featured-certification__image {
-  min-width: 150%;
-  min-height: 150%;
-  margin: -28px 0 0 -28px;
+  width: 150%;
+  height: 150%;
+  margin: -29px 0 0 -29px;
   rotate: -45deg;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.image-bloomtech-logo {
-  background-image: url(/src/images/logo/bloomtech-logo-circle.webp);
 }
 .featured-text-container {
   display: flex;
@@ -157,8 +149,6 @@
 }
 .slideshow__image {
   width: 90%;
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 3px;
 }
 

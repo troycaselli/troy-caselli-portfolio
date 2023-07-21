@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from "react";
+
+import IncrementedImage from "./IncrementedImage.jsx";
 import Divider from "./Divider";
 import Loading from "./Loading.jsx";
+import images from "../images/projects/asylumGrantTracker/index.js";
 import "../styling/projectDetails.css";
-import citizenshipMap from "../images/projects/asylumGrantTracker/citizenshipMap.png";
-import dataChart from "../images/projects/asylumGrantTracker/dataChart.png";
-import heatMap from "../images/projects/asylumGrantTracker/heatMap.png";
-import landingPage from "../images/projects/asylumGrantTracker/landingPage.png";
-import loginPage from "../images/projects/asylumGrantTracker/loginPage.png";
-import profilePage from "../images/projects/asylumGrantTracker/profilePage.png";
-import signupPage from "../images/projects/asylumGrantTracker/signupPage.png";
-import timeGraph from "../images/projects/asylumGrantTracker/timeGraph.png";
 
 function AsylumProject() {
   //toggle loading component
@@ -141,30 +136,54 @@ function AsylumProject() {
           <Loading />
         ) : (
           <div className="design-container">
-            <img
-              src={landingPage}
+            <IncrementedImage
+              src={images.landingPage}
+              placeholderSrc={images.landingPageBlur}
               alt="landing page"
               className="design__img"
-            ></img>
-            <img src={heatMap} alt="heat map" className="design__img"></img>
-            <img
-              src={citizenshipMap}
+            />
+            <IncrementedImage
+              src={images.heatMap}
+              placeholderSrc={images.heatMapBlur}
+              alt="heat map"
+              className="design__img"
+            />
+            <IncrementedImage
+              src={images.citizenshipMap}
+              placeholderSrc={images.citizenshipMapBlur}
               alt="citizenship map"
               className="design__img"
-            ></img>
-            <img src={timeGraph} alt="time graph" className="design__img"></img>
-            <img src={dataChart} alt="data chart" className="design__img"></img>
-            <img
-              src={signupPage}
+            />
+            <IncrementedImage
+              src={images.timeGraph}
+              placeholderSrc={images.timeGraphBlur}
+              alt="time graph"
+              className="design__img"
+            />
+            <IncrementedImage
+              src={images.dataChart}
+              placeholderSrc={images.dataChartBlur}
+              alt="data chart"
+              className="design__img"
+            />
+            <IncrementedImage
+              src={images.signupPage}
+              placeholderSrc={images.signupPageBlur}
               alt="signup page"
               className="design__img"
-            ></img>
-            <img src={loginPage} alt="login page" className="design__img"></img>
-            <img
-              src={profilePage}
+            />
+            <IncrementedImage
+              src={images.loginPage}
+              placeholderSrc={images.loginPageBlur}
+              alt="login page"
+              className="design__img"
+            />
+            <IncrementedImage
+              src={images.profilePage}
+              placeholderSrc={images.profilePageBlur}
               alt="profile page"
               className="design__img"
-            ></img>
+            />
           </div>
         )}
       </div>

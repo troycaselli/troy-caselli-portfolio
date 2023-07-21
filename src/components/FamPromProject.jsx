@@ -1,16 +1,10 @@
 import React, { useState, useEffect } from "react";
+
+import IncrementedImage from "./IncrementedImage.jsx";
 import Divider from "./Divider";
 import Loading from "./Loading.jsx";
+import images from "../images/projects/famPromIntake/index.js";
 import "../styling/projectDetails.css";
-import confirmationEmail from "../images/projects/famPromIntake/confirmationEmail.png";
-import intakeForm from "../images/projects/famPromIntake/intakeForm.png";
-import intakePageCompleted from "../images/projects/famPromIntake/intakePageCompleted.png";
-import intakePageIncomplete from "../images/projects/famPromIntake/intakePageIncomplete.png";
-import landingPage from "../images/projects/famPromIntake/landingPage.png";
-import lastPage from "../images/projects/famPromIntake/lastPage.png";
-import loginPage from "../images/projects/famPromIntake/loginPage.png";
-import profilePage from "../images/projects/famPromIntake/profilePage.png";
-import welcomePage from "../images/projects/famPromIntake/welcomePage.png";
 
 function FamPromProject() {
   //toggle loading component
@@ -101,11 +95,12 @@ function FamPromProject() {
           the current app and include the information in the sixteen-page paper
           intake form (excerpt below).
         </p>
-        <img
-          src={intakeForm}
+        <IncrementedImage
+          src={images.intakeForm}
+          placeholderSrc={images.intakeFormBlur}
           alt="intake form sample"
           className="design__img"
-        ></img>
+        />
       </div>
 
       <Divider />
@@ -116,39 +111,55 @@ function FamPromProject() {
           <Loading />
         ) : (
           <div className="design-container">
-            <img
-              src={welcomePage}
+            <IncrementedImage
+              src={images.welcomePage}
+              placeholderSrc={images.welcomePageBlur}
               alt="welcome page"
               className="design__img"
-            ></img>
-            <img src={loginPage} alt="login page" className="design__img"></img>
-            <img
-              src={confirmationEmail}
+            />
+            <IncrementedImage
+              src={images.loginPage}
+              placeholderSrc={images.loginPageBlur}
+              alt="login page"
+              className="design__img"
+            />
+            <IncrementedImage
+              src={images.confirmationEmail}
+              placeholderSrc={images.confirmationEmailBlur}
               alt="confirmation email"
               className="design__img"
-            ></img>
-            <img
-              src={landingPage}
+            />
+            <IncrementedImage
+              src={images.landingPage}
+              placeholderSrc={images.landingPageBlur}
               alt="landing page"
               className="design__img"
-            ></img>
-            <img
-              src={profilePage}
+            />
+            <IncrementedImage
+              src={images.profilePage}
+              placeholderSrc={images.profilePageBlur}
               alt="profile page"
               className="design__img"
-            ></img>
-            <img src={lastPage} alt="last page" className="design__img"></img>
+            />
+            <IncrementedImage
+              src={images.lastPage}
+              placeholderSrc={images.lastPageBlur}
+              alt="last page"
+              className="design__img"
+            />
             <div className="design-container__full-images">
-              <img
-                src={intakePageIncomplete}
+              <IncrementedImage
+                src={images.intakePageIncomplete}
+                placeholderSrc={images.intakePageIncompleteBlur}
                 alt="intake page: incomplete"
                 className="design__img"
-              ></img>
-              <img
-                src={intakePageCompleted}
+              />
+              <IncrementedImage
+                src={images.intakePageCompleted}
+                placeholderSrc={images.intakePageCompletedBlur}
                 alt="intake page: completed"
                 className="design__img"
-              ></img>
+              />
             </div>
           </div>
         )}

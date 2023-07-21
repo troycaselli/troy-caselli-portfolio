@@ -1,16 +1,10 @@
 import React, { useState, useEffect } from "react";
+
+import IncrementedImage from "./IncrementedImage.jsx";
 import Divider from "./Divider";
 import Loading from "./Loading.jsx";
+import images from "../images/projects/faithInFive/index.js";
 import "../styling/projectDetails.css";
-import confirmationEmail from "../images/projects/faithInFive/confirmationEmail.png";
-import dashboardPage from "../images/projects/faithInFive/dashboardPage.png";
-import groupsPage from "../images/projects/faithInFive/groupsPage.png";
-import listViewPage from "../images/projects/faithInFive/listViewPage.png";
-import loginPage from "../images/projects/faithInFive/loginPage.png";
-import mapViewPage from "../images/projects/faithInFive/mapViewPage.png";
-import restrictedPage1 from "../images/projects/faithInFive/restrictedPage1.png";
-import usersPage from "../images/projects/faithInFive/usersPage.png";
-import welcomePage from "../images/projects/faithInFive/welcomePage.png";
 
 function FaithInFiveProject() {
   //toggle loading component
@@ -135,43 +129,60 @@ function FaithInFiveProject() {
           <Loading />
         ) : (
           <div className="design-container">
-            <img
-              src={welcomePage}
+            <IncrementedImage
+              src={images.welcomePage}
+              placeholderSrc={images.welcomePageBlur}
               alt="welcome page"
               className="design__img"
-            ></img>
-            <img src={loginPage} alt="login page" className="design__img"></img>
-            <img
-              src={confirmationEmail}
+            />
+            <IncrementedImage
+              src={images.loginPage}
+              placeholderSrc={images.loginPageBlur}
+              alt="login page"
+              className="design__img"
+            />
+            <IncrementedImage
+              src={images.confirmationEmail}
+              placeholderSrc={images.confirmationEmailBlur}
               alt="confirmation email"
               className="design__img"
-            ></img>
-            <img
-              src={dashboardPage}
+            />
+            <IncrementedImage
+              src={images.dashboardPage}
+              placeholderSrc={images.dashboardPageBlur}
               alt="dashboard page"
               className="design__img"
-            ></img>
-            <img
-              src={mapViewPage}
+            />
+            <IncrementedImage
+              src={images.mapViewPage}
+              placeholderSrc={images.mapViewPageBlur}
               alt="map view page"
               className="design__img"
-            ></img>
-            <img
-              src={listViewPage}
+            />
+            <IncrementedImage
+              src={images.listViewPage}
+              placeholderSrc={images.listViewPageBlur}
               alt="list view page"
               className="design__img"
-            ></img>
-            <img
-              src={groupsPage}
+            />
+            <IncrementedImage
+              src={images.groupsPage}
+              placeholderSrc={images.groupsPageBlur}
               alt="groups page"
               className="design__img"
-            ></img>
-            <img src={usersPage} alt="users page" className="design__img"></img>
-            <img
-              src={restrictedPage1}
+            />
+            <IncrementedImage
+              src={images.usersPage}
+              placeholderSrc={images.usersPageBlur}
+              alt="users page"
+              className="design__img"
+            />
+            <IncrementedImage
+              src={images.restrictedPage}
+              placeholderSrc={images.restrictedPageBlur}
               alt="restricted page"
               className="design__img"
-            ></img>
+            />
           </div>
         )}
       </div>
