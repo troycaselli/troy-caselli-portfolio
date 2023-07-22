@@ -7,7 +7,7 @@ import {
   faEnvelope,
   faCalendarDays,
 } from "@fortawesome/free-solid-svg-icons";
-import "../styling/footer.css";
+import "../../styling/footer.css";
 
 function Footer() {
   return (

@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
-import "../styling/themeToggle.css";
-import "../styling/header.css";
+import "../../styling/themeToggle.css";
+import "../../styling/header.css";
 
 function ThemeToggle() {
   // theme and icon switch

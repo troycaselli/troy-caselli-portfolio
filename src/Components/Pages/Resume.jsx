@@ -1,9 +1,9 @@
 import React from "react";
-import Divider from "../components/Divider";
+import { Divider } from "../Common";
 
-import "../styling/resume.css";
-import "../styling/divider.css";
-import resumePDF from "../troy-caselli-web-dev-resume.pdf";
+import "../../styling/resume.css";
+import "../../styling/divider.css";
+import resumePDF from "../../troy-caselli-web-dev-resume.pdf";
 
 function Resume() {
   return (
