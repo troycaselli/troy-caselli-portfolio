@@ -1,6 +1,6 @@
 import React from "react";
 
-import IncrementedImage from "./IncrementedImage";
+import PreloadImage from "./PreloadImage";
 import images from "../images/about";
 import bloomtechImg from "../images/logo/bloomtech-logo-circle.webp";
 import "../styling/about.css";
@@ -11,10 +11,10 @@ function About() {
       <div className="featured-wrapper">
         <div className="featured-image-wrapper">
           <div className="featured-portrait-container">
-            <IncrementedImage
+            <PreloadImage
               src={images.portraitImg}
               placeholderSrc={images.portraitBlur}
-              alt="Troy Caselli portrait"
+              alt="portrait of Troy Caselli wearing a suit and tie in front of a stone building"
               className="featured-portrait__image"
             />
           </div>
@@ -27,9 +27,9 @@ function About() {
               rel="noopener noreferrer"
               type="button"
             >
-              <IncrementedImage
+              <PreloadImage
                 src={bloomtechImg}
-                alt="BloomTech logo"
+                alt="Bloom Institute of Technology orange and white logo"
                 className="featured-certification__image"
               />
             </a>
@@ -42,7 +42,7 @@ function About() {
             <h3 className="featured-text__title">Web Developer.</h3>
           </div>
           <div className="featured-text-paragraphs">
-            <p className="featured-text__paragraph">
+            <p className="featured-text__paragraph featured-text__drop-cap">
               The majority of my childhood was marked by the unique privilege of
               being a military kid. This kind of upbringing was extremely
               formative in my understanding of the world and my place in it; I
@@ -69,9 +69,9 @@ function About() {
               result, I spent the next year self-learning programming and
               earning a Full-Stack certification through Bloom Institute of
               Technology. Currently, I am glad to be using my programming skills
-              as a freelancer for ikTech, a company native to Spokane with a
-              distinct focus on software development for nonprofit
-              organizations.
+              as a contract Full-Stack Developer for ikTech, a company native to
+              Spokane with a distinct focus on software development for
+              nonprofit organizations.
             </p>
             <p className="featured-text__paragraph">
               Lastly, I am married to Teri Jo, my beloved bride of three years,
@@ -131,70 +131,70 @@ function About() {
         />
         <label htmlFor="s1" id="slide1" className="slideshow__label">
           <div className="slideshow__image-container">
-            <IncrementedImage
+            <PreloadImage
               src={images.maternityImg}
               placeholderSrc={images.maternityBlur}
-              alt="maternity"
+              alt="Troy and Teri Jo celebrating maternity"
               className="slideshow__image"
             />
           </div>
         </label>
         <label htmlFor="s2" id="slide2" className="slideshow__label">
           <div className="slideshow__image-container">
-            <IncrementedImage
+            <PreloadImage
               src={images.graduationImg}
               placeholderSrc={images.graduationBlur}
-              alt="bloomtech graduation"
+              alt="BloomTech graduation party with family"
               className="slideshow__image"
             />
           </div>
         </label>
         <label htmlFor="s3" id="slide3" className="slideshow__label">
           <div className="slideshow__image-container">
-            <IncrementedImage
+            <PreloadImage
               src={images.playingImg}
               placeholderSrc={images.playingBlur}
-              alt="playing with Tobias"
+              alt="playing with baby Tobias while coding on the floor"
               className="slideshow__image"
             />
           </div>
         </label>
         <label htmlFor="s4" id="slide4" className="slideshow__label">
           <div className="slideshow__image-container">
-            <IncrementedImage
+            <PreloadImage
               src={images.cherriesImg}
               placeholderSrc={images.cherriesBlur}
-              alt="cherry picking"
+              alt="climbing in and picking cherries at Green Bluff"
               className="slideshow__image"
             />
           </div>
         </label>
         <label htmlFor="s5" id="slide5" className="slideshow__label">
           <div className="slideshow__image-container">
-            <IncrementedImage
+            <PreloadImage
               src={images.mazeImg}
               placeholderSrc={images.mazeBlur}
-              alt="corn maze"
+              alt="wandering through a corn maze"
               className="slideshow__image"
             />
           </div>
         </label>
         <label htmlFor="s6" id="slide6" className="slideshow__label">
           <div className="slideshow__image-container">
-            <IncrementedImage
+            <PreloadImage
               src={images.glacierImg}
               placeholderSrc={images.glacierBlur}
-              alt="glacier national park"
+              alt="family gathered before a waterfall at Glacier National Park"
               className="slideshow__image"
             />
           </div>
         </label>
         <label htmlFor="s7" id="slide7" className="slideshow__label">
           <div className="slideshow__image-container">
-            <IncrementedImage
+            <PreloadImage
               src={images.studyingImg}
               placeholderSrc={images.studyingBlur}
-              alt="studying with Tobias"
+              alt="coding at a desk while holding a sleeping Tobias"
               className="slideshow__image"
             />
           </div>

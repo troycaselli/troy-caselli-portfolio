@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import IncrementedImage from "./IncrementedImage";
+import PreloadImage from "./PreloadImage";
 import Divider from "./Divider";
 import Loading from "./Loading.jsx";
 import images from "../images/projects/faithInFive";
@@ -129,55 +129,55 @@ function FaithInFiveProject() {
           <Loading />
         ) : (
           <div className="design-container">
-            <IncrementedImage
+            <PreloadImage
               src={images.welcomePage}
               placeholderSrc={images.welcomePageBlur}
               alt="welcome page"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.loginPage}
               placeholderSrc={images.loginPageBlur}
               alt="login page"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.confirmationEmail}
               placeholderSrc={images.confirmationEmailBlur}
               alt="confirmation email"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.dashboardPage}
               placeholderSrc={images.dashboardPageBlur}
               alt="dashboard page"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.mapViewPage}
               placeholderSrc={images.mapViewPageBlur}
               alt="map view page"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.listViewPage}
               placeholderSrc={images.listViewPageBlur}
               alt="list view page"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.groupsPage}
               placeholderSrc={images.groupsPageBlur}
               alt="groups page"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.usersPage}
               placeholderSrc={images.usersPageBlur}
               alt="users page"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.restrictedPage}
               placeholderSrc={images.restrictedPageBlur}
               alt="restricted page"

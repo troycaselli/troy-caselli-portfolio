@@ -4,7 +4,7 @@ import intakePageCompleted from "./intake-page-completed.png";
 import intakePageIncomplete from "./intake-page-incomplete.png";
 import landingPage from "./landing-page.png";
 import lastPage from "./last-page.png";
-import loginPage from "./last-page.png";
+import loginPage from "./login-page.png";
 import profilePage from "./profile-page.png";
 import welcomePage from "./welcome-page.png";
 import confirmationEmailBlur from "./confirmation-email-blur.jpg";

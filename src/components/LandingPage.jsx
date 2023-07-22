@@ -142,7 +142,7 @@ function LandingPage() {
           <div className="titles-container">
             <text className="title-names">
               {
-                "{ \n\t Full-Stack Engineer && \n\t JavaScript Developer && \n\t React Developer \n};"
+                "const profession = [ \n\t Full-Stack Engineer, \n\t JavaScript Developer, \n\t React Developer \n];"
               }
             </text>
           </div>

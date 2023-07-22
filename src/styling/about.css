@@ -120,6 +120,14 @@
   text-align: left;
   padding: 10px;
 }
+.featured-text__drop-cap::first-letter {
+  font-size: 2.9rem;
+  float: left;
+  line-height: 35px;
+  font-family: Montserrat;
+  color: var(--primary-color);
+  margin: 2px 5px 0 0;
+}
 
 /* About me page slideshow is adapted from https://dev.to/shantanu_jana/3d-image-slider-using-html-css-328b */
 .slideshow-header {

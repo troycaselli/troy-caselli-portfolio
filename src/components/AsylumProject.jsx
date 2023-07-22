@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import IncrementedImage from "./IncrementedImage";
+import PreloadImage from "./PreloadImage";
 import Divider from "./Divider";
 import Loading from "./Loading.jsx";
 import images from "../images/projects/asylumGrantTracker";
@@ -136,49 +136,49 @@ function AsylumProject() {
           <Loading />
         ) : (
           <div className="design-container">
-            <IncrementedImage
+            <PreloadImage
               src={images.landingPage}
               placeholderSrc={images.landingPageBlur}
               alt="landing page"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.heatMap}
               placeholderSrc={images.heatMapBlur}
               alt="heat map"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.citizenshipMap}
               placeholderSrc={images.citizenshipMapBlur}
               alt="citizenship map"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.timeGraph}
               placeholderSrc={images.timeGraphBlur}
               alt="time graph"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.dataChart}
               placeholderSrc={images.dataChartBlur}
               alt="data chart"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.signupPage}
               placeholderSrc={images.signupPageBlur}
               alt="signup page"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.loginPage}
               placeholderSrc={images.loginPageBlur}
               alt="login page"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.profilePage}
               placeholderSrc={images.profilePageBlur}
               alt="profile page"
