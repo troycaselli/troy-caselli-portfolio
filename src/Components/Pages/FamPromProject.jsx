@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-import PreloadImage from "./PreloadImage";
-import Divider from "./Divider";
-import Loading from "./Loading.jsx";
-import images from "../images/projects/famPromIntake";
-import "../styling/projectDetails.css";
+import { Divider, Loading, PreloadImage } from "../Common";
+import images from "../../images/projects/famPromIntake";
+import "../../styling/projectDetails.css";
 
 function FamPromProject() {
   //toggle loading component

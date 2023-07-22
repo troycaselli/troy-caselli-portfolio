@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-import PreloadImage from "./PreloadImage";
-import Divider from "./Divider";
-import Loading from "./Loading.jsx";
-import images from "../images/projects/faithInFive";
-import "../styling/projectDetails.css";
+import { Divider, Loading, PreloadImage } from "../Common";
+import images from "../../images/projects/asylumGrantTracker";
+import "../../styling/projectDetails.css";
 
-function FaithInFiveProject() {
+function AsylumProject() {
   //toggle loading component
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -16,19 +14,19 @@ function FaithInFiveProject() {
   return (
     <section className="project-wrapper">
       <div className="project-section">
-        <h1 className="project__title">FAITH IN FIVE INITIATIVE</h1>
-        <h3 className="project__role">Full-Stack Developer</h3>
+        <h1 className="project__title">ASYLUM OFFICE GRANT RATE TRACKER</h1>
+        <h3 className="project__role">Front-End Developer, UI/UX Developer</h3>
         <p className="project__about">
-          This web app helps Faith Bible Church serve its neighbors better
-          through interactive addresses display and visit log feature
+          This site provides public information and data for asylum grant rates
+          in the USA and private features for authorized users{" "}
         </p>
         <a
           className="project__link"
-          href="https://faith-in-five.vercel.app/"
+          href="https://github.com/troycaselli/asylum-rg-fe-starter"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Website
+          Source Code
         </a>
         {/* <p className='project__contributions'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ab ratione error. Commodi placeat, ex eius harum atque eum porro dolorem cumque eligendi quisquam modi. Possimus doloremque fugiat reiciendis sapiente!
@@ -42,14 +40,14 @@ function FaithInFiveProject() {
         <div className="users-container">
           <div className="project__users-circle">
             <p className="project__circle-text">
-              Enables Faith Bible Church Members <b>(Frontliners)</b> to track
-              their hospitality and service visits to neighbors more effectively
+              Allows <b>public guests</b> to search asylum decision data by
+              date, citizenship, and region
             </p>
           </div>
           <div className="project__users-circle">
             <p className="project__circle-text">
-              Simplifies the tasks of <b>administrators</b> who manage users,
-              groups, and addresses
+              In addition to priveleges of public guests, <b>members</b> have
+              exclusive access to a personal profile page
             </p>
           </div>
         </div>
@@ -60,14 +58,15 @@ function FaithInFiveProject() {
       <div className="project-section">
         <h2 className="project__subtitle">User Flow</h2>
         <div className="project-card">
-          <h3 className="project-card__user-title">Frontliner Flow</h3>
+          <h3 className="project-card__user-title">Public Guest Flow</h3>
           <div className="circles-container">
             <div className="project__circle">
               <p className="project__circle-bold">
                 <b>I</b>
               </p>
               <p className="project__circle-text">
-                Login to the FI5 App with a valid, whitelisted email address
+                Read featured content and download asylum data on the landing
+                page
               </p>
             </div>
             <div className="project__circle">
@@ -75,8 +74,8 @@ function FaithInFiveProject() {
                 <b>II</b>
               </p>
               <p className="project__circle-text">
-                Check the addresses (including location, status, and previous
-                visits log) assigned for your group to visit
+                Search and filter asylum office grant data by date, citizenship,
+                and region via an interactive map and chart
               </p>
             </div>
             <div className="project__circle">
@@ -84,22 +83,22 @@ function FaithInFiveProject() {
                 <b>III</b>
               </p>
               <p className="project__circle-text">
-                After meeting with a neighbor, submit a visit log with
-                information such as name, interest in church, prayer requests,
-                and needs
+                Redirect to Human Rights First for further information including
+                news and involvement opportunities
               </p>
             </div>
           </div>
         </div>
         <div className="project-card">
-          <h3 className="project-card__user-title">Administrator Flow</h3>
+          <h3 className="project-card__user-title">Member Flow</h3>
           <div className="circles-container">
             <div className="project__circle">
               <p className="project__circle-bold">
                 <b>I</b>
               </p>
               <p className="project__circle-text">
-                Login to the FI5 App with a valid, admin email address
+                Sign up or Login to the website with valid credentials via the
+                portal
               </p>
             </div>
             <div className="project__circle">
@@ -107,9 +106,15 @@ function FaithInFiveProject() {
                 <b>II</b>
               </p>
               <p className="project__circle-text">
-                Add, edit, or remove users, groups, and addresses in order to
-                ensure the best service for everyone who lives near the church
+                View private portfolio page which displays your image, name,
+                email, and raw data
               </p>
+            </div>
+            <div className="project__circle">
+              <p className="project__circle-bold">
+                <b>III</b>
+              </p>
+              <p className="project__circle-text">Logout of account</p>
             </div>
           </div>
         </div>
@@ -130,9 +135,39 @@ function FaithInFiveProject() {
         ) : (
           <div className="design-container">
             <PreloadImage
-              src={images.welcomePage}
-              placeholderSrc={images.welcomePageBlur}
-              alt="welcome page"
+              src={images.landingPage}
+              placeholderSrc={images.landingPageBlur}
+              alt="landing page"
+              className="design__img"
+            />
+            <PreloadImage
+              src={images.heatMap}
+              placeholderSrc={images.heatMapBlur}
+              alt="heat map"
+              className="design__img"
+            />
+            <PreloadImage
+              src={images.citizenshipMap}
+              placeholderSrc={images.citizenshipMapBlur}
+              alt="citizenship map"
+              className="design__img"
+            />
+            <PreloadImage
+              src={images.timeGraph}
+              placeholderSrc={images.timeGraphBlur}
+              alt="time graph"
+              className="design__img"
+            />
+            <PreloadImage
+              src={images.dataChart}
+              placeholderSrc={images.dataChartBlur}
+              alt="data chart"
+              className="design__img"
+            />
+            <PreloadImage
+              src={images.signupPage}
+              placeholderSrc={images.signupPageBlur}
+              alt="signup page"
               className="design__img"
             />
             <PreloadImage
@@ -142,45 +177,9 @@ function FaithInFiveProject() {
               className="design__img"
             />
             <PreloadImage
-              src={images.confirmationEmail}
-              placeholderSrc={images.confirmationEmailBlur}
-              alt="confirmation email"
-              className="design__img"
-            />
-            <PreloadImage
-              src={images.dashboardPage}
-              placeholderSrc={images.dashboardPageBlur}
-              alt="dashboard page"
-              className="design__img"
-            />
-            <PreloadImage
-              src={images.mapViewPage}
-              placeholderSrc={images.mapViewPageBlur}
-              alt="map view page"
-              className="design__img"
-            />
-            <PreloadImage
-              src={images.listViewPage}
-              placeholderSrc={images.listViewPageBlur}
-              alt="list view page"
-              className="design__img"
-            />
-            <PreloadImage
-              src={images.groupsPage}
-              placeholderSrc={images.groupsPageBlur}
-              alt="groups page"
-              className="design__img"
-            />
-            <PreloadImage
-              src={images.usersPage}
-              placeholderSrc={images.usersPageBlur}
-              alt="users page"
-              className="design__img"
-            />
-            <PreloadImage
-              src={images.restrictedPage}
-              placeholderSrc={images.restrictedPageBlur}
-              alt="restricted page"
+              src={images.profilePage}
+              placeholderSrc={images.profilePageBlur}
+              alt="profile page"
               className="design__img"
             />
           </div>
@@ -190,4 +189,4 @@ function FaithInFiveProject() {
   );
 }
 
-export default FaithInFiveProject;
+export default AsylumProject;

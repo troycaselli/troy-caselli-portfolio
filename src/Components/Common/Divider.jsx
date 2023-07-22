@@ -1,5 +1,5 @@
 import React from "react";
-import "../styling/divider.css";
+import "../../styling/divider.css";
 
 function Divider() {
   return (

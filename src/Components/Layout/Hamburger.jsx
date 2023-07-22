@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import ThemeToggle from "../components/ThemeToggle";
-import "../styling/hamburger.css";
+import { ThemeToggle } from "../Common";
+import "../../styling/hamburger.css";
 
 function Hamburger() {
   const [checkedValue, setCheckedValue] = useState(false);

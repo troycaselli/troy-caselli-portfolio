@@ -2,16 +2,16 @@ import React, { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import "./styling/app.css";
-import Header from "./components/Header";
-import Hamburger from "./components/Hamburger";
-import ThemeToggle from "./components/ThemeToggle";
-import Footer from "./components/Footer";
-import LandingPage from "./components/LandingPage";
-import About from "./components/About";
-import Resume from "./components/Resume";
-import FaithInFiveProject from "./components/FaithInFiveProject";
-import FamPromProject from "./components/FamPromProject";
-import AsylumProject from "./components/AsylumProject";
+import { Header } from "./Components";
+import { Hamburger } from "./Components";
+import { ThemeToggle } from "./Components";
+import { Footer } from "./Components";
+import { LandingPage } from "./Components";
+import { About } from "./Components";
+import { Resume } from "./Components";
+import { FaithInFiveProject } from "./Components";
+import { FamPromProject } from "./Components";
+import { AsylumProject } from "./Components";
 
 function App() {
   // Logic for showing navbar for desktop or hamburger for tablet and phones

@@ -1,9 +1,9 @@
 import React from "react";
 
-import PreloadImage from "./PreloadImage";
-import images from "../images/about";
-import bloomtechImg from "../images/logo/bloomtech-logo-circle.webp";
-import "../styling/about.css";
+import { PreloadImage } from "../Common";
+import images from "../../images/about";
+import bloomtechImg from "../../images/logo/bloomtech-logo-circle.webp";
+import "../../styling/about.css";
 
 function About() {
   return (
