@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const IncrementedImage = (props) => {
+const PreloadImage = (props) => {
   const { placeholderSrc, src, alt, className } = props;
   const [imgSrc, setImgSrc] = useState(placeholderSrc || src);
   const [imgClass, setImgClass] = useState(className + " blur");
@@ -17,4 +17,4 @@ const IncrementedImage = (props) => {
 
   return <img src={imgSrc} alt={alt || ""} className={imgClass} />;
 };
-export default IncrementedImage;
+export default PreloadImage;

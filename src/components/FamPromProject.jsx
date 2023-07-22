@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import IncrementedImage from "./IncrementedImage";
+import PreloadImage from "./PreloadImage";
 import Divider from "./Divider";
 import Loading from "./Loading.jsx";
 import images from "../images/projects/famPromIntake";
@@ -95,7 +95,7 @@ function FamPromProject() {
           the current app and include the information in the sixteen-page paper
           intake form (excerpt below).
         </p>
-        <IncrementedImage
+        <PreloadImage
           src={images.intakeForm}
           placeholderSrc={images.intakeFormBlur}
           alt="intake form sample"
@@ -111,50 +111,50 @@ function FamPromProject() {
           <Loading />
         ) : (
           <div className="design-container">
-            <IncrementedImage
+            <PreloadImage
               src={images.welcomePage}
               placeholderSrc={images.welcomePageBlur}
               alt="welcome page"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.loginPage}
               placeholderSrc={images.loginPageBlur}
               alt="login page"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.confirmationEmail}
               placeholderSrc={images.confirmationEmailBlur}
               alt="confirmation email"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.landingPage}
               placeholderSrc={images.landingPageBlur}
               alt="landing page"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.profilePage}
               placeholderSrc={images.profilePageBlur}
               alt="profile page"
               className="design__img"
             />
-            <IncrementedImage
+            <PreloadImage
               src={images.lastPage}
               placeholderSrc={images.lastPageBlur}
               alt="last page"
               className="design__img"
             />
             <div className="design-container__full-images">
-              <IncrementedImage
+              <PreloadImage
                 src={images.intakePageIncomplete}
                 placeholderSrc={images.intakePageIncompleteBlur}
                 alt="intake page: incomplete"
                 className="design__img"
               />
-              <IncrementedImage
+              <PreloadImage
                 src={images.intakePageCompleted}
                 placeholderSrc={images.intakePageCompletedBlur}
                 alt="intake page: completed"

@@ -56,7 +56,11 @@ function Header() {
         </div>
       </div>
       <div className="logo-container">
-        <img src={image} alt="Logo" className="logo-image" />
+        <img
+          src={image}
+          alt="sword and trowel x-shaped cross logo"
+          className="logo-image"
+        />
       </div>
     </div>
   );
