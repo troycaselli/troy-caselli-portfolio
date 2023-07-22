@@ -2,16 +2,18 @@ import React, { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import "./styling/app.css";
-import { Header } from "./Components";
-import { Hamburger } from "./Components";
-import { ThemeToggle } from "./Components";
-import { Footer } from "./Components";
-import { LandingPage } from "./Components";
-import { About } from "./Components";
-import { Resume } from "./Components";
-import { FaithInFiveProject } from "./Components";
-import { FamPromProject } from "./Components";
-import { AsylumProject } from "./Components";
+import {
+  Header,
+  Hamburger,
+  ThemeToggle,
+  Footer,
+  Landing,
+  About,
+  Resume,
+  FaithInFiveProject,
+  FamPromProject,
+  AsylumProject,
+} from "./Components";
 
 function App() {
   // Logic for showing navbar for desktop or hamburger for tablet and phones
@@ -52,7 +54,7 @@ function App() {
       {windowWidth > 900 ? <ThemeToggle /> : <></>}
 
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<Landing />} />
         <Route path="about" element={<About />} />
         <Route path="resume" element={<Resume />} />
         <Route path="faith-in-five" element={<FaithInFiveProject />} />

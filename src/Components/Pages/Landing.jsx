@@ -1,25 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import cImage from "../../images/icons/c.svg";
-import css3Image from "../../images/icons/css3.svg";
-import cypressImage from "../../images/icons/cypress.svg";
-import expressImage from "../../images/icons/express.svg";
-import githubImage from "../../images/icons/github.svg";
-import gitlabImage from "../../images/icons/gitlab.svg";
-import html5Image from "../../images/icons/html5.svg";
-import javaScriptImage from "../../images/icons/javascript.svg";
-import lessImage from "../../images/icons/less.svg";
-import nodeImage from "../../images/icons/nodejs.svg";
-import reactImage from "../../images/icons/react.svg";
-import reduxImage from "../../images/icons/redux.svg";
-import slackImage from "../../images/icons/slack.svg";
-import sqlite3Image from "../../images/icons/sqlite3.svg";
-import typescriptImage from "../../images/icons/typescript.svg";
-import vscodeImage from "../../images/icons/vscode.svg";
-import "../../styling/landingPage.css";
+import symbols from "../../images/symbols";
+import "../../styling/landing.css";
 
-function LandingPage() {
+function Landing() {
   const arrowUp = "\u{25B2}";
   const arrowDown = "\u{25BC}";
 
@@ -77,64 +62,80 @@ function LandingPage() {
           </svg>
         </div>
         <div className="tools-wrapper">
-          <img className="tool-image tool-1" src={cImage} alt="c"></img>
-          <img className="tool-image tool-2" src={css3Image} alt="css3"></img>
+          <img className="tool-image tool-1" src={symbols.cImage} alt="c"></img>
+          <img
+            className="tool-image tool-2"
+            src={symbols.css3Image}
+            alt="css3"
+          ></img>
           <img
             className="tool-image tool-3"
-            src={cypressImage}
+            src={symbols.cypressImage}
             alt="cypress"
           ></img>
           <img
             className="tool-image tool-4"
-            src={expressImage}
+            src={symbols.expressImage}
             alt="express"
           ></img>
           <img
             className="tool-image tool-5"
-            src={githubImage}
+            src={symbols.githubImage}
             alt="github"
           ></img>
           <img
             className="tool-image tool-6"
-            src={gitlabImage}
+            src={symbols.gitlabImage}
             alt="gitlab"
           ></img>
-          <img className="tool-image tool-7" src={html5Image} alt="html5"></img>
+          <img
+            className="tool-image tool-7"
+            src={symbols.html5Image}
+            alt="html5"
+          ></img>
           <img
             className="tool-image tool-8"
-            src={javaScriptImage}
+            src={symbols.javaScriptImage}
             alt="javascript"
           ></img>
-          <img className="tool-image tool-9" src={lessImage} alt="less"></img>
-          <img className="tool-image tool-10" src={nodeImage} alt="node"></img>
+          <img
+            className="tool-image tool-9"
+            src={symbols.lessImage}
+            alt="less"
+          ></img>
+          <img
+            className="tool-image tool-10"
+            src={symbols.nodeImage}
+            alt="node"
+          ></img>
           <img
             className="tool-image tool-11"
-            src={reactImage}
+            src={symbols.reactImage}
             alt="react"
           ></img>
           <img
             className="tool-image tool-12"
-            src={reduxImage}
+            src={symbols.reduxImage}
             alt="redux"
           ></img>
           <img
             className="tool-image tool-13"
-            src={slackImage}
+            src={symbols.slackImage}
             alt="slack"
           ></img>
           <img
             className="tool-image tool-14"
-            src={sqlite3Image}
+            src={symbols.sqlite3Image}
             alt="sqlite3"
           ></img>
           <img
             className="tool-image tool-15"
-            src={typescriptImage}
+            src={symbols.typescriptImage}
             alt="typescript"
           ></img>
           <img
             className="tool-image tool-16"
-            src={vscodeImage}
+            src={symbols.vscodeImage}
             alt="vscode"
           ></img>
         </div>
@@ -354,4 +355,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default Landing;

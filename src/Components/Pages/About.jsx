@@ -2,7 +2,7 @@ import React from "react";
 
 import { PreloadImage } from "../Common";
 import images from "../../images/about";
-import bloomtechImg from "../../images/logo/bloomtech-logo-circle.webp";
+import bloomtechImg from "../../images/logos/bloomtech-logo.webp";
 import "../../styling/about.css";
 
 function About() {
