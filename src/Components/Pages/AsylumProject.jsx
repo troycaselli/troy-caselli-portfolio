@@ -135,8 +135,8 @@ function AsylumProject() {
         ) : (
           <div className="design-container">
             <PreloadImage
-              src={images.landingPage}
-              placeholderSrc={images.landingPageBlur}
+              src={images.landing}
+              placeholderSrc={images.landingBlur}
               alt="landing page"
               className="design__img"
             />
