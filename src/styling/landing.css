@@ -16,7 +16,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 12% 0 0 0;
+  padding: 12% 0;
+  margin-top: 0;
+  background: var(--primary-color);
+  width: 100%;
 }
 .svg-wrapper {
   width: 600px;
@@ -42,7 +45,7 @@ body {
   font-family: "Aboreto", "Lato", sans-serif;
   font-size: 4rem;
   letter-spacing: 8px;
-  fill: var(--text-color);
+  fill: var(--title-color);
   position: relative;
   font-weight: bold;
 }
@@ -304,7 +307,7 @@ body {
   font-size: 1.8rem;
   letter-spacing: 4px;
   line-height: 35px;
-  color: var(--text-color);
+  color: var(--title-color);
   font-weight: 700;
 }
 
@@ -475,7 +478,7 @@ body {
 
 @media (max-width: 900px) {
   .intro-container {
-    margin-top: 13%;
+    padding: 20% 0;
   }
   .svg-wrapper {
     width: 450px;
@@ -828,9 +831,6 @@ body {
 }
 
 @media (max-width: 650px) {
-  .intro-container {
-    margin-top: 15%;
-  }
   .svg-wrapper {
     width: 300px;
   }
@@ -1133,9 +1133,6 @@ body {
 }
 
 @media (max-width: 450px) {
-  .intro-container {
-    margin-top: 22%;
-  }
   .svg-wrapper {
     width: 200px;
   }
