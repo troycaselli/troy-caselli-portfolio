@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
+import { ThemeToggle } from "../Common";
 import image from "../../images/logos/sword-spade-large.webp";
 import "../../styling/header.css";
 
@@ -57,6 +58,9 @@ function Header() {
         >
           Résumé
         </Link>
+        <div className="header-theme-container">
+          <ThemeToggle />
+        </div>
       </div>
     </div>
   );
