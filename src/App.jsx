@@ -5,7 +5,6 @@ import "./styling/app.css";
 import {
   Header,
   Hamburger,
-  ThemeToggle,
   Footer,
   Landing,
   About,
@@ -51,7 +50,6 @@ function App() {
   return (
     <div className="app-wrapper">
       {windowWidth > 900 ? <Header /> : <Hamburger />}
-      {windowWidth > 900 ? <ThemeToggle /> : <></>}
 
       <Routes>
         <Route path="/" element={<Landing />} />
