@@ -12,6 +12,7 @@ import {
   FaithInFiveProject,
   FamPromProject,
   AsylumProject,
+  ParticlesBackground,
 } from "./Components";
 
 function App() {
@@ -49,6 +50,8 @@ function App() {
 
   return (
     <div className="app-wrapper">
+      <ParticlesBackground />
+
       {windowWidth > 900 ? <Header /> : <Hamburger />}
 
       <Routes>
