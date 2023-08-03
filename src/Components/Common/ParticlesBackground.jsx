@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import { loadSlim } from "tsparticles-slim";
 
 function ParticlesBackground(props) {
   const particlesInit = useCallback(async (engine) => {
@@ -8,23 +8,13 @@ function ParticlesBackground(props) {
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
     //await loadFull(engine);
-    await loadFull(engine);
+    await loadSlim(engine);
   }, []);
 
   return (
     <Particles
       id="tsparticles"
       init={particlesInit}
-      // style={{
-      //   position: "absolute",
-      //   top: "0",
-      //   left: "0",
-      //   height: "100%",
-      //   width: "100%",
-      //   margin: "0",
-      //   padding: "0",
-      //   zIndex: "0",
-      // }}
       options={{
         particles: {
           number: {
@@ -81,10 +71,6 @@ function ParticlesBackground(props) {
           },
         },
         retina_detect: true,
-        fullScreen: {
-          enable: true,
-          zIndex: 0,
-        },
       }}
     />
   );
