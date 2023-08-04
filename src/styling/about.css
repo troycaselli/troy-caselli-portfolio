@@ -92,6 +92,12 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 5%;
+  background-color: rgba(
+    var(--background-color-red),
+    var(--background-color-green),
+    var(--background-color-blue),
+    0.7
+  );
 }
 .featured-text__title {
   font-size: 1.3rem;
