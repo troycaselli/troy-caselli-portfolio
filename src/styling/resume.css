@@ -18,15 +18,25 @@
   font-weight: bold;
   margin-bottom: 30px;
   border: 1px solid var(--secondary-color);
+  background-color: var(--background-color);
   border-radius: 2px;
   padding: 15px;
   width: fit-content;
   text-align: center;
   line-height: 2.2rem;
 }
+.skills-texts {
+  background-color: rgba(
+    var(--background-color-red),
+    var(--background-color-green),
+    var(--background-color-blue),
+    0.7
+  );
+}
 .skills-text {
   font-size: 1.1rem;
   margin: 15px 0;
+  opacity: 1;
 }
 .skills-subtitle {
   font-size: 1.3rem;
@@ -34,6 +44,12 @@
 }
 .resume-container {
   margin-bottom: 30px;
+  background-color: rgba(
+    var(--background-color-red),
+    var(--background-color-green),
+    var(--background-color-blue),
+    0.7
+  );
 }
 .resume__specs {
   display: flex;
@@ -84,6 +100,7 @@
   padding: 10px;
   color: var(--tertiary-color);
   border: 1px solid var(--secondary-color);
+  background: var(--background-color);
   -webkit-tap-highlight-color: transparent;
   border-radius: 2px;
   transition: 300ms;

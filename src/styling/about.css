@@ -101,6 +101,7 @@
 .featured-text-paragraphs {
   font-size: 1.1rem;
   border: 2px solid var(--secondary-color);
+  background: var(--background-color);
   border-radius: 3px;
   height: 350px;
   overflow-y: auto;
@@ -136,6 +137,7 @@
   color: var(--text-color);
   margin-top: 15%;
   border: 2px solid var(--secondary-color);
+  background: var(--background-color);
   border-radius: 2px;
   padding: 10px 30px;
   width: fit-content;

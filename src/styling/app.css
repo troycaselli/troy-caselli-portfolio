@@ -3,6 +3,9 @@
   --secondary-color: rgb(233, 211, 48);
   --tertiary-color: rgb(202, 71, 48);
   --background-color: rgb(240, 246, 247);
+  --background-color-red: 240;
+  --background-color-green: 246;
+  --background-color-blue: 247;
   --title-color: rgb(240, 246, 247);
   --text-color: rgb(38, 73, 92);
 }
@@ -12,6 +15,9 @@
   --secondary-color: rgb(211, 191, 44);
   --tertiary-color: rgb(175, 61, 41);
   --background-color: rgb(40, 44, 45);
+  --background-color-red: 40;
+  --background-color-green: 44;
+  --background-color-blue: 45;
   --title-color: rgb(221, 221, 226);
   --text-color: rgb(221, 221, 226);
 }
