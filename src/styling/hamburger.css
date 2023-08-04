@@ -8,7 +8,7 @@
     position: fixed;
     right: 20px;
     bottom: 20px;
-    z-index: 2;
+    z-index: 3;
     width: 68px;
     height: 68px;
     background: var(--primary-color);
@@ -115,7 +115,7 @@
     + .hamburger-theme-toggle
     + .hamburger-links,
   .hamburger-input:checked + .hamburger-menu + .hamburger-theme-toggle {
-    z-index: 2;
+    z-index: 3;
     opacity: 1;
   }
 

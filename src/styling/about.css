@@ -11,6 +11,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  z-index: 2;
 }
 .featured-image-wrapper {
   display: flex;
@@ -100,6 +101,7 @@
 .featured-text-paragraphs {
   font-size: 1.1rem;
   border: 2px solid var(--secondary-color);
+  background: var(--background-color);
   border-radius: 3px;
   height: 350px;
   overflow-y: auto;
@@ -135,9 +137,11 @@
   color: var(--text-color);
   margin-top: 15%;
   border: 2px solid var(--secondary-color);
+  background: var(--background-color);
   border-radius: 2px;
   padding: 10px 30px;
   width: fit-content;
+  z-index: 2;
 }
 #slideshow {
   position: relative;
@@ -147,6 +151,7 @@
   font-family: "Helvetica Neue", sans-serif;
   perspective: 1400px;
   transform-style: preserve-3d;
+  z-index: 2;
 }
 .slideshow__button {
   display: none;
