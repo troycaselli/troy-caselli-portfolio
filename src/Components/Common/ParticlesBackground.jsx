@@ -1,4 +1,5 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useState, useEffect } from "react";
+import { connect } from "react-redux";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 
@@ -6,6 +7,20 @@ function ParticlesBackground(props) {
   const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine);
   }, []);
+
+  const lightModeParticles = "rgb(38, 73, 92)";
+  const darkModeParticles = "rgb(5, 13, 17)";
+  const [particlesColor, setParticlesColor] = useState(lightModeParticles);
+
+  const value =
+    props.theme === "light" ? lightModeParticles : darkModeParticles;
+  useEffect(() => {
+    if (props.theme === "dark") {
+      setParticlesColor(darkModeParticles);
+    } else {
+      setParticlesColor(lightModeParticles);
+    }
+  }, [props.theme]);
 
   return (
     <Particles
@@ -23,9 +38,7 @@ function ParticlesBackground(props) {
           shape: {
             type: "circle",
           },
-          color: {
-            value: "rgb(38, 73, 92)",
-          },
+          color: particlesColor,
           opacity: {
             value: 0.5,
             random: true,
@@ -40,7 +53,7 @@ function ParticlesBackground(props) {
           line_linked: {
             enable: true,
             distance: 150,
-            color: "rgb(38, 73, 92)",
+            color: particlesColor,
             opacity: 0.2,
             width: 1,
           },
@@ -72,4 +85,10 @@ function ParticlesBackground(props) {
   );
 }
 
-export default ParticlesBackground;
+const mapStateToProps = (state) => {
+  return {
+    theme: state.theme,
+  };
+};
+
+export default connect(mapStateToProps, {})(ParticlesBackground);
