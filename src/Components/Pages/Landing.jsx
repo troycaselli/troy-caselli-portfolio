@@ -60,7 +60,7 @@ function Landing() {
           ></img>
           <img
             className="tool-image tool-4"
-            src={symbols.expressImage}
+            src={symbols.reduxImage}
             alt="express"
           ></img>
           <img
@@ -100,7 +100,7 @@ function Landing() {
           ></img>
           <img
             className="tool-image tool-12"
-            src={symbols.reduxImage}
+            src={symbols.expressImage}
             alt="redux"
           ></img>
           <img
