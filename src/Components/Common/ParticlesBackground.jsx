@@ -12,8 +12,6 @@ function ParticlesBackground(props) {
   const darkModeParticles = "rgb(5, 13, 17)";
   const [particlesColor, setParticlesColor] = useState(lightModeParticles);
 
-  const value =
-    props.theme === "light" ? lightModeParticles : darkModeParticles;
   useEffect(() => {
     if (props.theme === "dark") {
       setParticlesColor(darkModeParticles);

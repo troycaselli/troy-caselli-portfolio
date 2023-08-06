@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import symbols from "../../images/symbols";
@@ -12,27 +12,6 @@ function Landing() {
   // U+25BF (▿)
   // U+25B2 (▲)
   // U+25BC (▼)
-
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [textPosition, setTextPosition] = useState({ x: 43, y: 97 });
-
-  // repositions relative svg text on window's inner-width change
-  useEffect(() => {
-    let value = window.innerWidth;
-    if (value > 900) {
-      setTextPosition({ x: 43, y: 97 });
-    } else if (value <= 900 && value > 650) {
-      setTextPosition({ x: 47, y: 71 });
-    } else if (value <= 650 && value > 450) {
-      setTextPosition({ x: 25, y: 48 });
-    } else {
-      setTextPosition({ x: 14, y: 32 });
-    }
-  }, [windowWidth]);
-
-  window.onresize = () => {
-    setWindowWidth(window.innerWidth);
-  };
 
   const toggleArrow = (evt) => {
     const elValue = evt.target.getAttribute("value");
@@ -56,7 +35,13 @@ function Landing() {
         <div className="svg-wrapper">
           <svg className="svg-container" xmlns="http://www.w3.org/2000/svg">
             <rect className="shape" />
-            <text x={textPosition.x} y={textPosition.y} className="text">
+            <text
+              x="50%"
+              y="50%"
+              dominantBaseline="middle"
+              textAnchor="middle"
+              className="text"
+            >
               TROY CASELLI
             </text>
           </svg>

@@ -32,6 +32,8 @@ body {
 .shape {
   height: 150px;
   width: 600px;
+  transform: translateX(0);
+  transform: translateY(0);
   stroke-dasharray: 200 1300;
   stroke-dashoffset: -950;
   stroke-width: 8px;
