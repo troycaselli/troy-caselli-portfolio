@@ -37,7 +37,6 @@
   color: var(--tertiary-color);
   font-weight: 900;
   font-size: 20px;
-  cursor: pointer;
 }
 
 .moon::before {
@@ -47,6 +46,13 @@
   font-weight: 900;
   font-size: 20px;
   padding: 0 2.5px;
+}
+
+.sun:hover {
+  cursor: pointer;
+}
+
+.moon:hover {
   cursor: pointer;
 }
 

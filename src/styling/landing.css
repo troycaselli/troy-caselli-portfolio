@@ -1,10 +1,3 @@
-html,
-body {
-  background: var(--primary-color);
-  text-align: center;
-  height: 100%;
-}
-
 /* Introduction Section */
 
 .landing-wrapper {
@@ -313,15 +306,41 @@ body {
   font-weight: 700;
 }
 
+/* Featured Section */
+.featured-wrapper {
+  position: relative;
+  padding-bottom: 62.5%;
+  height: 0;
+  width: 100%;
+}
+.featured-header {
+  font-size: 3.5rem;
+  color: var(--text-color);
+  margin: 15% 0 5% 0;
+  border: 2px solid var(--secondary-color);
+  background: var(--background-color);
+  border-radius: 2px;
+  padding: 10px 30px;
+  width: fit-content;
+  z-index: 2;
+}
+.featured-video {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  border-radius: 10px;
+}
+
 /* Projects Section */
 
 #projects {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 150px;
 }
 .projects-header {
   font-size: 3.5rem;
   color: var(--text-color);
-  margin-top: 5%;
   border: 2px solid var(--secondary-color);
   background: var(--background-color);
   border-radius: 2px;
@@ -758,14 +777,30 @@ body {
     line-height: 30px;
   }
 
+  /* Featured Section (651px-900px) */
+
+  .featured-header {
+    font-size: 3rem;
+    margin: 10% 0 6% 0;
+  }
+  .featured-video {
+    left: 5%;
+    width: 90%;
+    height: 90%;
+  }
+
   /* Projects Section (651px-900px) */
 
+  #projects {
+    scroll-margin-top: 100px;
+  }
   .projects-header {
     font-size: 3rem;
-    margin-top: 30%;
+    margin-top: 10%;
   }
   .projects-wrapper {
     width: 90%;
+    margin-top: 0;
   }
   .projects-divider {
     width: 100px;
@@ -1110,11 +1145,21 @@ body {
     font-weight: 500;
   }
 
-  /* Projects Section 451px-650px*/
+  /* Featured Section (451px-650px) */
 
+  .featured-header {
+    font-size: 2.5rem;
+    margin: 18% 0 6% 0;
+  }
+
+  /* Projects Section (451px-650px) */
+
+  #projects {
+    scroll-margin-top: 75px;
+  }
   .projects-header {
     font-size: 2.5rem;
-    margin-top: 35%;
+    margin-top: 18%;
   }
   .projects-divider {
     width: 80px;
@@ -1413,14 +1458,28 @@ body {
     line-height: 15px;
   }
 
-  /* Projects Section 0px-450px*/
+  /* Featured Section (0px-450px) */
+
+  .featured-header {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin: 25% 0 10% 0;
+    border: 2px solid var(--secondary-color);
+    background: var(--background-color);
+    border-radius: 2px;
+    padding: 10px 30px;
+    width: fit-content;
+    z-index: 2;
+  }
+
+  /* Projects Section (0px-450px) */
 
   #projects {
     scroll-margin-top: 60px;
   }
   .projects-header {
     font-size: 2rem;
-    margin-top: 40%;
+    margin-top: 25%;
   }
   .project-container-left {
     flex-direction: column-reverse;
