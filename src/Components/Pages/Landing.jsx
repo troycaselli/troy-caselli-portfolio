@@ -135,10 +135,10 @@ function Landing() {
         </div>
       </section>
 
-      <h2 className="featured-header">Featured</h2>
-      <section className="featured-wrapper">
+      <h2 className="featured-landing-header">Featured</h2>
+      <section className="featured-landing-wrapper">
         <iframe
-          className="featured-video"
+          className="featured-landing-video"
           src="https://www.loom.com/embed/eec004b30a404ae68c82b1609f889ef4?sid=5615448c-a2dd-464b-9c51-3bc917fb1aaa"
           title="Asylum Project Contribution"
         ></iframe>
