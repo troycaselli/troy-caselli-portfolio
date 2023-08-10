@@ -30,10 +30,17 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
 body {
+  text-align: center;
+  height: 100%;
+  background: var(--primary-color);
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 body::-webkit-scrollbar {
@@ -41,7 +48,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: transparent;
+  background: var(--primary-color);
 }
 
 body::-webkit-scrollbar-thumb {
