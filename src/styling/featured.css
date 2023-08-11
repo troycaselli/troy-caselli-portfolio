@@ -1,0 +1,24 @@
+.featured-landing-wrapper {
+  position: relative;
+  padding-bottom: 62.5%;
+  height: 0;
+  width: 100%;
+  z-index: 2;
+}
+.featured-landing-video {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .featured-landing-video {
+    left: 5%;
+    width: 90%;
+    height: 90%;
+  }
+}

@@ -307,12 +307,7 @@
 }
 
 /* Featured Section */
-.featured-landing-wrapper {
-  position: relative;
-  padding-bottom: 62.5%;
-  height: 0;
-  width: 100%;
-}
+
 .featured-landing-header {
   font-size: 3.5rem;
   color: var(--text-color);
@@ -323,14 +318,6 @@
   padding: 10px 30px;
   width: fit-content;
   z-index: 2;
-}
-.featured-landing-video {
-  position: absolute;
-  top: 0;
-  left: 15%;
-  width: 70%;
-  height: 70%;
-  border-radius: 10px;
 }
 
 /* Projects Section */
@@ -782,11 +769,6 @@
   .featured-landing-header {
     font-size: 3rem;
     margin: 10% 0 6% 0;
-  }
-  .featured-landing-video {
-    left: 5%;
-    width: 90%;
-    height: 90%;
   }
 
   /* Projects Section (651px-900px) */
@@ -1462,14 +1444,7 @@
 
   .featured-landing-header {
     font-size: 2rem;
-    color: var(--text-color);
     margin: 25% 0 10% 0;
-    border: 2px solid var(--secondary-color);
-    background: var(--background-color);
-    border-radius: 2px;
-    padding: 10px 30px;
-    width: fit-content;
-    z-index: 2;
   }
 
   /* Projects Section (0px-450px) */
