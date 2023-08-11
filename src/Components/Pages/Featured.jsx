@@ -20,24 +20,24 @@ function Featured() {
           onClick={handleThumbnailToggle}
         ></img>
       ) : (
-        <iframe
-          className="featured-landing-video"
-          src="https://www.useloom.com/embed/eec004b30a404ae68c82b1609f889ef4?sid=5615448c-a2dd-464b-9c51-3bc917fb1aa"
-          title="Asylum Project Contribution"
-          frameborder="0"
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowfullscreen
-        ></iframe>
-
         // <iframe
         //   className="featured-landing-video"
-        //   src="https://www.youtube.com/embed/2eXqBfBBgFc?fs=0&rel=0&autoplay=1&mute=1"
-        //   title="YouTube video player"
+        //   src="https://www.useloom.com/embed/eec004b30a404ae68c82b1609f889ef4?sid=5615448c-a2dd-464b-9c51-3bc917fb1aa"
+        //   title="Asylum Project Contribution"
         //   frameborder="0"
-        //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        //   webkitallowfullscreen
+        //   mozallowfullscreen
         //   allowfullscreen
         // ></iframe>
+
+        <iframe
+          className="featured-landing-video"
+          src="https://www.youtube.com/embed/2eXqBfBBgFc?fs=0&rel=0&autoplay=1&mute=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       )}
     </section>
   );
