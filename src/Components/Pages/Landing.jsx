@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { Featured } from "./index";
 import symbols from "../../images/symbols";
 import "../../styling/landing.css";
 
@@ -136,13 +137,7 @@ function Landing() {
       </section>
 
       <h2 className="featured-landing-header">Featured</h2>
-      <section className="featured-landing-wrapper">
-        <iframe
-          className="featured-landing-video"
-          src="https://www.loom.com/embed/eec004b30a404ae68c82b1609f889ef4?sid=5615448c-a2dd-464b-9c51-3bc917fb1aaa"
-          title="Asylum Project Contribution"
-        ></iframe>
-      </section>
+      <Featured />
 
       <h2 id="projects" className="projects-header">
         Projects
