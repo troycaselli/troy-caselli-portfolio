@@ -29,15 +29,16 @@ function Featured() {
         //   mozallowfullscreen
         //   allowfullscreen
         // ></iframe>
-
-        <iframe
-          className="featured-landing-video"
-          src="//www.youtube.com/embed/2eXqBfBBgFc?fs=0&rel=0&autoplay=1&mute=1"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+        <div>
+          <iframe
+            className="featured-landing-video"
+            src="//www.youtube.com/embed/2eXqBfBBgFc?fs=0&rel=0&autoplay=1&mute=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
       )}
     </section>
   );
