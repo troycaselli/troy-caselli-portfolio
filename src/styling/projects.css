@@ -1,0 +1,298 @@
+.projects-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+  z-index: 2;
+}
+.projects-container-left {
+  width: 50%;
+}
+.projects-container-right {
+  width: 50%;
+  margin-top: 225px;
+}
+.project-container-left {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 0 20px 250px 0;
+  background-color: rgba(
+    var(--background-color-red),
+    var(--background-color-green),
+    var(--background-color-blue),
+    0.7
+  );
+}
+.project-container-right {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0 0 250px 20px;
+  background-color: rgba(
+    var(--background-color-red),
+    var(--background-color-green),
+    var(--background-color-blue),
+    0.7
+  );
+}
+.project-info {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  color: var(--text-color);
+  height: 170px;
+  padding: 0 8px;
+}
+.project-info__title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.project-info__role {
+  padding-top: 5px;
+  color: var(--tertiary-color);
+  font-style: italic;
+}
+.project-info__text {
+  font-size: 1.1rem;
+  border: 1px solid var(--secondary-color);
+  background: var(--background-color);
+  padding: 8px 5px;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+.project-links-container {
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+}
+.project-info__link {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: ease-out 200ms;
+}
+.project-info__link:active {
+  animation: select 200ms 1 linear;
+  color: var(--tertiary-color);
+}
+@keyframes select {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.8;
+  }
+  100% {
+    scale: 1;
+  }
+}
+.project-info__divider {
+  padding: 0 15px;
+}
+.project-image-container-left {
+  height: 150px;
+  width: 150px;
+  rotate: 45deg;
+  margin: 0 -30px 0 60px;
+  border-radius: 3px;
+  border: 1.5px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  overflow: hidden;
+  transition: 300ms ease-in-out;
+}
+.project-image-container-right {
+  height: 150px;
+  width: 150px;
+  rotate: 45deg;
+  margin: 0 50px 0 -30px;
+  border-radius: 3px;
+  border: 1.5px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  overflow: hidden;
+  transition: 300ms ease-in-out;
+}
+.project-image {
+  min-width: 170%;
+  min-height: 170%;
+  rotate: -45deg;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -45px 0 0 -45px;
+}
+.image-faith {
+  background-image: url(/src/images/projectPreviews/faith-in-five-square.webp);
+}
+.image-sms {
+  background-image: url(/src/images/projectPreviews/family-promise-sms-square.webp);
+}
+.image-asylum {
+  background-image: url(/src/images/projectPreviews/asylum-tracker-square.webp);
+}
+.image-friends {
+  background-image: url(/src/images/projectPreviews/friends-app-square.webp);
+}
+.image-user {
+  background-image: url(/src/images/projectPreviews/user-account-database-square.webp);
+}
+
+/* Media Queries for smaller screen sizes */
+
+@media (max-width: 1199px) {
+  .project-info {
+    height: 200px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .project-info {
+    height: 225px;
+  }
+}
+@media (max-width: 900px) {
+  .projects-wrapper {
+    width: 90%;
+    margin-top: 0;
+  }
+  .projects-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+  .projects-container-left,
+  .projects-container-right {
+    width: 100%;
+    margin: 0;
+  }
+  .project-container-left {
+    flex-direction: column-reverse;
+    margin: 7% 0 0 0;
+  }
+  .project-container-right {
+    flex-direction: column;
+    margin: 7% 0 0 0;
+  }
+  .project-info {
+    width: 80%;
+    opacity: 0;
+    height: 0;
+    transition: ease 0.5s;
+  }
+  .project-info__title {
+    padding-top: 5%;
+  }
+  .opened {
+    opacity: 1;
+    height: 190px;
+  }
+  .project-image-container-left,
+  .project-image-container-right {
+    height: 400px;
+    width: 100%;
+    rotate: 0deg;
+    margin: 0;
+    transition: none;
+    cursor: pointer;
+  }
+  .project-image-container-left:hover,
+  .project-image-container-right:hover {
+    scale: none;
+  }
+  .project-image {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100%;
+    rotate: 0deg;
+    background-position: top;
+    margin: 0;
+  }
+  .image-faith {
+    background-image: url(/src/images/projectPreviews/faith-in-five-full.webp);
+  }
+  .image-sms {
+    background-image: url(/src/images/projectPreviews/family-promise-sms-full.webp);
+  }
+  .image-asylum {
+    background-image: url(/src/images/projectPreviews/asylum-tracker-full.webp);
+  }
+  .image-friends {
+    background-image: url(/src/images/projectPreviews/friends-app-full.webp);
+  }
+  .project-image__text {
+    color: var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2%;
+    background: var(--secondary-color);
+    padding: 10px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .project-info {
+    width: 90%;
+  }
+  .opened {
+    opacity: 1;
+    height: 190px;
+  }
+  .image-faith {
+    background-image: url(/src/images/projectPreviews/faith-in-five-square.webp);
+  }
+  .image-sms {
+    background-image: url(/src/images/projectPreviews/family-promise-sms-square.webp);
+  }
+  .image-friends {
+    background-image: url(/src/images/projectPreviews/friends-app-square.webp);
+  }
+  .image-user {
+    background-image: url(/src/images/projectPreviews/user-account-database-square.webp);
+  }
+  .project-image__text {
+    color: var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2%;
+    background: var(--secondary-color);
+    padding: 10px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .project-container-left {
+    flex-direction: column-reverse;
+    margin: 10% 0 0 0;
+  }
+  .project-container-right {
+    flex-direction: column;
+    margin: 10% 0 0 0;
+  }
+  .project-info {
+    width: 100%;
+    opacity: 0;
+    height: 0;
+    transition: ease 0.5s;
+  }
+  .opened {
+    opacity: 1;
+    height: 220px;
+  }
+  .image-asylum {
+    background-image: url(/src/images/projectPreviews/asylum-tracker-square.webp);
+  }
+  .image-user {
+    background-image: url(/src/images/projectPreviews/user-account-database-full.webp);
+  }
+  .project-image__text {
+    color: var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2%;
+    background: var(--secondary-color);
+    padding: 10px;
+    border-radius: 20px;
+  }
+}
