@@ -3,5 +3,7 @@ export { default as AsylumProject } from "./AsylumProject";
 export { default as FaithInFiveProject } from "./FaithInFiveProject";
 export { default as FamPromProject } from "./FamPromProject";
 export { default as Featured } from "./Featured";
+export { default as Hero } from "./Hero";
 export { default as Landing } from "./Landing";
+export { default as Projects } from "./Projects";
 export { default as Resume } from "./Resume";
