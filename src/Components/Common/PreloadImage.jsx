@@ -5,7 +5,6 @@ const PreloadImage = (props) => {
   const [imgSrc, setImgSrc] = useState(placeholderSrc || src);
   const [imgClass, setImgClass] = useState(className + " blur");
 
-  console.log(imgClass);
   useEffect(() => {
     const img = new Image();
     img.src = src;

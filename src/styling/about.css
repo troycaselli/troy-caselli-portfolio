@@ -182,6 +182,7 @@
 }
 .slideshow__image {
   width: 90%;
+  height: auto;
   border-radius: 3px;
 }
 
