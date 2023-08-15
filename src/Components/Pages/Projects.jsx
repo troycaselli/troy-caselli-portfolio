@@ -5,30 +5,6 @@ import images from "../../images/projectPreviews";
 import "../../styling/projects.css";
 
 function Projects() {
-  const arrowUp = "\u{25B2}";
-  const arrowDown = "\u{25BC}";
-
-  // U+25B5 (▵)
-  // U+25BF (▿)
-  // U+25B2 (▲)
-  // U+25BC (▼)
-
-  const toggleArrow = (evt) => {
-    const elValue = evt.target.getAttribute("value");
-    const elValueId = "#" + elValue;
-    const elInfo = document.querySelector(elValueId);
-    const elArrowId = "#" + elValue + "-text";
-    const elArrow = document.querySelector(elArrowId);
-
-    if (elInfo.classList.contains("opened")) {
-      elInfo.classList.remove("opened");
-      elArrow.innerText = arrowDown;
-    } else {
-      elInfo.classList.add("opened");
-      elArrow.innerText = arrowUp;
-    }
-  };
-
   return (
     <section className="projects-wrapper">
       <div className="project-container">
@@ -62,7 +38,7 @@ function Projects() {
           </div>
         </div>
       </div>
-      <div className="project-container">
+      <div className="project-container project-reverse">
         <Link to="/family-promise-sms" className="project-image__link">
           <img
             src={images.famPromImg}
@@ -114,7 +90,7 @@ function Projects() {
           </p>
           <div className="project-links-container">
             {/* <a className='project-info__link' href='' target='_blank' rel='noopener noreferrer' >Website</a>
-<text className='project-info__divider'>|</text> */}
+            <text className='project-info__divider'>|</text> */}
             <a
               className="project-info__link"
               href="https://github.com/troycaselli/asylum-rg-fe-starter"
@@ -130,7 +106,8 @@ function Projects() {
           </div>
         </div>
       </div>
-      <div className="project-container">
+
+      <div className="project-container project-reverse">
         <a
           href="https://github.com/troycaselli/web-module-project-client-auth"
           target="_blank"
@@ -156,7 +133,7 @@ function Projects() {
           </p>
           <div className="project-links-container">
             {/* <a className='project-info__link' href='' target='_blank' rel='noopener noreferrer' >Website</a>
-                                <text className='project-info__divider'>|</text> */}
+            <text className='project-info__divider'>|</text> */}
             <a
               className="project-info__link"
               href="https://github.com/troycaselli/web-module-project-client-auth"
@@ -167,37 +144,37 @@ function Projects() {
             </a>
           </div>
         </div>
-        <div className="project-container">
-          <a
-            href="https://github.com/troycaselli/node-db1-project"
-            target="_blank"
-            rel="noopener noreferrer"
-            type="button"
-            className="project-image__link"
-          >
-            <img
-              src={images.userImg}
-              alt="User Account Database Project Screenshot"
-              className="project-image"
-            />
-          </a>
-          <div className="project-info" id="user">
-            <h3 className="project-info__title">User Account Database</h3>
-            <h4 className="project-info__role">Back-End Developer</h4>
-            <p className="project-info__text">
-              This backend-only app records and persists user and company name
-              information alongside their current spending plan cap.
-            </p>
-            <div className="project-links-container">
-              <a
-                className="project-info__link"
-                href="https://github.com/troycaselli/node-db1-project"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Source Code
-              </a>
-            </div>
+      </div>
+      <div className="project-container">
+        <a
+          href="https://github.com/troycaselli/node-db1-project"
+          target="_blank"
+          rel="noopener noreferrer"
+          type="button"
+          className="project-image__link"
+        >
+          <img
+            src={images.userImg}
+            alt="User Account Database Project Screenshot"
+            className="project-image"
+          />
+        </a>
+        <div className="project-info" id="user">
+          <h3 className="project-info__title">User Account Database</h3>
+          <h4 className="project-info__role">Back-End Developer</h4>
+          <p className="project-info__text">
+            This backend-only app records and persists user and company name
+            information alongside their current spending plan cap.
+          </p>
+          <div className="project-links-container">
+            <a
+              className="project-info__link"
+              href="https://github.com/troycaselli/node-db1-project"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source Code
+            </a>
           </div>
         </div>
       </div>
