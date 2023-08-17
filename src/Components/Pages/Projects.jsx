@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { PreloadImage } from "../Common";
 import images from "../../images/projectPreviews";
 
 import "../../styling/projects.css";
@@ -9,8 +10,9 @@ function Projects() {
     <section className="projects-wrapper">
       <div className="project-container">
         <Link to="/faith-in-five" className="project-image__link">
-          <img
+          <PreloadImage
             src={images.faithInFiveImg}
+            placeholderSrc={images.faithInFiveImgBlur}
             alt="Faith In Five Project Screenshot"
             className="project-image"
           />
@@ -40,8 +42,9 @@ function Projects() {
       </div>
       <div className="project-container project-reverse">
         <Link to="/family-promise-sms" className="project-image__link">
-          <img
+          <PreloadImage
             src={images.famPromImg}
+            placeholderSrc={images.famPromImgBlur}
             alt="Famnily Promise SMS Project Screenshot"
             className="project-image"
           />
@@ -71,8 +74,9 @@ function Projects() {
       </div>
       <div className="project-container">
         <Link to="/asylum-grant-tracker" className="project-image__link">
-          <img
+          <PreloadImage
             src={images.asylumImg}
+            placeholderSrc={images.asylumImgBlur}
             alt="Asylum Grant Tracker Project Screenshot"
             className="project-image"
           />
@@ -115,8 +119,9 @@ function Projects() {
           type="button"
           className="project-image__link"
         >
-          <img
+          <PreloadImage
             src={images.friendsImg}
+            placeholderSrc={images.friendsImgBlur}
             alt="Friends List Login Project Screenshot"
             className="project-image"
           />
@@ -153,8 +158,9 @@ function Projects() {
           type="button"
           className="project-image__link"
         >
-          <img
+          <PreloadImage
             src={images.userImg}
+            placeholderSrc={images.userImgBlur}
             alt="User Account Database Project Screenshot"
             className="project-image"
           />
