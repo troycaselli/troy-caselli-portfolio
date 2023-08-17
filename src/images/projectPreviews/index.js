@@ -1,8 +1,8 @@
-import asylumImg from "./asylum-tracker-full.webp";
-import faithInFiveImg from "./faith-in-five-full.webp";
-import famPromImg from "./family-promise-sms-full.webp";
-import friendsImg from "./friends-app-full.webp";
-import userImg from "./user-account-database-full.webp";
+import asylumImg from "./asylum-tracker-full.png";
+import faithInFiveImg from "./faith-in-five-full.png";
+import famPromImg from "./family-promise-sms-full.png";
+import friendsImg from "./friends-app-full.png";
+import userImg from "./user-account-database-full.png";
 
 const images = {
   asylumImg,

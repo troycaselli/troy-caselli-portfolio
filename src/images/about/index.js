@@ -13,7 +13,7 @@ import cherriesBlur from "./picking-cherries-blur.jpg";
 import studyingBlur from "./juggling-responsibilities-blur.jpg";
 import mazeBlur from "./corn-maze-blur.jpg";
 import portraitImg from "./troy-caselli-portrait.jpg";
-import portraitBlur from "./troy-caselli-portrait-square-blur.jpg";
+import portraitBlur from "./troy-caselli-portrait-blur.jpg";
 
 const images = {
   graduationImg,

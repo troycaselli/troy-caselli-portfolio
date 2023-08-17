@@ -11,7 +11,7 @@ function About() {
       <div className="featured-wrapper">
         <div className="featured-image-wrapper">
           <div className="featured-portrait-container">
-            <img
+            <PreloadImage
               src={images.portraitImg}
               placeholderSrc={images.portraitBlur}
               alt="portrait of Troy Caselli wearing a suit and tie in front of a stone building"
@@ -27,7 +27,7 @@ function About() {
               rel="noopener noreferrer"
               type="button"
             >
-              <img
+              <PreloadImage
                 src={bloomtechImg}
                 alt="Bloom Institute of Technology orange and white logo"
                 className="featured-certification__image"
@@ -131,7 +131,7 @@ function About() {
         />
         <label htmlFor="s1" id="slide1" className="slideshow__label">
           <div className="slideshow__image-container">
-            <img
+            <PreloadImage
               src={images.maternityImg}
               placeholderSrc={images.maternityBlur}
               alt="Troy and Teri Jo celebrating maternity"
@@ -141,7 +141,7 @@ function About() {
         </label>
         <label htmlFor="s2" id="slide2" className="slideshow__label">
           <div className="slideshow__image-container">
-            <img
+            <PreloadImage
               src={images.graduationImg}
               placeholderSrc={images.graduationBlur}
               alt="BloomTech graduation party with family"
@@ -151,7 +151,7 @@ function About() {
         </label>
         <label htmlFor="s3" id="slide3" className="slideshow__label">
           <div className="slideshow__image-container">
-            <img
+            <PreloadImage
               src={images.playingImg}
               placeholderSrc={images.playingBlur}
               alt="playing with baby Tobias while coding on the floor"
@@ -161,7 +161,7 @@ function About() {
         </label>
         <label htmlFor="s4" id="slide4" className="slideshow__label">
           <div className="slideshow__image-container">
-            <img
+            <PreloadImage
               src={images.cherriesImg}
               placeholderSrc={images.cherriesBlur}
               alt="climbing in and picking cherries at Green Bluff"
@@ -171,7 +171,7 @@ function About() {
         </label>
         <label htmlFor="s5" id="slide5" className="slideshow__label">
           <div className="slideshow__image-container">
-            <img
+            <PreloadImage
               src={images.mazeImg}
               placeholderSrc={images.mazeBlur}
               alt="wandering through a corn maze"
@@ -181,7 +181,7 @@ function About() {
         </label>
         <label htmlFor="s6" id="slide6" className="slideshow__label">
           <div className="slideshow__image-container">
-            <img
+            <PreloadImage
               src={images.glacierImg}
               placeholderSrc={images.glacierBlur}
               alt="family gathered before a waterfall at Glacier National Park"
@@ -191,7 +191,7 @@ function About() {
         </label>
         <label htmlFor="s7" id="slide7" className="slideshow__label">
           <div className="slideshow__image-container">
-            <img
+            <PreloadImage
               src={images.studyingImg}
               placeholderSrc={images.studyingBlur}
               alt="coding at a desk while holding a sleeping Tobias"
