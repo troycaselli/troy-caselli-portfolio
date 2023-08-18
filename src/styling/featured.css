@@ -11,6 +11,7 @@
   left: 15%;
   width: 70%;
   height: 70%;
+  border: 0;
   border-radius: 10px;
   cursor: pointer;
 }
