@@ -1,6 +1,5 @@
 import React from "react";
 
-import { PreloadImage } from "../Common";
 import images from "../../images/about";
 import bloomtechImg from "../../images/logos/bloomtech-logo.webp";
 import "../../styling/about.css";
@@ -11,9 +10,10 @@ function About() {
       <div className="featured-wrapper">
         <div className="featured-image-wrapper">
           <div className="featured-portrait-container">
-            <PreloadImage
-              src={images.portraitImg}
-              placeholderSrc={images.portraitBlur}
+            <img
+              srcSet={`${images.portraitSm} 480w, ${images.portraitMd} 800w`}
+              sizes="(max-width: 480px) 480px, 800px"
+              src={images.portraitMd}
               alt="portrait of Troy Caselli wearing a suit and tie in front of a stone building"
               className="featured-portrait__image"
             />
@@ -27,7 +27,7 @@ function About() {
               rel="noopener noreferrer"
               type="button"
             >
-              <PreloadImage
+              <img
                 src={bloomtechImg}
                 alt="Bloom Institute of Technology orange and white logo"
                 className="featured-certification__image"
@@ -131,9 +131,10 @@ function About() {
         />
         <label htmlFor="s1" id="slide1" className="slideshow__label">
           <div className="slideshow__image-container">
-            <PreloadImage
-              src={images.maternityImg}
-              placeholderSrc={images.maternityBlur}
+            <img
+              srcSet={`${images.maternitySm} 480w, ${images.maternityMd} 800w, ${images.maternityLg} 1280w`}
+              sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, 1280px"
+              src={images.maternityMd}
               alt="Troy and Teri Jo celebrating maternity"
               className="slideshow__image"
             />
@@ -141,9 +142,10 @@ function About() {
         </label>
         <label htmlFor="s2" id="slide2" className="slideshow__label">
           <div className="slideshow__image-container">
-            <PreloadImage
-              src={images.graduationImg}
-              placeholderSrc={images.graduationBlur}
+            <img
+              srcSet={`${images.graduationSm} 480w, ${images.graduationMd} 800w, ${images.graduationLg} 1280w`}
+              sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, 1280px"
+              src={images.graduationMd}
               alt="BloomTech graduation party with family"
               className="slideshow__image"
             />
@@ -151,9 +153,10 @@ function About() {
         </label>
         <label htmlFor="s3" id="slide3" className="slideshow__label">
           <div className="slideshow__image-container">
-            <PreloadImage
-              src={images.playingImg}
-              placeholderSrc={images.playingBlur}
+            <img
+              srcSet={`${images.playingSm} 480w, ${images.playingMd} 800w, ${images.playingLg} 1280w`}
+              sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, 1280px"
+              src={images.playingMd}
               alt="playing with baby Tobias while coding on the floor"
               className="slideshow__image"
             />
@@ -161,9 +164,10 @@ function About() {
         </label>
         <label htmlFor="s4" id="slide4" className="slideshow__label">
           <div className="slideshow__image-container">
-            <PreloadImage
-              src={images.cherriesImg}
-              placeholderSrc={images.cherriesBlur}
+            <img
+              srcSet={`${images.cherriesSm} 480w, ${images.cherriesMd} 800w, ${images.cherriesLg} 1280w`}
+              sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, 1280px"
+              src={images.cherriesMd}
               alt="climbing in and picking cherries at Green Bluff"
               className="slideshow__image"
             />
@@ -171,9 +175,10 @@ function About() {
         </label>
         <label htmlFor="s5" id="slide5" className="slideshow__label">
           <div className="slideshow__image-container">
-            <PreloadImage
-              src={images.mazeImg}
-              placeholderSrc={images.mazeBlur}
+            <img
+              srcSet={`${images.mazeSm} 480w, ${images.mazeMd} 800w, ${images.mazeLg} 1280w`}
+              sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, 1280px"
+              src={images.mazeMd}
               alt="wandering through a corn maze"
               className="slideshow__image"
             />
@@ -181,9 +186,10 @@ function About() {
         </label>
         <label htmlFor="s6" id="slide6" className="slideshow__label">
           <div className="slideshow__image-container">
-            <PreloadImage
-              src={images.glacierImg}
-              placeholderSrc={images.glacierBlur}
+            <img
+              srcSet={`${images.glacierSm} 480w, ${images.glacierMd} 800w, ${images.glacierLg} 1280w`}
+              sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, 1280px"
+              src={images.glacierMd}
               alt="family gathered before a waterfall at Glacier National Park"
               className="slideshow__image"
             />
@@ -191,9 +197,10 @@ function About() {
         </label>
         <label htmlFor="s7" id="slide7" className="slideshow__label">
           <div className="slideshow__image-container">
-            <PreloadImage
-              src={images.studyingImg}
-              placeholderSrc={images.studyingBlur}
+            <img
+              srcSet={`${images.studyingSm} 480w, ${images.studyingMd} 800w, ${images.studyingLg} 1280w`}
+              sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, 1280px"
+              src={images.studyingMd}
               alt="coding at a desk while holding a sleeping Tobias"
               className="slideshow__image"
             />
