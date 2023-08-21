@@ -50,8 +50,6 @@ function App() {
 
   return (
     <div className="app-wrapper">
-      <ParticlesBackground />
-
       {windowWidth > 900 ? <Header /> : <Hamburger />}
 
       <Routes>
@@ -64,6 +62,8 @@ function App() {
       </Routes>
 
       <Footer />
+
+      <ParticlesBackground />
     </div>
   );
 }
