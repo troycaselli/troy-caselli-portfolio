@@ -13,20 +13,20 @@ function Resume() {
         <div className="skills-texts">
           <p className="skills-text">
             <span className="skills-subtitle">Front-End:</span> JavaScript,
-            React.js, TypeScript, Next.js, HTML, CSS (Less, Tailwind, ChakraUI),
-            Axios, Redux, Context API, Yup
+            React.js, TypeScript, Angular, Next.js, Axios, Redux, Context API,
+            HTML, CSS (Less, Tailwind, ChakraUI), Yup
           </p>
           <p className="skills-text">
-            <span className="skills-subtitle">Back-End:</span> Node.js,
-            Relational Databases (SQLite3 and PostgreSQL), Express, knex.js,
-            Docker, C++, Ruby, Ruby on Rails, PHP
+            <span className="skills-subtitle">Back-End:</span> Node.js, Express,
+            knex.js, Relational Databases (SQLite3 and PostgreSQL), Docker, C++,
+            PHP
           </p>
           <p className="skills-text">
             <span className="skills-subtitle">Additional Skills:</span> API
-            endpoints/integration, automation testing (Jest and Cypress),
-            Debugging, Algorithms, Architecture, Project Management, Git CLI,
-            GitHub, GitLab, VS Code, Postman, HTTPie, Vercel, Netlify,
-            Deployment
+            endpoints/Integration, automation testing (Jest and Cypress),
+            Project Management, GitHub, GitLab, VS Code, Git CLI, Postman,
+            HTTPie, Vercel, Netlify, Deployment, Architecture, Algorithms,
+            Debugging, Slack, Figma
           </p>
         </div>
       </div>
@@ -42,7 +42,7 @@ function Resume() {
           </div>
           <p className="resume__dates">Jan. 2023-Current</p>
           <p className="resume-description">
-            Contributed to large-scale, multi-tier production applications
+            Contributed to large-scale, multi-tier production applications,
             enabling local nonprofits to better serve the community. Developed
             code in agile workflows to tailor products to stakeholders’ needs.
             Worked in small teams of two or three according to the demands of
@@ -51,8 +51,34 @@ function Resume() {
           <div className="resume-texts">
             <div className="resume-container">
               <div className="resume__experience-specs">
+                <p className="resume__name">
+                  Emergency Shelters Reports Hub&nbsp;
+                </p>
+                <p className="resume__dates">(Sept. 2023)</p>
+              </div>
+              <p className="resume-description">
+                This site centralizes and organizes Spokane County ES data for
+                public availability and utilization by the City of Spokane.{" "}
+              </p>
+              <div className="resume-texts">
+                <p className="resume-bullet">
+                  ◆ Expedited site deployment by consulting the Stakeholder for
+                  feedback and expectations within an agile workflow.
+                </p>
+                <p className="resume-bullet">
+                  ◆ Designed wireframes and mock-ups for mobile and desktop
+                  using Figma by employing standard UI/UX procedure.
+                </p>
+                <p className="resume-bullet">
+                  ◆ Built a fully responsive front-end SPA using TS and Angular
+                  with intuitive navigation, increasing the app’s usability.
+                </p>
+              </div>
+            </div>
+            <div className="resume-container">
+              <div className="resume__experience-specs">
                 <p className="resume__name">Faith in Five Initiative&nbsp;</p>
-                <p className="resume__dates">(Mar. 2023 - Current)</p>
+                <p className="resume__dates">(Mar. 2023 - Sept. 2023)</p>
               </div>
               <p className="resume-description">
                 This app helps Faith Bible Church serve its neighbors better
@@ -82,12 +108,11 @@ function Resume() {
           </div>
           <p className="resume__dates">Sept. 2022-Dec. 2022</p>
           <p className="resume-description">
-            Advanced the development of a digital intake form to expedite the
-            administration of services to homeless families in Spokane.
-            Self-learned TypeScript, Tailwind CSS library, and Docker in order
-            to efficiently contribute to the project’s source code. Worked on
-            project’s tasks independently while under the supervision of the
-            project manager.
+            Advanced the development of software to combat family homelessness
+            in the City of Spokane. Self-learned TypeScript, Tailwind CSS
+            library, and Docker in order to efficiently contribute to the
+            project’s source code. Worked on project’s tasks independently while
+            under the supervision of the project manager.
           </p>
           <div className="resume-texts">
             <div className="resume-container">
