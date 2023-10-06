@@ -14,15 +14,15 @@ function ESReportsProject() {
   return (
     <section className="project-wrapper">
       <div className="project-section">
-        <h1 className="project__title">FAMILY PROMISE SMS</h1>
-        <h3 className="project__role">Front-End Developer</h3>
+        <h1 className="project__title">EMERGENCY SHELTERS REPORTS HUB</h1>
+        <h3 className="project__role">Full-Stack Developer</h3>
         <p className="project__about">
-          This application enables homeless individuals to digitally fill out
-          and submit an intake form for admittance to a local shelter.
+          This site centralizes and organizes Spokane County ES data for public
+          availability and utilization by the City of Spokane.
         </p>
         <a
           className="project__link"
-          href="https://shelter-management-system.vercel.app/"
+          href="https://reports-green.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -38,6 +38,12 @@ function ESReportsProject() {
       <div className="project-section">
         <h2 className="project__subtitle">User Overview</h2>
         <div className="users-container">
+          <div className="project__users-circle">
+            <p className="project__circle-text">
+              Expedites the process for <b>applicants</b> who need assistance to
+              receive funds and accomodations
+            </p>
+          </div>
           <div className="project__users-circle">
             <p className="project__circle-text">
               Expedites the process for <b>applicants</b> who need assistance to
@@ -87,7 +93,7 @@ function ESReportsProject() {
       <Divider />
 
       <div className="project-section">
-        <h2 className="project__subtitle">Wireframes</h2>
+        <h2 className="project__subtitle">Mock-Ups</h2>
         <p className="project__text">
           The stakeholder wanted the digital intake form to match the style of
           the current app and include the information in the sixteen-page paper
