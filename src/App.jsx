@@ -9,6 +9,7 @@ import {
   Landing,
   About,
   Resume,
+  ESReportsProject,
   FaithInFiveProject,
   FamPromProject,
   AsylumProject,
@@ -56,6 +57,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="about" element={<About />} />
         <Route path="resume" element={<Resume />} />
+        <Route path="es-reports" element={<ESReportsProject />} />
         <Route path="faith-in-five" element={<FaithInFiveProject />} />
         <Route path="family-promise-sms" element={<FamPromProject />} />
         <Route path="asylum-grant-tracker" element={<AsylumProject />} />
