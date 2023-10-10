@@ -40,14 +40,14 @@ function ESReportsProject() {
         <div className="users-container">
           <div className="project__users-circle">
             <p className="project__circle-text">
-              Expedites the process for <b>applicants</b> who need assistance to
-              receive funds and accomodations
+              Enables <b>the public</b> to access emergency shelter data for the
+              County of Spokane
             </p>
           </div>
           <div className="project__users-circle">
             <p className="project__circle-text">
-              Expedites the process for <b>applicants</b> who need assistance to
-              receive funds and accomodations
+              Provides ciritical data for <b>Government Agencies</b> of Spokane
+              to evaluate and use for legal compliance and policy-making
             </p>
           </div>
         </div>
@@ -58,14 +58,17 @@ function ESReportsProject() {
       <div className="project-section">
         <h2 className="project__subtitle">User Flow</h2>
         <div className="project-card">
-          <h3 className="project-card__user-title">Applicant Flow</h3>
+          <h3 className="project-card__user-title">
+            Public and Government Agency Flow
+          </h3>
           <div className="circles-container">
             <div className="project__circle">
               <p className="project__circle-bold">
                 <b>I</b>
               </p>
               <p className="project__circle-text">
-                Sign up or login to the SMS App with a valid email address
+                Select an ES report to navigate from the splash page to the data
+                display page
               </p>
             </div>
             <div className="project__circle">
@@ -73,17 +76,8 @@ function ESReportsProject() {
                 <b>II</b>
               </p>
               <p className="project__circle-text">
-                Sufficiently fill out and submit the Shelter Management System
-                Intake Form
-              </p>
-            </div>
-            <div className="project__circle">
-              <p className="project__circle-bold">
-                <b>III</b>
-              </p>
-              <p className="project__circle-text">
-                Receive an announcement by phone, email, or mail from Family
-                Promise describing your qualification and receipt of benefits
+                Navigate between and interact with the ES data charts/maps on
+                the page
               </p>
             </div>
           </div>
@@ -95,9 +89,7 @@ function ESReportsProject() {
       <div className="project-section">
         <h2 className="project__subtitle">Mock-Ups</h2>
         <p className="project__text">
-          The stakeholder wanted the digital intake form to match the style of
-          the current app and include the information in the sixteen-page paper
-          intake form (excerpt below).
+          ES Reports Mock-ups were built using Figma.
         </p>
         <PreloadImage
           src={images.intakeForm}
