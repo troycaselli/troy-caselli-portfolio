@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { Divider, Loading, PreloadImage } from "../Common";
-import images from "../../images/projects/famPromIntake";
+import images from "../../images/projects/ESReports";
 import "../../styling/projectDetails.css";
 
 function ESReportsProject() {
@@ -92,8 +92,8 @@ function ESReportsProject() {
           ES Reports Mock-ups were built using Figma.
         </p>
         <PreloadImage
-          src={images.intakeForm}
-          placeholderSrc={images.intakeFormBlur}
+          src={images.reportsMockUpsPage}
+          placeholderSrc={images.reportsMockUpsPageBlur}
           alt="intake form sample"
           className="design__img"
         />
@@ -108,51 +108,51 @@ function ESReportsProject() {
         ) : (
           <div className="design-container">
             <PreloadImage
-              src={images.welcomePage}
-              placeholderSrc={images.welcomePageBlur}
-              alt="welcome page"
+              src={images.splashPage}
+              placeholderSrc={images.splashPageBlur}
+              alt="splash page"
               className="design__img"
             />
             <PreloadImage
-              src={images.loginPage}
-              placeholderSrc={images.loginPageBlur}
+              src={images}
+              placeholderSrc={images}
               alt="login page"
               className="design__img"
             />
             <PreloadImage
-              src={images.confirmationEmail}
-              placeholderSrc={images.confirmationEmailBlur}
+              src={images}
+              placeholderSrc={images}
               alt="confirmation email"
               className="design__img"
             />
             <PreloadImage
-              src={images.landing}
-              placeholderSrc={images.landingBlur}
+              src={images}
+              placeholderSrc={images}
               alt="landing page"
               className="design__img"
             />
             <PreloadImage
-              src={images.profilePage}
-              placeholderSrc={images.profilePageBlur}
+              src={images}
+              placeholderSrc={images}
               alt="profile page"
               className="design__img"
             />
             <PreloadImage
-              src={images.lastPage}
-              placeholderSrc={images.lastPageBlur}
+              src={images}
+              placeholderSrc={images}
               alt="last page"
               className="design__img"
             />
             <div className="design-container__full-images">
               <PreloadImage
-                src={images.intakePageIncomplete}
-                placeholderSrc={images.intakePageIncompleteBlur}
+                src={images}
+                placeholderSrc={images}
                 alt="intake page: incomplete"
                 className="design__img"
               />
               <PreloadImage
-                src={images.intakePageCompleted}
-                placeholderSrc={images.intakePageCompletedBlur}
+                src={images}
+                placeholderSrc={images}
                 alt="intake page: completed"
                 className="design__img"
               />
