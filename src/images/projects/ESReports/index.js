@@ -1,13 +1,13 @@
-import allProvidersPage from "./all-providers-dash.png";
-import esProvidersPage from "./es-providers-dash.png";
-import fpsPreventionPage from "./fps-prevention-dash.png";
+import allProvidersPage from "./all-providers-dash.jpeg";
+import esProvidersPage from "./all-es-providers-dash.jpeg";
+import fpsPreventionPage from "./fps-prevention-dash.jpeg";
 import reportsMockUpsPage from "./reports-mock-ups.png";
-import splashPage from "./splash-page.png";
-import allProvidersPageBlur from "./all-providers-dash-blur.png";
-import esProvidersPageBlur from "./es-providers-dash-blur.png";
-import fpsPreventionPageBlur from "./fps-prevention-dash-blur.png";
+import splashPage from "./splash-page.jpeg";
+import allProvidersPageBlur from "./all-providers-dash-blur.jpeg";
+import esProvidersPageBlur from "./all-es-providers-dash-blur.jpeg";
+import fpsPreventionPageBlur from "./fps-prevention-dash-blur.jpeg";
 import reportsMockUpsPageBlur from "./reports-mock-ups-blur.png";
-import splashPageBlur from "./splash-page-blur.png";
+import splashPageBlur from "./splash-page-blur.jpeg";
 
 const images = {
   allProvidersPage,
