@@ -89,14 +89,20 @@ function ESReportsProject() {
       <div className="project-section">
         <h2 className="project__subtitle">Mock-Ups</h2>
         <p className="project__text">
-          ES Reports Mock-ups were built using Figma.
+          ES Reports mock-ups were built using Figma.
         </p>
-        <PreloadImage
-          src={images.reportsMockUpsPage}
-          placeholderSrc={images.reportsMockUpsPageBlur}
-          alt="intake form sample"
-          className="design__img"
-        />
+        <a
+          href="https://www.figma.com/file/jLguxvEulAIG6btFx5BIfu/ES-Reports?type=design&node-id=0%3A1&mode=design&t=i9A8mfKjngPIAu1A-1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <PreloadImage
+            src={images.reportsMockUpsPage}
+            placeholderSrc={images.reportsMockUpsPageBlur}
+            alt="intake form sample"
+            className="design__img"
+          />
+        </a>
       </div>
 
       <Divider />
@@ -114,49 +120,23 @@ function ESReportsProject() {
               className="design__img"
             />
             <PreloadImage
-              src={images}
-              placeholderSrc={images}
-              alt="login page"
+              src={images.allProvidersPage}
+              placeholderSrc={images.allProvidersPageBlur}
+              alt="all providers page"
               className="design__img"
             />
             <PreloadImage
-              src={images}
-              placeholderSrc={images}
-              alt="confirmation email"
+              src={images.esProvidersPage}
+              placeholderSrc={images.esProvidersPageBlur}
+              alt="es providers page"
               className="design__img"
             />
             <PreloadImage
-              src={images}
-              placeholderSrc={images}
-              alt="landing page"
+              src={images.fpsPreventionPage}
+              placeholderSrc={images.fpsPreventionPageBlur}
+              alt="fps prevention page"
               className="design__img"
             />
-            <PreloadImage
-              src={images}
-              placeholderSrc={images}
-              alt="profile page"
-              className="design__img"
-            />
-            <PreloadImage
-              src={images}
-              placeholderSrc={images}
-              alt="last page"
-              className="design__img"
-            />
-            <div className="design-container__full-images">
-              <PreloadImage
-                src={images}
-                placeholderSrc={images}
-                alt="intake page: incomplete"
-                className="design__img"
-              />
-              <PreloadImage
-                src={images}
-                placeholderSrc={images}
-                alt="intake page: completed"
-                className="design__img"
-              />
-            </div>
           </div>
         )}
       </div>
