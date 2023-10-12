@@ -91,12 +91,18 @@ function ESReportsProject() {
         <p className="project__text">
           ES Reports mock-ups were built using Figma.
         </p>
-        <PreloadImage
-          src={images.reportsMockUpsPage}
-          placeholderSrc={images.reportsMockUpsPageBlur}
-          alt="intake form sample"
-          className="design__img"
-        />
+        <a
+          href="https://www.figma.com/file/jLguxvEulAIG6btFx5BIfu/ES-Reports?type=design&node-id=0%3A1&mode=design&t=i9A8mfKjngPIAu1A-1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <PreloadImage
+            src={images.reportsMockUpsPage}
+            placeholderSrc={images.reportsMockUpsPageBlur}
+            alt="intake form sample"
+            className="design__img"
+          />
+        </a>
       </div>
 
       <Divider />
