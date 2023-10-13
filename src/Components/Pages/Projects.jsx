@@ -42,7 +42,7 @@ function Projects() {
           </div>
         </div>
       </div>
-      <div className="project-container">
+      <div className="project-container project-reverse">
         <Link to="/faith-in-five" className="project-image__link">
           <img
             srcSet={`${images.faithInFiveSm} 480w, ${images.faithInFiveMd} 800w, ${images.faithInFiveLg} 1280w`}
@@ -75,7 +75,7 @@ function Projects() {
           </div>
         </div>
       </div>
-      <div className="project-container project-reverse">
+      <div className="project-container">
         <Link to="/family-promise-sms" className="project-image__link">
           <img
             srcSet={`${images.famPromSm} 480w, ${images.famPromMd} 800w, ${images.famPromLg} 1280w`}
@@ -108,7 +108,7 @@ function Projects() {
           </div>
         </div>
       </div>
-      <div className="project-container">
+      <div className="project-container project-reverse">
         <Link to="/asylum-grant-tracker" className="project-image__link">
           <img
             srcSet={`${images.asylumSm} 480w, ${images.asylumMd} 800w, ${images.asylumLg} 1280w`}
@@ -148,7 +148,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="project-container project-reverse">
+      <div className="project-container">
         <a
           href="https://github.com/troycaselli/web-module-project-client-auth"
           target="_blank"
@@ -188,7 +188,7 @@ function Projects() {
           </div>
         </div>
       </div>
-      <div className="project-container">
+      <div className="project-container project-reverse">
         <a
           href="https://github.com/troycaselli/node-db1-project"
           target="_blank"
