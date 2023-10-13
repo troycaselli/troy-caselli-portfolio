@@ -12,6 +12,41 @@ function Projects() {
           <img
             srcSet={`${images.faithInFiveSm} 480w, ${images.faithInFiveMd} 800w, ${images.faithInFiveLg} 1280w`}
             sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, 1280px"
+            alt="Emergency Shelters Reports Hub Project Screenshot"
+            className="project-image"
+            src={images.faithInFiveMd}
+          />
+        </Link>
+        <div className="project-info" id="faith">
+          <h3 className="project-info__title">
+            Emergency Shelters Reports Hub
+          </h3>
+          <h4 className="project-info__role">Full-Stack Developer</h4>
+          <p className="project-info__text">
+            This site centralizes and organizes Spokane County ES data for
+            public availability and utilization by the City of Spokane.
+          </p>
+          <div className="project-links-container">
+            <a
+              className="project-info__link"
+              href="https://reports-green.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website
+            </a>
+            <text className="project-info__divider">|</text>
+            <Link to="/es-reports" className="project-info__link">
+              Exhibit
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className="project-container">
+        <Link to="/faith-in-five" className="project-image__link">
+          <img
+            srcSet={`${images.faithInFiveSm} 480w, ${images.faithInFiveMd} 800w, ${images.faithInFiveLg} 1280w`}
+            sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, 1280px"
             alt="Faith In Five Project Screenshot"
             className="project-image"
             src={images.faithInFiveMd}
