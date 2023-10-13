@@ -1,6 +1,9 @@
 import asylumLg from "./asylum-tracker-1280.png";
 import asylumMd from "./asylum-tracker-800.png";
 import asylumSm from "./asylum-tracker-480.png";
+import esLg from "./es-reports-hub-1280.png";
+import esMd from "./es-reports-hub-800.png";
+import esSm from "./es-reports-hub-480.png";
 import faithInFiveLg from "./faith-in-five-1280.png";
 import faithInFiveMd from "./faith-in-five-800.png";
 import faithInFiveSm from "./faith-in-five-480.png";
@@ -23,6 +26,9 @@ const images = {
   asylumLg,
   asylumMd,
   asylumSm,
+  esLg,
+  esMd,
+  esSm,
   faithInFiveLg,
   faithInFiveMd,
   faithInFiveSm,

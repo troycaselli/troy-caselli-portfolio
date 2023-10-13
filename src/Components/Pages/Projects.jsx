@@ -10,6 +10,41 @@ function Projects() {
       <div className="project-container">
         <Link to="/faith-in-five" className="project-image__link">
           <img
+            srcSet={`${images.esSm} 480w, ${images.esMd} 800w, ${images.esLg} 1280w`}
+            sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, 1280px"
+            alt="Emergency Shelters Reports Hub Project Screenshot"
+            className="project-image"
+            src={images.esMd}
+          />
+        </Link>
+        <div className="project-info" id="faith">
+          <h3 className="project-info__title">
+            Emergency Shelters Reports Hub
+          </h3>
+          <h4 className="project-info__role">Full-Stack Developer</h4>
+          <p className="project-info__text">
+            This site centralizes and organizes Spokane County ES data for
+            public availability and utilization by the City of Spokane.
+          </p>
+          <div className="project-links-container">
+            <a
+              className="project-info__link"
+              href="https://reports-green.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website
+            </a>
+            <text className="project-info__divider">|</text>
+            <Link to="/es-reports" className="project-info__link">
+              Exhibit
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className="project-container project-reverse">
+        <Link to="/faith-in-five" className="project-image__link">
+          <img
             srcSet={`${images.faithInFiveSm} 480w, ${images.faithInFiveMd} 800w, ${images.faithInFiveLg} 1280w`}
             sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, 1280px"
             alt="Faith In Five Project Screenshot"
@@ -40,7 +75,7 @@ function Projects() {
           </div>
         </div>
       </div>
-      <div className="project-container project-reverse">
+      <div className="project-container">
         <Link to="/family-promise-sms" className="project-image__link">
           <img
             srcSet={`${images.famPromSm} 480w, ${images.famPromMd} 800w, ${images.famPromLg} 1280w`}
@@ -73,7 +108,7 @@ function Projects() {
           </div>
         </div>
       </div>
-      <div className="project-container">
+      <div className="project-container project-reverse">
         <Link to="/asylum-grant-tracker" className="project-image__link">
           <img
             srcSet={`${images.asylumSm} 480w, ${images.asylumMd} 800w, ${images.asylumLg} 1280w`}
@@ -113,7 +148,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="project-container project-reverse">
+      <div className="project-container">
         <a
           href="https://github.com/troycaselli/web-module-project-client-auth"
           target="_blank"
@@ -153,7 +188,7 @@ function Projects() {
           </div>
         </div>
       </div>
-      <div className="project-container">
+      <div className="project-container project-reverse">
         <a
           href="https://github.com/troycaselli/node-db1-project"
           target="_blank"

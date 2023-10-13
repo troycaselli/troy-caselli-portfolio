@@ -18,7 +18,7 @@ function FamPromProject() {
         <h3 className="project__role">Front-End Developer</h3>
         <p className="project__about">
           This application enables homeless individuals to digitally fill out
-          and submit an intake form for admittance to a local shelter.
+          and submit an intake form for admittance to a local shelter
         </p>
         <a
           className="project__link"
