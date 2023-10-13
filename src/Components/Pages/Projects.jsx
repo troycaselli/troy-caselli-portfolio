@@ -10,11 +10,11 @@ function Projects() {
       <div className="project-container">
         <Link to="/faith-in-five" className="project-image__link">
           <img
-            srcSet={`${images.faithInFiveSm} 480w, ${images.faithInFiveMd} 800w, ${images.faithInFiveLg} 1280w`}
+            srcSet={`${images.esSm} 480w, ${images.esMd} 800w, ${images.esLg} 1280w`}
             sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, 1280px"
             alt="Emergency Shelters Reports Hub Project Screenshot"
             className="project-image"
-            src={images.faithInFiveMd}
+            src={images.esMd}
           />
         </Link>
         <div className="project-info" id="faith">
