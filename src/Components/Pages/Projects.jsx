@@ -8,7 +8,7 @@ function Projects() {
   return (
     <section className="projects-wrapper">
       <div className="project-container">
-        <Link to="/faith-in-five" className="project-image__link">
+        <Link to="/es-reports" className="project-image__link">
           <img
             srcSet={`${images.esSm} 480w, ${images.esMd} 800w, ${images.esLg} 1280w`}
             sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, 1280px"
