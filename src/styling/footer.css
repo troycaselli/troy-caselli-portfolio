@@ -1,6 +1,8 @@
 .footer-wrapper {
   background-color: var(--primary-color);
   padding: 5px 0;
+  position: relative;
+  z-index: 2;
 }
 .footer-container-top {
   display: flex;
