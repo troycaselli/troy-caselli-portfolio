@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import "../../styling/featured.css";
 
 function Featured() {
@@ -10,24 +8,27 @@ function Featured() {
       bottom half: (partial opacity) and description-hugging center line
       onHover: enlarge
       */}
-      {/* <Link
-        to="/faith-in-five"
+      <a
         className="featured-card__link featured-mockups"
+        href="https://www.figma.com/file/jLguxvEulAIG6btFx5BIfu/ES-Reports?type=design&node-id=0-1&mode=design"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <h3 className="featured-title">Test</h3>
+        <h3 className="featured-title">ES Reports Mockups</h3>
         <div className="featured-container">
           <p className="featured-info">
-            dfgu hijoiug yft dr sxcyunfkw engdvuyfg isuewb flngirhe fewgewfdste
-            gerg erg dsr ewgfewg e gdgew fewg gd
+            Appointed as the Front-End Lead for the Emergency Shelters Reports
+            Hub project, I designed the UI and user flow mockups for desktop and
+            mobile devices using Figma.
           </p>
         </div>
-      </Link> */}
-      <iframe
+      </a>
+      {/* <iframe
         className="featured-landing-video"
         src="//www.youtube.com/embed/2eXqBfBBgFc?fs=0&rel=0&autoplay=1&mute=1"
         title="Asylum Contribution Video"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      ></iframe>
+      ></iframe> */}
     </section>
   );
 }
