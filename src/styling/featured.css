@@ -1,4 +1,4 @@
-/* .featured-landing-wrapper {
+.featured-landing-wrapper {
   position: relative;
   padding-bottom: 62.5%;
   height: 0;
@@ -22,9 +22,9 @@
     width: 90%;
     height: 90%;
   }
-} */
+}
 
-.featured-landing-wrapper {
+/* .featured-landing-wrapper {
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -41,6 +41,9 @@
   border-radius: 3px;
   text-decoration: none;
   z-index: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   transition: transform 300ms ease-out;
 }
 .featured-card__link:hover {
@@ -48,9 +51,6 @@
 }
 .featured-mockups {
   background-image: url("/src/images/featured/blueprint-468610967.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 .featured-title {
   font-size: 1.7rem;
@@ -71,4 +71,4 @@
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--text-color);
-}
+} */

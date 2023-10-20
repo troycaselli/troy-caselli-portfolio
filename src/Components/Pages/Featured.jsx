@@ -8,7 +8,7 @@ function Featured() {
       bottom half: (partial opacity) and description-hugging center line
       onHover: enlarge
       */}
-      <a
+      {/* <a
         className="featured-card__link featured-mockups"
         href="https://youtu.be/gZHYCkHwMmk"
         target="_blank"
@@ -54,13 +54,13 @@ function Featured() {
             general public.
           </p>
         </div>
-      </a>
-      {/* <iframe
+      </a> */}
+      <iframe
         className="featured-landing-video"
         src="//www.youtube.com/embed/2eXqBfBBgFc?fs=0&rel=0&autoplay=1&mute=1"
         title="Asylum Contribution Video"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      ></iframe> */}
+      ></iframe>
     </section>
   );
 }
