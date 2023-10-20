@@ -41,6 +41,10 @@
   width: 300px;
   border-radius: 3px;
   text-decoration: none;
+  transition: transform 300ms ease-out;
+}
+.featured-card__link:hover {
+  transform: scale(1.03);
 }
 .featured-mockups {
   background-image: url("/src/images/featured/blueprint-468610967.jpg");
@@ -53,8 +57,8 @@
   font-weight: 700;
   color: rgb(13, 13, 13);
   padding: 5px 10px;
-  border-radius: 50%;
-  background: radial-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+  border-radius: 3px;
+  background: radial-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
 }
 .featured-container {
   background-color: rgba(255, 255, 255, 0.6);
