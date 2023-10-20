@@ -9,7 +9,7 @@ function Featured() {
       onHover: enlarge
       */}
       {/* <a
-        className="featured-card__link featured-mockups"
+        className="featured-card__link featured-testing"
         href="https://youtu.be/gZHYCkHwMmk"
         target="_blank"
         rel="noopener noreferrer"
@@ -40,7 +40,7 @@ function Featured() {
         </div>
       </a>
       <a
-        className="featured-card__link featured-mockups"
+        className="featured-card__link featured-ticket"
         href="https://youtu.be/2eXqBfBBgFc"
         target="_blank"
         rel="noopener noreferrer"
