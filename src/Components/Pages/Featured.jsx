@@ -8,7 +8,7 @@ function Featured() {
       bottom half: (partial opacity) and description-hugging center line
       onHover: enlarge
       */}
-      {/* <a
+      <a
         className="featured-card__link featured-testing"
         href="https://youtu.be/gZHYCkHwMmk"
         target="_blank"
@@ -17,10 +17,9 @@ function Featured() {
         <h3 className="featured-title">Cypress Testing Google's Homepage</h3>
         <div className="featured-container">
           <p className="featured-info">
-            I recorded a video displaying a number of automated Cypress tests
-            which tested critical functionalities on Google's Homepage. Tests
-            included the functionality of the search bar and various links on
-            the page.
+            In this video, I execute a number of automated Cypress tests which
+            test critical functionalities on Google's Homepage. Tests include
+            the functionality of the search bar and various links on the page.
           </p>
         </div>
       </a>
@@ -54,13 +53,13 @@ function Featured() {
             general public.
           </p>
         </div>
-      </a> */}
-      <iframe
+      </a>
+      {/* <iframe
         className="featured-landing-video"
         src="//www.youtube.com/embed/2eXqBfBBgFc?fs=0&rel=0&autoplay=1&mute=1"
         title="Asylum Contribution Video"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      ></iframe>
+      ></iframe> */}
     </section>
   );
 }
