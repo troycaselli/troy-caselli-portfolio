@@ -49,13 +49,13 @@
   transform: scale(1.03);
 }
 .featured-mockups {
-  background-image: url("/src/images/featured/blueprint-468610967-vertical.jpg");
+  background-image: url("/src/images/featured/blueprint-468610967.jpg");
 }
 .featured-testing {
-  background-image: url("/src/images/featured/testing-1212440836-vertical.jpg");
+  background-image: url("/src/images/featured/testing-1212440836.jpg");
 }
 .featured-ticket {
-  background-image: url("/src/images/featured/construction-1249551311-vertical.jpg");
+  background-image: url("/src/images/featured/construction-1249551311.jpg");
 }
 .featured-title {
   font-size: 1.7rem;
