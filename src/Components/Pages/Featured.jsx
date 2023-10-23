@@ -3,11 +3,6 @@ import "../../styling/featured.css";
 function Featured() {
   return (
     <section className="featured-landing-wrapper">
-      {/* full background: car dummy, cathedral construction, blueprint 
-      uppr half: title-hugging center line
-      bottom half: (partial opacity) and description-hugging center line
-      onHover: enlarge
-      */}
       <a
         className="featured-card__link featured-testing"
         href="https://youtu.be/gZHYCkHwMmk"
@@ -54,12 +49,6 @@ function Featured() {
           </p>
         </div>
       </a>
-      {/* <iframe
-        className="featured-landing-video"
-        src="//www.youtube.com/embed/2eXqBfBBgFc?fs=0&rel=0&autoplay=1&mute=1"
-        title="Asylum Contribution Video"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      ></iframe> */}
     </section>
   );
 }
