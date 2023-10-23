@@ -1,30 +1,4 @@
 .featured-landing-wrapper {
-  position: relative;
-  padding-bottom: 62.5%;
-  height: 0;
-  width: 100%;
-  z-index: 2;
-}
-.featured-landing-video {
-  position: absolute;
-  top: 0;
-  left: 15%;
-  width: 70%;
-  height: 70%;
-  border: 0;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-@media (max-width: 900px) {
-  .featured-landing-video {
-    left: 5%;
-    width: 90%;
-    height: 90%;
-  }
-}
-
-/* .featured-landing-wrapper {
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -35,7 +9,6 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-color: rgb(255, 255, 255);
   height: 450px;
   width: 300px;
   border-radius: 3px;
@@ -50,13 +23,13 @@
   transform: scale(1.03);
 }
 .featured-mockups {
-  background-image: url("/src/images/featured/blueprint-468610967-vertical.jpg");
+  background-image: url("/src/images/featured/blueprint-468610967.jpg");
 }
 .featured-testing {
-  background-image: url("/src/images/featured/testing-1212440836-vertical.jpg");
+  background-image: url("/src/images/featured/testing-1212440836.jpg");
 }
 .featured-ticket {
-  background-image: url("/src/images/featured/construction-1249551311-vertical.jpg");
+  background-image: url("/src/images/featured/construction-1249551311.jpg");
 }
 .featured-title {
   font-size: 1.7rem;
@@ -71,10 +44,32 @@
   height: 50%;
   width: 100%;
   margin-top: 20px;
-  padding: 20px 20px 0 20px;
+  padding: 20px;
 }
 .featured-info {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--text-color);
-} */
+}
+
+@media (max-width: 1000px) {
+  .featured-landing-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .featured-card__link {
+    width: 90%;
+    height: auto;
+    padding-top: 20px;
+  }
+  .featured-card__link:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .featured-card__link:hover {
+    transform: none;
+  }
+}

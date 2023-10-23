@@ -128,6 +128,41 @@ function AsylumProject() {
 
       <Divider /> */}
 
+      {/* ============== ADD TO PROJECT ============= */}
+      {/* JSX:
+        <iframe
+        className="featured-landing-video"
+        src="//www.youtube.com/embed/2eXqBfBBgFc?fs=0&rel=0&autoplay=1&mute=1"
+        title="Asylum Contribution Video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      ></iframe> */}
+      {/* CSS:
+        .featured-landing-wrapper {
+          position: relative;
+          padding-bottom: 62.5%;
+          height: 0;
+          width: 100%;
+          z-index: 2;
+        }
+        .featured-landing-video {
+          position: absolute;
+          top: 0;
+          left: 15%;
+          width: 70%;
+          height: 70%;
+          border: 0;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+
+        @media (max-width: 900px) {
+          .featured-landing-video {
+            left: 5%;
+            width: 90%;
+            height: 90%;
+          }
+      */}
+
       <div className="project-section">
         <h2 className="project__subtitle">UX / Design</h2>
         {loading ? (
