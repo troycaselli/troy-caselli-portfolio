@@ -24,12 +24,12 @@ function Featured() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <h3 className="featured-title">ES Reports Mockups</h3>
+        <h3 className="featured-title">Emergency Shelters Reports Mockups</h3>
         <div className="featured-container">
           <p className="featured-info">
             Appointed as the Front-End Lead for the Emergency Shelters Reports
-            Hub project, I designed the UI and user flow mockups for desktop and
-            mobile devices using Figma.
+            Hub project, I was responsible for designing the UI and user flow
+            mockups for desktop and mobile devices using Figma.
           </p>
         </div>
       </a>
