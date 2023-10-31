@@ -18,8 +18,8 @@ function Resume() {
           </p>
           <p className="skills-text">
             <span className="skills-subtitle">Back-End:</span> Node.js, Express,
-            knex.js, Relational Databases (SQLite3 and PostgreSQL), Docker, C++,
-            PHP
+            knex.js, Relational Databases (SQLite3 and PostgreSQL), Docker,
+            Python, C++, PHP
           </p>
           <p className="skills-text">
             <span className="skills-subtitle">Additional Skills:</span> API
@@ -35,6 +35,21 @@ function Resume() {
 
       <div className="resume-section">
         <h2 className="resume__title">EXPERIENCE</h2>
+        <div className="resume-container">
+          <div className="resume__specs">
+            <p className="resume__name">Remotasks,&nbsp;</p>
+            <p className="resume__role">AI Programming Response Evaluator</p>
+          </div>
+          <p className="resume__dates">Oct. 2023-Current</p>
+          <p className="resume-description">
+            Advanced the development of the latest iteration of Google Bard.
+            Evaluated two generative AI models’ responses to a wide variety of
+            user programming prompts according to certain criteria and
+            expectations. Provided an extensive description of the strengths and
+            weaknesses and specific recommendations conducive to developing and
+            optimizing both AI models.
+          </p>
+        </div>
         <div className="resume-container">
           <div className="resume__specs">
             <p className="resume__name">ikTech,&nbsp;</p>
