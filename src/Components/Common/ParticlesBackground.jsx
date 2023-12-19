@@ -8,7 +8,7 @@ function ParticlesBackground(props) {
     await loadSlim(engine);
   }, []);
 
-  const lightModeParticles = "rgb(38, 73, 92)";
+  const lightModeParticles = "rgb(30, 42, 56)";
   const darkModeParticles = "rgb(5, 13, 17)";
   const [particlesColor, setParticlesColor] = useState(lightModeParticles);
 
