@@ -53,7 +53,7 @@ function Resume() {
         <div className="resume-container">
           <div className="resume__specs">
             <p className="resume__name">ikTech,&nbsp;</p>
-            <p className="resume__role">Full-Stack Developer</p>
+            <p className="resume__role">Contract Full-Stack Developer</p>
           </div>
           <p className="resume__dates">Jan. 2023-Current</p>
           <p className="resume-description">
